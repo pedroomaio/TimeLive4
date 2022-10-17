@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProjectTaskForGraph" targetNamespace="http://tempuri.org/ProjectTaskCountByGraph.xsd" xmlns:mstns="http://tempuri.org/ProjectTaskCountByGraph.xsd" xmlns="http://tempuri.org/ProjectTaskCountByGraph.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LivetecsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LivetecsConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LivetecsConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rptvueAccountProjectTasksTableAdapter" GeneratorDataComponentClassName="rptvueAccountProjectTasksTableAdapter" Name="rptvueAccountProjectTasks" UserDataComponentName="rptvueAccountProjectTasksTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LivetecsConnectionString (Web.config)" DbObjectName="TimeliveDashboard.dbo.rptvueAccountProjectTasks" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AccountProjectTaskId, AccountProjectId, ParentAccountProjectTaskId, TaskName, TaskDescription, AccountTaskTypeId, DeadlineDate, CompletedPercent, Completed, IsParentTask, IsForAllEmployees, AccountPriorityId, TaskStatusId, CreatedOn, CreatedByEmployeeId, ModifiedOn, ModifiedByEmployeeId, TaskStatus, CreatedByFirstName, CreatedByLastName, Priority, ProjectName, ProjectCode, TaskType, AccountId, AccountProjectMilestoneId, MilestoneDescription, IsReOpen, ModifiedByFirstName, ModifiedByLastName, EstimatedCost, EstimatedHours, EstimatedTimeSpentUnit, AccountEmployeeId, IsDisabled, TaskCode, IsTemplate, IsForAllProjectTask, IsBillable, AccountClientId, ClientNick, ClientName, Duration, ParentTaskName, EstimatedCurrencyId, EstimatedCurrencyCode, BillableTotalHours, NonBillableTotalHours, TotalHours, CurrencyEmployeeCost, EstimatedCurrencyExchangeRate, CurrencyEstimatedCost, CurrencyAmount, ProjectDescription, MilestoneDate, StartDate FROM dbo.rptvueAccountProjectTasks</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AccountProjectTaskId" DataSetColumn="AccountProjectTaskId" />
+              <Mapping SourceColumn="AccountProjectId" DataSetColumn="AccountProjectId" />
+              <Mapping SourceColumn="ParentAccountProjectTaskId" DataSetColumn="ParentAccountProjectTaskId" />
+              <Mapping SourceColumn="TaskName" DataSetColumn="TaskName" />
+              <Mapping SourceColumn="TaskDescription" DataSetColumn="TaskDescription" />
+              <Mapping SourceColumn="AccountTaskTypeId" DataSetColumn="AccountTaskTypeId" />
+              <Mapping SourceColumn="DeadlineDate" DataSetColumn="DeadlineDate" />
+              <Mapping SourceColumn="CompletedPercent" DataSetColumn="CompletedPercent" />
+              <Mapping SourceColumn="Completed" DataSetColumn="Completed" />
+              <Mapping SourceColumn="IsParentTask" DataSetColumn="IsParentTask" />
+              <Mapping SourceColumn="IsForAllEmployees" DataSetColumn="IsForAllEmployees" />
+              <Mapping SourceColumn="AccountPriorityId" DataSetColumn="AccountPriorityId" />
+              <Mapping SourceColumn="TaskStatusId" DataSetColumn="TaskStatusId" />
+              <Mapping SourceColumn="CreatedOn" DataSetColumn="CreatedOn" />
+              <Mapping SourceColumn="CreatedByEmployeeId" DataSetColumn="CreatedByEmployeeId" />
+              <Mapping SourceColumn="ModifiedOn" DataSetColumn="ModifiedOn" />
+              <Mapping SourceColumn="ModifiedByEmployeeId" DataSetColumn="ModifiedByEmployeeId" />
+              <Mapping SourceColumn="TaskStatus" DataSetColumn="TaskStatus" />
+              <Mapping SourceColumn="CreatedByFirstName" DataSetColumn="CreatedByFirstName" />
+              <Mapping SourceColumn="CreatedByLastName" DataSetColumn="CreatedByLastName" />
+              <Mapping SourceColumn="Priority" DataSetColumn="Priority" />
+              <Mapping SourceColumn="ProjectName" DataSetColumn="ProjectName" />
+              <Mapping SourceColumn="ProjectCode" DataSetColumn="ProjectCode" />
+              <Mapping SourceColumn="TaskType" DataSetColumn="TaskType" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="AccountProjectMilestoneId" DataSetColumn="AccountProjectMilestoneId" />
+              <Mapping SourceColumn="MilestoneDescription" DataSetColumn="MilestoneDescription" />
+              <Mapping SourceColumn="IsReOpen" DataSetColumn="IsReOpen" />
+              <Mapping SourceColumn="ModifiedByFirstName" DataSetColumn="ModifiedByFirstName" />
+              <Mapping SourceColumn="ModifiedByLastName" DataSetColumn="ModifiedByLastName" />
+              <Mapping SourceColumn="EstimatedCost" DataSetColumn="EstimatedCost" />
+              <Mapping SourceColumn="EstimatedHours" DataSetColumn="EstimatedHours" />
+              <Mapping SourceColumn="EstimatedTimeSpentUnit" DataSetColumn="EstimatedTimeSpentUnit" />
+              <Mapping SourceColumn="AccountEmployeeId" DataSetColumn="AccountEmployeeId" />
+              <Mapping SourceColumn="IsDisabled" DataSetColumn="IsDisabled" />
+              <Mapping SourceColumn="TaskCode" DataSetColumn="TaskCode" />
+              <Mapping SourceColumn="IsTemplate" DataSetColumn="IsTemplate" />
+              <Mapping SourceColumn="IsForAllProjectTask" DataSetColumn="IsForAllProjectTask" />
+              <Mapping SourceColumn="IsBillable" DataSetColumn="IsBillable" />
+              <Mapping SourceColumn="AccountClientId" DataSetColumn="AccountClientId" />
+              <Mapping SourceColumn="ClientNick" DataSetColumn="ClientNick" />
+              <Mapping SourceColumn="ClientName" DataSetColumn="ClientName" />
+              <Mapping SourceColumn="Duration" DataSetColumn="Duration" />
+              <Mapping SourceColumn="ParentTaskName" DataSetColumn="ParentTaskName" />
+              <Mapping SourceColumn="EstimatedCurrencyId" DataSetColumn="EstimatedCurrencyId" />
+              <Mapping SourceColumn="EstimatedCurrencyCode" DataSetColumn="EstimatedCurrencyCode" />
+              <Mapping SourceColumn="BillableTotalHours" DataSetColumn="BillableTotalHours" />
+              <Mapping SourceColumn="NonBillableTotalHours" DataSetColumn="NonBillableTotalHours" />
+              <Mapping SourceColumn="TotalHours" DataSetColumn="TotalHours" />
+              <Mapping SourceColumn="CurrencyEmployeeCost" DataSetColumn="CurrencyEmployeeCost" />
+              <Mapping SourceColumn="EstimatedCurrencyExchangeRate" DataSetColumn="EstimatedCurrencyExchangeRate" />
+              <Mapping SourceColumn="CurrencyEstimatedCost" DataSetColumn="CurrencyEstimatedCost" />
+              <Mapping SourceColumn="CurrencyAmount" DataSetColumn="CurrencyAmount" />
+              <Mapping SourceColumn="ProjectDescription" DataSetColumn="ProjectDescription" />
+              <Mapping SourceColumn="MilestoneDate" DataSetColumn="MilestoneDate" />
+              <Mapping SourceColumn="StartDate" DataSetColumn="StartDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vueAccountProjectTaskTableAdapter" GeneratorDataComponentClassName="vueAccountProjectTaskTableAdapter" Name="vueAccountProjectTask" UserDataComponentName="vueAccountProjectTaskTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LivetecsConnectionString (Web.config)" DbObjectName="TimeliveDashboard.dbo.vueAccountProjectTask" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetTaskCountByProjectTaskStatus" GetMethodModifier="Public" GetMethodName="GetTaskCountByProjectTaskStatus" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetTaskCountByProjectTaskStatus" UserSourceName="GetTaskCountByProjectTaskStatus">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TaskStatus, COUNT(TaskStatus) AS StatusCount, AccountId
+FROM            vueAccountProjectTask
+WHERE        (AccountId = @AccountId) OR
+                         (AccountProjectId IN
+                             (SELECT        AccountProjectId
+                               FROM            vueAccountProjects
+                               WHERE        (AccountId = @AccountId)))
+GROUP BY TaskStatus, AccountId, TaskStatus</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="AccountId" ColumnName="AccountId" DataSourceName="TimeliveDashboard.dbo.vueAccountProjectTask" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TaskStatus" DataSetColumn="TaskStatus" />
+              <Mapping SourceColumn="StatusCount" DataSetColumn="StatusCount" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AccountProjectTaskEstCostFroGraphTableAdapter" GeneratorDataComponentClassName="AccountProjectTaskEstCostFroGraphTableAdapter" Name="AccountProjectTaskEstCostForGraph" UserDataComponentName="AccountProjectTaskEstCostFroGraphTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeliveDashboard.dbo.AccountProjectTask" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetProjectTaskEstCostByAccountId" GetMethodModifier="Public" GetMethodName="GetProjectTaskEstCostByAccountId" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetProjectTaskEstCostByAccountId" UserSourceName="GetProjectTaskEstCostByAccountId">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [AccountProjectTask] WHERE (([AccountProjectTaskId] = @Original_AccountProjectTaskId))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_AccountProjectTaskId" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="AccountProjectTaskId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [AccountProjectTask] ([AccountProjectId], [ParentAccountProjectTaskId], [TaskName], [TaskDescription], [AccountTaskTypeId], [Duration], [DurationUnit], [DeadlineDate], [CompletedPercent], [Completed], [IsParentTask], [TaskStatusId], [EstimatedCost], [IsBillable], [IsDisabled], [IsForAllProjectTask], [TaskCode]) VALUES (@AccountProjectId, @ParentAccountProjectTaskId, @TaskName, @TaskDescription, @AccountTaskTypeId, @Duration, @DurationUnit, @DeadlineDate, @CompletedPercent, @Completed, @IsParentTask, @TaskStatusId, @EstimatedCost, @IsBillable, @IsDisabled, @IsForAllProjectTask, @TaskCode)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@AccountProjectId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AccountProjectId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@ParentAccountProjectTaskId" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="ParentAccountProjectTaskId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TaskName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TaskName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TaskDescription" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TaskDescription" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@AccountTaskTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AccountTaskTypeId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Duration" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="Duration" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DurationUnit" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DurationUnit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DeadlineDate" Precision="0" ProviderType="SmallDateTime" Scale="0" Size="0" SourceColumn="DeadlineDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@CompletedPercent" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="CompletedPercent" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Completed" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Completed" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@IsParentTask" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsParentTask" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@TaskStatusId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TaskStatusId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@EstimatedCost" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="EstimatedCost" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@IsBillable" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsBillable" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@IsDisabled" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsDisabled" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@IsForAllProjectTask" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsForAllProjectTask" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TaskCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TaskCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     AccountProjectTaskId, AccountProjectId, ParentAccountProjectTaskId, TaskName, TaskDescription, AccountTaskTypeId, Duration, DurationUnit, DeadlineDate, 
+                      CompletedPercent, Completed, IsParentTask, TaskStatusId, EstimatedCost, IsBillable, IsDisabled, IsForAllProjectTask, TaskCode
+FROM         AccountProjectTask
+WHERE     (AccountProjectId IN
+                          (SELECT     AccountProjectId
+                            FROM          vueAccountProjects
+                            WHERE      (AccountId = @AccountId) AND (AccountProjectId = @AccountProjectId) AND (ISNULL(IsDeleted, 0) = 0) AND (ISNULL(IsDeletedClient, 0) = 0)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="AccountId" ColumnName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountId" Precision="0" Scale="0" Size="4" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="AccountProjectId" ColumnName="AccountProjectId" DataSourceName="TimeliveDashboard.dbo.AccountProjectTask" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountProjectId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountProjectId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [AccountProjectTask] SET [AccountProjectId] = @AccountProjectId, [ParentAccountProjectTaskId] = @ParentAccountProjectTaskId, [TaskName] = @TaskName, [TaskDescription] = @TaskDescription, [AccountTaskTypeId] = @AccountTaskTypeId, [Duration] = @Duration, [DurationUnit] = @DurationUnit, [DeadlineDate] = @DeadlineDate, [CompletedPercent] = @CompletedPercent, [Completed] = @Completed, [IsParentTask] = @IsParentTask, [TaskStatusId] = @TaskStatusId, [EstimatedCost] = @EstimatedCost, [IsBillable] = @IsBillable, [IsDisabled] = @IsDisabled, [IsForAllProjectTask] = @IsForAllProjectTask, [TaskCode] = @TaskCode WHERE (([AccountProjectTaskId] = @Original_AccountProjectTaskId))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@AccountProjectId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AccountProjectId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@ParentAccountProjectTaskId" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="ParentAccountProjectTaskId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TaskName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TaskName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TaskDescription" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TaskDescription" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@AccountTaskTypeId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AccountTaskTypeId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Duration" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="Duration" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DurationUnit" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DurationUnit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DeadlineDate" Precision="0" ProviderType="SmallDateTime" Scale="0" Size="0" SourceColumn="DeadlineDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@CompletedPercent" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="CompletedPercent" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Completed" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Completed" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@IsParentTask" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsParentTask" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@TaskStatusId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TaskStatusId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@EstimatedCost" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="EstimatedCost" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@IsBillable" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsBillable" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@IsDisabled" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsDisabled" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@IsForAllProjectTask" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="IsForAllProjectTask" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TaskCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TaskCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_AccountProjectTaskId" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="AccountProjectTaskId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AccountProjectTaskId" DataSetColumn="AccountProjectTaskId" />
+              <Mapping SourceColumn="AccountProjectId" DataSetColumn="AccountProjectId" />
+              <Mapping SourceColumn="ParentAccountProjectTaskId" DataSetColumn="ParentAccountProjectTaskId" />
+              <Mapping SourceColumn="TaskName" DataSetColumn="TaskName" />
+              <Mapping SourceColumn="TaskDescription" DataSetColumn="TaskDescription" />
+              <Mapping SourceColumn="AccountTaskTypeId" DataSetColumn="AccountTaskTypeId" />
+              <Mapping SourceColumn="Duration" DataSetColumn="Duration" />
+              <Mapping SourceColumn="DurationUnit" DataSetColumn="DurationUnit" />
+              <Mapping SourceColumn="DeadlineDate" DataSetColumn="DeadlineDate" />
+              <Mapping SourceColumn="CompletedPercent" DataSetColumn="CompletedPercent" />
+              <Mapping SourceColumn="Completed" DataSetColumn="Completed" />
+              <Mapping SourceColumn="IsParentTask" DataSetColumn="IsParentTask" />
+              <Mapping SourceColumn="TaskStatusId" DataSetColumn="TaskStatusId" />
+              <Mapping SourceColumn="EstimatedCost" DataSetColumn="EstimatedCost" />
+              <Mapping SourceColumn="IsBillable" DataSetColumn="IsBillable" />
+              <Mapping SourceColumn="IsDisabled" DataSetColumn="IsDisabled" />
+              <Mapping SourceColumn="IsForAllProjectTask" DataSetColumn="IsForAllProjectTask" />
+              <Mapping SourceColumn="TaskCode" DataSetColumn="TaskCode" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProjectTaskForGraph" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ProjectTaskForGraph" msprop:Generator_UserDSName="ProjectTaskForGraph">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rptvueAccountProjectTasks" msprop:Generator_TableClassName="rptvueAccountProjectTasksDataTable" msprop:Generator_TableVarName="tablerptvueAccountProjectTasks" msprop:Generator_TablePropName="rptvueAccountProjectTasks" msprop:Generator_RowDeletingName="rptvueAccountProjectTasksRowDeleting" msprop:Generator_UserTableName="rptvueAccountProjectTasks" msprop:Generator_RowChangingName="rptvueAccountProjectTasksRowChanging" msprop:Generator_RowEvHandlerName="rptvueAccountProjectTasksRowChangeEventHandler" msprop:Generator_RowDeletedName="rptvueAccountProjectTasksRowDeleted" msprop:Generator_RowEvArgName="rptvueAccountProjectTasksRowChangeEvent" msprop:Generator_RowChangedName="rptvueAccountProjectTasksRowChanged" msprop:Generator_RowClassName="rptvueAccountProjectTasksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountProjectTaskId" msprop:Generator_ColumnVarNameInTable="columnAccountProjectTaskId" msprop:Generator_ColumnPropNameInRow="AccountProjectTaskId" msprop:Generator_ColumnPropNameInTable="AccountProjectTaskIdColumn" msprop:Generator_UserColumnName="AccountProjectTaskId" type="xs:long" />
+              <xs:element name="AccountProjectId" msprop:Generator_ColumnVarNameInTable="columnAccountProjectId" msprop:Generator_ColumnPropNameInRow="AccountProjectId" msprop:Generator_ColumnPropNameInTable="AccountProjectIdColumn" msprop:Generator_UserColumnName="AccountProjectId" type="xs:int" />
+              <xs:element name="ParentAccountProjectTaskId" msprop:Generator_ColumnVarNameInTable="columnParentAccountProjectTaskId" msprop:Generator_ColumnPropNameInRow="ParentAccountProjectTaskId" msprop:Generator_ColumnPropNameInTable="ParentAccountProjectTaskIdColumn" msprop:Generator_UserColumnName="ParentAccountProjectTaskId" type="xs:long" minOccurs="0" />
+              <xs:element name="TaskName" msprop:Generator_ColumnVarNameInTable="columnTaskName" msprop:Generator_ColumnPropNameInRow="TaskName" msprop:Generator_ColumnPropNameInTable="TaskNameColumn" msprop:Generator_UserColumnName="TaskName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TaskDescription" msprop:Generator_ColumnVarNameInTable="columnTaskDescription" msprop:Generator_ColumnPropNameInRow="TaskDescription" msprop:Generator_ColumnPropNameInTable="TaskDescriptionColumn" msprop:Generator_UserColumnName="TaskDescription">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountTaskTypeId" msprop:Generator_ColumnVarNameInTable="columnAccountTaskTypeId" msprop:Generator_ColumnPropNameInRow="AccountTaskTypeId" msprop:Generator_ColumnPropNameInTable="AccountTaskTypeIdColumn" msprop:Generator_UserColumnName="AccountTaskTypeId" type="xs:int" />
+              <xs:element name="DeadlineDate" msprop:Generator_ColumnVarNameInTable="columnDeadlineDate" msprop:Generator_ColumnPropNameInRow="DeadlineDate" msprop:Generator_ColumnPropNameInTable="DeadlineDateColumn" msprop:Generator_UserColumnName="DeadlineDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CompletedPercent" msprop:Generator_ColumnVarNameInTable="columnCompletedPercent" msprop:Generator_ColumnPropNameInRow="CompletedPercent" msprop:Generator_ColumnPropNameInTable="CompletedPercentColumn" msprop:Generator_UserColumnName="CompletedPercent" type="xs:double" minOccurs="0" />
+              <xs:element name="Completed" msprop:Generator_ColumnVarNameInTable="columnCompleted" msprop:Generator_ColumnPropNameInRow="Completed" msprop:Generator_ColumnPropNameInTable="CompletedColumn" msprop:Generator_UserColumnName="Completed" type="xs:boolean" />
+              <xs:element name="IsParentTask" msprop:Generator_ColumnVarNameInTable="columnIsParentTask" msprop:Generator_ColumnPropNameInRow="IsParentTask" msprop:Generator_ColumnPropNameInTable="IsParentTaskColumn" msprop:Generator_UserColumnName="IsParentTask" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsForAllEmployees" msprop:Generator_ColumnVarNameInTable="columnIsForAllEmployees" msprop:Generator_ColumnPropNameInRow="IsForAllEmployees" msprop:Generator_ColumnPropNameInTable="IsForAllEmployeesColumn" msprop:Generator_UserColumnName="IsForAllEmployees" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AccountPriorityId" msprop:Generator_ColumnVarNameInTable="columnAccountPriorityId" msprop:Generator_ColumnPropNameInRow="AccountPriorityId" msprop:Generator_ColumnPropNameInTable="AccountPriorityIdColumn" msprop:Generator_UserColumnName="AccountPriorityId" type="xs:int" />
+              <xs:element name="TaskStatusId" msprop:Generator_ColumnVarNameInTable="columnTaskStatusId" msprop:Generator_ColumnPropNameInRow="TaskStatusId" msprop:Generator_ColumnPropNameInTable="TaskStatusIdColumn" msprop:Generator_UserColumnName="TaskStatusId" type="xs:int" minOccurs="0" />
+              <xs:element name="CreatedOn" msprop:Generator_ColumnVarNameInTable="columnCreatedOn" msprop:Generator_ColumnPropNameInRow="CreatedOn" msprop:Generator_ColumnPropNameInTable="CreatedOnColumn" msprop:Generator_UserColumnName="CreatedOn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreatedByEmployeeId" msprop:Generator_ColumnVarNameInTable="columnCreatedByEmployeeId" msprop:Generator_ColumnPropNameInRow="CreatedByEmployeeId" msprop:Generator_ColumnPropNameInTable="CreatedByEmployeeIdColumn" msprop:Generator_UserColumnName="CreatedByEmployeeId" type="xs:int" minOccurs="0" />
+              <xs:element name="ModifiedOn" msprop:Generator_ColumnVarNameInTable="columnModifiedOn" msprop:Generator_ColumnPropNameInRow="ModifiedOn" msprop:Generator_ColumnPropNameInTable="ModifiedOnColumn" msprop:Generator_UserColumnName="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedByEmployeeId" msprop:Generator_ColumnVarNameInTable="columnModifiedByEmployeeId" msprop:Generator_ColumnPropNameInRow="ModifiedByEmployeeId" msprop:Generator_ColumnPropNameInTable="ModifiedByEmployeeIdColumn" msprop:Generator_UserColumnName="ModifiedByEmployeeId" type="xs:int" minOccurs="0" />
+              <xs:element name="TaskStatus" msprop:Generator_ColumnVarNameInTable="columnTaskStatus" msprop:Generator_ColumnPropNameInRow="TaskStatus" msprop:Generator_ColumnPropNameInTable="TaskStatusColumn" msprop:Generator_UserColumnName="TaskStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="90" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedByFirstName" msprop:Generator_ColumnVarNameInTable="columnCreatedByFirstName" msprop:Generator_ColumnPropNameInRow="CreatedByFirstName" msprop:Generator_ColumnPropNameInTable="CreatedByFirstNameColumn" msprop:Generator_UserColumnName="CreatedByFirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedByLastName" msprop:Generator_ColumnVarNameInTable="columnCreatedByLastName" msprop:Generator_ColumnPropNameInRow="CreatedByLastName" msprop:Generator_ColumnPropNameInTable="CreatedByLastNameColumn" msprop:Generator_UserColumnName="CreatedByLastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" msprop:Generator_UserColumnName="Priority" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectName" msprop:Generator_ColumnVarNameInTable="columnProjectName" msprop:Generator_ColumnPropNameInRow="ProjectName" msprop:Generator_ColumnPropNameInTable="ProjectNameColumn" msprop:Generator_UserColumnName="ProjectName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectCode" msprop:Generator_ColumnVarNameInTable="columnProjectCode" msprop:Generator_ColumnPropNameInRow="ProjectCode" msprop:Generator_ColumnPropNameInTable="ProjectCodeColumn" msprop:Generator_UserColumnName="ProjectCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TaskType" msprop:Generator_ColumnVarNameInTable="columnTaskType" msprop:Generator_ColumnPropNameInRow="TaskType" msprop:Generator_ColumnPropNameInTable="TaskTypeColumn" msprop:Generator_UserColumnName="TaskType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountId" msprop:Generator_ColumnVarNameInTable="columnAccountId" msprop:Generator_ColumnPropNameInRow="AccountId" msprop:Generator_ColumnPropNameInTable="AccountIdColumn" msprop:Generator_UserColumnName="AccountId" type="xs:int" minOccurs="0" />
+              <xs:element name="AccountProjectMilestoneId" msprop:Generator_ColumnVarNameInTable="columnAccountProjectMilestoneId" msprop:Generator_ColumnPropNameInRow="AccountProjectMilestoneId" msprop:Generator_ColumnPropNameInTable="AccountProjectMilestoneIdColumn" msprop:Generator_UserColumnName="AccountProjectMilestoneId" type="xs:long" />
+              <xs:element name="MilestoneDescription" msprop:Generator_ColumnVarNameInTable="columnMilestoneDescription" msprop:Generator_ColumnPropNameInRow="MilestoneDescription" msprop:Generator_ColumnPropNameInTable="MilestoneDescriptionColumn" msprop:Generator_UserColumnName="MilestoneDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsReOpen" msprop:Generator_ColumnVarNameInTable="columnIsReOpen" msprop:Generator_ColumnPropNameInRow="IsReOpen" msprop:Generator_ColumnPropNameInTable="IsReOpenColumn" msprop:Generator_UserColumnName="IsReOpen" type="xs:boolean" />
+              <xs:element name="ModifiedByFirstName" msprop:Generator_ColumnVarNameInTable="columnModifiedByFirstName" msprop:Generator_ColumnPropNameInRow="ModifiedByFirstName" msprop:Generator_ColumnPropNameInTable="ModifiedByFirstNameColumn" msprop:Generator_UserColumnName="ModifiedByFirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ModifiedByLastName" msprop:Generator_ColumnVarNameInTable="columnModifiedByLastName" msprop:Generator_ColumnPropNameInRow="ModifiedByLastName" msprop:Generator_ColumnPropNameInTable="ModifiedByLastNameColumn" msprop:Generator_UserColumnName="ModifiedByLastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EstimatedCost" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEstimatedCost" msprop:Generator_ColumnPropNameInRow="EstimatedCost" msprop:Generator_ColumnPropNameInTable="EstimatedCostColumn" msprop:Generator_UserColumnName="EstimatedCost" type="xs:double" minOccurs="0" />
+              <xs:element name="EstimatedHours" msprop:Generator_ColumnVarNameInTable="columnEstimatedHours" msprop:Generator_ColumnPropNameInRow="EstimatedHours" msprop:Generator_ColumnPropNameInTable="EstimatedHoursColumn" msprop:Generator_UserColumnName="EstimatedHours" type="xs:double" />
+              <xs:element name="EstimatedTimeSpentUnit" msprop:Generator_ColumnVarNameInTable="columnEstimatedTimeSpentUnit" msprop:Generator_ColumnPropNameInRow="EstimatedTimeSpentUnit" msprop:Generator_ColumnPropNameInTable="EstimatedTimeSpentUnitColumn" msprop:Generator_UserColumnName="EstimatedTimeSpentUnit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountEmployeeId" msprop:Generator_ColumnVarNameInTable="columnAccountEmployeeId" msprop:Generator_ColumnPropNameInRow="AccountEmployeeId" msprop:Generator_ColumnPropNameInTable="AccountEmployeeIdColumn" msprop:Generator_UserColumnName="AccountEmployeeId" type="xs:int" minOccurs="0" />
+              <xs:element name="IsDisabled" msprop:Generator_ColumnVarNameInTable="columnIsDisabled" msprop:Generator_ColumnPropNameInRow="IsDisabled" msprop:Generator_ColumnPropNameInTable="IsDisabledColumn" msprop:Generator_UserColumnName="IsDisabled" type="xs:boolean" />
+              <xs:element name="TaskCode" msprop:Generator_ColumnVarNameInTable="columnTaskCode" msprop:Generator_ColumnPropNameInRow="TaskCode" msprop:Generator_ColumnPropNameInTable="TaskCodeColumn" msprop:Generator_UserColumnName="TaskCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsTemplate" msprop:Generator_ColumnVarNameInTable="columnIsTemplate" msprop:Generator_ColumnPropNameInRow="IsTemplate" msprop:Generator_ColumnPropNameInTable="IsTemplateColumn" msprop:Generator_UserColumnName="IsTemplate" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsForAllProjectTask" msprop:Generator_ColumnVarNameInTable="columnIsForAllProjectTask" msprop:Generator_ColumnPropNameInRow="IsForAllProjectTask" msprop:Generator_ColumnPropNameInTable="IsForAllProjectTaskColumn" msprop:Generator_UserColumnName="IsForAllProjectTask" type="xs:boolean" />
+              <xs:element name="IsBillable" msprop:Generator_ColumnVarNameInTable="columnIsBillable" msprop:Generator_ColumnPropNameInRow="IsBillable" msprop:Generator_ColumnPropNameInTable="IsBillableColumn" msprop:Generator_UserColumnName="IsBillable" type="xs:boolean" />
+              <xs:element name="AccountClientId" msprop:Generator_ColumnVarNameInTable="columnAccountClientId" msprop:Generator_ColumnPropNameInRow="AccountClientId" msprop:Generator_ColumnPropNameInTable="AccountClientIdColumn" msprop:Generator_UserColumnName="AccountClientId" type="xs:int" />
+              <xs:element name="ClientNick" msprop:Generator_ColumnVarNameInTable="columnClientNick" msprop:Generator_ColumnPropNameInRow="ClientNick" msprop:Generator_ColumnPropNameInTable="ClientNickColumn" msprop:Generator_UserColumnName="ClientNick">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" msprop:Generator_UserColumnName="ClientName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Duration" msprop:Generator_ColumnVarNameInTable="columnDuration" msprop:Generator_ColumnPropNameInRow="Duration" msprop:Generator_ColumnPropNameInTable="DurationColumn" msprop:Generator_UserColumnName="Duration" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="223" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentTaskName" msprop:Generator_ColumnVarNameInTable="columnParentTaskName" msprop:Generator_ColumnPropNameInRow="ParentTaskName" msprop:Generator_ColumnPropNameInTable="ParentTaskNameColumn" msprop:Generator_UserColumnName="ParentTaskName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EstimatedCurrencyId" msprop:Generator_ColumnVarNameInTable="columnEstimatedCurrencyId" msprop:Generator_ColumnPropNameInRow="EstimatedCurrencyId" msprop:Generator_ColumnPropNameInTable="EstimatedCurrencyIdColumn" msprop:Generator_UserColumnName="EstimatedCurrencyId" type="xs:int" minOccurs="0" />
+              <xs:element name="EstimatedCurrencyCode" msprop:Generator_ColumnVarNameInTable="columnEstimatedCurrencyCode" msprop:Generator_ColumnPropNameInRow="EstimatedCurrencyCode" msprop:Generator_ColumnPropNameInTable="EstimatedCurrencyCodeColumn" msprop:Generator_UserColumnName="EstimatedCurrencyCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BillableTotalHours" msprop:Generator_ColumnVarNameInTable="columnBillableTotalHours" msprop:Generator_ColumnPropNameInRow="BillableTotalHours" msprop:Generator_ColumnPropNameInTable="BillableTotalHoursColumn" msprop:Generator_UserColumnName="BillableTotalHours" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NonBillableTotalHours" msprop:Generator_ColumnVarNameInTable="columnNonBillableTotalHours" msprop:Generator_ColumnPropNameInRow="NonBillableTotalHours" msprop:Generator_ColumnPropNameInTable="NonBillableTotalHoursColumn" msprop:Generator_UserColumnName="NonBillableTotalHours" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalHours" msprop:Generator_ColumnVarNameInTable="columnTotalHours" msprop:Generator_ColumnPropNameInRow="TotalHours" msprop:Generator_ColumnPropNameInTable="TotalHoursColumn" msprop:Generator_UserColumnName="TotalHours" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CurrencyEmployeeCost" msprop:Generator_ColumnVarNameInTable="columnCurrencyEmployeeCost" msprop:Generator_ColumnPropNameInRow="CurrencyEmployeeCost" msprop:Generator_ColumnPropNameInTable="CurrencyEmployeeCostColumn" msprop:Generator_UserColumnName="CurrencyEmployeeCost" type="xs:double" minOccurs="0" />
+              <xs:element name="EstimatedCurrencyExchangeRate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEstimatedCurrencyExchangeRate" msprop:Generator_ColumnPropNameInRow="EstimatedCurrencyExchangeRate" msprop:Generator_ColumnPropNameInTable="EstimatedCurrencyExchangeRateColumn" msprop:Generator_UserColumnName="EstimatedCurrencyExchangeRate" type="xs:double" minOccurs="0" />
+              <xs:element name="CurrencyEstimatedCost" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCurrencyEstimatedCost" msprop:Generator_ColumnPropNameInRow="CurrencyEstimatedCost" msprop:Generator_ColumnPropNameInTable="CurrencyEstimatedCostColumn" msprop:Generator_UserColumnName="CurrencyEstimatedCost" type="xs:double" minOccurs="0" />
+              <xs:element name="CurrencyAmount" msprop:Generator_ColumnVarNameInTable="columnCurrencyAmount" msprop:Generator_ColumnPropNameInRow="CurrencyAmount" msprop:Generator_ColumnPropNameInTable="CurrencyAmountColumn" msprop:Generator_UserColumnName="CurrencyAmount" type="xs:double" minOccurs="0" />
+              <xs:element name="ProjectDescription" msprop:Generator_ColumnVarNameInTable="columnProjectDescription" msprop:Generator_ColumnPropNameInRow="ProjectDescription" msprop:Generator_ColumnPropNameInTable="ProjectDescriptionColumn" msprop:Generator_UserColumnName="ProjectDescription">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MilestoneDate" msprop:Generator_ColumnVarNameInTable="columnMilestoneDate" msprop:Generator_ColumnPropNameInRow="MilestoneDate" msprop:Generator_ColumnPropNameInTable="MilestoneDateColumn" msprop:Generator_UserColumnName="MilestoneDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" msprop:Generator_UserColumnName="StartDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vueAccountProjectTask" msprop:Generator_TableClassName="vueAccountProjectTaskDataTable" msprop:Generator_TableVarName="tablevueAccountProjectTask" msprop:Generator_TablePropName="vueAccountProjectTask" msprop:Generator_RowDeletingName="vueAccountProjectTaskRowDeleting" msprop:Generator_UserTableName="vueAccountProjectTask" msprop:Generator_RowChangingName="vueAccountProjectTaskRowChanging" msprop:Generator_RowEvHandlerName="vueAccountProjectTaskRowChangeEventHandler" msprop:Generator_RowDeletedName="vueAccountProjectTaskRowDeleted" msprop:Generator_RowEvArgName="vueAccountProjectTaskRowChangeEvent" msprop:Generator_RowChangedName="vueAccountProjectTaskRowChanged" msprop:Generator_RowClassName="vueAccountProjectTaskRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaskStatus" msprop:Generator_ColumnVarNameInTable="columnTaskStatus" msprop:Generator_ColumnPropNameInRow="TaskStatus" msprop:Generator_ColumnPropNameInTable="TaskStatusColumn" msprop:Generator_UserColumnName="TaskStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="90" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatusCount" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnStatusCount" msprop:Generator_ColumnPropNameInRow="StatusCount" msprop:Generator_ColumnPropNameInTable="StatusCountColumn" msprop:Generator_UserColumnName="StatusCount" type="xs:int" minOccurs="0" />
+              <xs:element name="AccountId" msprop:Generator_ColumnVarNameInTable="columnAccountId" msprop:Generator_ColumnPropNameInRow="AccountId" msprop:Generator_ColumnPropNameInTable="AccountIdColumn" msprop:Generator_UserColumnName="AccountId" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AccountProjectTaskEstCostForGraph" msprop:Generator_TableClassName="AccountProjectTaskEstCostForGraphDataTable" msprop:Generator_TableVarName="tableAccountProjectTaskEstCostForGraph" msprop:Generator_TablePropName="AccountProjectTaskEstCostForGraph" msprop:Generator_RowDeletingName="AccountProjectTaskEstCostForGraphRowDeleting" msprop:Generator_UserTableName="AccountProjectTaskEstCostForGraph" msprop:Generator_RowChangingName="AccountProjectTaskEstCostForGraphRowChanging" msprop:Generator_RowEvHandlerName="AccountProjectTaskEstCostForGraphRowChangeEventHandler" msprop:Generator_RowDeletedName="AccountProjectTaskEstCostForGraphRowDeleted" msprop:Generator_RowEvArgName="AccountProjectTaskEstCostForGraphRowChangeEvent" msprop:Generator_RowChangedName="AccountProjectTaskEstCostForGraphRowChanged" msprop:Generator_RowClassName="AccountProjectTaskEstCostForGraphRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountProjectTaskId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnAccountProjectTaskId" msprop:Generator_ColumnPropNameInRow="AccountProjectTaskId" msprop:Generator_ColumnPropNameInTable="AccountProjectTaskIdColumn" msprop:Generator_UserColumnName="AccountProjectTaskId" type="xs:long" />
+              <xs:element name="AccountProjectId" msprop:Generator_ColumnVarNameInTable="columnAccountProjectId" msprop:Generator_ColumnPropNameInRow="AccountProjectId" msprop:Generator_ColumnPropNameInTable="AccountProjectIdColumn" msprop:Generator_UserColumnName="AccountProjectId" type="xs:int" />
+              <xs:element name="ParentAccountProjectTaskId" msprop:Generator_ColumnVarNameInTable="columnParentAccountProjectTaskId" msprop:Generator_ColumnPropNameInRow="ParentAccountProjectTaskId" msprop:Generator_ColumnPropNameInTable="ParentAccountProjectTaskIdColumn" msprop:Generator_UserColumnName="ParentAccountProjectTaskId" type="xs:long" minOccurs="0" />
+              <xs:element name="TaskName" msprop:Generator_ColumnVarNameInTable="columnTaskName" msprop:Generator_ColumnPropNameInRow="TaskName" msprop:Generator_ColumnPropNameInTable="TaskNameColumn" msprop:Generator_UserColumnName="TaskName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TaskDescription" msprop:Generator_ColumnVarNameInTable="columnTaskDescription" msprop:Generator_ColumnPropNameInRow="TaskDescription" msprop:Generator_ColumnPropNameInTable="TaskDescriptionColumn" msprop:Generator_UserColumnName="TaskDescription">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountTaskTypeId" msprop:Generator_ColumnVarNameInTable="columnAccountTaskTypeId" msprop:Generator_ColumnPropNameInRow="AccountTaskTypeId" msprop:Generator_ColumnPropNameInTable="AccountTaskTypeIdColumn" msprop:Generator_UserColumnName="AccountTaskTypeId" type="xs:int" />
+              <xs:element name="Duration" msprop:Generator_ColumnVarNameInTable="columnDuration" msprop:Generator_ColumnPropNameInRow="Duration" msprop:Generator_ColumnPropNameInTable="DurationColumn" msprop:Generator_UserColumnName="Duration" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DurationUnit" msprop:Generator_ColumnVarNameInTable="columnDurationUnit" msprop:Generator_ColumnPropNameInRow="DurationUnit" msprop:Generator_ColumnPropNameInTable="DurationUnitColumn" msprop:Generator_UserColumnName="DurationUnit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeadlineDate" msprop:Generator_ColumnVarNameInTable="columnDeadlineDate" msprop:Generator_ColumnPropNameInRow="DeadlineDate" msprop:Generator_ColumnPropNameInTable="DeadlineDateColumn" msprop:Generator_UserColumnName="DeadlineDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CompletedPercent" msprop:Generator_ColumnVarNameInTable="columnCompletedPercent" msprop:Generator_ColumnPropNameInRow="CompletedPercent" msprop:Generator_ColumnPropNameInTable="CompletedPercentColumn" msprop:Generator_UserColumnName="CompletedPercent" type="xs:double" minOccurs="0" />
+              <xs:element name="Completed" msprop:Generator_ColumnVarNameInTable="columnCompleted" msprop:Generator_ColumnPropNameInRow="Completed" msprop:Generator_ColumnPropNameInTable="CompletedColumn" msprop:Generator_UserColumnName="Completed" type="xs:boolean" />
+              <xs:element name="IsParentTask" msprop:Generator_ColumnVarNameInTable="columnIsParentTask" msprop:Generator_ColumnPropNameInRow="IsParentTask" msprop:Generator_ColumnPropNameInTable="IsParentTaskColumn" msprop:Generator_UserColumnName="IsParentTask" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TaskStatusId" msprop:Generator_ColumnVarNameInTable="columnTaskStatusId" msprop:Generator_ColumnPropNameInRow="TaskStatusId" msprop:Generator_ColumnPropNameInTable="TaskStatusIdColumn" msprop:Generator_UserColumnName="TaskStatusId" type="xs:int" minOccurs="0" />
+              <xs:element name="EstimatedCost" msprop:Generator_ColumnVarNameInTable="columnEstimatedCost" msprop:Generator_ColumnPropNameInRow="EstimatedCost" msprop:Generator_ColumnPropNameInTable="EstimatedCostColumn" msprop:Generator_UserColumnName="EstimatedCost" type="xs:double" minOccurs="0" />
+              <xs:element name="IsBillable" msprop:Generator_ColumnVarNameInTable="columnIsBillable" msprop:Generator_ColumnPropNameInRow="IsBillable" msprop:Generator_ColumnPropNameInTable="IsBillableColumn" msprop:Generator_UserColumnName="IsBillable" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsDisabled" msprop:Generator_ColumnVarNameInTable="columnIsDisabled" msprop:Generator_ColumnPropNameInRow="IsDisabled" msprop:Generator_ColumnPropNameInTable="IsDisabledColumn" msprop:Generator_UserColumnName="IsDisabled" type="xs:boolean" />
+              <xs:element name="IsForAllProjectTask" msprop:Generator_ColumnVarNameInTable="columnIsForAllProjectTask" msprop:Generator_ColumnPropNameInRow="IsForAllProjectTask" msprop:Generator_ColumnPropNameInTable="IsForAllProjectTaskColumn" msprop:Generator_UserColumnName="IsForAllProjectTask" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TaskCode" msprop:Generator_ColumnVarNameInTable="columnTaskCode" msprop:Generator_ColumnPropNameInRow="TaskCode" msprop:Generator_ColumnPropNameInTable="TaskCodeColumn" msprop:Generator_UserColumnName="TaskCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

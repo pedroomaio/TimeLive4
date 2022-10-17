@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>TimeLive.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{6e8e28f3-7175-4f56-8ac6-9f511444ecb1}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>TimeLive.Database</RootNamespace>
+    <AssemblyName>TimeLive.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Service Broker\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\xp_vacationmap_DEV.sql" />
+    <Build Include="dbo\Tables\xp_vacationmap.sql" />
+    <Build Include="dbo\Tables\xp_users.sql" />
+    <Build Include="dbo\Tables\xp_usergroups.sql" />
+    <Build Include="dbo\Tables\xp_project_history.sql" />
+    <Build Include="dbo\Tables\xp_project_budget.sql" />
+    <Build Include="dbo\Tables\xp_newproject.sql" />
+    <Build Include="dbo\Tables\xp_jobtype.sql" />
+    <Build Include="dbo\Tables\xp_holidays.sql" />
+    <Build Include="dbo\Tables\xp_groups.sql" />
+    <Build Include="dbo\Tables\xp_employeeprofile.sql" />
+    <Build Include="dbo\Tables\xp_customvalues.sql" />
+    <Build Include="dbo\Tables\SystemWorkType.sql" />
+    <Build Include="dbo\Tables\SystemWorkingDay.sql" />
+    <Build Include="dbo\Tables\SystemTimeZone.sql" />
+    <Build Include="dbo\Tables\SystemTimesheetPeriodType.sql" />
+    <Build Include="dbo\Tables\SystemTimeSheetApprovalPath.sql" />
+    <Build Include="dbo\Tables\SystemTimeEntryHoursFormat.sql" />
+    <Build Include="dbo\Tables\SystemTerminology.sql" />
+    <Build Include="dbo\Tables\SystemStatusType.sql" />
+    <Build Include="dbo\Tables\SystemSolutionType.sql" />
+    <Build Include="dbo\Tables\SystemSecurityCategoryPermission.sql" />
+    <Build Include="dbo\Tables\SystemSecurityCategoryPage.sql" />
+    <Build Include="dbo\Tables\SystemSecurityCategoryMasterAccountRole.sql" />
+    <Build Include="dbo\Tables\SystemSecurityCategory.sql" />
+    <Build Include="dbo\Tables\SystemResetToZeroType.sql" />
+    <Build Include="dbo\Tables\SystemReportType.sql" />
+    <Build Include="dbo\Tables\SystemReportPermission.sql" />
+    <Build Include="dbo\Tables\SystemReportFilterSourceMapping.sql" />
+    <Build Include="dbo\Tables\SystemReportFilterSource.sql" />
+    <Build Include="dbo\Tables\SystemReportFieldType.sql" />
+    <Build Include="dbo\Tables\SystemReportDataSourceField.sql" />
+    <Build Include="dbo\Tables\SystemReportDataSource.sql" />
+    <Build Include="dbo\Tables\SystemReportCalculationType.sql" />
+    <Build Include="dbo\Tables\SystemProjectBillingRateType.sql" />
+    <Build Include="dbo\Tables\SystemPermission.sql" />
+    <Build Include="dbo\Tables\SystemPath.sql" />
+    <Build Include="dbo\Tables\SystemPartyType.sql" />
+    <Build Include="dbo\Tables\SystemPackageType.sql" />
+    <Build Include="dbo\Tables\SystemNamePrefix.sql" />
+    <Build Include="dbo\Tables\SystemModuleView.sql" />
+    <Build Include="dbo\Tables\SystemModuleFields.sql" />
+    <Build Include="dbo\Tables\SystemModule.sql" />
+    <Build Include="dbo\Tables\SystemMasterEMailTemplate.sql" />
+    <Build Include="dbo\Tables\SystemLicense.sql" />
+    <Build Include="dbo\Tables\SystemInvoiceBillingType.sql" />
+    <Build Include="dbo\Tables\SystemInitialDaysOfThePeriod.sql" />
+    <Build Include="dbo\Tables\SystemFilterModuleField.sql" />
+    <Build Include="dbo\Tables\SystemFilterModule.sql" />
+    <Build Include="dbo\Tables\SystemFeatures.sql" />
+    <Build Include="dbo\Tables\SystemEmployeeType.sql" />
+    <Build Include="dbo\Tables\SystemEmployeeDashboard.sql" />
+    <Build Include="dbo\Tables\SystemEMailNotificationType.sql" />
+    <Build Include="dbo\Tables\SystemEMailNotification.sql" />
+    <Build Include="dbo\Tables\SystemEarnPeriod.sql" />
+    <Build Include="dbo\Tables\SystemDurationUnit.sql" />
+    <Build Include="dbo\Tables\SystemData.sql" />
+    <Build Include="dbo\Tables\SystemCustomerRequestType.sql" />
+    <Build Include="dbo\Tables\SystemCurrency.sql" />
+    <Build Include="dbo\Tables\SystemCountry.sql" />
+    <Build Include="dbo\Tables\SystemChartType.sql" />
+    <Build Include="dbo\Tables\SystemCharts.sql" />
+    <Build Include="dbo\Tables\SystemBillingRateType.sql" />
+    <Build Include="dbo\Tables\SystemBillingCategory.sql" />
+    <Build Include="dbo\Tables\SystemAttachmentType.sql" />
+    <Build Include="dbo\Tables\SystemApproverType.sql" />
+    <Build Include="dbo\Tables\SystemApplicationType.sql" />
+    <Build Include="dbo\Tables\MasterWorkingDayType.sql" />
+    <Build Include="dbo\Tables\MasterTimesheetPeriodType.sql" />
+    <Build Include="dbo\Tables\MasterTimeOffType.sql" />
+    <Build Include="dbo\Tables\MasterTimeOffPolicyDetail.sql" />
+    <Build Include="dbo\Tables\MasterTimeOffPolicy.sql" />
+    <Build Include="dbo\Tables\MasterTaxZone.sql" />
+    <Build Include="dbo\Tables\MasterTaxCode.sql" />
+    <Build Include="dbo\Tables\MasterPaymentMethod.sql" />
+    <Build Include="dbo\Tables\MasterHolidayTypeDetail.sql" />
+    <Build Include="dbo\Tables\MasterHolidayType.sql" />
+    <Build Include="dbo\Tables\MasterEntityType.sql" />
+    <Build Include="dbo\Tables\MasterEmployeeType.sql" />
+    <Build Include="dbo\Tables\MasterCustomDataType.sql" />
+    <Build Include="dbo\Tables\MasterCostCenter.sql" />
+    <Build Include="dbo\Tables\MasterAccountWorkingDay.sql" />
+    <Build Include="dbo\Tables\MasterAccountTaskType.sql" />
+    <Build Include="dbo\Tables\MasterAccountStatus.sql" />
+    <Build Include="dbo\Tables\MasterAccountRole.sql" />
+    <Build Include="dbo\Tables\MasterAccountProjectType.sql" />
+    <Build Include="dbo\Tables\MasterAccountPriority.sql" />
+    <Build Include="dbo\Tables\MasterAccountPreferences.sql" />
+    <Build Include="dbo\Tables\MasterAccountExpenseTypeTaxCode.sql" />
+    <Build Include="dbo\Tables\MasterAccountExpenseType.sql" />
+    <Build Include="dbo\Tables\MasterAccountExpense.sql" />
+    <Build Include="dbo\Tables\MasterAccountCurrencyExchangeRate.sql" />
+    <Build Include="dbo\Tables\MasterAccountCurrency.sql" />
+    <Build Include="dbo\Tables\MasterAccountBillingType.sql" />
+    <Build Include="dbo\Tables\MasterAccountApprovalType.sql" />
+    <Build Include="dbo\Tables\MasterAccountApprovalPath.sql" />
+    <Build Include="dbo\Tables\MasterAccountAbsenceType.sql" />
+    <Build Include="dbo\Tables\LTCustomerPayment.sql" />
+    <Build Include="dbo\Tables\LTCustomer.sql" />
+    <Build Include="dbo\Tables\EmailMessage.sql" />
+    <Build Include="dbo\Tables\CountryState.sql" />
+    <Build Include="dbo\Tables\Authentication.sql" />
+    <Build Include="dbo\Tables\Audit.sql" />
+    <Build Include="dbo\Tables\apt_back.sql" />
+    <Build Include="dbo\Tables\AccountWorkTypeBillingRate.sql" />
+    <Build Include="dbo\Tables\AccountWorkType.sql" />
+    <Build Include="dbo\Tables\AccountWorkingDayType.sql" />
+    <Build Include="dbo\Tables\AccountWorkingDay.sql" />
+    <Build Include="dbo\Tables\AccountType.sql" />
+    <Build Include="dbo\Tables\AccountTimesheetPeriodType.sql" />
+    <Build Include="dbo\Tables\AccountTimeOffType.sql" />
+    <Build Include="dbo\Tables\AccountTimeOffPolicyDetail.sql" />
+    <Build Include="dbo\Tables\AccountTimeOffPolicy.sql" />
+    <Build Include="dbo\Tables\AccountTimeExpenseBillingTimesheet.sql" />
+    <Build Include="dbo\Tables\AccountTimeExpenseBillingExpense.sql" />
+    <Build Include="dbo\Tables\AccountTimeExpenseBilling.sql" />
+    <Build Include="dbo\Tables\AccountTerminology.sql" />
+    <Build Include="dbo\Tables\AccountTaxZone.sql" />
+    <Build Include="dbo\Tables\AccountTaxCode.sql" />
+    <Build Include="dbo\Tables\AccountTaskType.sql" />
+    <Build Include="dbo\Tables\AccountStatus.sql" />
+    <Build Include="dbo\Tables\AccountRole.sql" />
+    <Build Include="dbo\Tables\AccountReportSummary.sql" />
+    <Build Include="dbo\Tables\AccountReportGroup.sql" />
+    <Build Include="dbo\Tables\AccountReportDataSourceMapping.sql" />
+    <Build Include="dbo\Tables\AccountReportColumn.sql" />
+    <Build Include="dbo\Tables\AccountReportCategory.sql" />
+    <Build Include="dbo\Tables\AccountReport.sql" />
+    <Build Include="dbo\Tables\AccountQBOnlineLog.sql" />
+    <Build Include="dbo\Tables\AccountProjectType.sql" />
+    <Build Include="dbo\Tables\AccountProjectTaskEmployee.sql" />
+    <Build Include="dbo\Tables\AccountProjectTaskComments.sql" />
+    <Build Include="dbo\Tables\AccountProjectTaskAttachment.sql" />
+    <Build Include="dbo\Tables\AccountProjectTask.sql" />
+    <Build Include="dbo\Tables\AccountProjectRole.sql" />
+    <Build Include="dbo\Tables\AccountProjectMilestone.sql" />
+    <Build Include="dbo\Tables\AccountProjectEmployee.sql" />
+    <Build Include="dbo\Tables\AccountProjectAttachment.sql" />
+    <Build Include="dbo\Tables\accountproject_bkp_20160923_rmdm.sql" />
+    <Build Include="dbo\Tables\AccountProject.sql" />
+    <Build Include="dbo\Tables\AccountPriority.sql" />
+    <Build Include="dbo\Tables\AccountPreferences.sql" />
+    <Build Include="dbo\Tables\AccountPaymentMethod.sql" />
+    <Build Include="dbo\Tables\AccountPartyDepartment.sql" />
+    <Build Include="dbo\Tables\AccountPartyContact.sql" />
+    <Build Include="dbo\Tables\AccountParty.sql" />
+    <Build Include="dbo\Tables\AccountPagePermission.sql" />
+    <Build Include="dbo\Tables\AccountObjectPermission.sql" />
+    <Build Include="dbo\Tables\AccountModuleView.sql" />
+    <Build Include="dbo\Tables\AccountModuleFields.sql" />
+    <Build Include="dbo\Tables\AccountLocation.sql" />
+    <Build Include="dbo\Tables\AccountHolidayTypeDetail.sql" />
+    <Build Include="dbo\Tables\AccountHolidayType.sql" />
+    <Build Include="dbo\Tables\AccountFilterModule.sql" />
+    <Build Include="dbo\Tables\AccountFeatures.sql" />
+    <Build Include="dbo\Tables\AccountExpenseTypeTaxCode.sql" />
+    <Build Include="dbo\Tables\AccountExpenseType.sql" />
+    <Build Include="dbo\Tables\AccountExpenseEntryApproval.sql" />
+    <Build Include="dbo\Tables\AccountExpenseEntry.sql" />
+    <Build Include="dbo\Tables\AccountExpense.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeType.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeTimeOffRequestApproval.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeTimeOffRequest.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeTimeOffAudit.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeTimeOff.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeTimeEntryTemplate.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeTimeEntryPeriod.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeTimeEntryApprovalProject.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeTimeEntryApproval.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeTimeEntry.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeProjectPreferences.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeExpenseSheet.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeDashboard.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeCharts.sql" />
+    <Build Include="dbo\Tables\AccountEmployeeAttendance.sql" />
+    <Build Include="dbo\Tables\AccountEmployee.sql" />
+    <Build Include="dbo\Tables\AccountEMailNotificationPreference.sql" />
+    <Build Include="dbo\Tables\AccountDepartment.sql" />
+    <Build Include="dbo\Tables\AccountCustomField.sql" />
+    <Build Include="dbo\Tables\AccountCurrencyExchangeRate.sql" />
+    <Build Include="dbo\Tables\AccountCurrency.sql" />
+    <Build Include="dbo\Tables\AccountCostCenterEmployee.sql" />
+    <Build Include="dbo\Tables\AccountCostCenter.sql" />
+    <Build Include="dbo\Tables\AccountBillingType.sql" />
+    <Build Include="dbo\Tables\AccountBillingRate.sql" />
+    <Build Include="dbo\Tables\AccountAttachments.sql" />
+    <Build Include="dbo\Tables\AccountApprovalType.sql" />
+    <Build Include="dbo\Tables\AccountApprovalPath.sql" />
+    <Build Include="dbo\Tables\AccountAbsenceType.sql" />
+    <Build Include="dbo\Tables\Account.sql" />
+    <Build Include="dbo\Views\vxp_DetailTimesheet.sql" />
+    <Build Include="dbo\Views\vxp_DetailMonthAllocationWithApprover.sql" />
+    <Build Include="dbo\Views\vxp_DetailMonthAllocation.sql" />
+    <Build Include="dbo\Views\vxp_DetailExpense.sql" />
+    <Build Include="dbo\Views\vueTotalSubmittedPeriods.sql" />
+    <Build Include="dbo\Views\vueTotalNotSubmittedPeriods.sql" />
+    <Build Include="dbo\Views\vueTotalNotApprovedPeriods.sql" />
+    <Build Include="dbo\Views\vueTotalApprovedPeriods.sql" />
+    <Build Include="dbo\Views\vueTotalApprovalProjectsSubmitted.sql" />
+    <Build Include="dbo\Views\vueTotalApprovalProjects.sql" />
+    <Build Include="dbo\Views\vueTimesheetSummaryPendingForApprovalOnlyEmployees.sql" />
+    <Build Include="dbo\Views\vueTimesheetSummaryPendingForApprovalDailyEmailWithPreferenceGrouped.sql" />
+    <Build Include="dbo\Views\vueTimesheetSummaryPendingForApprovalDailyEmailWithPreference.sql" />
+    <Build Include="dbo\Views\vueTimesheetSummaryPendingForApprovalDailyEmail.sql" />
+    <Build Include="dbo\Views\vueTimesheetSummaryPendingForApproval.sql" />
+    <Build Include="dbo\Views\vueTimesheetSummaryPendingApprovalForEmailWithPreference.sql" />
+    <Build Include="dbo\Views\vueTimesheetSummaryPendingApprovalForEmail.sql" />
+    <Build Include="dbo\Views\vueTimesheetSummaryForApproval.sql" />
+    <Build Include="dbo\Views\vueTimesheetSequenceForApprovalPendingEmail.sql" />
+    <Build Include="dbo\Views\vueTimesheetSequenceForApproval.sql" />
+    <Build Include="dbo\Views\vueTimesheetOverdueNotificationWithPreferenceForTeamLead.sql" />
+    <Build Include="dbo\Views\vueTimesheetOverdueNotificationWithPreferenceForProjectManager.sql" />
+    <Build Include="dbo\Views\vueTimesheetOverdueNotificationWithPreferenceForEmployeeManager.sql" />
+    <Build Include="dbo\Views\vueTimesheetOverdueNotificationWithPreferenceForAdministrator.sql" />
+    <Build Include="dbo\Views\vueTimesheetOverdueNotificationWithPreference.sql" />
+    <Build Include="dbo\Views\vueTimesheetDueNotificationEmailWithPreference.sql" />
+    <Build Include="dbo\Views\vueTimesheetAuditTrailForReport.sql" />
+    <Build Include="dbo\Views\vueTimeSheetApprovalSequenceForTimeOff.sql" />
+    <Build Include="dbo\Views\vueTimesheetApprovalSequence.sql" />
+    <Build Include="dbo\Views\vueTimeOffApprovalSequence.sql" />
+    <Build Include="dbo\Views\vueTimeEntryApprovalActivityForReport.sql" />
+    <Build Include="dbo\Views\vueTimeBillingWorksheet.sql" />
+    <Build Include="dbo\Views\vueTaskBillingRate.sql" />
+    <Build Include="dbo\Views\vueSystemSecurityCategoryPage.sql" />
+    <Build Include="dbo\Views\vueSystemReportPermission.sql" />
+    <Build Include="dbo\Views\vueSystemReportDataSourceField.sql" />
+    <Build Include="dbo\Views\vueSystemPagesWithRolesForSiteMap.sql" />
+    <Build Include="dbo\Views\vueSystemPagesSiteMap.sql" />
+    <Build Include="dbo\Views\vueSystemFilterModule.sql" />
+    <Build Include="dbo\Views\vueSystemDefaultSecurity.sql" />
+    <Build Include="dbo\Views\vueSubmittedCountApprovalProjects.sql" />
+    <Build Include="dbo\Views\vueProjectSummary.sql" />
+    <Build Include="dbo\Views\vueExternalAccountEmployee.sql" />
+    <Build Include="dbo\Views\vueExpenseSheetAuditTrailUnionForReport.sql" />
+    <Build Include="dbo\Views\vueExpenseSheetAuditTrailForReport.sql" />
+    <Build Include="dbo\Views\vueExpenseEntryApprovalActivityForReport.sql" />
+    <Build Include="dbo\Views\vueExpenseBillingWorksheet.sql" />
+    <Build Include="dbo\Views\vueExpenseApprovalSequenceSummary.sql" />
+    <Build Include="dbo\Views\vueExpenseApprovalSequence.sql" />
+    <Build Include="dbo\Views\vueBillingTimesheet.sql" />
+    <Build Include="dbo\Views\vueBillingExpense.sql" />
+    <Build Include="dbo\Views\vueAudit.sql" />
+    <Build Include="dbo\Views\vueApprovedCountApprovalProjects.sql" />
+    <Build Include="dbo\Views\vueAccountWorkTypeBillingRate.sql" />
+    <Build Include="dbo\Views\vueAccountWorkingDayType.sql" />
+    <Build Include="dbo\Views\vueAccountWorkingDay.sql" />
+    <Build Include="dbo\Views\vueAccountTimesheetPeriodType.sql" />
+    <Build Include="dbo\Views\vueAccountTimeOffType.sql" />
+    <Build Include="dbo\Views\vueAccountTimeOffPolicyDetail.sql" />
+    <Build Include="dbo\Views\vueAccountTimeExpenseBillingTimesheetForParentTask.sql" />
+    <Build Include="dbo\Views\vueAccountTimeExpenseBillingTimesheetForEdit.sql" />
+    <Build Include="dbo\Views\vueAccountTimeExpenseBillingTimesheet.sql" />
+    <Build Include="dbo\Views\vueAccountTimeExpenseBillingReport.sql" />
+    <Build Include="dbo\Views\vueAccountTimeExpenseBillingExpenseForEdit.sql" />
+    <Build Include="dbo\Views\vueAccountTimeExpenseBillingExpense.sql" />
+    <Build Include="dbo\Views\vueAccountTimeExpenseBilling.sql" />
+    <Build Include="dbo\Views\vueAccountTerminology.sql" />
+    <Build Include="dbo\Views\vueAccountStatus.sql" />
+    <Build Include="dbo\Views\vueAccountRole.sql" />
+    <Build Include="dbo\Views\vueAccountReportSummary.sql" />
+    <Build Include="dbo\Views\vueAccountReportGroup.sql" />
+    <Build Include="dbo\Views\vueAccountReportFilter.sql" />
+    <Build Include="dbo\Views\vueAccountReportDataSourceMapping.sql" />
+    <Build Include="dbo\Views\vueAccountReportColumnWithReportGroup.sql" />
+    <Build Include="dbo\Views\vueAccountReportColumn.sql" />
+    <Build Include="dbo\Views\vueAccountReport.sql" />
+    <Build Include="dbo\Views\vueAccountReimbursementCurrency.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTeamForReport.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskWithPreferences.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskWithParentForQB.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskWithComments.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskWithBillingRate.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskUpdateEmail.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskTimesheet.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskOnlyForReport.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskForReport.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskForQB.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskEmployeeUpdateEmail.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskEmployeeForTaskTeam.sql" />
+    <Build Include="dbo\Views\VueAccountProjectTaskEmployeeForReport.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskEmployeeForFullJoin.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskEmployeeEmail.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskEmployee.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskEmail.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskComments.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskBillingRate.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTaskAttachment.sql" />
+    <Build Include="dbo\Views\vueAccountProjectTask.sql" />
+    <Build Include="dbo\Views\vueAccountProjectsOnlyForReport.sql" />
+    <Build Include="dbo\Views\vueAccountProjectsForReport.sql" />
+    <Build Include="dbo\Views\vueAccountProjects.sql" />
+    <Build Include="dbo\Views\vueAccountProjectRoleFullJoin.sql" />
+    <Build Include="dbo\Views\vueAccountProjectRoleBillingRate.sql" />
+    <Build Include="dbo\Views\vueAccountProjectRole.sql" />
+    <Build Include="dbo\Views\vueAccountProjectForProjectSummary.sql" />
+    <Build Include="dbo\Views\vueAccountProjectEmployeFullJoin.sql" />
+    <Build Include="dbo\Views\vueAccountProjectEmployeeTask.sql" />
+    <Build Include="dbo\Views\vueAccountProjectEmployeeBillingRate.sql" />
+    <Build Include="dbo\Views\vueAccountProjectEmployee.sql" />
+    <Build Include="dbo\Views\vueAccountPartyDepartment.sql" />
+    <Build Include="dbo\Views\vueAccountPartyContact.sql" />
+    <Build Include="dbo\Views\vueAccountParty.sql" />
+    <Build Include="dbo\Views\vueAccountPageSecuritySiteMap.sql" />
+    <Build Include="dbo\Views\vueAccountPagePermissionView.sql" />
+    <Build Include="dbo\Views\vueAccountPagePermission.sql" />
+    <Build Include="dbo\Views\vueAccountObjectPermission.sql" />
+    <Build Include="dbo\Views\vueAccountModuleViewWithSystemModuleFields.sql" />
+    <Build Include="dbo\Views\vueAccountModuleFields.sql" />
+    <Build Include="dbo\Views\vueAccountHolidayTypeDetail.sql" />
+    <Build Include="dbo\Views\vueAccountHolidayType.sql" />
+    <Build Include="dbo\Views\vueAccountHolidaySelect.sql" />
+    <Build Include="dbo\Views\vueAccountHolidayEmployee.sql" />
+    <Build Include="dbo\Views\vueAccountFilterModule.sql" />
+    <Build Include="dbo\Views\vueAccountFeatures.sql" />
+    <Build Include="dbo\Views\vueAccountExternalUserForReport.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseWithTaxCode.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseType.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryWithLastStatus.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryWithLastAction.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryRejectedEmailToApprover.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryRejectedEmail.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryForReport.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryForQB.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryForProjectSummary.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryAuditTrailForReport.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovedForApproverEmployeeId.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovedEmailToApprover.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovedEmail.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalSummary.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalPendingSummaryReadOnly.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalPendingSummary.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalPendingEmailWithPreference.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalPendingEmailInstantWithPreference.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalPendingEmailInstant.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalPendingEmail.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalPendingApprover.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalPending.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalLastAction.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApprovalForReport.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntryApproval.sql" />
+    <Build Include="dbo\Views\vueAccountExpenseEntry.sql" />
+    <Build Include="dbo\Views\vueAccountExpense.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeWorkingDays.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeWithBillingRate.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimesheetSubmissionStatusALL.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimesheetSubmissionStatus.sql" />
+    <Build Include="dbo\Views\VueAccountEmployeeTimeOffTypeIsInclude.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestWithTimeEntryReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestRejectedEmail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestApprovedEmail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestApprovalPendingEmailWithPreference.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestApprovalPendingEmailForInstant.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestApprovalPendingEmail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestApprovalPendingApprover.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestApprovalPending.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestApprovalDetail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequestApproval.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffRequest.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffLastSchedule.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffForImportExport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffCurrentApprover.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOffAudit.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeOff.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryWithTimeOffForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryWithStatus.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryWithLastStatus.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryWithApprover.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryWithAccountProjectRole.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryWithAccountProjectEmployee.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryRejectedEmail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryPeriodForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryPeriodAuditTrailForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryPeriodApprovalProject.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryPeriodApprovalDetail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryPeriod.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryPendingNotificationEmailWithPreferenceForTeamLead.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryPendingNotificationEmailWithPreferenceForProjectManager.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryPendingNotificationEmailWithPreferenceForEmployeeManager.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryPendingNotificationEmailWithPreferenceForAdministrator.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryPendingNotificationEmailWithPreference.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryForQB.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryForMobile.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryForEmail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryCurrentApprover.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryAuditTrailForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovedEmail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalWithProject.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalPendingForTimeOff.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalPendingEmaiWithPreferencelForTimeOff.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalPendingEmailWithPreference.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalPendingEmailForTimeOff.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalPendingEmailForInstantTimeOff.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalPendingEMail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalPendingApproverForTimeOff.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalPendingApprover.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalPending.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalLastAction.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalForTimeOff.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApprovalForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntryApproval.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEntry.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeTimeEnryAuditTrailUnionForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeesWithPreference.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeesForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeProject.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeHolidayTypesWithDetail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeForQB.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeExpenseSheetOnlyAmount.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeExpenseSheetForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeExpenseSheetAuditTrailForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeExpenseSheetAuditForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeExpenseSheetApprovalDetail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeExpenseSheet.sql" />
+    <Build Include="dbo\Views\VueAccountEmployeeDashboard.sql" />
+    <Build Include="dbo\Views\VueAccountEmployeeChart.sql" />
+    <Build Include="dbo\Views\vueAccountEMployeeAttendanceforReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeAttendanceDetail.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeAttendance.sql" />
+    <Build Include="dbo\Views\vueAccountEmployeeAbsenceForReport.sql" />
+    <Build Include="dbo\Views\vueAccountEmployee.sql" />
+    <Build Include="dbo\Views\vueAccountEMailNotificationPreference.sql" />
+    <Build Include="dbo\Views\vueAccountCustomFieldManage.sql" />
+    <Build Include="dbo\Views\vueAccountCurrencyExchangeRate.sql" />
+    <Build Include="dbo\Views\vueAccountCurrency.sql" />
+    <Build Include="dbo\Views\vueAccountCostCenterEmployee.sql" />
+    <Build Include="dbo\Views\vueAccountClientForReport.sql" />
+    <Build Include="dbo\Views\vueAccountBillingType.sql" />
+    <Build Include="dbo\Views\vueAccountBillingRate.sql" />
+    <Build Include="dbo\Views\vueAccountBaseCurrency.sql" />
+    <Build Include="dbo\Views\vueAccountAttendance.sql" />
+    <Build Include="dbo\Views\vueAccountApproverType.sql" />
+    <Build Include="dbo\Views\vueAccountApproval.sql" />
+    <Build Include="dbo\Views\vueAccount.sql" />
+    <Build Include="dbo\Views\ViewAccountEmployeeTimeOffApprovalPending.sql" />
+    <Build Include="dbo\Views\rptvueTimesheetAuditTrail.sql" />
+    <Build Include="dbo\Views\rptvueTimeEntryPeriodicSubmission.sql" />
+    <Build Include="dbo\Views\rptvueTimeEntryApprovalActivity.sql" />
+    <Build Include="dbo\Views\rptvueInvoice.sql" />
+    <Build Include="dbo\Views\rptvueExternalUsers.sql" />
+    <Build Include="dbo\Views\rptvueExpenseSheetAuditTrail.sql" />
+    <Build Include="dbo\Views\rptvueExpenseEntryApprovalActivity.sql" />
+    <Build Include="dbo\Views\rptvueAccountProjectTeam.sql" />
+    <Build Include="dbo\Views\rptvueAccountProjectTasks.sql" />
+    <Build Include="dbo\Views\rptvueAccountProjectTaskEmployee.sql" />
+    <Build Include="dbo\Views\rptvueAccountProjectsTimesheet.sql" />
+    <Build Include="dbo\Views\rptvueAccountProjectsReport.sql" />
+    <Build Include="dbo\Views\rptvueAccountProjectsforReport.sql" />
+    <Build Include="dbo\Views\rptvueAccountProjects.sql" />
+    <Build Include="dbo\Views\rptvueAccountLocations.sql" />
+    <Build Include="dbo\Views\rptvueAccountExpenseEntry.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployeeTimeOffRequestWithTimeEntryReport.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployeeTimeOffRequest.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployeeTimeOffAudit.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployeeTimeOff.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployeeTimeEntryPeriod.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployeeTimeEntryForProjectReport.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployeeTimeEntry.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployees.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployeeExpenseSheet.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployeeAttendance.sql" />
+    <Build Include="dbo\Views\rptvueAccountEmployeeAbsence.sql" />
+    <Build Include="dbo\Views\rptvueAccountDepartments.sql" />
+    <Build Include="dbo\Views\rptvueAccountClients.sql" />
+    <Build Include="dbo\Views\AccountWorkingDayType_V.sql" />
+    <Build Include="dbo\Functions\timeToDecimal.sql" />
+    <Build Include="dbo\Functions\getLastBusinessDay.sql" />
+    <Build Include="dbo\Functions\GET_TZVALUE.sql" />
+    <Build Include="dbo\Functions\fxp_GetLastDayOfMonth.sql" />
+    <Build Include="dbo\Functions\CombineValuesForTimeOffCurrentApprover.sql" />
+    <Build Include="dbo\Functions\CombineValuesForTimeEntryCurrentApprover.sql" />
+    <Build Include="dbo\Functions\CombineValuesForTimeEntryApprover.sql" />
+    <Build Include="dbo\Functions\CombineValuesForSiteMap.sql" />
+    <Build Include="dbo\Functions\AccountProjectTaskWithParentTask.sql" />
+    <Build Include="dbo\Stored Procedures\usp_TimeEntryReport4.sql" />
+    <Build Include="dbo\Stored Procedures\usp_TimeEntryReport3.sql" />
+    <Build Include="dbo\Stored Procedures\usp_TimeEntryReport2.sql" />
+    <Build Include="dbo\Stored Procedures\usp_TimeEntryReport1.sql" />
+    <Build Include="dbo\Stored Procedures\usp_DeleteTempTableForTimeEntryReport.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpTimeSheetProjectEmployeeDataSet.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpTimeSheetProjectDataSet.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpTimeSheetDataSet.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpNumberWorkDays.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpGetTimeoffPoliciesInfo.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpGetTimeOffApprovalTypesInfo.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpGetProjectsInfo.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpGetLocationsInfo.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpGetHolidayTypesInfo.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpGetEmployees.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpGetEmployeeById.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpGetDepartmentsInfo.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpDetailedExpensesGroupedbyMonth.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpDetailedExpensesGrouped.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpDetailedExpensesbyMonth.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpDetailedExpenses.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpDeleteExpensesForTSTEnvironment.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpAllocationDataSetUNSUB.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpAllocationDataSetNAP.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpAllocationDataSetMissing.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpAllocationDataSetAP.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpAllEmployeesDetailedExpenses.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpAddEmployeeToProjectTeam.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpAccountEmployeeWithTimeoff.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpAccountEmployeeClose.sql" />
+    <Build Include="dbo\Stored Procedures\sp_xpAccountEmployee.sql" />
+    <Build Include="dbo\Stored Procedures\sp_UpdateTimeEntry.sql" />
+    <Build Include="dbo\Stored Procedures\sp_defixfullaccount.sql" />
+    <Build Include="dbo\Stored Procedures\sp_defix.sql" />
+    <Build Include="dbo\Stored Procedures\InsertAbsentDate.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteScript.sql" />
+    <Build Include="dbo\Stored Procedures\CreateTableforAccountEmployeeTimesheetSubmissionStatus.sql" />
+    <Build Include="dbo\Stored Procedures\_EmailMessage_GetPendingEmailMessage.sql" />
+    <Build Include="Service Broker\SMEContract.sql" />
+    <Build Include="Service Broker\SMEMessageType.sql" />
+    <Build Include="Service Broker\SMEResponseQueue.sql" />
+    <Build Include="Service Broker\SMEPostQueue.sql" />
+    <Build Include="Service Broker\SMEService.sql" />
+    <Build Include="Service Broker\SMEPostingService.sql" />
+  </ItemGroup>
+</Project>

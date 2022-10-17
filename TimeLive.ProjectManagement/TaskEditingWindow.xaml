@@ -1,0 +1,66 @@
+﻿<controls:ChildWindow x:Class="ProjectManagement.TaskEditingWindow"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:wincontrols="clr-namespace:System.Windows.Controls;assembly=System.Windows"
+           Width="400" Height="300" 
+                      xmlns:gantt="clr-namespace:RadiantQ.Windows.Controls.Gantt;assembly=RadiantQ.GanttControls"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:local="clr-namespace:ProjectManagement"
+                       xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:ganttprimitives="clr-namespace:RadiantQ.Windows.Controls.Gantt.Primitives;assembly=RadiantQ.GanttControls"
+                                 Title="TaskEditingWindow">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.Resources>
+            <local:ResourceNamesListProvider x:Name="resourceNamesList"></local:ResourceNamesListProvider>
+           </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Resource Assignments:" Margin="5" />
+            <sdk:DataGrid x:Name="resourceAssignmentsGrid" AutoGenerateColumns="False" RowHeight="25" Height="150"
+                           VerticalScrollBarVisibility="Auto">
+                <sdk:DataGrid.Columns>
+                    <sdk:DataGridTemplateColumn Header="Resource">
+                        <sdk:DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock  VerticalAlignment="Center" Text="{Binding ResourceName}"
+                                                       Margin="2,0,0,0"></TextBlock>
+                            </DataTemplate>
+                        </sdk:DataGridTemplateColumn.CellTemplate>
+                        <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <wincontrols:ComboBox ItemsSource="{Binding Converter={StaticResource resourceNamesList}}"
+                                                      SelectedItem="{Binding ResourceName, Mode=TwoWay}"
+                                                      ></wincontrols:ComboBox>
+                            </DataTemplate>
+                        </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                    </sdk:DataGridTemplateColumn>
+                    <sdk:DataGridTemplateColumn Header="Allocation">
+                        <sdk:DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock  VerticalAlignment="Center" Text="{Binding AllocationUnits}" HorizontalAlignment="Right"
+                                                       Margin="2,0,0,0"></TextBlock>
+                            </DataTemplate>
+                        </sdk:DataGridTemplateColumn.CellTemplate>
+                        <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <ganttprimitives:NumericUpDownSuffixed VerticalAlignment="Center" IsHitTestVisible="True" MaxWidth="90" Maximum="200" Minimum="0"
+                                                                       Suffix="%" Value="{Binding AllocationUnits, Mode=TwoWay}"/>
+                            </DataTemplate>
+                        </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                    </sdk:DataGridTemplateColumn>
+                </sdk:DataGrid.Columns>
+            </sdk:DataGrid>
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="5" Content="Add" Click="Add_Click" Width="50" />
+                <Button Margin="5" Content="Deleted Selected" Click="Delete_Click" Width="100"/>
+            </StackPanel>
+        </StackPanel>
+        
+        <Button x:Name="CancelButton" Content="Cancel" Click="CancelButton_Click" Width="75" Height="23" HorizontalAlignment="Right" Margin="0,12,0,0" Grid.Row="1" />
+        <Button x:Name="OKButton" Content="OK" Click="OKButton_Click" Width="75" Height="23" HorizontalAlignment="Right" Margin="0,12,79,0" Grid.Row="1" />
+    </Grid>
+</controls:ChildWindow>

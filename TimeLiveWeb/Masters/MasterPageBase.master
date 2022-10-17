@@ -1,0 +1,707 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPageBase.master.vb" Inherits="Masters_MasterPageBase"
+    ClientIDMode="Predictable" %>
+
+<%@ Register Src="../Menus/Controls/ctlTopMenu.ascx" TagName="ctlTopMenu" TagPrefix="uc5" %>
+<%@ Register Src="../Menus/Controls/ctlSiteMapPath.ascx" TagName="ctlSiteMapPath"
+    TagPrefix="uc4" %>
+<%@ Register Src="../Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus"
+    TagPrefix="uc3" %>
+<%@ Register Src="../Authenticate/Controls/ctlLogin.ascx" TagName="ctlLogin" TagPrefix="uc2" %>
+<%@ Register Src="../Menus/Controls/ctlAccountAdminSiteMenu.ascx" TagName="ctlAccountAdminSiteMenu"
+    TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="../Styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- For all browsers,child and adult -->
+    <link rel="stylesheet" href="../css/styles/modal.css?v=1">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" media="print" href="../css/print.css?v=1">
+    <!-- For progressively larger displays -->
+    <%--<link rel="stylesheet" media="only all and (min-width: 480px)" href="../css/480.css?v=1">--%>
+    <link rel="stylesheet" media="only all and (min-width: 768px)" href="../css/768.css?v=1">
+    <%--	<link rel="stylesheet" media="only all and (min-width: 992px)" href="../css/992.css?v=1">
+			<link rel="stylesheet" media="only all and (min-width: 1200px)" href="../css/1200.css?v=1">--%>
+    <!-- For Retina displays -->
+    <link rel="stylesheet" media="only all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)"
+        href="../css/2x.css?v=1">
+    <!-- Additional styles -->
+    <link rel="stylesheet" href="../css/styles/form.css?v=1">
+    <link rel="stylesheet" href="../css/styles/switches.css?v=1">
+    <link rel="stylesheet" href="../css/styles/table.css?v=1">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../js/libs/DataTables/jquery.dataTables.css?v=1">
+    <!-- JavaScript at bottom except for Modernizr -->
+    <script src="../js/libs/modernizr.custom.js"></script>
+    <!-- For Modern Browsers -->
+    <link rel="shortcut icon" href="../img/favicons/favicon.png">
+    <!-- For everything else -->
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+    <!-- For retina screens -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/favicons/apple-touch-icon-retina.png">
+    <!-- For iPad 1-->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/favicons/apple-touch-icon-ipad.png">
+    <!-- For iPhone 3G, iPod Touch and Android -->
+    <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon.png">
+    <!-- iOS web-app metas -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Startup image for web apps -->
+    <link rel="apple-touch-startup-image" href="../img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+    <link rel="apple-touch-startup-image" href="../img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+    <link rel="apple-touch-startup-image" href="../img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+    <!-- Microsoft clear type rendering -->
+    <meta http-equiv="cleartype" content="on">
+    <style type="text/css">
+        #UpdatePanel1 {
+            width: 200px;
+            height: 100px;
+            border: 1px solid gray;
+        }
+
+        #UpdateProgress1 {
+            width: 200px;
+            background-color: #FFC080;
+            bottom: 0%;
+            left: 0px;
+            position: absolute;
+        }
+
+        ul li a.special {
+            display: block;
+            font-family: Verdana;
+            font-size: 10px;
+            text-decoration: none;
+            height: 48px;
+            width: 93px;
+            line-height: 16px;
+        }
+
+            ul li a.special:hover {
+                background-color: #b4bbc3;
+                color: white;
+            }
+            ul li a.special:focus {
+                background-color: #b4bbc3;
+                color: white;
+            }
+
+        ul li a.current {
+            background-color: #b4bbc3;
+            color: white;
+            display: block;
+            font-family: Verdana;
+            font-size: 10px;
+            text-decoration: none;
+            width: 93px;
+            height: 48px;
+            line-height: 16px;
+        }
+
+        .notify-badge {
+            position: relative;
+            background:red;
+            height: 2rem;
+            top: 0.8rem;
+            left: 2.5rem;
+            width: 4rem;
+            text-align: center;
+            border-radius: 40px;
+            color: white;
+            line-height: -4px;
+            padding: 2px 5px;
+            font-size: 99%;
+            font-weight:bold;
+        }
+        .notify-approval
+        {
+           position: relative;
+            background:transparent;
+            height: 2rem;
+            top: 1.5rem;
+            left: 2.5rem;
+            width: 4rem;
+            text-align: center;
+            border-radius: 40px;
+            color: transparent;
+            line-height: -4px;
+            padding: 2px 5px;
+            font-size: 99%;
+        }
+        .notify-newapproval
+        {
+            position: relative;
+            background:red;
+            height: 2rem;
+            width: 4rem;
+            text-align: center;
+            border-radius: 40px;
+            color: white;
+            line-height: -4px;
+            padding: 2px 6px;
+            left:1.5rem;
+            top:1rem;
+            font-size: 12px;
+            font-size-adjust:99%;
+            font-weight:normal;
+            font-weight:bold;
+        }
+         .notify-rejected {
+            position: absolute;
+            background: red;
+            top: 6.1rem;
+            left: 3rem;
+            text-align: center;
+            border-radius: 40px;
+            color: white;
+            line-height: -4px;
+            padding: 2px 5px;
+            font-size: 99%;
+            font-weight: bold;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="phCustomHeaderStylesAndScripts" runat="server" />
+</head>
+<body class="clearfix with-menu with-shortcuts">
+    <form id="Form1" runat="server" defaultbutton="cmdclick" visible="True">
+        <asp:ScriptManager ID="ScriptManager2" runat="server" AsyncPostBackTimeout="0">
+        </asp:ScriptManager>
+        <header role="banner" id="title-bar2">
+				<h2 style="margin-top:10px;">
+					<asp:Image ID="HI" runat="server"  Height="50px"  ImageUrl="~/Images/CompanyLogo.gif" AlternateText="TimeLive Logo" />
+				</h2>
+			</header>
+        <header role="banner" id="title-bar" style="padding: 0px;">
+				<h2></h2>
+				<ul class="topmainmenu">
+					<li style="margin: 0px -1.2px;"><a href="#" id="open-menu" ><span>Menu</span></a> </li>
+					<%If AccountPagePermissionBLL.IsPageHasPermissionOf(15, 1) Then%>
+					<li style="margin: 0px -1.2px;">
+						<a href="../AccountAdmin/AdminMain.aspx" id="open-menu4">
+							<span>
+								<asp:Label ID="lbladmin" runat="server" ForeColor="White" Font-Size="12px" Text="Admin Options" ></asp:Label>
+							</span>
+						</a>
+					</li>
+					<%End If%>
+					<%If Session("Role") = "Administrator" Then%>
+					<li style="margin: 0px -1.0px;">
+						<a class="open-menu22">
+							<span>
+								<asp:Label ID="nametop" runat="server" Text="<%$ Resources:TimeLive.Resource, LoggedIn As:%>" ></asp:Label>
+							</span>
+						</a>
+					</li>
+					<%Else%>
+					<%If AccountPagePermissionBLL.IsPageHasPermissionOf(15, 1) Then%>
+					<li style="margin: 0px -1.0px;">
+						<a style="right:210px;"  class="open-menu2">
+							<span>
+								<asp:Label ID="nametop2" runat="server" Text="<%$ Resources:TimeLive.Resource, LoggedIn As:%>" ></asp:Label>
+							</span>
+						</a>
+					</li>
+					<%Else%>
+					<li style="margin: 0px -1.0px;">
+						<a style="right:90px;"  class="open-menu21">
+							<span>
+								<asp:Label ID="nametop3" runat="server" Text="<%$ Resources:TimeLive.Resource, LoggedIn As:%>" ></asp:Label>
+							</span>
+						</a>
+					</li>
+					<%End If%>    
+					<%End If%>
+					<li style="margin: 0px -1.2px;">
+						<asp:UpdatePanel ID="UP1" runat="server">
+							<ContentTemplate>
+								<a href="#" runat="server" id="AnchortimeOut" class="open-menu23">
+									<span>
+										<asp:label ID="lblTimeOut"  runat="server" ForeColor="White" Font-Size="Smaller" Text="<%$ Resources:TimeLive.Resource, Time Out%>" ></asp:label>
+									</span>
+								</a>
+							</ContentTemplate>
+						</asp:UpdatePanel>
+					</li>
+					<li style="margin: 0px -1.2px;">
+						<asp:UpdatePanel ID="UP2" runat="server">
+							<ContentTemplate>
+								<a href="#" runat="server" id="Anchortimein" class="open-menu24">
+									<span>
+										<asp:label ID="lblTimeIn"   runat="server" ForeColor="White" Font-Size="Smaller" Text="<%$ Resources:TimeLive.Resource, Time In%>" ></asp:label>
+									</span>
+								</a>
+							</ContentTemplate>
+						</asp:UpdatePanel>
+					</li>
+					<li style="margin: 0px -1.2px;">
+						<asp:UpdatePanel ID="UP3" runat="server">
+							<ContentTemplate>
+								<%If AccountPagePermissionBLL.IsPageHasPermissionOf(31, 1) Then%>
+								<a href="~/ProjectAdmin/AccountProjectGantt.aspx" runat="server" id="AnchorProjectGanttView" class="open-menu25">
+									<span>
+										<asp:label ID="lblProjectGanttView" runat="server" ForeColor="White" Font-Size="Smaller" Text="<%$ Resources:TimeLive.Resource, Project Gantt View%>" ></asp:label>
+									</span>
+								</a>
+								<%End If%>
+							</ContentTemplate>
+						</asp:UpdatePanel>
+					</li>
+				</ul>
+			</header>
+        <!-- Button to open/hide menu -->
+        <div id="open-menu5">
+            <!--<span>
+					<uc4:ctlSiteMapPath ID="ctlSiteMapPath1" runat="server" />
+					</asp:Label>
+				</span> -->
+        </div>
+        <%--<uc4:ctlSiteMapPath ID="ctlSiteMapPath1" runat="server" />--%>
+        <a href="#" id="open-menu3"><span></span></a>
+        <div style="height: 40px; position: fixed; text-align: center; bottom: 0%; width: 80px; font-size: smaller; opacity: 1; z-index: 99;">
+            v1.2
+        </div>
+        <!-- Button to open/hide shortcuts -->
+        <%--<a href="#" id="open-shortcuts"><span class="icon-thumbs"></span></a>--%>
+        <!-- Side tabs shortcuts -->
+        <ul class="shortcuts-new">
+
+            <%--
+				<%If AccountPagePermissionBLL.IsPageHasPermissionOf(25, 1) Then%>
+				<%If Page.Request.Path.Contains("Default.aspx") Or
+					Page.Request.Path.Contains("AccountEmployeeDashboard.aspx") Or
+					Page.Request.Path.Contains("ChartCustomization.aspx") Then%>
+				<li style="list-style-type: none; margin-left: -5px; margin-top: 110px; vertical-align: middle;
+					text-align: center"><a class="current" href="../Employee/Default.aspx">
+					<img src="../img/dashboard.png" /><br />
+					Dashboard</a> 
+				</li>
+				<%Else%>
+				<li style="list-style-type: none; margin-left: -5px; margin-top: 110px; vertical-align: middle;
+					text-align: center"><a class="special" href="../Employee/Default.aspx">
+					<img src="../img/dashboard.png" /><br />
+					Dashboard</a> 
+				</li>
+				<!--<div style="font-family:Verdana;font-size:10px;">Dashboard</div>-->
+				<%End If%>
+				<%End If%>
+            --%>
+            <%--
+					<%If DBUtilities.IsProjectManagementFeature = True Then%>
+					     <%If AccountPagePermissionBLL.IsPageHasPermissionOf(27, 1) Then%>
+					     <%If Page.Request.Path.Contains("MyProjects.aspx") Then %>
+					  <li style="list-style-type:none;margin-left:-5px;margin-top:15px;vertical-align:middle;text-align:center">
+					             <a class="current" href="../Employee/MyProjects.aspx"><img src="../img/project.png"/><br />My Projects</a></li>
+					  <%Else %>
+					        <li style="list-style-type:none;margin-left:-5px;margin-top:15px;vertical-align:middle;text-align:center">
+					             <a class="special" href="../Employee/MyProjects.aspx"><img src="../img/project.png"/><br />My Projects</a></li>
+					             <!--<div style="font-family:Verdana;font-size:10px;">My Projects</div>-->
+					     <%End If%> 
+					 <%End If %>
+					 <%End If %>     
+            --%>
+            <%If AccountPagePermissionBLL.IsPageHasPermissionOf(28, 1) Then%>
+            <%If Page.Request.Path.Contains("MyTasks.aspx") Then%>
+            <li style="display: none; list-style-type: none; margin-left: -5px; margin-top: 15px; vertical-align: middle; text-align: center"><a class="current" href="../Employee/MyTasks.aspx">
+                <img src="../img/task.png" /><br />
+                My Tasks</a>
+            </li>
+            <%Else%>
+            <li style="display: none; list-style-type: none; margin-left: -5px; margin-top: 15px; vertical-align: middle; text-align: center"><a class="special" href="../Employee/MyTasks.aspx">
+                <img src="../img/task.png" />My Tasks</a>
+            </li>
+            <!--<div style="font-family:Verdana;font-size:10px;">My Tasks</div>-->
+            <%End If%>
+            <%End If%>
+            <%If AccountPagePermissionBLL.IsPageHasPermissionOf(18, 1) Or AccountPagePermissionBLL.IsPageHasPermissionOf(19, 1) Then%>
+            <%If Page.Request.Path.Contains("AccountEmployeeTimeEntryDayView.aspx") Or
+                 Page.Request.Path.Contains("AccountEmployeeTimeEntryPeriodView.aspx") Or
+                 Page.Request.Path.Contains("AccountEmployeeTimeEntryPeriodList.aspx") Then%>
+            <span class="notify-rejected" id="RejectedOnPage" runat="server"></span>
+            <li style="list-style-type: none; margin-left: -5px; margin-top: 105px; vertical-align: middle; text-align: center"><a class="current" id="TimesheetLink1" runat="server" href="../Employee/AccountEmployeeTimeEntryDayView.aspx">
+                <img src="../img/timesheetnew.png" /><br />
+                <%=ResourceHelper.GetFromResource("My Timesheet")%></a>
+            </li>
+            <%Else%>
+            <span class="notify-rejected" id="RejectedMain" runat="server"></span>
+            <li style="list-style-type: none; margin-left: -5px; margin-top: 105px; vertical-align: middle; text-align: center"><a class="special" id="TimesheetLink" runat="server" href="../Employee/AccountEmployeeTimeEntryDayView.aspx">
+                <img src="../img/timesheetnew.png"/><br />
+                <%=ResourceHelper.GetFromResource("My Timesheet")%></a>
+            </li>
+            <!--<div style="font-family:Verdana;font-size:10px;">My Timesheet</div></a>-->
+            <%End If%>
+            <%End If%>
+            <%If AccountPagePermissionBLL.IsPageHasPermissionOf(135, 1) Then%>
+            <%If Page.Request.Path.Contains("AccountExpenseEntry.aspx") Or
+                                                                                                                                                        Page.Request.Path.Contains("AccountExpenseEntryForm.aspx") Then%>
+            <li style="list-style-type: none; margin-left: -5px; margin-top: 15px; vertical-align: middle; text-align: center"><a class="current" href="../Employee/AccountExpenseEntry.aspx">
+                <img src="../img/expense.png" /><br />
+                <%=ResourceHelper.GetFromResource("My Expenses")%></a>
+            </li>
+            <%Else%>
+            <li style="list-style-type: none; margin-left: -5px; margin-top: 15px; vertical-align: middle; text-align: center"><a class="special" href="../Employee/AccountExpenseEntry.aspx">
+                <img src="../img/expense.png" /><br />
+                <%=ResourceHelper.GetFromResource("My Expenses")%></a>
+            </li>
+            <!--<div style="font-family:Verdana;font-size:10px;">My Expenses</div></a>-->
+            <%End If%>
+            <%End If%>
+            <%If AccountPagePermissionBLL.IsPageHasPermissionOf(142, 1) Then%>
+            <%If Page.Request.Path.Contains("MyTimeOff.aspx") Then%>
+            <li style="list-style-type: none; margin-left: -5px; margin-top: 15px; vertical-align: middle; text-align: center"><a class="current" href="../Employee/MyTimeOff.aspx">
+                <img src="../img/timeoffnew.png" /><br />
+                <%=ResourceHelper.GetFromResource("My TimeOff")%></a>
+            </li>
+            <%Else%>
+            <li style="list-style-type: none; margin-left: -5px; margin-top: 15px; vertical-align: middle; text-align: center"><a class="special" href="../Employee/MyTimeOff.aspx">
+                <img src="../img/timeoffnew.png" /><br />
+                <%=ResourceHelper.GetFromResource("My TimeOff")%></a>
+            </li>
+            <!--<div style="font-family:Verdana;font-size:10px;">My TimeOff</div></a>-->
+            <%End If%>
+            <%End If%>
+            <%If AccountPagePermissionBLL.IsPageHasPermissionOf(124, 1) Then%>
+            <%If Page.Request.Path.Contains("MyReports.aspx") Or
+                                                                                                                                                                                                        Page.Request.Path.Contains("ShowReport.aspx") Or
+                                                                                                                                                                                                        Page.Request.Path.Contains("AccountEmployeeTimesheetSubmissionStatusReport.aspx") Then%>
+            <li style="list-style-type: none; margin-left: -5px; margin-top: 15px; vertical-align: middle; text-align: center"><a class="current" href="../WebReport/MyReports.aspx">
+                <img src="../img/reports.png" /><br />
+                <%=ResourceHelper.GetFromResource("My Reports")%></a>
+            </li>
+            <%Else%>
+            <li style="list-style-type: none; margin-left: -5px; margin-top: 15px; vertical-align: middle; text-align: center"><a class="special" href="../WebReport/MyReports.aspx">
+                <img src="../img/reports.png" /><br />
+                <%=ResourceHelper.GetFromResource("My Reports")%></a>
+            </li>
+            <!--<div style="font-family:Verdana;font-size:10px;">My Reports</div></a>-->
+            <%End If%>
+            <%End If%>
+            <%If AccountPagePermissionBLL.IsPageHasPermissionOf(159, 1) Then%>
+            <%If Page.Request.Path.Contains("ManageApproval.aspx") Or
+                         Page.Request.Path.Contains("ExpenseApproval.aspx") Or Page.Request.Path.Contains("TimeSheetApproval.aspx") Then%>
+            <span class="notify-badge" id="ApprovalMainWithin" runat="server"></span>
+            <li style="list-style-type: none; margin-left: -5px; margin-top: 0px; vertical-align: middle; text-align: center">
+                <a class="current" href="../Employee/ManageApproval.aspx">
+                    <img src="../img/approvals.png" /><br />
+                    <%=ResourceHelper.GetFromResource("Approvals")%></a>
+            </li>
+            <%Else%>
+             <span class="notify-badge" id="ApprovalMain" runat="server"></span>
+            <li style="list-style-type: none; margin-left: -5px; margin-top: 0px; vertical-align: middle; text-align: center">
+                <a class="special" href="../Employee/ManageApproval.aspx">
+                    <img src="../img/approvals.png" /><br />
+                    <%=ResourceHelper.GetFromResource("Approvals")%></a>
+            </li>
+            <!--<div style="font-family:Verdana;font-size:10px;">Approvals</div></a>-->
+            <%End If%>
+            <%End If%>
+        </ul>
+        <section id="menu" role="complementary">
+				<div id="menu-content">
+					<header>
+						<table width="100%" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="left" valign="middle">
+									<asp:Label Font-Underline="true" ForeColor="#BFBFBF" ID="RoleLabel" runat="server"></asp:Label>
+								</td>
+								<td align="right" valign="middle">
+									<uc3:ctlLoginStatus ID="CtlLoginStatus2" runat="server"/>
+								</td>
+							</tr>
+						</table>
+					</header>
+					<div id="profile" style="text-align: center;">
+						<asp:HyperLink ID="L" runat="server">
+							<asp:Image ID="I" runat="server" AlternateText="Profile" ImageUrl="~/Img/User.png" ToolTip="Profile" Width="64" Height="64" />
+						</asp:HyperLink>
+						<%--<asp:image id="imguser" ImageUrl="~/Images/Profile.gif" width="1000" height="1000" CssClass="user-icon"/>--%>               
+						<span class="name">
+							<asp:Label ID="name" runat="server" Text="<%$ Resources:TimeLive.Resource, LoggedIn As:%>" ></asp:Label>
+						</span>
+						<%--<uc3:ctlLoginStatus ID="CtlLoginStatus1" runat="server"/>--%>
+					</div>
+					<section class="navigable">
+						<ul class="big-menu">
+                           <%-- <li>
+								<span class="current">
+									<asp:HyperLink runat="server" ID="HyperLink1" NavigateUrl="~/Employee/Default.aspx">
+										<asp:Literal ID="Literal1" runat="server" Text="<%$ Resources:TimeLive.Resource, Dashboard%> " />
+									</asp:HyperLink>
+								</span>
+							</li> --%>
+							<asp:Repeater runat="server" ID="R" DataSourceID="SiteMapDataSource1" EnableViewState="False">
+								<ItemTemplate>
+									<asp:Panel ID="Panel1" runat="server" Visible='<%# IsMenuPage(Eval("Key")) %>'>
+										<li class="big-menu">
+											<asp:HyperLink ID="H2" runat="server" NavigateUrl='<%# Eval("Url") %>'><%#EncodeMenuTitle(Eval("Title"))%></asp:HyperLink>
+											<%-- <asp:Repeater ID="R" runat="server" DataSource='<%# CType(Container.DataItem, SiteMapNode).ChildNodes %>'>
+												<HeaderTemplate><ul class="big-menu"></HeaderTemplate>
+												
+												<ItemTemplate><li><asp:HyperLink ID="H3" runat="server" NavigateUrl='<%# EncodeMenuURL(Eval("Url"), Eval("Title")) %>'><%# EncodeMenuTitle(Eval("Title")) %></asp:HyperLink></li></ItemTemplate><FooterTemplate></ul></FooterTemplate>
+												</asp:Repeater>--%>
+										</li>
+									</asp:Panel>
+								</ItemTemplate>
+							</asp:Repeater>
+						</ul>
+						<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+					</section>
+				</div>
+			</section>
+        <section role="main" id="main">
+				<asp:UpdatePanel ID="UPFilter" runat="server">
+					<ContentTemplate>
+						<div class="fieldset" id="FilterResult" runat="server" style="width: 35%; margin-left: 30px; margin-top: 110px; border:2px solid #04599E; padding:2px 2px 5px 10px;" align="left">
+							<table width="100%">
+								<tr>
+									<td align="left" style="line-height: 35px;">
+										<asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Filter.png"  style="width:32px;border-width:0px;vertical-align:middle;margin-left: -16px;margin-top: -25px;" />
+										<asp:Label ID="Label2" runat="server" Font-Names="Tahoma" Font-Bold="false" Font-Size="19px" Text="Filtered List"></asp:Label>
+									</td>
+									<td align="right" style="line-height: 35px;">
+										<input type="submit" id="btnClearFilter" runat="server" ValidationGroup="vgcf" class="button green-gradient" value="Clear All Filters"/>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="padding-bottom: 5px;">
+										<asp:Label ID="Label9" runat="server" Font-Names="Tahoma" Font-Bold="false" Font-Size="13px" Text="This list is filtered, more details are below:"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl1" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption1" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText1" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl2" runat="server">
+									<td colspan="2">
+										<asp:Label ID="lblCaption2" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText2" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl3" runat="server">
+									<td colspan="2">
+										<asp:Label ID="lblCaption3" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText3" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl4" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption4" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText4" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl5" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption5" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText5" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl6" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption6" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText6" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl7" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption7" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText7" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl8" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption8" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText8" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl9" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption9" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText9" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl10" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption10" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText10" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl11" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption11" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText11" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl12" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption12" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText12" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl13" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption13" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText13" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl14" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption14" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText14" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl15" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption15" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText15" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl16" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption16" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText16" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl17" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption17" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText17" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl18" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption18" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText18" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl19" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption19" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText19" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl20" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption20" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText20" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl21" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption21" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText21" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl22" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption22" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText22" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl23" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption23" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText23" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl24" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption24" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText24" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl25" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption25" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText25" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+								</tr>
+								<tr id="tbl0" runat="server">
+									<td align="left" valign="middle" colspan="2">
+										<asp:Label ID="lblCaption0" runat="server" Font-Names="Tahoma" Font-Bold="True" Font-Size="11px"></asp:Label>
+										<asp:Label ID="lblText0" runat="server" Font-Names="Tahoma" Font-Size="11px"></asp:Label>
+									</td>
+									<td style="text-align:right;">  
+									</td>
+								</tr>
+								<%-- <tr><td colspan="2">  <input type="submit" id="btnClearFilter" runat="server" class="button green-gradient" value="Clear Filter"/>
+									</td></tr>--%>
+							</table>
+						</div>
+					</ContentTemplate>
+				</asp:UpdatePanel>
+				<asp:ContentPlaceHolder ID="C" runat="server">
+				</asp:ContentPlaceHolder>
+			</section>
+        <asp:PlaceHolder runat="server" ID="phDefaultFooterScripts" EnableViewState="false">
+            <!-- JavaScript at the bottom for fast page loading -->
+            <!-- Scripts -->
+            <script src="../js/libs/jquery-1.7.2.min.js"></script>
+            <script src="../js/setup.js"></script>
+            <!-- Template functions -->
+            <script src="../js/developr.input.js"></script>
+            <script src="../js/developr.navigable.js"></script>
+            <script src="../js/developr.notify.js"></script>
+            <script src="../js/developr.scroll.js"></script>
+            <script src="../js/developr.tooltip.js"></script>
+            <script src="../js/developr.table.js"></script>
+            <script src="../js/developr.tabs.js"></script>
+            <script src="../js/jquery.min.js"></script>
+            <script src="../js/jquery.actual.min.js"></script>
+            <script src="../js/libs/validation/jquery.validate.min.js"></script>
+            <script src="../bootstrap/js/bootstrap.min.js"></script>
+            <!-- Plugins -->
+            <script src="../js/libs/jquery.tablesorter.min.js"></script>
+            <script src="../js/libs/DataTables/jquery.dataTables.min.js"></script>
+        </asp:PlaceHolder>
+        <asp:ContentPlaceHolder ID="phCustomFooterStylesAndScripts" runat="server" />
+        <%-- menuProxy - The URL of  the code on your site that fetches and displays the HTML for the Intuit 
+				"blue dot" menu.  This URL points to the Menu Proxy Code.
+				
+				grantUrl - The URL of the code on your site that begins the user authorization 
+				flow by getting an OAuth request token.  The flow is initiated when the user 
+				clicks the Connect to QuickBooks button.  This URL points to the Request Token Code.  
+				The host name in this URL must match the Host Name Domain field on the Manage Apps tab in 
+				My Developer Center.
+				
+				The intuit.ipp.anywhere.setup() function specifies the URLs needed by the Intuit Blue Dot 
+				menu and the Connect to QuickBooks button.  
+				If a page displays either of these widgets, it must include a call to the 
+				intuit.ipp.anywhere.setup() function.--%>
+        <script type="text/javascript" src="https://js.appcenter.intuit.com/Content/IA/intuit.ipp.anywhere.js"></script>
+        <script type="text/javascript">
+            intuit.ipp.anywhere.setup({
+                menuProxy: '<%=  GetCurrentURL() %>' + 'MenuProxy.aspx',
+                grantUrl: '<%=  GetCurrentURL() %>' + 'QBO/OauthGrant.aspx'
+            });
+        </script>
+        <script type="text/javascript">
+				<!--
+    function confirmPost(url) {
+        var agree = confirm("You will no longer be able to access QuickBooks data. Continue?");
+        if (agree)
+            window.location = url;
+        else
+            return false;
+    }
+
+    // -->
+
+        </script>
+        <div style="display: none">
+            <asp:Button ID="cmdclick" runat="server" Text="" />
+        </div>
+        <%--                menuProxy: 'http://localhost:1051/TimeLiveWeb/MenuProxy.aspx',
+				grantUrl: 'http://localhost:1051/TimeLiveWeb/QBO/OauthGrant.aspx'--%>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="TimeLive_Integration_Quickbooks_Services_TimeLiveServices" Roaming="true" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">http://localhost:1070/TimeLiveWeb/Services/TimeLiveServices.asmx</Value>
+    </Setting>
+    <Setting Name="TimeLive_Integration_Quickbooks_Services_TimeLive_Employees_Employees" Roaming="true" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">http://localhost:1070/TimeLiveWeb/Services/Employees.asmx</Value>
+    </Setting>
+    <Setting Name="TimeLive_Integration_Quickbooks_Services_TimeLive_Clients_Clients" Roaming="true" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">http://localhost:1070/TimeLiveWeb/Services/Clients.asmx</Value>
+    </Setting>
+    <Setting Name="TimeLive_Integration_Quickbooks_Services_TimeLive_Projects_Projects" Roaming="true" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">http://localhost:1070/TimeLiveWeb/Services/Projects.asmx</Value>
+    </Setting>
+    <Setting Name="TimeLive_Integration_Quickbooks_Services_TimeLive_Tasks_Tasks" Roaming="true" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">http://localhost:1070/TimeLiveWeb/Services/Tasks.asmx</Value>
+    </Setting>
+    <Setting Name="TimeLive_Integration_Quickbooks_Services_TimeLive_TimeEntries_TimeEntries" Roaming="true" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">http://localhost:1070/TimeLiveWeb/Services/TimeEntries.asmx</Value>
+    </Setting>
+    <Setting Name="TimeLive_Integration_Quickbooks_Services_TimeLive_ExpenseEntries_ExpenseEntries" Roaming="true" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">http://localhost:1070/TimeLiveWeb/Services/ExpenseEntries.asmx</Value>
+    </Setting>
+    <Setting Name="WebServiceURL" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Username" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,106 @@
+﻿
+CREATE PROCEDURE [dbo].[sp_defixfullaccount]
+ 	@AccountID numeric
+ 	
+AS
+BEGIN
+
+--set nocount on 
+
+
+--
+
+Disable TRIGGER AuditTriggerAccountEmployeeTimeEntryPeriod  ON dbo.AccountEmployeeTimeEntryPeriod;
+Disable TRIGGER AuditTriggerAccountEmployeeTimeEntry  ON dbo.AccountEmployeeTimeEntry;
+ 
+update AccountEmployeeTimeEntryPeriod set AccountEmployeeId  = AccountEmployeeTimeEntry.AccountEmployeeId from 
+accountemployeeTimeEntry 
+inner join AccountEmployeeTimeEntryPeriod 
+on AccountEmployeeTimeEntry.AccountEmployeeTimeEntryPeriodId = AccountEmployeeTimeEntryPeriod.AccountEmployeeTimeEntryPeriodId 
+where AccountEmployeeTimeEntryPeriod.AccountEmployeeId <> AccountEmployeeTimeEntry.AccountEmployeeId
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID
+ 
+Update AccountEmployeeTimeEntry Set AccountEmployeeTimeEntry.AccountEmployeeTimeEntryApprovalProjectId =
+(Select top 1 AccountEmployeeTimeEntryApprovalProject.AccountEmployeeTimeEntryApprovalProjectId 
+From AccountEmployeeTimeEntryApprovalProject
+Where 
+AccountEmployeeTimeEntry.AccountEmployeeTimeEntryPeriodId = AccountEmployeeTimeEntryApprovalProject.AccountEmployeeTimeEntryPeriodId
+And AccountEmployeeTimeEntry.AccountEmployeeId = AccountEmployeeTimeEntryApprovalProject.TimeEntryAccountEmployeeId
+And AccountEmployeeTimeEntry.AccountProjectId = AccountEmployeeTimeEntryApprovalProject.AccountProjectId)
+from AccountEmployee inner join AccountEmployeeTimeEntry on AccountEmployee.AccountEmployeeId = AccountEmployeeTimeEntry.AccountEmployeeId
+where AccountEmployee.AccountId = @AccountID
+
+Delete From AccountEmployeeTimeEntryApprovalProject
+Where AccountEmployeeTimeEntryApprovalProjectId Not In 
+(Select AccountEmployeeTimeEntryApprovalProjectId From AccountEmployeeTimeEntry
+Where AccountEmployeeTimeEntryApprovalProjectId Is Not NULL) 
+and TimeEntryAccountEmployeeId in (select AccountEmployeeID from AccountEmployee where AccountId =@AccountID)
+
+Delete From AccountEmployeeTimeEntryPeriod
+Where AccountEmployeeTimeEntryPeriodId Not In (Select AccountEmployeeTimeEntryPeriodId From AccountEmployeeTimeEntry
+Where AccountEmployeeTimeEntryPeriodId Is Not NULL) 
+And AccountEmployeeTimeEntryPeriodId Not In (Select AccountEmployeeTimeEntryPeriodId
+From AccountEmployeeTimeEntryApprovalProject
+)
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID 
+
+Update AccountEmployeeTimeEntry Set AccountEmployeeTimeEntry.AccountEmployeeTimeEntryPeriodId =
+(Select Top 1 AccountEmployeeTimeEntryPeriod.AccountEmployeeTimeEntryPeriodId From AccountEmployeeTimeEntryPeriod
+Where AccountEmployeeTimeEntry.TimeEntryDate >= AccountEmployeeTimeEntryPeriod.TimeEntryStartDate 
+And AccountEmployeeTimeEntry.TimeEntryDate <= AccountEmployeeTimeEntryPeriod.TimeEntryEndDate
+And AccountEmployeeTimeEntry.AccountEmployeeId = AccountEmployeeTimeEntryPeriod.AccountEmployeeId)
+from AccountEmployee inner join AccountEmployeeTimeEntry on AccountEmployee.AccountEmployeeId = AccountEmployeeTimeEntry.AccountEmployeeId
+where AccountEmployee.AccountId = @AccountID
+
+Update AccountEmployeeTimeEntry Set AccountEmployeeTimeEntry.AccountEmployeeTimeEntryApprovalProjectId =
+(Select top 1 AccountEmployeeTimeEntryApprovalProject.AccountEmployeeTimeEntryApprovalProjectId From AccountEmployeeTimeEntryApprovalProject
+Where AccountEmployeeTimeEntry.AccountEmployeeTimeEntryPeriodId = AccountEmployeeTimeEntryApprovalProject.AccountEmployeeTimeEntryPeriodId
+And AccountEmployeeTimeEntry.AccountEmployeeId = AccountEmployeeTimeEntryApprovalProject.TimeEntryAccountEmployeeId
+And AccountEmployeeTimeEntry.AccountProjectId = AccountEmployeeTimeEntryApprovalProject.AccountProjectId)
+from AccountEmployee inner join AccountEmployeeTimeEntry on AccountEmployee.AccountEmployeeId = AccountEmployeeTimeEntry.AccountEmployeeId
+where AccountEmployee.AccountId = @AccountID
+
+Update AccountEmployeeTimeEntryApproval 
+Set AccountEmployeeTimeEntryApproval.AccountEmployeeTimeEntryPeriodId =
+(Select Top 1 AccountEmployeeTimeEntry.AccountEmployeeTimeEntryPeriodId From AccountEmployeeTimeEntry
+Where AccountEmployeeTimeEntryApproval.AccountEmployeeTimeEntryId = AccountEmployeetimeentry.AccountEmployeeTimeEntryId
+) 
+from 
+AccountEmployeeTimeEntry 
+inner join AccountEmployeeTimeEntryApproval on AccountEmployeeTimeEntry.AccountEmployeeTimeEntryId = AccountEmployeeTimeEntryApproval.AccountEmployeeTimeEntryId 
+inner join AccountEmployee on AccountEmployee.AccountEmployeeId = AccountEmployeeTimeEntry.AccountEmployeeId
+where AccountEmployee.AccountId = @AccountID
+
+Delete From AccountEmployeeTimeEntryApprovalProject
+Where AccountEmployeeTimeEntryApprovalProjectId Not In 
+(Select AccountEmployeeTimeEntryApprovalProjectId From AccountEmployeeTimeEntry
+Where AccountEmployeeTimeEntryApprovalProjectId Is Not NULL)
+
+Delete From AccountEmployeeTimeEntryPeriod
+Where AccountEmployeeTimeEntryPeriodId Not In (Select AccountEmployeeTimeEntryPeriodId From AccountEmployeeTimeEntry
+Where AccountEmployeeTimeEntryPeriodId Is Not NULL) 
+And AccountEmployeeTimeEntryPeriodId Not In (Select AccountEmployeeTimeEntryPeriodId
+From AccountEmployeeTimeEntryApprovalProject)
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID
+
+
+Update AccountEmployeeTimeEntryPeriod
+Set Submitted = 1, Rejected = 0 Where
+AccountEmployeeTimeEntryPeriodId In (Select AccountEmployeeTimeEntryPeriodId From vueTotalSubmittedPeriods)
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID;
+
+Update AccountEmployeeTimeEntryPeriod
+Set Approved = 1 Where
+AccountEmployeeTimeEntryPeriodId In (Select AccountEmployeeTimeEntryPeriodId From vueTotalApprovedPeriods)
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID;
+
+Update AccountEmployeeTimeEntryPeriod
+Set Approved = 0 Where
+AccountEmployeeTimeEntryPeriodId In (Select AccountEmployeeTimeEntryPeriodId From vueTotalNotApprovedPeriods)
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID;
+
+
+Enable TRIGGER AuditTriggerAccountEmployeeTimeEntry  ON dbo.AccountEmployeeTimeEntry;
+Enable TRIGGER AuditTriggerAccountEmployeeTimeEntryPeriod  ON dbo.AccountEmployeeTimeEntryPeriod;
+
+END

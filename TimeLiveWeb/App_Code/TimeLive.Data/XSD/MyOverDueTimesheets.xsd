@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MyOverDueTimesheets" targetNamespace="http://tempuri.org/MyOverDueTimesheets.xsd" xmlns:mstns="http://tempuri.org/MyOverDueTimesheets.xsd" xmlns="http://tempuri.org/MyOverDueTimesheets.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LivetecsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LivetecsConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LivetecsConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VueTimesheetOverDueTableAdapter" GeneratorDataComponentClassName="VueTimesheetOverDueTableAdapter" Name="VueTimesheetOverDue" UserDataComponentName="VueTimesheetOverDueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeliveDashboard.dbo.vueTimesheetOverdueNotificationWithPreference" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetVueOverDueTimesheets" GetMethodModifier="Public" GetMethodName="GetVueOverDueTimesheets" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetVueOverDueTimesheets" UserSourceName="GetVueOverDueTimesheets">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     ScheduledEmailSendTime, EmployeeName, AccountEmployeeId, AccountId, EMailAddress, LastScheduledEmailSentTime, CultureInfoName, 
+                      TimesheetOverdueAfterDays, SystemTimesheetPeriodType, WeekStartDay, SystemInitialDayOfFirstPeriod, SystemInitialDayOfLastPeriod, InitialDayOfTheMonth
+FROM         vueTimesheetOverdueNotificationWithPreference</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ScheduledEmailSendTime" DataSetColumn="ScheduledEmailSendTime" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="AccountEmployeeId" DataSetColumn="AccountEmployeeId" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="EMailAddress" DataSetColumn="EMailAddress" />
+              <Mapping SourceColumn="LastScheduledEmailSentTime" DataSetColumn="LastScheduledEmailSentTime" />
+              <Mapping SourceColumn="CultureInfoName" DataSetColumn="CultureInfoName" />
+              <Mapping SourceColumn="TimesheetOverdueAfterDays" DataSetColumn="TimesheetOverdueAfterDays" />
+              <Mapping SourceColumn="SystemTimesheetPeriodType" DataSetColumn="SystemTimesheetPeriodType" />
+              <Mapping SourceColumn="WeekStartDay" DataSetColumn="WeekStartDay" />
+              <Mapping SourceColumn="SystemInitialDayOfFirstPeriod" DataSetColumn="SystemInitialDayOfFirstPeriod" />
+              <Mapping SourceColumn="SystemInitialDayOfLastPeriod" DataSetColumn="SystemInitialDayOfLastPeriod" />
+              <Mapping SourceColumn="InitialDayOfTheMonth" DataSetColumn="InitialDayOfTheMonth" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="LivetecsConnectionString (Web.config)" DbObjectName="TimeliveDashboard.dbo.vueTimesheetOverdueNotificationWithPreference" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByEmployeeId" GetMethodModifier="Public" GetMethodName="GetDataByEmployeeId" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByEmployeeId" UserSourceName="GetDataByEmployeeId">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     AccountEmployeeId, AccountId, CultureInfoName, EMailAddress, EmployeeName, InitialDayOfTheMonth, LastScheduledEmailSentTime, ScheduledEmailSendTime, 
+                      SystemInitialDayOfFirstPeriod, SystemInitialDayOfLastPeriod, SystemTimesheetPeriodType, TimesheetOverdueAfterDays, WeekStartDay
+FROM         vueTimesheetOverdueNotificationWithPreference
+WHERE     (AccountId = @AccountId) AND (AccountEmployeeId = @AccountEmployeeId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="AccountId" ColumnName="AccountId" DataSourceName="TimeliveDashboard.dbo.vueTimesheetOverdueNotificationWithPreference" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="AccountEmployeeId" ColumnName="AccountEmployeeId" DataSourceName="TimeliveDashboard.dbo.vueTimesheetOverdueNotificationWithPreference" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountEmployeeId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountEmployeeId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vueTimesheetDueTableAdapter" GeneratorDataComponentClassName="vueTimesheetDueTableAdapter" Name="vueTimesheetDue" UserDataComponentName="vueTimesheetDueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeliveDashboard.dbo.vueTimesheetDueNotificationEmailWithPreference" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetVueDueTimesheets" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetVueDueTimesheets" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetVueDueTimesheets" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     vueTimesheetDueNotificationEmailWithPreference.*
+FROM         vueTimesheetDueNotificationEmailWithPreference
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ScheduledEmailSendTime" DataSetColumn="ScheduledEmailSendTime" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="AccountEmployeeId" DataSetColumn="AccountEmployeeId" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="EMailAddress" DataSetColumn="EMailAddress" />
+              <Mapping SourceColumn="LastScheduledEmailSentTime" DataSetColumn="LastScheduledEmailSentTime" />
+              <Mapping SourceColumn="CultureInfoName" DataSetColumn="CultureInfoName" />
+              <Mapping SourceColumn="TimesheetOverdueAfterDays" DataSetColumn="TimesheetOverdueAfterDays" />
+              <Mapping SourceColumn="SystemTimesheetPeriodType" DataSetColumn="SystemTimesheetPeriodType" />
+              <Mapping SourceColumn="WeekStartDay" DataSetColumn="WeekStartDay" />
+              <Mapping SourceColumn="SystemInitialDayOfFirstPeriod" DataSetColumn="SystemInitialDayOfFirstPeriod" />
+              <Mapping SourceColumn="SystemInitialDayOfLastPeriod" DataSetColumn="SystemInitialDayOfLastPeriod" />
+              <Mapping SourceColumn="InitialDayOfTheMonth" DataSetColumn="InitialDayOfTheMonth" />
+              <Mapping SourceColumn="TimesheetOverduePeriods" DataSetColumn="TimesheetOverduePeriods" />
+              <Mapping SourceColumn="MinimumHoursPerWeek" DataSetColumn="MinimumHoursPerWeek" />
+              <Mapping SourceColumn="MaximumHoursPerWeek" DataSetColumn="MaximumHoursPerWeek" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeliveDashboard.dbo.vueTimesheetDueNotificationEmailWithPreference" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetOverDueTimesheetByAccountandEmployeeId" GetMethodModifier="Public" GetMethodName="GetOverDueTimesheetByAccountandEmployeeId" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetOverDueTimesheetByAccountandEmployeeId" UserSourceName="GetOverDueTimesheetByAccountandEmployeeId">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     ScheduledEmailSendTime, EmployeeName, AccountEmployeeId, AccountId, EMailAddress, LastScheduledEmailSentTime, CultureInfoName, 
+                      TimesheetOverdueAfterDays, SystemTimesheetPeriodType, WeekStartDay, SystemInitialDayOfFirstPeriod, SystemInitialDayOfLastPeriod, InitialDayOfTheMonth, 
+                      TimesheetOverduePeriods, MinimumHoursPerWeek, MaximumHoursPerWeek
+FROM         vueTimesheetDueNotificationEmailWithPreference
+WHERE     (AccountId = @accountid) AND (AccountEmployeeId = @accountemployeeid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="accountid" ColumnName="AccountId" DataSourceName="TimeliveDashboard.dbo.vueTimesheetDueNotificationEmailWithPreference" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@accountid" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="accountemployeeid" ColumnName="AccountEmployeeId" DataSourceName="TimeliveDashboard.dbo.vueTimesheetDueNotificationEmailWithPreference" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@accountemployeeid" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountEmployeeId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MyOverDueTimesheets" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="MyOverDueTimesheets" msprop:Generator_UserDSName="MyOverDueTimesheets">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VueTimesheetOverDue" msprop:Generator_TableClassName="VueTimesheetOverDueDataTable" msprop:Generator_TableVarName="tableVueTimesheetOverDue" msprop:Generator_TablePropName="VueTimesheetOverDue" msprop:Generator_RowDeletingName="VueTimesheetOverDueRowDeleting" msprop:Generator_UserTableName="VueTimesheetOverDue" msprop:Generator_RowChangingName="VueTimesheetOverDueRowChanging" msprop:Generator_RowEvHandlerName="VueTimesheetOverDueRowChangeEventHandler" msprop:Generator_RowDeletedName="VueTimesheetOverDueRowDeleted" msprop:Generator_RowEvArgName="VueTimesheetOverDueRowChangeEvent" msprop:Generator_RowChangedName="VueTimesheetOverDueRowChanged" msprop:Generator_RowClassName="VueTimesheetOverDueRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScheduledEmailSendTime" msprop:Generator_ColumnVarNameInTable="columnScheduledEmailSendTime" msprop:Generator_ColumnPropNameInRow="ScheduledEmailSendTime" msprop:Generator_ColumnPropNameInTable="ScheduledEmailSendTimeColumn" msprop:Generator_UserColumnName="ScheduledEmailSendTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EmployeeName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="301" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountEmployeeId" msprop:Generator_ColumnVarNameInTable="columnAccountEmployeeId" msprop:Generator_ColumnPropNameInRow="AccountEmployeeId" msprop:Generator_ColumnPropNameInTable="AccountEmployeeIdColumn" msprop:Generator_UserColumnName="AccountEmployeeId" type="xs:int" />
+              <xs:element name="AccountId" msprop:Generator_ColumnVarNameInTable="columnAccountId" msprop:Generator_ColumnPropNameInRow="AccountId" msprop:Generator_ColumnPropNameInTable="AccountIdColumn" msprop:Generator_UserColumnName="AccountId" type="xs:int" />
+              <xs:element name="EMailAddress" msprop:Generator_ColumnVarNameInTable="columnEMailAddress" msprop:Generator_ColumnPropNameInRow="EMailAddress" msprop:Generator_ColumnPropNameInTable="EMailAddressColumn" msprop:Generator_UserColumnName="EMailAddress">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastScheduledEmailSentTime" msprop:Generator_ColumnVarNameInTable="columnLastScheduledEmailSentTime" msprop:Generator_ColumnPropNameInRow="LastScheduledEmailSentTime" msprop:Generator_ColumnPropNameInTable="LastScheduledEmailSentTimeColumn" msprop:Generator_UserColumnName="LastScheduledEmailSentTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CultureInfoName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCultureInfoName" msprop:Generator_ColumnPropNameInRow="CultureInfoName" msprop:Generator_ColumnPropNameInTable="CultureInfoNameColumn" msprop:Generator_UserColumnName="CultureInfoName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TimesheetOverdueAfterDays" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTimesheetOverdueAfterDays" msprop:Generator_ColumnPropNameInRow="TimesheetOverdueAfterDays" msprop:Generator_ColumnPropNameInTable="TimesheetOverdueAfterDaysColumn" msprop:Generator_UserColumnName="TimesheetOverdueAfterDays" type="xs:short" minOccurs="0" />
+              <xs:element name="SystemTimesheetPeriodType" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSystemTimesheetPeriodType" msprop:Generator_ColumnPropNameInRow="SystemTimesheetPeriodType" msprop:Generator_ColumnPropNameInTable="SystemTimesheetPeriodTypeColumn" msprop:Generator_UserColumnName="SystemTimesheetPeriodType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WeekStartDay" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnWeekStartDay" msprop:Generator_ColumnPropNameInRow="WeekStartDay" msprop:Generator_ColumnPropNameInTable="WeekStartDayColumn" msprop:Generator_UserColumnName="WeekStartDay" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="SystemInitialDayOfFirstPeriod" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSystemInitialDayOfFirstPeriod" msprop:Generator_ColumnPropNameInRow="SystemInitialDayOfFirstPeriod" msprop:Generator_ColumnPropNameInTable="SystemInitialDayOfFirstPeriodColumn" msprop:Generator_UserColumnName="SystemInitialDayOfFirstPeriod" type="xs:short" minOccurs="0" />
+              <xs:element name="SystemInitialDayOfLastPeriod" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSystemInitialDayOfLastPeriod" msprop:Generator_ColumnPropNameInRow="SystemInitialDayOfLastPeriod" msprop:Generator_ColumnPropNameInTable="SystemInitialDayOfLastPeriodColumn" msprop:Generator_UserColumnName="SystemInitialDayOfLastPeriod" type="xs:short" minOccurs="0" />
+              <xs:element name="InitialDayOfTheMonth" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnInitialDayOfTheMonth" msprop:Generator_ColumnPropNameInRow="InitialDayOfTheMonth" msprop:Generator_ColumnPropNameInTable="InitialDayOfTheMonthColumn" msprop:Generator_UserColumnName="InitialDayOfTheMonth" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vueTimesheetDue" msprop:Generator_TableClassName="vueTimesheetDueDataTable" msprop:Generator_TableVarName="tablevueTimesheetDue" msprop:Generator_TablePropName="vueTimesheetDue" msprop:Generator_RowDeletingName="vueTimesheetDueRowDeleting" msprop:Generator_UserTableName="vueTimesheetDue" msprop:Generator_RowChangingName="vueTimesheetDueRowChanging" msprop:Generator_RowEvHandlerName="vueTimesheetDueRowChangeEventHandler" msprop:Generator_RowDeletedName="vueTimesheetDueRowDeleted" msprop:Generator_RowEvArgName="vueTimesheetDueRowChangeEvent" msprop:Generator_RowChangedName="vueTimesheetDueRowChanged" msprop:Generator_RowClassName="vueTimesheetDueRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScheduledEmailSendTime" msprop:Generator_ColumnVarNameInTable="columnScheduledEmailSendTime" msprop:Generator_ColumnPropNameInRow="ScheduledEmailSendTime" msprop:Generator_ColumnPropNameInTable="ScheduledEmailSendTimeColumn" msprop:Generator_UserColumnName="ScheduledEmailSendTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EmployeeName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="301" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountEmployeeId" msprop:Generator_ColumnVarNameInTable="columnAccountEmployeeId" msprop:Generator_ColumnPropNameInRow="AccountEmployeeId" msprop:Generator_ColumnPropNameInTable="AccountEmployeeIdColumn" msprop:Generator_UserColumnName="AccountEmployeeId" type="xs:int" />
+              <xs:element name="AccountId" msprop:Generator_ColumnVarNameInTable="columnAccountId" msprop:Generator_ColumnPropNameInRow="AccountId" msprop:Generator_ColumnPropNameInTable="AccountIdColumn" msprop:Generator_UserColumnName="AccountId" type="xs:int" />
+              <xs:element name="EMailAddress" msprop:Generator_ColumnVarNameInTable="columnEMailAddress" msprop:Generator_ColumnPropNameInRow="EMailAddress" msprop:Generator_ColumnPropNameInTable="EMailAddressColumn" msprop:Generator_UserColumnName="EMailAddress">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastScheduledEmailSentTime" msprop:Generator_ColumnVarNameInTable="columnLastScheduledEmailSentTime" msprop:Generator_ColumnPropNameInRow="LastScheduledEmailSentTime" msprop:Generator_ColumnPropNameInTable="LastScheduledEmailSentTimeColumn" msprop:Generator_UserColumnName="LastScheduledEmailSentTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CultureInfoName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCultureInfoName" msprop:Generator_ColumnPropNameInRow="CultureInfoName" msprop:Generator_ColumnPropNameInTable="CultureInfoNameColumn" msprop:Generator_UserColumnName="CultureInfoName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TimesheetOverdueAfterDays" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTimesheetOverdueAfterDays" msprop:Generator_ColumnPropNameInRow="TimesheetOverdueAfterDays" msprop:Generator_ColumnPropNameInTable="TimesheetOverdueAfterDaysColumn" msprop:Generator_UserColumnName="TimesheetOverdueAfterDays" type="xs:short" minOccurs="0" />
+              <xs:element name="SystemTimesheetPeriodType" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSystemTimesheetPeriodType" msprop:Generator_ColumnPropNameInRow="SystemTimesheetPeriodType" msprop:Generator_ColumnPropNameInTable="SystemTimesheetPeriodTypeColumn" msprop:Generator_UserColumnName="SystemTimesheetPeriodType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WeekStartDay" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnWeekStartDay" msprop:Generator_ColumnPropNameInRow="WeekStartDay" msprop:Generator_ColumnPropNameInTable="WeekStartDayColumn" msprop:Generator_UserColumnName="WeekStartDay" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="SystemInitialDayOfFirstPeriod" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSystemInitialDayOfFirstPeriod" msprop:Generator_ColumnPropNameInRow="SystemInitialDayOfFirstPeriod" msprop:Generator_ColumnPropNameInTable="SystemInitialDayOfFirstPeriodColumn" msprop:Generator_UserColumnName="SystemInitialDayOfFirstPeriod" type="xs:short" minOccurs="0" />
+              <xs:element name="SystemInitialDayOfLastPeriod" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSystemInitialDayOfLastPeriod" msprop:Generator_ColumnPropNameInRow="SystemInitialDayOfLastPeriod" msprop:Generator_ColumnPropNameInTable="SystemInitialDayOfLastPeriodColumn" msprop:Generator_UserColumnName="SystemInitialDayOfLastPeriod" type="xs:short" minOccurs="0" />
+              <xs:element name="InitialDayOfTheMonth" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnInitialDayOfTheMonth" msprop:Generator_ColumnPropNameInRow="InitialDayOfTheMonth" msprop:Generator_ColumnPropNameInTable="InitialDayOfTheMonthColumn" msprop:Generator_UserColumnName="InitialDayOfTheMonth" type="xs:short" minOccurs="0" />
+              <xs:element name="TimesheetOverduePeriods" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTimesheetOverduePeriods" msprop:Generator_ColumnPropNameInRow="TimesheetOverduePeriods" msprop:Generator_ColumnPropNameInTable="TimesheetOverduePeriodsColumn" msprop:Generator_UserColumnName="TimesheetOverduePeriods" type="xs:short" minOccurs="0" />
+              <xs:element name="MinimumHoursPerWeek" msprop:Generator_ColumnVarNameInTable="columnMinimumHoursPerWeek" msprop:Generator_ColumnPropNameInRow="MinimumHoursPerWeek" msprop:Generator_ColumnPropNameInTable="MinimumHoursPerWeekColumn" msprop:Generator_UserColumnName="MinimumHoursPerWeek" type="xs:double" />
+              <xs:element name="MaximumHoursPerWeek" msprop:Generator_ColumnVarNameInTable="columnMaximumHoursPerWeek" msprop:Generator_ColumnPropNameInRow="MaximumHoursPerWeek" msprop:Generator_ColumnPropNameInTable="MaximumHoursPerWeekColumn" msprop:Generator_UserColumnName="MaximumHoursPerWeek" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

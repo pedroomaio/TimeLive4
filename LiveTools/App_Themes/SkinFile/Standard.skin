@@ -1,0 +1,37 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:GridView runat="server" SkinId="gridviewSkinEmployee"   BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" CellPadding="4" GridLines="Vertical" CaptionAlign="Left" Font-Italic="False" Font-Names="tahoma" Font-Size="11px" ForeColor="#505050" Font-Bold="False"  CssClass="TableView">
+    <FooterStyle BackColor="#CCCC99" />
+    <RowStyle BackColor="#efeff1" />
+    <SelectedRowStyle BackColor="#CE5D5A"  ForeColor="White" />
+    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+    <HeaderStyle BackColor="#fff0c6" Font-Bold="True" ForeColor="#505050" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
+    <AlternatingRowStyle BackColor="White" />
+</asp:GridView>
+
+<asp:FormView SkinId="formviewSkinEmployee" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px">
+</asp:FormView>
+
+<asp:RangeValidator SkinId="ValidatorMessageSkin" runat="server">
+
+</asp:RangeValidator>
+                                
+                                
+
+
+
+
+

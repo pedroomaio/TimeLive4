@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AddExpenseEntry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objExpenseEntry" type="tns:ExpenseEntry" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExpenseEntry">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClientWithProject" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpenseEntryDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpenseName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpenseType" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddExpenseEntryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExpenseEntryResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SecuredWebServiceHeader" type="tns:SecuredWebServiceHeader" />
+      <s:complexType name="SecuredWebServiceHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthenticatedToken" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AccountId" type="s:int" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="GetAllExpenseEntriesByDateRange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="EndDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllExpenseEntriesByDateRangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllExpenseEntriesByDateRangeResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetExpenseEntriesByEmployeeIdAndDateRange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AccountEmployeeId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="EndDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExpenseEntriesByEmployeeIdAndDateRangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExpenseEntriesByEmployeeIdAndDateRangeResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExpenseName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objExpenseName" type="tns:ExpenseName" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExpenseName">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExpenseName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddExpenseNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddExpenseNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExpenseNames">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetExpenseNamesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExpenseNamesResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExpenseApprovalTypeId">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetExpenseApprovalTypeIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetExpenseApprovalTypeIdResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddExpenseEntrySoapIn">
+    <wsdl:part name="parameters" element="tns:AddExpenseEntry" />
+  </wsdl:message>
+  <wsdl:message name="AddExpenseEntrySoapOut">
+    <wsdl:part name="parameters" element="tns:AddExpenseEntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExpenseEntrySecuredWebServiceHeader">
+    <wsdl:part name="SecuredWebServiceHeader" element="tns:SecuredWebServiceHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseEntriesByDateRangeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllExpenseEntriesByDateRange" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseEntriesByDateRangeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllExpenseEntriesByDateRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllExpenseEntriesByDateRangeSecuredWebServiceHeader">
+    <wsdl:part name="SecuredWebServiceHeader" element="tns:SecuredWebServiceHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseEntriesByEmployeeIdAndDateRangeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExpenseEntriesByEmployeeIdAndDateRange" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseEntriesByEmployeeIdAndDateRangeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExpenseEntriesByEmployeeIdAndDateRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseEntriesByEmployeeIdAndDateRangeSecuredWebServiceHeader">
+    <wsdl:part name="SecuredWebServiceHeader" element="tns:SecuredWebServiceHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddExpenseNameSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExpenseName" />
+  </wsdl:message>
+  <wsdl:message name="AddExpenseNameSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExpenseNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExpenseNameSecuredWebServiceHeader">
+    <wsdl:part name="SecuredWebServiceHeader" element="tns:SecuredWebServiceHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseNamesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExpenseNames" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseNamesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExpenseNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseNamesSecuredWebServiceHeader">
+    <wsdl:part name="SecuredWebServiceHeader" element="tns:SecuredWebServiceHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseApprovalTypeIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExpenseApprovalTypeId" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseApprovalTypeIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExpenseApprovalTypeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpenseApprovalTypeIdSecuredWebServiceHeader">
+    <wsdl:part name="SecuredWebServiceHeader" element="tns:SecuredWebServiceHeader" />
+  </wsdl:message>
+  <wsdl:portType name="ExpenseEntriesSoap">
+    <wsdl:operation name="AddExpenseEntry">
+      <wsdl:input message="tns:AddExpenseEntrySoapIn" />
+      <wsdl:output message="tns:AddExpenseEntrySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllExpenseEntriesByDateRange">
+      <wsdl:input message="tns:GetAllExpenseEntriesByDateRangeSoapIn" />
+      <wsdl:output message="tns:GetAllExpenseEntriesByDateRangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseEntriesByEmployeeIdAndDateRange">
+      <wsdl:input message="tns:GetExpenseEntriesByEmployeeIdAndDateRangeSoapIn" />
+      <wsdl:output message="tns:GetExpenseEntriesByEmployeeIdAndDateRangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExpenseName">
+      <wsdl:input message="tns:AddExpenseNameSoapIn" />
+      <wsdl:output message="tns:AddExpenseNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseNames">
+      <wsdl:input message="tns:GetExpenseNamesSoapIn" />
+      <wsdl:output message="tns:GetExpenseNamesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseApprovalTypeId">
+      <wsdl:input message="tns:GetExpenseApprovalTypeIdSoapIn" />
+      <wsdl:output message="tns:GetExpenseApprovalTypeIdSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ExpenseEntriesSoap" type="tns:ExpenseEntriesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddExpenseEntry">
+      <soap:operation soapAction="http://tempuri.org/AddExpenseEntry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddExpenseEntrySecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllExpenseEntriesByDateRange">
+      <soap:operation soapAction="http://tempuri.org/GetAllExpenseEntriesByDateRange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAllExpenseEntriesByDateRangeSecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseEntriesByEmployeeIdAndDateRange">
+      <soap:operation soapAction="http://tempuri.org/GetExpenseEntriesByEmployeeIdAndDateRange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetExpenseEntriesByEmployeeIdAndDateRangeSecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExpenseName">
+      <soap:operation soapAction="http://tempuri.org/AddExpenseName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddExpenseNameSecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseNames">
+      <soap:operation soapAction="http://tempuri.org/GetExpenseNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetExpenseNamesSecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseApprovalTypeId">
+      <soap:operation soapAction="http://tempuri.org/GetExpenseApprovalTypeId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetExpenseApprovalTypeIdSecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExpenseEntriesSoap12" type="tns:ExpenseEntriesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddExpenseEntry">
+      <soap12:operation soapAction="http://tempuri.org/AddExpenseEntry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddExpenseEntrySecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllExpenseEntriesByDateRange">
+      <soap12:operation soapAction="http://tempuri.org/GetAllExpenseEntriesByDateRange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAllExpenseEntriesByDateRangeSecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseEntriesByEmployeeIdAndDateRange">
+      <soap12:operation soapAction="http://tempuri.org/GetExpenseEntriesByEmployeeIdAndDateRange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetExpenseEntriesByEmployeeIdAndDateRangeSecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExpenseName">
+      <soap12:operation soapAction="http://tempuri.org/AddExpenseName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddExpenseNameSecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseNames">
+      <soap12:operation soapAction="http://tempuri.org/GetExpenseNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetExpenseNamesSecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpenseApprovalTypeId">
+      <soap12:operation soapAction="http://tempuri.org/GetExpenseApprovalTypeId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetExpenseApprovalTypeIdSecuredWebServiceHeader" part="SecuredWebServiceHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExpenseEntries">
+    <wsdl:port name="ExpenseEntriesSoap" binding="tns:ExpenseEntriesSoap">
+      <soap:address location="http://localhost:1070/TimeLiveWeb/Services/ExpenseEntries.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExpenseEntriesSoap12" binding="tns:ExpenseEntriesSoap12">
+      <soap12:address location="http://localhost:1070/TimeLiveWeb/Services/ExpenseEntries.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

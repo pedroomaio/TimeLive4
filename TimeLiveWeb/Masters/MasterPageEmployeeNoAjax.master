@@ -1,0 +1,31 @@
+<%@ Master Language="VB" CodeFile="MasterPageEmployeeNoAjax.master.vb"  Inherits="MasterPageEmployeeNoAjax" MasterPageFile="~/Masters/MasterPageBase.master" %>
+<%@ Register Src="../Menus/Controls/ctlAccountAdminSiteMenu.ascx" TagName="ctlAccountAdminSiteMenu"
+    TagPrefix="uc1" %>
+    <%@ Register Src="../Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus"
+    TagPrefix="uc3" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderLeftMenu" Runat="Server">
+<uc1:ctlAccountAdminSiteMenu ID="CtlAccountAdminSiteMenu1" runat="server" />
+
+
+ 
+</asp:Content>
+<asp:Content ID="C" ContentPlaceHolderID="C" Runat="Server">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td>
+            <uc3:ctlLoginStatus ID="CtlLoginStatus1" runat="server"  /><span style="height: 28px;"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+</table>
+                            
+</asp:Content>
+
+

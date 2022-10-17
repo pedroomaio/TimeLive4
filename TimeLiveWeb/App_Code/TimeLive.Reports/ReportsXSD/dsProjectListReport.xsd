@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsProjectListReportForXtrReport" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="TimeLiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="TimeLiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.TimeLiveConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vueAccountProjectsTableAdapter" Name="vueAccountProjects">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeLive.dbo.vueAccountProjects" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     AccountProjectId, ProjectName, StartDate, ProjectCode, PartyName, AccountClientId, LeaderEmployeeId, ProjectManagerEmployeeId, LeaderName, 
+                      ProjectManagerName, AccountId, IsActive, Deadline, EstimatedDuration, EstimatedDurationUnit, ProjectStatusId, Status, IsDisabled, 
+                      ProjectDescription
+FROM         vueAccountProjects</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AccountProjectId" DataSetColumn="AccountProjectId" />
+              <Mapping SourceColumn="ProjectName" DataSetColumn="ProjectName" />
+              <Mapping SourceColumn="StartDate" DataSetColumn="StartDate" />
+              <Mapping SourceColumn="ProjectCode" DataSetColumn="ProjectCode" />
+              <Mapping SourceColumn="PartyName" DataSetColumn="PartyName" />
+              <Mapping SourceColumn="AccountClientId" DataSetColumn="AccountClientId" />
+              <Mapping SourceColumn="LeaderEmployeeId" DataSetColumn="LeaderEmployeeId" />
+              <Mapping SourceColumn="ProjectManagerEmployeeId" DataSetColumn="ProjectManagerEmployeeId" />
+              <Mapping SourceColumn="LeaderName" DataSetColumn="LeaderName" />
+              <Mapping SourceColumn="ProjectManagerName" DataSetColumn="ProjectManagerName" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="IsActive" DataSetColumn="IsActive" />
+              <Mapping SourceColumn="Deadline" DataSetColumn="Deadline" />
+              <Mapping SourceColumn="EstimatedDuration" DataSetColumn="EstimatedDuration" />
+              <Mapping SourceColumn="EstimatedDurationUnit" DataSetColumn="EstimatedDurationUnit" />
+              <Mapping SourceColumn="ProjectStatusId" DataSetColumn="ProjectStatusId" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="IsDisabled" DataSetColumn="IsDisabled" />
+              <Mapping SourceColumn="ProjectDescription" DataSetColumn="ProjectDescription" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeLive.dbo.vueAccountProjects" DbObjectType="View" FillMethodModifier="Public" FillMethodName="GetDataForProjectReport1" GenerateMethods="Both" GenerateShortCommands="True" GetMethodModifier="Public" GetMethodName="GetDataForProjectReport" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT AccountClientId, AccountId, AccountProjectId, Deadline, EstimatedDuration, EstimatedDurationUnit, IsActive, LeaderEmployeeId, LeaderName, PartyName, ProjectCode, ProjectManagerEmployeeId, ProjectManagerName, ProjectName, ProjectStatusId, StartDate, Status FROM vueAccountProjects 
+WHERE (AccountId = @AccountId) AND 
+(@AccountClientId = 0 OR AccountClientId = @AccountClientId) AND 
+(@IsActive = - 1 AND IsActive = IsActive OR @IsActive = 1 AND IsActive = 1 OR @IsActive = 0 AND (IsActive IS NULL OR IsActive = 0)) AND (@ProjectStatusId = 0 Or ProjectStatusId = @ProjectStatusId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="AccountId" ColumnName="AccountId" DataSourceName="TimeLive.dbo.vueAccountProjects" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountId" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="AccountClientId" ColumnName="AccountClientId" DataSourceName="TimeLive.dbo.vueAccountProjects" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountClientId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountClientId" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="IsActive" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="@IsActive" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="ProjectStatusId" ColumnName="ProjectStatusId" DataSourceName="TimeLive.dbo.vueAccountProjects" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ProjectStatusId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ProjectStatusId" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsProjectListReportForXtrReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vueAccountProjects">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountProjectId" type="xs:int" minOccurs="0" />
+              <xs:element name="ProjectName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StartDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ProjectCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PartyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountClientId" type="xs:int" minOccurs="0" />
+              <xs:element name="LeaderEmployeeId" type="xs:int" minOccurs="0" />
+              <xs:element name="ProjectManagerEmployeeId" type="xs:int" minOccurs="0" />
+              <xs:element name="LeaderName" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="301" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectManagerName" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="301" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountId" type="xs:int" minOccurs="0" />
+              <xs:element name="IsActive" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deadline" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EstimatedDuration" type="xs:int" minOccurs="0" />
+              <xs:element name="EstimatedDurationUnit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectStatusId" type="xs:int" minOccurs="0" />
+              <xs:element name="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsDisabled" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ProjectDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

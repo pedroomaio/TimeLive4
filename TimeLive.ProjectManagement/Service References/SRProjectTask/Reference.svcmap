@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c23c8ffa-4505-42e3-9220-049b11e8d6dc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1050/TimeLiveWeb/services/TaskService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TaskService3.xsd" MetadataType="Schema" ID="8c43e994-1dfc-4ab9-9b1f-d55bca9588ce" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/TaskService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TaskService2.wsdl" MetadataType="Wsdl" ID="bc088c7d-31fd-4247-a1a4-6d7e2f641be8" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/TaskService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="TaskService31.xsd" MetadataType="Schema" ID="0d14ea39-8fe4-453f-9fe7-93402559dbaa" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/TaskService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TaskService32.xsd" MetadataType="Schema" ID="8b14cff3-15e8-44e1-957e-46d0ed1b49f8" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/TaskService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TaskService1.disco" MetadataType="Disco" ID="1970fdc2-b503-4e52-a3ba-875d9ac6ce17" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/TaskService.svc?disco" />
+    <MetadataFile FileName="TaskService21.wsdl" MetadataType="Wsdl" ID="6a26da71-8375-416c-af96-8c3a9d66928f" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/TaskService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

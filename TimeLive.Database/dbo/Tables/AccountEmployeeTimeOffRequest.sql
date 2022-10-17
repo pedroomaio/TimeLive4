@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[AccountEmployeeTimeOffRequest] (
+    [AccountEmployeeTimeOffRequestId] UNIQUEIDENTIFIER CONSTRAINT [DF_AccountEmployeeTimeOffRequest_AccountEmployeeTimeOffRequestId] DEFAULT (newid()) NOT NULL,
+    [AccountTimeOffTypeId]            UNIQUEIDENTIFIER NOT NULL,
+    [AccountEmployeeId]               INT              NOT NULL,
+    [RequestSubmitDate]               DATETIME         NOT NULL,
+    [HoursOff]                        FLOAT (53)       NOT NULL,
+    [StartDate]                       DATETIME         NOT NULL,
+    [EndDate]                         DATETIME         NOT NULL,
+    [InApproval]                      BIT              CONSTRAINT [DF_AccountEmployeeTimeOffRequest_InApproval] DEFAULT ((0)) NULL,
+    [Approved]                        BIT              CONSTRAINT [DF_AccountEmployeeTimeOffRequest_Approved] DEFAULT ((0)) NULL,
+    [Rejected]                        BIT              CONSTRAINT [DF_AccountEmployeeTimeOffRequest_Rejected] DEFAULT ((0)) NULL,
+    [Description]                     NVARCHAR (2000)  NULL,
+    [ApprovedOn]                      DATETIME         NULL,
+    [ApprovedBy]                      INT              NULL,
+    [DayOff]                          FLOAT (53)       NOT NULL,
+    [CreatedByEmployee]               INT              NULL,
+    [CreatedOn]                       DATETIME         CONSTRAINT [DF_AccountEmployeeTimeOffRequest_CreatedOn] DEFAULT (getdate()) NULL,
+    [ModifiedByEmployeeId]            INT              NULL,
+    [ModifiedOn]                      DATETIME         CONSTRAINT [DF_AccountEmployeeTimeOffRequest_ModifiedOn] DEFAULT (getdate()) NULL,
+    [AccountId]                       INT              NOT NULL,
+    [AccountProjectId]                INT              NULL,
+    [Deleted]                         BIT              DEFAULT ((0)) NOT NULL,
+    CONSTRAINT [PK_AccountEmployeeTimeOffRequest] PRIMARY KEY CLUSTERED ([AccountEmployeeTimeOffRequestId] ASC),
+    CONSTRAINT [FK_AccountEmployeeTimeOffRequest_AccountProject] FOREIGN KEY ([AccountProjectId]) REFERENCES [dbo].[AccountProject] ([AccountProjectId]),
+    CONSTRAINT [FK_AccountEmployeeTimeOffRequest_AccountTimeOffType] FOREIGN KEY ([AccountTimeOffTypeId]) REFERENCES [dbo].[AccountTimeOffType] ([AccountTimeOffTypeId])
+);
+

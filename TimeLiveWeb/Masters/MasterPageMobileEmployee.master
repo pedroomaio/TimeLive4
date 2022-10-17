@@ -1,0 +1,25 @@
+<%@ Master Language="VB" CodeFile="MasterPageMobileEmployee.master.vb" Inherits="Masters_MasterPageMobileEmployee" %>
+<%@ Register Src="../Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus"
+    TagPrefix="uc1" %>
+	
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head >
+    <link rel="stylesheet"  href="../Resources/jquery.mobile-1.0a4.1.min.css" />
+	<script type="text/javascript" src="../Resources/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="../Resources/jquery.mobile-1.0a4.1.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="page-home" data-theme="d" >
+<form id="form1" runat="server">
+<asp:ScriptManager ID="ScriptManager2" runat="server">
+</asp:ScriptManager>
+  <uc1:ctlLoginStatus ID="CtlLoginStatus2" runat="server"  />
+<asp:contentplaceholder id="ContentPlaceHolder1" runat="server" >
+</asp:contentplaceholder>
+</form>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<%@ Master Language="VB" CodeFile="MasterPageEmployeeBaseTimeEntry.master.vb"  Inherits="MasterPageEmployeeBaseTimeEntry" MasterPageFile="~/Masters/MasterPageBaseTimeEntry.master" %>
+    <%@ Register Src="../Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus"
+    TagPrefix="uc3" %>
+    <%@ Register Src="../Menus/Controls/ctlAccountAdminSiteMenu.ascx" TagName="ctlAccountAdminSiteMenu"
+    TagPrefix="uc1" %>
+<%@ Register Assembly="C1.Web.C1WebSplitter.2" Namespace="C1.Web.C1WebSplitter" TagPrefix="C1WebSplitter" %>    
+<asp:Content ID="C1" ContentPlaceHolderID="CB" Runat="Server">
+    <tr>
+        <td>
+    <C1WebSplitter:C1WebSplitter BorderColor="Black" BorderStyle=none ID="Spt" 
+            Panel1-CssClass="PanelStyle1" Panel2-CssClass="PanelStyle1" Bar-CssClass="Splitter" 
+            Bar-CollapsedCssClass="SplitterCollapsedHorizontal" Bar-HoverCssClass="SplitterHover" 
+            Bar-DragCssClass="SplitterDrag" Bar-CollapseHoverImageUrl="~/images/splitter_colhover_vert.gif" 
+            Bar-CollapseImageUrl="~/images/splitter_col_vert.gif" 
+            Bar-ExpandHoverImageUrl="~/images/splitter_exphover_vert.gif" 
+            Bar-ExpandImageUrl="~/images/splitter_exp_vert.gif" runat="server" Height="100%" 
+            Orientation="Vertical" SplitterDistance="155" Width="100%" Panel1-Collapsed="false" Bar-Width="10">
+        <C1WebSplitter:C1WebPanel ID="Sp" runat="server">
+           <uc1:ctlAccountAdminSiteMenu ID="CM" runat="server" />
+                       <asp:UpdateProgress id="UpdateProgress2" runat="server" DisplayAfter="1" >
+                            <ProgressTemplate>
+                                <br />
+                                <asp:Image ID="P" runat="server" ImageUrl="~/Images/AjaxUpdateStatus.gif"/><span class="LoginStatusText">Processing...</span> 
+                            </ProgressTemplate>
+                        </asp:UpdateProgress>
+        </C1WebSplitter:C1WebPanel>
+        <C1WebSplitter:C1WebPanel ID="C1WebSplitter1_Panel2" runat="server"  >
+                      <asp:ContentPlaceHolder ID="CB" runat="server">
+                                      </asp:ContentPlaceHolder>
+        </C1WebSplitter:C1WebPanel>
+    </C1WebSplitter:C1WebSplitter>
+            </td>
+    </tr>
+</asp:Content>
+

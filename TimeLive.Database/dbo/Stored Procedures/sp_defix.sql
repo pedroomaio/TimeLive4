@@ -1,0 +1,102 @@
+﻿
+CREATE PROCEDURE [dbo].[sp_defix]
+ 	@AccountID numeric,
+ 	@AccountEmployeeID numeric
+ 	
+AS
+BEGIN
+
+
+Disable TRIGGER AuditTriggerAccountEmployeeTimeEntryPeriod  ON dbo.AccountEmployeeTimeEntryPeriod;
+Disable TRIGGER AuditTriggerAccountEmployeeTimeEntry  ON dbo.AccountEmployeeTimeEntry;
+
+
+
+
+update AccountEmployeeTimeEntryPeriod set AccountEmployeeId  = AccountEmployeeTimeEntry.AccountEmployeeId from 
+accountemployeeTimeEntry 
+inner join AccountEmployeeTimeEntryPeriod 
+on AccountEmployeeTimeEntry.AccountEmployeeTimeEntryPeriodId = AccountEmployeeTimeEntryPeriod.AccountEmployeeTimeEntryPeriodId 
+where AccountEmployeeTimeEntryPeriod.AccountEmployeeId <> AccountEmployeeTimeEntry.AccountEmployeeId
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID and AccountEmployeeTimeEntryPeriod.AccountEmployeeId = @AccountEmployeeID 
+and accountemployeeTimeEntry.AccountEmployeeId = @AccountEmployeeId
+
+Update AccountEmployeeTimeEntry Set AccountEmployeeTimeEntry.AccountEmployeeTimeEntryApprovalProjectId =
+(Select top 1 AccountEmployeeTimeEntryApprovalProject.AccountEmployeeTimeEntryApprovalProjectId 
+From AccountEmployeeTimeEntryApprovalProject
+Where AccountEmployeeTimeEntryApprovalProject.TimeEntryAccountEmployeeId = @AccountEmployeeID
+And AccountEmployeeTimeEntry.AccountEmployeeTimeEntryPeriodId = AccountEmployeeTimeEntryApprovalProject.AccountEmployeeTimeEntryPeriodId
+And AccountEmployeeTimeEntry.AccountEmployeeId = AccountEmployeeTimeEntryApprovalProject.TimeEntryAccountEmployeeId
+And AccountEmployeeTimeEntry.AccountProjectId = AccountEmployeeTimeEntryApprovalProject.AccountProjectId)
+Where AccountEmployeeTimeEntry.AccountEmployeeId  = @AccountEmployeeID
+
+Delete From AccountEmployeeTimeEntryApprovalProject
+Where AccountEmployeeTimeEntryApprovalProjectId Not In 
+(Select AccountEmployeeTimeEntryApprovalProjectId From AccountEmployeeTimeEntry
+Where AccountEmployeeTimeEntryApprovalProjectId Is Not NULL)
+and AccountEmployeeTimeEntryApprovalProject.TimeEntryAccountEmployeeId = @AccountEmployeeID
+
+Delete From AccountEmployeeTimeEntryPeriod
+Where AccountEmployeeTimeEntryPeriodId Not In (Select AccountEmployeeTimeEntryPeriodId From AccountEmployeeTimeEntry
+Where AccountEmployeeTimeEntryPeriodId Is Not NULL) 
+And AccountEmployeeTimeEntryPeriodId Not In (Select AccountEmployeeTimeEntryPeriodId
+From AccountEmployeeTimeEntryApprovalProject
+)
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID and AccountEmployeeTimeEntryPeriod.AccountEmployeeId = @AccountEmployeeID
+
+Update AccountEmployeeTimeEntry Set AccountEmployeeTimeEntry.AccountEmployeeTimeEntryPeriodId =
+(Select Top 1 AccountEmployeeTimeEntryPeriod.AccountEmployeeTimeEntryPeriodId From AccountEmployeeTimeEntryPeriod
+Where AccountEmployeeTimeEntry.TimeEntryDate >= AccountEmployeeTimeEntryPeriod.TimeEntryStartDate 
+And AccountEmployeeTimeEntry.TimeEntryDate <= AccountEmployeeTimeEntryPeriod.TimeEntryEndDate
+And AccountEmployeeTimeEntry.AccountEmployeeId = AccountEmployeeTimeEntryPeriod.AccountEmployeeId)
+where AccountEmployeeTimeEntry.AccountEmployeeId = @AccountEmployeeID 
+
+Update AccountEmployeeTimeEntry Set AccountEmployeeTimeEntry.AccountEmployeeTimeEntryApprovalProjectId =
+(Select top 1 AccountEmployeeTimeEntryApprovalProject.AccountEmployeeTimeEntryApprovalProjectId From AccountEmployeeTimeEntryApprovalProject
+Where AccountEmployeeTimeEntry.AccountEmployeeTimeEntryPeriodId = AccountEmployeeTimeEntryApprovalProject.AccountEmployeeTimeEntryPeriodId
+And AccountEmployeeTimeEntry.AccountEmployeeId = AccountEmployeeTimeEntryApprovalProject.TimeEntryAccountEmployeeId
+And AccountEmployeeTimeEntry.AccountProjectId = AccountEmployeeTimeEntryApprovalProject.AccountProjectId)
+where AccountEmployeeTimeEntry.AccountEmployeeId = @AccountEmployeeID 
+
+Update AccountEmployeeTimeEntryApproval 
+Set AccountEmployeeTimeEntryApproval.AccountEmployeeTimeEntryPeriodId =
+(Select Top 1 AccountEmployeeTimeEntry.AccountEmployeeTimeEntryPeriodId From AccountEmployeeTimeEntry
+Where AccountEmployeeTimeEntryApproval.AccountEmployeeTimeEntryId = AccountEmployeetimeentry.AccountEmployeeTimeEntryId
+) 
+from 
+AccountEmployeeTimeEntry 
+inner join AccountEmployeeTimeEntryApproval on AccountEmployeeTimeEntry.AccountEmployeeTimeEntryId = AccountEmployeeTimeEntryApproval.AccountEmployeeTimeEntryId 
+where AccountEmployeeTimeEntry.AccountEmployeeId = @AccountEmployeeID 
+
+Delete From AccountEmployeeTimeEntryApprovalProject
+Where AccountEmployeeTimeEntryApprovalProjectId Not In 
+(Select AccountEmployeeTimeEntryApprovalProjectId From AccountEmployeeTimeEntry
+Where AccountEmployeeTimeEntryApprovalProjectId Is Not NULL)
+and AccountEmployeeTimeEntryApprovalProject.TimeEntryAccountEmployeeId = @AccountEmployeeID 
+
+Delete From AccountEmployeeTimeEntryPeriod
+Where AccountEmployeeTimeEntryPeriodId Not In (Select AccountEmployeeTimeEntryPeriodId From AccountEmployeeTimeEntry
+Where AccountEmployeeTimeEntryPeriodId Is Not NULL) 
+And AccountEmployeeTimeEntryPeriodId Not In (Select AccountEmployeeTimeEntryPeriodId
+From AccountEmployeeTimeEntryApprovalProject)
+and AccountEmployeeTimeEntryPeriod.AccountEmployeeId = @AccountEmployeeID and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID
+
+Update AccountEmployeeTimeEntryPeriod
+Set Submitted = 1, Rejected = 0 Where
+AccountEmployeeTimeEntryPeriodId In (Select AccountEmployeeTimeEntryPeriodId From vueTotalSubmittedPeriods)
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID and AccountEmployeeTimeEntryPeriod.AccountEmployeeId = @AccountEmployeeID;
+
+Update AccountEmployeeTimeEntryPeriod
+Set Approved = 1 Where
+AccountEmployeeTimeEntryPeriodId In (Select AccountEmployeeTimeEntryPeriodId From vueTotalApprovedPeriods)
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID and AccountEmployeeTimeEntryPeriod.AccountEmployeeId = @AccountEmployeeID;
+
+Update AccountEmployeeTimeEntryPeriod
+Set Approved = 0 Where
+AccountEmployeeTimeEntryPeriodId In (Select AccountEmployeeTimeEntryPeriodId From vueTotalNotApprovedPeriods)
+and AccountEmployeeTimeEntryPeriod.AccountId = @AccountID and AccountEmployeeTimeEntryPeriod.AccountEmployeeId = @AccountEmployeeID;
+
+Enable TRIGGER AuditTriggerAccountEmployeeTimeEntry  ON dbo.AccountEmployeeTimeEntry;
+Enable TRIGGER AuditTriggerAccountEmployeeTimeEntryPeriod  ON dbo.AccountEmployeeTimeEntryPeriod;
+
+END

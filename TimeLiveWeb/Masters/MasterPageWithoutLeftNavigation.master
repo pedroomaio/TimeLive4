@@ -1,0 +1,58 @@
+<%@ Master Language="VB" CodeFile="MasterPageWithoutLeftNavigation.master.vb"  Inherits="MasterPageWithoutLeftNavigation" MasterPageFile="~/Masters/MasterPageEmployeeBase.master" %>
+<%@ Register Src="../Menus/Controls/ctlAccountAdminSiteMenu.ascx" TagName="ctlAccountAdminSiteMenu"
+    TagPrefix="uc1" %>
+    <%@ Register Src="../Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus"
+    TagPrefix="uc3" %>
+<%@ Register Assembly="C1.Web.C1WebSplitter.2" Namespace="C1.Web.C1WebSplitter" TagPrefix="C1WebSplitter" %>    
+<asp:Content ID="C2" ContentPlaceHolderID="C" Runat="Server">
+	<tr>
+		<TD vAlign=top colspan=2  bgColor=#ffffff width="100%" style="height:100%;">
+    <C1WebSplitter:C1WebSplitter BorderColor="Black" BorderStyle=none ID="Spt" 
+            Panel1-CssClass="PanelStyle1" Panel2-CssClass="PanelStyle1" Bar-CssClass="Splitter" 
+            Bar-CollapsedCssClass="SplitterCollapsedHorizontal" Bar-HoverCssClass="SplitterHover" 
+            Bar-DragCssClass="SplitterDrag" Bar-CollapseHoverImageUrl="~/images/splitter_colhover_vert.gif" 
+            Bar-CollapseImageUrl="~/images/splitter_col_vert.gif" 
+            Bar-ExpandHoverImageUrl="~/images/splitter_exphover_vert.gif" 
+            Bar-ExpandImageUrl="~/images/splitter_exp_vert.gif" runat="server" Height="100%" 
+            Orientation="Vertical" SplitterDistance="155"  Width="100%" Panel1-Collapsed="false" 
+            Panel1-MinSize="10" Bar-Width="10">
+        <C1WebSplitter:C1WebPanel ID="Sp" runat="server">
+           <uc1:ctlAccountAdminSiteMenu ID="CM" runat="server" />
+
+                       <asp:UpdateProgress id="UpdateProgress2" runat="server" DisplayAfter="1" >
+                            <ProgressTemplate>
+                                <br />
+                                <asp:Image ID="P" runat="server" ImageUrl="~/Images/AjaxUpdateStatus.gif"/><span class="LoginStatusText">Processing...</span> 
+                            </ProgressTemplate>
+                        </asp:UpdateProgress>
+        </C1WebSplitter:C1WebPanel>
+        <C1WebSplitter:C1WebPanel ID="C1WebSplitter1_Panel2" runat="server"  >
+                                    <asp:ContentPlaceHolder ID="H1" runat="server">
+                        <table border="0" cellpadding="0" cellspacing="0" width="98%">
+                            <tr>
+                                <td>
+                                    <uc3:ctlLoginStatus ID="L" runat="server"  />
+                                </td>
+                            </tr>
+                        </table>
+                         <table border="0" cellpadding="0" cellspacing="0" width="98%">
+
+                            <tr>
+                                <td>
+                                    <asp:ScriptManager ID="ScriptManager2" runat="server">
+                                    </asp:ScriptManager>
+                                    <asp:ContentPlaceHolder ID="C" runat="server">
+                                                              </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                        </table>
+                                                              </asp:ContentPlaceHolder>
+        </C1WebSplitter:C1WebPanel>
+    </C1WebSplitter:C1WebSplitter>
+
+	    </td>
+	    <td bgcolor="#999999" style="width: 31px">&nbsp;</td>
+
+</tr>                      
+</asp:Content>
+

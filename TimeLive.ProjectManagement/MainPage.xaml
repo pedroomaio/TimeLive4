@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="ProjectManagement.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ProjectManagement"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:my="clr-namespace:RadiantQ.Windows.Controls.Gantt;assembly=RadiantQ.GanttControls"
+    xmlns:prim="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+    mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+  <Grid x:Name="LayoutRoot" Background="White">
+                <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <local:TimeSpanToHoursConverter x:Name="timeSpanToHoursConverter" />
+            <Style x:Name="CenterHeaderText" TargetType="prim:DataGridColumnHeader">
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
+            </Style>
+            <!-- Custom Effort column to represent effort in hours-->
+            <my:GanttTableTemplateColumn x:Key="effortColumnTemplate" Header="Duration(H)">
+                <my:GanttTableTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Activity.Effort, Converter={StaticResource timeSpanToHoursConverter}}" VerticalAlignment="Center"
+                                        HorizontalAlignment="Right"  Margin="0,0,2,0" ToolTipService.ToolTip="Duration in Hours"></TextBlock>
+                    </DataTemplate>
+                </my:GanttTableTemplateColumn.CellTemplate>
+                <my:GanttTableTemplateColumn.CellEditingTemplate>
+                    <DataTemplate>
+                        <local:EffortAsHoursPicker Value="{Binding Activity.Effort, Mode=TwoWay}" VerticalAlignment="Center" />
+                    </DataTemplate>
+                </my:GanttTableTemplateColumn.CellEditingTemplate>
+            </my:GanttTableTemplateColumn>
+            <my:GanttTableTemplateColumn x:Key="descColumnTemplate" Header="Description" HeaderStyle="{StaticResource CenterHeaderText}"  >
+                <my:GanttTableTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Activity.DataSource.Description}" VerticalAlignment="Center"
+                                                       Margin="2,0,0,0"></TextBlock>
+                    </DataTemplate>
+                </my:GanttTableTemplateColumn.CellTemplate>
+
+                <my:GanttTableTemplateColumn.CellEditingTemplate>
+                    <DataTemplate>
+                        <!-- Use any kind of editors here, can be a DatePicker, ComboBox, etc. -->
+                        <TextBox Text="{Binding Activity.DataSource.Description, Mode=TwoWay}" VerticalAlignment="Center"></TextBox>
+                    </DataTemplate>
+                </my:GanttTableTemplateColumn.CellEditingTemplate>
+            </my:GanttTableTemplateColumn>
+        </Grid.Resources>
+            <StackPanel Orientation="Horizontal">
+            <Button Content="Add" Margin="5" Name="Add" Click="Add_Click" Width="55" VerticalContentAlignment="Center" VerticalAlignment="Stretch"></Button>
+            <Button Content="Update" Margin="5" Name="Update" Click="Update_Click" Width="55" VerticalContentAlignment="Center" VerticalAlignment="Stretch"></Button>
+            <Button Content="Delete"  Margin="5" Name="Delete" Width="55" VerticalContentAlignment="Center" VerticalAlignment="Stretch" Click="Delete_Click" />
+            <Button Height="23" Name="Resource" Width="60"  Content="Resource" Click="Resource_Click"  VerticalContentAlignment="Center" VerticalAlignment="Stretch" />
+        </StackPanel>
+        <my:GanttControl PreferredStartTimeBinding="{Binding PreferredStartTime}" ResourceIDBinding="{Binding ResourceID}" 
+            ResourceNameBinding="{Binding ResourceName}" ResourceScheduleBinding="{Binding CustomSchedule}" 
+            DescriptionBinding="{Binding Description}" 
+            x:Name="ganttControl" Grid.Row="1" ZoomOptions="ShowZoomSliderInHeader">
+        </my:GanttControl>
+        <ProgressBar x:Name="myProgressbar" Width="400" Height="40" Grid.Row="1" Visibility="Collapsed" />
+    </Grid>
+</UserControl>

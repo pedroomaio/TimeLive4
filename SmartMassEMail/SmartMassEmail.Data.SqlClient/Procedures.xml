@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type='text/xsl' href="scriptsql.xsl"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database includeDrop="true">SmartMassEmailDB</database>
+<procedures>
+		
+		<procedure owner="dbo" name="EmailMessage_Get_List" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Gets all records from the EmailMessage table
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters/>
+			<body><![CDATA[
+				
+				SELECT
+					[ID],
+					[ChangeStamp],
+					[Priority],
+					[Status],
+					[NumberOfRetry],
+					[RetryTime],
+					[MaximumRetry],
+					[ExpiryDatetime],
+					[ArrivedDateTime],
+					[SenderInfo],
+					[EmailTo],
+					[EmailFrom],
+					[EmailSubject],
+					[EmailBody],
+					[EmailCC],
+					[EmailBCC],
+					[IsHtml]
+				FROM
+					dbo.[EmailMessage]
+					
+				Select @@ROWCOUNT
+			]]></body>
+		</procedure>
+		
+		
+		<procedure owner="dbo" name="EmailMessage_GetPaged" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Gets records from the EmailMessage table passing page index and page count parameters
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@WhereClause" type="varchar" direction="Input" size="2000" precision="0" scale="0" param="(2000)" />
+				<parameter name="@OrderBy" type="varchar" direction="Input" size="2000" precision="0" scale="0" param="(2000)"/>
+				<parameter name="@PageIndex" type="int" direction="Input" size="0" precision="10" scale="0" />
+				<parameter name="@PageSize" type="int" direction="Input" size="0" precision="10" scale="0" /> 
+			</parameters>
+			<body><![CDATA[
+				
+				BEGIN
+				DECLARE @PageLowerBound int
+				DECLARE @PageUpperBound int
+				
+				-- Set the page bounds
+				SET @PageLowerBound = @PageSize * @PageIndex
+				SET @PageUpperBound = @PageLowerBound + @PageSize
+
+				-- Create a temp table to store the select results
+				Create Table #PageIndex
+				(
+				    [IndexId] int IDENTITY (1, 1) NOT NULL,
+				    [ID] uniqueidentifier 
+				)
+				
+				-- Insert into the temp table
+				declare @SQL as nvarchar(4000)
+				SET @SQL = 'INSERT INTO #PageIndex (ID)'
+				SET @SQL = @SQL + ' SELECT'
+				IF @PageSize > 0
+				BEGIN
+					SET @SQL = @SQL + ' TOP ' + convert(nvarchar, @PageUpperBound)
+				END
+				SET @SQL = @SQL + ' [ID]'
+				SET @SQL = @SQL + ' FROM dbo.[EmailMessage]'
+				IF LEN(@WhereClause) > 0
+				BEGIN
+					SET @SQL = @SQL + ' WHERE ' + @WhereClause
+				END
+				IF LEN(@OrderBy) > 0
+				BEGIN
+					SET @SQL = @SQL + ' ORDER BY ' + @OrderBy
+				END
+				
+				-- Populate the temp table
+				exec sp_executesql @SQL
+
+				-- Return paged results
+				SELECT O.[ID], O.[ChangeStamp], O.[Priority], O.[Status], O.[NumberOfRetry], O.[RetryTime], O.[MaximumRetry], O.[ExpiryDatetime], O.[ArrivedDateTime], O.[SenderInfo], O.[EmailTo], O.[EmailFrom], O.[EmailSubject], O.[EmailBody], O.[EmailCC], O.[EmailBCC], O.[IsHtml]
+				FROM
+				    dbo.[EmailMessage] O,
+				    #PageIndex PageIndex
+				WHERE
+				    PageIndex.IndexID > @PageLowerBound
+					AND O.[ID] = PageIndex.[ID]
+				ORDER BY
+				    PageIndex.IndexID
+				
+				-- get row count
+				SET @SQL = 'SELECT COUNT(*) as TotalRowCount'
+				SET @SQL = @SQL + ' FROM dbo.[EmailMessage]'
+				IF LEN(@WhereClause) > 0
+				BEGIN
+					SET @SQL = @SQL + ' WHERE ' + @WhereClause
+				END
+				exec sp_executesql @SQL
+			
+				END
+			]]></body>
+		</procedure>
+		
+		<procedure owner="dbo" name="EmailMessage_Insert" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Inserts a record into the EmailMessage table
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@ID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@ChangeStamp" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault=""/>
+				<parameter name="@Priority" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault=""/>
+				<parameter name="@Status" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault=""/>
+				<parameter name="@NumberOfRetry" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault=""/>
+				<parameter name="@RetryTime" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault=""/>
+				<parameter name="@MaximumRetry" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault=""/>
+				<parameter name="@ExpiryDatetime" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault=""/>
+				<parameter name="@ArrivedDateTime" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault=""/>
+				<parameter name="@SenderInfo" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@EmailTo" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@EmailFrom" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@EmailSubject" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@EmailBody" type="text" direction="Input" size="2147483647" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@EmailCC" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@EmailBCC" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@IsHtml" type="bit" direction="Input" size="0" precision="1" scale="0" param="" nulldefault=""/>
+			</parameters>
+			<body>
+						<![CDATA[
+
+				INSERT INTO dbo.[EmailMessage]
+					(
+					[ID]
+					,[ChangeStamp]
+					,[Priority]
+					,[Status]
+					,[NumberOfRetry]
+					,[RetryTime]
+					,[MaximumRetry]
+					,[ExpiryDatetime]
+					,[ArrivedDateTime]
+					,[SenderInfo]
+					,[EmailTo]
+					,[EmailFrom]
+					,[EmailSubject]
+					,[EmailBody]
+					,[EmailCC]
+					,[EmailBCC]
+					,[IsHtml]
+					)
+				VALUES
+					(
+					@ID
+					,@ChangeStamp
+					,@Priority
+					,@Status
+					,@NumberOfRetry
+					,@RetryTime
+					,@MaximumRetry
+					,@ExpiryDatetime
+					,@ArrivedDateTime
+					,@SenderInfo
+					,@EmailTo
+					,@EmailFrom
+					,@EmailSubject
+					,@EmailBody
+					,@EmailCC
+					,@EmailBCC
+					,@IsHtml
+					)
+														
+			]]></body>
+		</procedure>
+		<procedure owner="dbo" name="EmailMessage_Update" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Updates a record in the EmailMessage table
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@ID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@OriginalID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@ChangeStamp" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault=""/>
+				<parameter name="@Priority" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault=""/>
+				<parameter name="@Status" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault=""/>
+				<parameter name="@NumberOfRetry" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault=""/>
+				<parameter name="@RetryTime" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault=""/>
+				<parameter name="@MaximumRetry" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault=""/>
+				<parameter name="@ExpiryDatetime" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault=""/>
+				<parameter name="@ArrivedDateTime" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault=""/>
+				<parameter name="@SenderInfo" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@EmailTo" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@EmailFrom" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@EmailSubject" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@EmailBody" type="text" direction="Input" size="2147483647" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@EmailCC" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@EmailBCC" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault=""/>
+				<parameter name="@IsHtml" type="bit" direction="Input" size="0" precision="1" scale="0" param="" nulldefault=""/>
+			</parameters>
+			<body>
+						<![CDATA[
+				
+				
+				-- Modify the updatable columns
+				UPDATE
+					dbo.[EmailMessage]
+				SET
+					[ID] = @ID
+					,[ChangeStamp] = @ChangeStamp
+					,[Priority] = @Priority
+					,[Status] = @Status
+					,[NumberOfRetry] = @NumberOfRetry
+					,[RetryTime] = @RetryTime
+					,[MaximumRetry] = @MaximumRetry
+					,[ExpiryDatetime] = @ExpiryDatetime
+					,[ArrivedDateTime] = @ArrivedDateTime
+					,[SenderInfo] = @SenderInfo
+					,[EmailTo] = @EmailTo
+					,[EmailFrom] = @EmailFrom
+					,[EmailSubject] = @EmailSubject
+					,[EmailBody] = @EmailBody
+					,[EmailCC] = @EmailCC
+					,[EmailBCC] = @EmailBCC
+					,[IsHtml] = @IsHtml
+				WHERE
+[ID] = @OriginalID 
+				
+			]]></body>
+		</procedure>
+		<procedure owner="dbo" name="EmailMessage_Delete" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Deletes a record in the EmailMessage table
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@ID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+			</parameters>
+			<body><![CDATA[
+				DELETE FROM dbo.[EmailMessage] WITH (ROWLOCK) 
+				WHERE
+					[ID] = @ID
+					
+			]]></body>
+		</procedure>
+		<procedure owner="dbo" name="EmailMessage_GetByID" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Select records from the EmailMessage table through an index
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@ID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+			</parameters>
+			<body><![CDATA[
+				SELECT
+					[ID],
+					[ChangeStamp],
+					[Priority],
+					[Status],
+					[NumberOfRetry],
+					[RetryTime],
+					[MaximumRetry],
+					[ExpiryDatetime],
+					[ArrivedDateTime],
+					[SenderInfo],
+					[EmailTo],
+					[EmailFrom],
+					[EmailSubject],
+					[EmailBody],
+					[EmailCC],
+					[EmailBCC],
+					[IsHtml]
+				FROM
+					dbo.[EmailMessage]
+				WHERE
+					[ID] = @ID
+			Select @@ROWCOUNT
+					
+			]]></body>
+			
+		</procedure>
+		<procedure owner="dbo" name="EmailMessage_Find" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Finds records in the EmailMessage table passing nullable parameters
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@SearchUsingOR" type="bit" direction="Input" size="0" precision="1" scale="0" param="" nulldefault="null"/>
+				<parameter name="@ID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault="null"/>
+				<parameter name="@ChangeStamp" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault="null"/>
+				<parameter name="@Priority" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault="null"/>
+				<parameter name="@Status" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault="null"/>
+				<parameter name="@NumberOfRetry" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault="null"/>
+				<parameter name="@RetryTime" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault="null"/>
+				<parameter name="@MaximumRetry" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault="null"/>
+				<parameter name="@ExpiryDatetime" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault="null"/>
+				<parameter name="@ArrivedDateTime" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault="null"/>
+				<parameter name="@SenderInfo" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault="null"/>
+				<parameter name="@EmailTo" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault="null"/>
+				<parameter name="@EmailFrom" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault="null"/>
+				<parameter name="@EmailSubject" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault="null"/>
+				<parameter name="@EmailBody" type="text"  direction="Input" size="2147483647" precision="0" scale="0" param="" nulldefault="null"/>
+				<parameter name="@EmailCC" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault="null"/>
+				<parameter name="@EmailBCC" type="varchar" direction="Input" size="1000" precision="0" scale="0" param="(1000)" nulldefault="null"/>
+				<parameter name="@IsHtml" type="bit" direction="Input" size="0" precision="1" scale="0" param="" nulldefault="null"/>
+			</parameters>
+			<body><![CDATA[
+				
+  IF ISNULL(@SearchUsingOR, 0) <> 1
+  BEGIN
+    SELECT
+	  [ID]
+	, [ChangeStamp]
+	, [Priority]
+	, [Status]
+	, [NumberOfRetry]
+	, [RetryTime]
+	, [MaximumRetry]
+	, [ExpiryDatetime]
+	, [ArrivedDateTime]
+	, [SenderInfo]
+	, [EmailTo]
+	, [EmailFrom]
+	, [EmailSubject]
+	, [EmailBody]
+	, [EmailCC]
+	, [EmailBCC]
+	, [IsHtml]
+    FROM
+	dbo.[EmailMessage]
+    WHERE 
+	 ([ID] = @ID OR @ID is null)
+	AND ([ChangeStamp] = @ChangeStamp OR @ChangeStamp is null)
+	AND ([Priority] = @Priority OR @Priority is null)
+	AND ([Status] = @Status OR @Status is null)
+	AND ([NumberOfRetry] = @NumberOfRetry OR @NumberOfRetry is null)
+	AND ([RetryTime] = @RetryTime OR @RetryTime is null)
+	AND ([MaximumRetry] = @MaximumRetry OR @MaximumRetry is null)
+	AND ([ExpiryDatetime] = @ExpiryDatetime OR @ExpiryDatetime is null)
+	AND ([ArrivedDateTime] = @ArrivedDateTime OR @ArrivedDateTime is null)
+	AND ([SenderInfo] = @SenderInfo OR @SenderInfo is null)
+	AND ([EmailTo] = @EmailTo OR @EmailTo is null)
+	AND ([EmailFrom] = @EmailFrom OR @EmailFrom is null)
+	AND ([EmailSubject] = @EmailSubject OR @EmailSubject is null)
+	AND ([EmailCC] = @EmailCC OR @EmailCC is null)
+	AND ([EmailBCC] = @EmailBCC OR @EmailBCC is null)
+	AND ([IsHtml] = @IsHtml OR @IsHtml is null)
+						
+  END
+  ELSE
+  BEGIN
+    SELECT
+	  [ID]
+	, [ChangeStamp]
+	, [Priority]
+	, [Status]
+	, [NumberOfRetry]
+	, [RetryTime]
+	, [MaximumRetry]
+	, [ExpiryDatetime]
+	, [ArrivedDateTime]
+	, [SenderInfo]
+	, [EmailTo]
+	, [EmailFrom]
+	, [EmailSubject]
+	, [EmailBody]
+	, [EmailCC]
+	, [EmailBCC]
+	, [IsHtml]
+    FROM
+	dbo.[EmailMessage]
+    WHERE 
+	 ([ID] = @ID AND @ID is not null)
+	OR ([ChangeStamp] = @ChangeStamp AND @ChangeStamp is not null)
+	OR ([Priority] = @Priority AND @Priority is not null)
+	OR ([Status] = @Status AND @Status is not null)
+	OR ([NumberOfRetry] = @NumberOfRetry AND @NumberOfRetry is not null)
+	OR ([RetryTime] = @RetryTime AND @RetryTime is not null)
+	OR ([MaximumRetry] = @MaximumRetry AND @MaximumRetry is not null)
+	OR ([ExpiryDatetime] = @ExpiryDatetime AND @ExpiryDatetime is not null)
+	OR ([ArrivedDateTime] = @ArrivedDateTime AND @ArrivedDateTime is not null)
+	OR ([SenderInfo] = @SenderInfo AND @SenderInfo is not null)
+	OR ([EmailTo] = @EmailTo AND @EmailTo is not null)
+	OR ([EmailFrom] = @EmailFrom AND @EmailFrom is not null)
+	OR ([EmailSubject] = @EmailSubject AND @EmailSubject is not null)
+	OR ([EmailCC] = @EmailCC AND @EmailCC is not null)
+	OR ([EmailBCC] = @EmailBCC AND @EmailBCC is not null)
+	OR ([IsHtml] = @IsHtml AND @IsHtml is not null)
+	Select @@ROWCOUNT			
+  END
+				]]></body>
+		</procedure>
+		
+		<procedure owner="dbo" name="EmailMessageDetail_Get_List" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Gets all records from the EmailMessageDetail table
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters/>
+			<body><![CDATA[
+				
+				SELECT
+					[ID],
+					[ChangeStamp],
+					[IsBinary],
+					[Name],
+					[BinaryData],
+					[StringData],
+					[EmailMessageID]
+				FROM
+					dbo.[EmailMessageDetail]
+					
+				Select @@ROWCOUNT
+			]]></body>
+		</procedure>
+		
+		
+		<procedure owner="dbo" name="EmailMessageDetail_GetPaged" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Gets records from the EmailMessageDetail table passing page index and page count parameters
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@WhereClause" type="varchar" direction="Input" size="2000" precision="0" scale="0" param="(2000)" />
+				<parameter name="@OrderBy" type="varchar" direction="Input" size="2000" precision="0" scale="0" param="(2000)"/>
+				<parameter name="@PageIndex" type="int" direction="Input" size="0" precision="10" scale="0" />
+				<parameter name="@PageSize" type="int" direction="Input" size="0" precision="10" scale="0" /> 
+			</parameters>
+			<body><![CDATA[
+				
+				BEGIN
+				DECLARE @PageLowerBound int
+				DECLARE @PageUpperBound int
+				
+				-- Set the page bounds
+				SET @PageLowerBound = @PageSize * @PageIndex
+				SET @PageUpperBound = @PageLowerBound + @PageSize
+
+				-- Create a temp table to store the select results
+				Create Table #PageIndex
+				(
+				    [IndexId] int IDENTITY (1, 1) NOT NULL,
+				    [ID] uniqueidentifier 
+				)
+				
+				-- Insert into the temp table
+				declare @SQL as nvarchar(4000)
+				SET @SQL = 'INSERT INTO #PageIndex (ID)'
+				SET @SQL = @SQL + ' SELECT'
+				IF @PageSize > 0
+				BEGIN
+					SET @SQL = @SQL + ' TOP ' + convert(nvarchar, @PageUpperBound)
+				END
+				SET @SQL = @SQL + ' [ID]'
+				SET @SQL = @SQL + ' FROM dbo.[EmailMessageDetail]'
+				IF LEN(@WhereClause) > 0
+				BEGIN
+					SET @SQL = @SQL + ' WHERE ' + @WhereClause
+				END
+				IF LEN(@OrderBy) > 0
+				BEGIN
+					SET @SQL = @SQL + ' ORDER BY ' + @OrderBy
+				END
+				
+				-- Populate the temp table
+				exec sp_executesql @SQL
+
+				-- Return paged results
+				SELECT O.[ID], O.[ChangeStamp], O.[IsBinary], O.[Name], O.[BinaryData], O.[StringData], O.[EmailMessageID]
+				FROM
+				    dbo.[EmailMessageDetail] O,
+				    #PageIndex PageIndex
+				WHERE
+				    PageIndex.IndexID > @PageLowerBound
+					AND O.[ID] = PageIndex.[ID]
+				ORDER BY
+				    PageIndex.IndexID
+				
+				-- get row count
+				SET @SQL = 'SELECT COUNT(*) as TotalRowCount'
+				SET @SQL = @SQL + ' FROM dbo.[EmailMessageDetail]'
+				IF LEN(@WhereClause) > 0
+				BEGIN
+					SET @SQL = @SQL + ' WHERE ' + @WhereClause
+				END
+				exec sp_executesql @SQL
+			
+				END
+			]]></body>
+		</procedure>
+		
+		<procedure owner="dbo" name="EmailMessageDetail_Insert" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Inserts a record into the EmailMessageDetail table
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@ID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@ChangeStamp" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault=""/>
+				<parameter name="@IsBinary" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault=""/>
+				<parameter name="@Name" type="varchar" direction="Input" size="250" precision="0" scale="0" param="(250)" nulldefault=""/>
+				<parameter name="@BinaryData" type="image" direction="Input" size="2147483647" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@StringData" type="text" direction="Input" size="2147483647" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@EmailMessageID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+			</parameters>
+			<body><![CDATA[
+					
+				INSERT INTO dbo.[EmailMessageDetail]
+					(
+					[ID]
+					,[ChangeStamp]
+					,[IsBinary]
+					,[Name]
+					,[BinaryData]
+					,[StringData]
+					,[EmailMessageID]
+					)
+				VALUES
+					(
+					@ID
+					,@ChangeStamp
+					,@IsBinary
+					,@Name
+					,@BinaryData
+					,@StringData
+					,@EmailMessageID
+					)
+				
+									
+							
+			]]></body>
+		</procedure>
+		<procedure owner="dbo" name="EmailMessageDetail_Update" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Updates a record in the EmailMessageDetail table
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@ID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@OriginalID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@ChangeStamp" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault=""/>
+				<parameter name="@IsBinary" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault=""/>
+				<parameter name="@Name" type="varchar" direction="Input" size="250" precision="0" scale="0" param="(250)" nulldefault=""/>
+				<parameter name="@BinaryData" type="image" direction="Input" size="2147483647" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@StringData" type="text" direction="Input" size="2147483647" precision="0" scale="0" param="" nulldefault=""/>
+				<parameter name="@EmailMessageID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+			</parameters>
+			<body><![CDATA[
+				
+				
+				-- Modify the updatable columns
+				UPDATE
+					dbo.[EmailMessageDetail]
+				SET
+					[ID] = @ID
+					,[ChangeStamp] = @ChangeStamp
+					,[IsBinary] = @IsBinary
+					,[Name] = @Name
+					,[BinaryData] = @BinaryData
+					,[StringData] = @StringData
+					,[EmailMessageID] = @EmailMessageID
+				WHERE
+[ID] = @OriginalID 
+				
+			]]></body>
+		</procedure>
+		<procedure owner="dbo" name="EmailMessageDetail_Delete" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Deletes a record in the EmailMessageDetail table
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@ID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+			</parameters>
+			<body><![CDATA[
+				DELETE FROM dbo.[EmailMessageDetail] WITH (ROWLOCK) 
+				WHERE
+					[ID] = @ID
+					
+			]]></body>
+		</procedure>
+		<procedure owner="dbo" name="EmailMessageDetail_GetByEmailMessageID" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Select records from the EmailMessageDetail table through a foreign key
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@EmailMessageID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+			</parameters>
+			<body><![CDATA[
+				
+				SELECT
+					[ID],
+					[ChangeStamp],
+					[IsBinary],
+					[Name],
+					[BinaryData],
+					[StringData],
+					[EmailMessageID]
+				FROM
+					dbo.[EmailMessageDetail]
+				WHERE
+					[EmailMessageID] = @EmailMessageID
+				
+				Select @@ROWCOUNT
+			]]></body>
+		</procedure>
+		<procedure owner="dbo" name="EmailMessageDetail_GetByID" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Select records from the EmailMessageDetail table through an index
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@ID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault=""/>
+			</parameters>
+			<body><![CDATA[
+				SELECT
+					[ID],
+					[ChangeStamp],
+					[IsBinary],
+					[Name],
+					[BinaryData],
+					[StringData],
+					[EmailMessageID]
+				FROM
+					dbo.[EmailMessageDetail]
+				WHERE
+					[ID] = @ID
+			Select @@ROWCOUNT
+					
+			]]></body>
+			
+		</procedure>
+		<procedure owner="dbo" name="EmailMessageDetail_Find" grant="">
+			<comment><![CDATA[/*
+----------------------------------------------------------------------------------------------------
+-- Date Created: Friday, 1 September 2006
+
+-- Created By:  ()
+-- Purpose: Finds records in the EmailMessageDetail table passing nullable parameters
+----------------------------------------------------------------------------------------------------
+*/
+]]></comment>
+			<parameters>
+				<parameter name="@SearchUsingOR" type="bit" direction="Input" size="0" precision="1" scale="0" param="" nulldefault="null"/>
+				<parameter name="@ID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault="null"/>
+				<parameter name="@ChangeStamp" type="datetime" direction="Input" size="0" precision="23" scale="3" param="" nulldefault="null"/>
+				<parameter name="@IsBinary" type="int" direction="Input" size="0" precision="10" scale="0" param="" nulldefault="null"/>
+				<parameter name="@Name" type="varchar" direction="Input" size="250" precision="0" scale="0" param="(250)" nulldefault="null"/>
+				<parameter name="@BinaryData" type="image" direction="Input" size="2147483647" precision="0" scale="0" param="" nulldefault="null"/>
+				<parameter name="@StringData" type="text" direction="Input" size="2147483647" precision="0" scale="0" param="" nulldefault="null"/>
+				<parameter name="@EmailMessageID" type="uniqueidentifier" direction="Input" size="0" precision="0" scale="0" param="" nulldefault="null"/>
+			</parameters>
+			<body><![CDATA[
+				
+  IF ISNULL(@SearchUsingOR, 0) <> 1
+  BEGIN
+    SELECT
+	  [ID]
+	, [ChangeStamp]
+	, [IsBinary]
+	, [Name]
+	, [BinaryData]
+	, [StringData]
+	, [EmailMessageID]
+    FROM
+	dbo.[EmailMessageDetail]
+    WHERE 
+	 ([ID] = @ID OR @ID is null)
+	AND ([ChangeStamp] = @ChangeStamp OR @ChangeStamp is null)
+	AND ([IsBinary] = @IsBinary OR @IsBinary is null)
+	AND ([Name] = @Name OR @Name is null)
+	AND ([EmailMessageID] = @EmailMessageID OR @EmailMessageID is null)
+						
+  END
+  ELSE
+  BEGIN
+    SELECT
+	  [ID]
+	, [ChangeStamp]
+	, [IsBinary]
+	, [Name]
+	, [BinaryData]
+	, [StringData]
+	, [EmailMessageID]
+    FROM
+	dbo.[EmailMessageDetail]
+    WHERE 
+	 ([ID] = @ID AND @ID is not null)
+	OR ([ChangeStamp] = @ChangeStamp AND @ChangeStamp is not null)
+	OR ([IsBinary] = @IsBinary AND @IsBinary is not null)
+	OR ([Name] = @Name AND @Name is not null)
+	OR ([EmailMessageID] = @EmailMessageID AND @EmailMessageID is not null)
+	Select @@ROWCOUNT			
+  END
+				]]></body>
+		</procedure>
+</procedures>
+</root>

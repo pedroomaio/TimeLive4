@@ -1,0 +1,88 @@
+<%@ Master Language="VB" CodeFile="MasterPageBaseTimeEntry.master.vb" Inherits="Masters_MasterPageBaseTimeEntry" %>
+<%@ Register Src="../Menus/Controls/ctlTopMenu.ascx" TagName="ctlTopMenu" TagPrefix="uc5" %>
+<%@ Register Src="../Menus/Controls/ctlSiteMapPath.ascx" TagName="ctlSiteMapPath"
+    TagPrefix="uc4" %>
+<%@ Register Src="../Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus"
+    TagPrefix="uc3" %>
+<%@ Register Src="../Authenticate/Controls/ctlLogin.ascx" TagName="ctlLogin" TagPrefix="uc2" %>
+<%@ Register Src="../Menus/Controls/ctlAccountAdminSiteMenu.ascx" TagName="ctlAccountAdminSiteMenu"
+    TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat=server>
+    <link href="../Styles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    #UpdatePanel1 {
+      width:200px; height:100px;
+      border: 1px solid gray;
+    }
+    #UpdateProgress1 {
+      width:200px; background-color: #FFC080;
+      bottom: 0%; left: 0px; position: absolute;
+    }
+    </style>
+</head>
+<body leftmargin="0" topmargin="0">
+<form id="Form1" runat=server>
+<table width="100%" cellpadding="0" cellspacing="0" bordercolor="#000000">
+    <tr bgcolor="#ffffff">
+        <td align="left" colspan="1" height="70px" style="margin:0 0 0 20; padding:0 0 0 10" >
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+            <tr>
+                <td width="80%">
+                 <asp:Image ID="H" runat="server"  Height="50px"  ImageUrl="~/Images/TopHeader.jpg" AlternateText="TimeLive - Time Tracking Solution" />
+                </td>
+                <td align="right" style=" padding:10 10 10 10'">
+                <%If System.Configuration.ConfigurationManager.AppSettings("SHOW_HELP_ICON") <> "No" Then%>
+                 <asp:HyperLink ID="H2" CssClass="help" runat="server" NavigateUrl="http://www.livetecs.com/timelivehelp/" Target="_blank">
+                 <asp:Literal ID="L7" runat="server" Text="<%$ Resources:TimeLive.Resource, Help%>" />"<asp:Image ID="Image2" runat="server" ImageUrl="~/Images/Help.gif" ToolTip="<%$ Resources:TimeLive.Resource, Help%> " />
+            </asp:HyperLink>  
+            <%End If%>
+                </td>
+             </tr>
+        </table>
+               
+                       
+            </td>
+            
+    </tr>
+	<tr bgcolor="#003366">
+    <TD style="HEIGHT: 5px; border:green 0px solid;" bgColor=#000033>
+        <asp:LoginView ID="LoginView1" runat="server">
+            <LoggedInTemplate>
+                <uc5:ctlTopMenu ID="TM" runat="server" />
+            </LoggedInTemplate>
+            <AnonymousTemplate>
+            </AnonymousTemplate>
+        </asp:LoginView>
+      </td>
+  </tr>
+	<tr bgcolor="#000033">
+		<td style="height: 5px; border:green 0px solid;"><asp:Image ID="Image4" runat="server" ImageUrl="~/Images/spacer.gif" width="1" height="1" /></td>
+	</tr>
+<asp:ContentPlaceHolder ID="CB" runat="server">
+                                      </asp:ContentPlaceHolder>
+</table>
+</form>
+</body>
+</html>
+            <script type="text/javascript" language="jscript">
+                var obj
+           //     debugger
+                col = window.document.getElementsByName("ctl00$ctl00$ContentPlaceHolderBody$ContentPlaceHolderBody$btnWeekShow")
+                if (col.length > 0 ) {
+                    obj = col.item(0)
+                    obj.disabled = false;
+                    obj.visible = true;
+                
+                    obj = window.document.getElementsByName("ctl00$ctl00$ContentPlaceHolderBody$ContentPlaceHolderBody$CtlAccountEmployeeTimeEntryWeekView1$WeekButton1").item(0)
+                    obj.disabled = false;
+                    obj.visible = true;
+                    obj.className = "";
+                    
+                    obj = window.document.getElementsByName("ctl00$ctl00$ContentPlaceHolderBody$ContentPlaceHolderBody$CtlAccountEmployeeTimeEntryWeekView1$btnSubmit").item(0)
+                    obj.disabled = false;
+                    obj.visible = true;
+                    obj.className = "";
+                }
+            </script>

@@ -1,0 +1,8 @@
+DevExpress.Patch.BConnect, DevExpress.Patch.Vsa, Version=11.0.0.4, Culture=neutral, PublicKeyToken=7fc7bfca2443de66
+DevExpress.XtraReports.Web.ReportViewer, DevExpress.XtraReports.v11.1.Web, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraReports.Web.ReportToolbar, DevExpress.XtraReports.v11.1.Web, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+C1.Web.C1WebSplitter.C1WebSplitter, C1.Web.C1WebSplitter.2, Version=2.0.20083.66, Culture=neutral, PublicKeyToken=4179bda1f6069789
+C1.Web.C1WebReport.C1WebReport, C1.Web.C1WebReport.2, Version=2.5.20073.260, Culture=neutral, PublicKeyToken=79882d576c6336da
+C1.Web.Command.C1WebTabStrip, C1.Web.Command.2, Version=2.0.20063.108, Culture=neutral, PublicKeyToken=96d8a77dc0c22f6b
+C1.Web.C1WebReport.C1WebReport, C1.Web.C1WebReport.2, Version=2.5.20063.223, Culture=neutral, PublicKeyToken=79882d576c6336da
+C1.Web.C1Input.C1WebMaskEdit, C1.Web.C1Input.2, Version=2.0.20063.34, Culture=neutral, PublicKeyToken=96d8a77dc0c22f6b

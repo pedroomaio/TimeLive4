@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1050/TimeLiveWeb/services/TaskService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:element name="DoWork">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoWorkResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTasks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountProjectId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTasksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetTasksResult" nillable="true" type="q1:ArrayOfProjectTask" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAccountProjectTask">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountProjectId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="ParentAccountProjectTaskId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="TaskName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TaskDescription" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CompletedPercent" type="xs:double" />
+        <xs:element minOccurs="0" name="DeadlineDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Original_AccountProjectTaskId" type="xs:int" />
+        <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="IsParentTask" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Duration" type="xs:double" />
+        <xs:element minOccurs="0" name="Predecessors" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAccountProjectTaskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAccountProjectTaskResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddAccountProjectTask">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountProjectId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="ParentAccountProjectTaskId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="TaskName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TaskDescription" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CompletedPercent" type="xs:double" />
+        <xs:element minOccurs="0" name="DeadlineDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Duration" type="xs:double" />
+        <xs:element minOccurs="0" name="Predecessors" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddAccountProjectTaskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="AddAccountProjectTaskResult" nillable="true" type="q2:ArrayOfProjectTask" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAccountProjectTask">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccountProjectTaskId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAccountProjectTaskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAccountProjectTaskResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetPermissionForTask">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetPermissionForTaskResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="SetPermissionForTaskResult" nillable="true" type="q3:ArrayOfProjectTask" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,4860 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="]" xml:space="preserve">
+    <value>只需点击“转到登录页”,浏览到下面的登录页。</value>
+  </data>
+  <data name="&lt;All&gt;" xml:space="preserve">
+    <value>&lt;所有&gt;</value>
+  </data>
+  <data name="&lt;None&gt;" xml:space="preserve">
+    <value>&lt;无&gt;</value>
+  </data>
+  <data name="&lt;RootLevel&gt;" xml:space="preserve">
+    <value>&lt;根级别&gt;</value>
+  </data>
+  <data name="100% satisfaction guaranteed or your money back" xml:space="preserve">
+    <value>保证100%满意,否则退还款项</value>
+  </data>
+  <data name="24x7 Customer Support" xml:space="preserve">
+    <value>24x7客户支持</value>
+  </data>
+  <data name="30 Day Money Back Guarantee" xml:space="preserve">
+    <value>30天退款保证</value>
+  </data>
+  <data name="Absence" xml:space="preserve">
+    <value>请假</value>
+  </data>
+  <data name="Absence Description" xml:space="preserve">
+    <value>请假描述</value>
+  </data>
+  <data name="Absence Description:" xml:space="preserve">
+    <value>请假原因描述：</value>
+  </data>
+  <data name="Absence Summary Report" xml:space="preserve">
+    <value>请假情况汇总</value>
+  </data>
+  <data name="Absence Type" xml:space="preserve">
+    <value>请假类型</value>
+  </data>
+  <data name="Absence Type Information" xml:space="preserve">
+    <value>请假类型信息</value>
+  </data>
+  <data name="Absence Type List" xml:space="preserve">
+    <value>请假类型列表</value>
+  </data>
+  <data name="Absence Types" xml:space="preserve">
+    <value>请假类型</value>
+  </data>
+  <data name="Absence:" xml:space="preserve">
+    <value>请假：</value>
+  </data>
+  <data name="Absent" xml:space="preserve">
+    <value>请假</value>
+  </data>
+  <data name="Access Allowed From IP:" xml:space="preserve">
+    <value>允许访问的IP地址：</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>帐户</value>
+  </data>
+  <data name="Account Disable" xml:space="preserve">
+    <value>禁用帐户</value>
+  </data>
+  <data name="Account Employee Timesheet Submission Status Report" xml:space="preserve">
+    <value>帐户员工的工时提交状态报告</value>
+  </data>
+  <data name="Account Expiry" xml:space="preserve">
+    <value>帐户到期</value>
+  </data>
+  <data name="Account Id" xml:space="preserve">
+    <value>帐户ID</value>
+  </data>
+  <data name="Account Information (Organization Information)" xml:space="preserve">
+    <value>帐户信息(组织信息)</value>
+  </data>
+  <data name="Account Invoice Form" xml:space="preserve">
+    <value>帐户发票表单</value>
+  </data>
+  <data name="Account Location" xml:space="preserve">
+    <value>账户所在地</value>
+  </data>
+  <data name="Account Login" xml:space="preserve">
+    <value>登录帐户</value>
+  </data>
+  <data name="Account Name" xml:space="preserve">
+    <value>帐户名称：</value>
+  </data>
+  <data name="Account Priority" xml:space="preserve">
+    <value>帐户优先级</value>
+  </data>
+  <data name="Account Setup" xml:space="preserve">
+    <value>帐户设置</value>
+  </data>
+  <data name="Account Time Expense Billing" xml:space="preserve">
+    <value>帐户时间费用台帐</value>
+  </data>
+  <data name="Account Time Expense Billing Information" xml:space="preserve">
+    <value>帐户时间费用台帐信息</value>
+  </data>
+  <data name="Account Type Id" xml:space="preserve">
+    <value>帐户类型ID</value>
+  </data>
+  <data name="Activate" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="Activation Failed" xml:space="preserve">
+    <value>激活失败</value>
+  </data>
+  <data name="Activation_text" xml:space="preserve">
+    <value>激活字符</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>活动的</value>
+  </data>
+  <data name="Active Status:" xml:space="preserve">
+    <value>活动状态：</value>
+  </data>
+  <data name="Activities" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="Activity Code" xml:space="preserve">
+    <value>活动编码</value>
+  </data>
+  <data name="Activity Name" xml:space="preserve">
+    <value>活动名称</value>
+  </data>
+  <data name="Actual Amount" xml:space="preserve">
+    <value>实际金额</value>
+  </data>
+  <data name="Actual Amount (BaseCurrency)" xml:space="preserve">
+    <value>实际金额（ 本币 ）</value>
+  </data>
+  <data name="Actual Billing Rate" xml:space="preserve">
+    <value>实际结算利率</value>
+  </data>
+  <data name="Actual Cost (BaseCurrency)" xml:space="preserve">
+    <value>实际成本（ 本币 ）</value>
+  </data>
+  <data name="Actual Hours" xml:space="preserve">
+    <value>实际小时数</value>
+  </data>
+  <data name="Actual Time" xml:space="preserve">
+    <value>实际时间</value>
+  </data>
+  <data name="Add Client" xml:space="preserve">
+    <value>添加客户</value>
+  </data>
+  <data name="Add Employee" xml:space="preserve">
+    <value>添加员工</value>
+  </data>
+  <data name="Add New Expense Sheet" xml:space="preserve">
+    <value>添加新的费用表</value>
+  </data>
+  <data name="Add New Report" xml:space="preserve">
+    <value>添加新的报告</value>
+  </data>
+  <data name="Add Project" xml:space="preserve">
+    <value>添加项目</value>
+  </data>
+  <data name="Add Task" xml:space="preserve">
+    <value>添加任务</value>
+  </data>
+  <data name="Add Time Off Request" xml:space="preserve">
+    <value>添加时间关闭请求</value>
+  </data>
+  <data name="Add_text" xml:space="preserve">
+    <value>添加文本</value>
+  </data>
+  <data name="Address Line 1:" xml:space="preserve">
+    <value>第1行地址：</value>
+  </data>
+  <data name="Address Line 2:" xml:space="preserve">
+    <value>第2行地址：</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="Address1:" xml:space="preserve">
+    <value>地址：</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="Address2:" xml:space="preserve">
+    <value>地址：</value>
+  </data>
+  <data name="Admin Options" xml:space="preserve">
+    <value>管理选项</value>
+  </data>
+  <data name="Admin Pages" xml:space="preserve">
+    <value>管理页面</value>
+  </data>
+  <data name="Admin Reports" xml:space="preserve">
+    <value>管理报告</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>行政管理</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="Administrator / Project Reports" xml:space="preserve">
+    <value>管理员/项目报告</value>
+  </data>
+  <data name="Administrator Password:" xml:space="preserve">
+    <value>管理员密码：</value>
+  </data>
+  <data name="Administrator Username:" xml:space="preserve">
+    <value>管理员用户名：</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>先进的</value>
+  </data>
+  <data name="Air" xml:space="preserve">
+    <value>飞机</value>
+  </data>
+  <data name="Air Travel" xml:space="preserve">
+    <value>飞机旅行</value>
+  </data>
+  <data name="Airport Tax" xml:space="preserve">
+    <value>机场税</value>
+  </data>
+  <data name="Airport Tax :" xml:space="preserve">
+    <value>机场税：</value>
+  </data>
+  <data name="Airport Tax:" xml:space="preserve">
+    <value>机场税：</value>
+  </data>
+  <data name="AirportTax:" xml:space="preserve">
+    <value>机场税：</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="All Client Report" xml:space="preserve">
+    <value>所有客户的报告</value>
+  </data>
+  <data name="All Clients of Organization" xml:space="preserve">
+    <value>所有客户的组织</value>
+  </data>
+  <data name="All Clients Report" xml:space="preserve">
+    <value>所有客户的报告</value>
+  </data>
+  <data name="All Department Report" xml:space="preserve">
+    <value>所有部门的报告</value>
+  </data>
+  <data name="All Departments of Organization" xml:space="preserve">
+    <value>各部门组织</value>
+  </data>
+  <data name="All Departments Report" xml:space="preserve">
+    <value>所有部门的报告</value>
+  </data>
+  <data name="All Employee Task:" xml:space="preserve">
+    <value>全体员工的任务：</value>
+  </data>
+  <data name="All Employees Of Organization" xml:space="preserve">
+    <value>所有组织的员工</value>
+  </data>
+  <data name="All Employees Report" xml:space="preserve">
+    <value>所有雇员报告</value>
+  </data>
+  <data name="All Expenses" xml:space="preserve">
+    <value>所有费用</value>
+  </data>
+  <data name="All External User Report" xml:space="preserve">
+    <value>所有外部用户报告</value>
+  </data>
+  <data name="All External Users Report" xml:space="preserve">
+    <value>所有外部用户报告</value>
+  </data>
+  <data name="All Location Report" xml:space="preserve">
+    <value>所有地点的报告</value>
+  </data>
+  <data name="All Locations Report" xml:space="preserve">
+    <value>所有地点的报告</value>
+  </data>
+  <data name="All Open Expenses" xml:space="preserve">
+    <value>所有未完成的费用</value>
+  </data>
+  <data name="All Project Task:" xml:space="preserve">
+    <value>所有项目的任务：</value>
+  </data>
+  <data name="All Projects of Organization" xml:space="preserve">
+    <value>所有组织的项目</value>
+  </data>
+  <data name="All Projects Report" xml:space="preserve">
+    <value>所有项目的报告</value>
+  </data>
+  <data name="Allow All" xml:space="preserve">
+    <value>允许所有</value>
+  </data>
+  <data name="Allow Customization" xml:space="preserve">
+    <value>允许定制</value>
+  </data>
+  <data name="Allow Own Approval" xml:space="preserve">
+    <value>允许自己审批</value>
+  </data>
+  <data name="Allow Own Project" xml:space="preserve">
+    <value>允许自己的项目</value>
+  </data>
+  <data name="Allow Own Report" xml:space="preserve">
+    <value>允许自己的报告</value>
+  </data>
+  <data name="Allow Own Sub-Ordinates" xml:space="preserve">
+    <value>Allow Own Sub-Ordinates</value>
+  </data>
+  <data name="Allow Own Team" xml:space="preserve">
+    <value>允许自己的团队</value>
+  </data>
+  <data name="Alls" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="American Express" xml:space="preserve">
+    <value>美国联邦快递</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="Amount (BaseCurrency)" xml:space="preserve">
+    <value>数额（ 本币 ）</value>
+  </data>
+  <data name="Amount:" xml:space="preserve">
+    <value>金额：</value>
+  </data>
+  <data name="Application Preference" xml:space="preserve">
+    <value>程序首选项</value>
+  </data>
+  <data name="Application Preferences" xml:space="preserve">
+    <value>程序首选项</value>
+  </data>
+  <data name="Application Setup" xml:space="preserve">
+    <value>应用程序安装</value>
+  </data>
+  <data name="Approval Date" xml:space="preserve">
+    <value>批准日期</value>
+  </data>
+  <data name="Approval Not Required" xml:space="preserve">
+    <value>不需要批准</value>
+  </data>
+  <data name="Approval Path" xml:space="preserve">
+    <value>批准路径</value>
+  </data>
+  <data name="Approval Sequence" xml:space="preserve">
+    <value>批准序列</value>
+  </data>
+  <data name="Approval Status" xml:space="preserve">
+    <value>批准状态</value>
+  </data>
+  <data name="Approval Status:" xml:space="preserve">
+    <value>批准状态：</value>
+  </data>
+  <data name="Approval Type" xml:space="preserve">
+    <value>批准类型</value>
+  </data>
+  <data name="Approval Type List" xml:space="preserve">
+    <value>批准类型列表</value>
+  </data>
+  <data name="Approval Type Name" xml:space="preserve">
+    <value>批准型号名称</value>
+  </data>
+  <data name="Approval Type Name:" xml:space="preserve">
+    <value>批准类型名称：</value>
+  </data>
+  <data name="Approval Type:" xml:space="preserve">
+    <value>批准类型：</value>
+  </data>
+  <data name="Approval Types" xml:space="preserve">
+    <value>批准类型</value>
+  </data>
+  <data name="Approvals" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="ApprovalStatus" xml:space="preserve">
+    <value>批准状态</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="Approved By :" xml:space="preserve">
+    <value>批准者：</value>
+  </data>
+  <data name="Approved By Employee Name" xml:space="preserve">
+    <value>按员工姓名批准</value>
+  </data>
+  <data name="Approved By:" xml:space="preserve">
+    <value>批准者：</value>
+  </data>
+  <data name="Approved Date" xml:space="preserve">
+    <value>批准日期</value>
+  </data>
+  <data name="Approved On" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="Approved On :" xml:space="preserve">
+    <value>批准：</value>
+  </data>
+  <data name="Approved Status:" xml:space="preserve">
+    <value>批准状态：</value>
+  </data>
+  <data name="Approved:" xml:space="preserve">
+    <value>批准：</value>
+  </data>
+  <data name="Approver Comments" xml:space="preserve">
+    <value>批准评论</value>
+  </data>
+  <data name="Approver Email Address" xml:space="preserve">
+    <value>批准人员的电子邮件地址</value>
+  </data>
+  <data name="Approver Name" xml:space="preserve">
+    <value>审批人姓名</value>
+  </data>
+  <data name="Approver Type" xml:space="preserve">
+    <value>审批人类型</value>
+  </data>
+  <data name="Approver's Comments" xml:space="preserve">
+    <value>审批人的评论</value>
+  </data>
+  <data name="Apprvoed Hours" xml:space="preserve">
+    <value>批准时间</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>存档</value>
+  </data>
+  <data name="Assign To" xml:space="preserve">
+    <value>指派给</value>
+  </data>
+  <data name="Assigned By" xml:space="preserve">
+    <value>指派自</value>
+  </data>
+  <data name="Assigned To" xml:space="preserve">
+    <value>分配给</value>
+  </data>
+  <data name="Assigned To:" xml:space="preserve">
+    <value>分配给：</value>
+  </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Attachment Add Notification" xml:space="preserve">
+    <value>带通知的附件</value>
+  </data>
+  <data name="Attachment Information" xml:space="preserve">
+    <value>附件信息</value>
+  </data>
+  <data name="Attachment List" xml:space="preserve">
+    <value>附件列表</value>
+  </data>
+  <data name="Attachment Name" xml:space="preserve">
+    <value>附件名称</value>
+  </data>
+  <data name="Attachment Name:" xml:space="preserve">
+    <value>附件名称：</value>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>出勤</value>
+  </data>
+  <data name="Attendance Date" xml:space="preserve">
+    <value>出勤日期</value>
+  </data>
+  <data name="Attendance Detail Report" xml:space="preserve">
+    <value>出勤详细报告</value>
+  </data>
+  <data name="AttendanceDetailReport" xml:space="preserve">
+    <value>出勤详细报告</value>
+  </data>
+  <data name="Audit" xml:space="preserve">
+    <value>审计</value>
+  </data>
+  <data name="Audit Trail" xml:space="preserve">
+    <value>查账索引</value>
+  </data>
+  <data name="Audit Trial" xml:space="preserve">
+    <value>查账索引</value>
+  </data>
+  <data name="Australia, Dollars" xml:space="preserve">
+    <value>澳大利亚，美元</value>
+  </data>
+  <data name="Authentication Setting" xml:space="preserve">
+    <value>认证设置</value>
+  </data>
+  <data name="Auto" xml:space="preserve">
+    <value>自动</value>
+  </data>
+  <data name="Auto Rental" xml:space="preserve">
+    <value>汽车租赁</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>可用的</value>
+  </data>
+  <data name="Available Hours" xml:space="preserve">
+    <value>可用时间</value>
+  </data>
+  <data name="Back_text" xml:space="preserve">
+    <value>后面的文字</value>
+  </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>本币</value>
+  </data>
+  <data name="Base Currency:" xml:space="preserve">
+    <value>本币：</value>
+  </data>
+  <data name="Begin Date" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="Begin Date:" xml:space="preserve">
+    <value>开始日期：</value>
+  </data>
+  <data name="Bill Date" xml:space="preserve">
+    <value>账单日期</value>
+  </data>
+  <data name="Bill Date:" xml:space="preserve">
+    <value>账单日期：</value>
+  </data>
+  <data name="Bill Hours" xml:space="preserve">
+    <value>账单时间</value>
+  </data>
+  <data name="Billable" xml:space="preserve">
+    <value>结算</value>
+  </data>
+  <data name="Billable Hours" xml:space="preserve">
+    <value>结算时间</value>
+  </data>
+  <data name="Billable Total Hours" xml:space="preserve">
+    <value>结算的总时数</value>
+  </data>
+  <data name="Billable:" xml:space="preserve">
+    <value>结算：</value>
+  </data>
+  <data name="Billed" xml:space="preserve">
+    <value>结算</value>
+  </data>
+  <data name="Billed Amount" xml:space="preserve">
+    <value>结算金额</value>
+  </data>
+  <data name="Billed:" xml:space="preserve">
+    <value>结算：</value>
+  </data>
+  <data name="Billing" xml:space="preserve">
+    <value>帐单</value>
+  </data>
+  <data name="Billing Address:" xml:space="preserve">
+    <value>帐单地址：</value>
+  </data>
+  <data name="Billing Amount" xml:space="preserve">
+    <value>帐单金额</value>
+  </data>
+  <data name="Billing Amount (BaseCurrency)" xml:space="preserve">
+    <value>帐单金额（ 本币 ）</value>
+  </data>
+  <data name="Billing Category" xml:space="preserve">
+    <value>帐单类别</value>
+  </data>
+  <data name="Billing Category:" xml:space="preserve">
+    <value>帐单类别：</value>
+  </data>
+  <data name="Billing Cycle End Date" xml:space="preserve">
+    <value>帐期结束日期</value>
+  </data>
+  <data name="Billing Cycle End Date:" xml:space="preserve">
+    <value>帐期结束日期：</value>
+  </data>
+  <data name="Billing Cycle Start Date" xml:space="preserve">
+    <value>帐期开始日期</value>
+  </data>
+  <data name="Billing Cycle Start Date:" xml:space="preserve">
+    <value>帐期开始日期：</value>
+  </data>
+  <data name="Billing Rate" xml:space="preserve">
+    <value>结算利率</value>
+  </data>
+  <data name="Billing Rate (BaseCurrency)" xml:space="preserve">
+    <value>结算利率（ 本币 ）</value>
+  </data>
+  <data name="Billing Rate Currency" xml:space="preserve">
+    <value>结算利率</value>
+  </data>
+  <data name="Billing Rate Currency:" xml:space="preserve">
+    <value>结算利率货币：</value>
+  </data>
+  <data name="Billing Rate End Date:" xml:space="preserve">
+    <value>结算利率结束日期：</value>
+  </data>
+  <data name="Billing Rate History" xml:space="preserve">
+    <value>结算利率历史记录</value>
+  </data>
+  <data name="Billing Rate Information" xml:space="preserve">
+    <value>结算利率的资料</value>
+  </data>
+  <data name="Billing Rate List" xml:space="preserve">
+    <value>结算利率列表</value>
+  </data>
+  <data name="Billing Rate Start Date:" xml:space="preserve">
+    <value>结算利率开始日期：</value>
+  </data>
+  <data name="Billing Rate Type" xml:space="preserve">
+    <value>结算利率类型</value>
+  </data>
+  <data name="Billing Rate Type:" xml:space="preserve">
+    <value>结算利率类型：</value>
+  </data>
+  <data name="Billing Rate:" xml:space="preserve">
+    <value>结算利率：</value>
+  </data>
+  <data name="Billing Rates" xml:space="preserve">
+    <value>结算利率</value>
+  </data>
+  <data name="Billing Report" xml:space="preserve">
+    <value>结算报告</value>
+  </data>
+  <data name="Billing Setup" xml:space="preserve">
+    <value>结算设置</value>
+  </data>
+  <data name="Billing Type" xml:space="preserve">
+    <value>结算类型</value>
+  </data>
+  <data name="Billing Type Information" xml:space="preserve">
+    <value>结算类型信息</value>
+  </data>
+  <data name="Billing Type List" xml:space="preserve">
+    <value>结算类型列表</value>
+  </data>
+  <data name="Billing Type:" xml:space="preserve">
+    <value>结算类型：</value>
+  </data>
+  <data name="Billing Types" xml:space="preserve">
+    <value>结算类型</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>两者</value>
+  </data>
+  <data name="Both downloadable version and hosted version can be setup instantly." xml:space="preserve">
+    <value>这两个下载版本和托管版可以即刻安装。</value>
+  </data>
+  <data name="Browse_text" xml:space="preserve">
+    <value>浏览文本</value>
+  </data>
+  <data name="Bug" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="Buy Tracking" xml:space="preserve">
+    <value>购买跟踪</value>
+  </data>
+  <data name="Canada, Dollars" xml:space="preserve">
+    <value>加拿大，美元</value>
+  </data>
+  <data name="Cancel_text" xml:space="preserve">
+    <value>取消文字</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Caption" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="Car" xml:space="preserve">
+    <value>轿车</value>
+  </data>
+  <data name="Car Mileage" xml:space="preserve">
+    <value>车程</value>
+  </data>
+  <data name="Carry Forward" xml:space="preserve">
+    <value>结转</value>
+  </data>
+  <data name="Carry Over" xml:space="preserve">
+    <value>结转</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>延期</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="Change Base Currency" xml:space="preserve">
+    <value>修改本币</value>
+  </data>
+  <data name="Change plan to..." xml:space="preserve">
+    <value>改变计划至 ...</value>
+  </data>
+  <data name="Check All" xml:space="preserve">
+    <value>选取所有</value>
+  </data>
+  <data name="Check All Approved" xml:space="preserve">
+    <value>选取所有批准</value>
+  </data>
+  <data name="Check-All" xml:space="preserve">
+    <value>选取所有</value>
+  </data>
+  <data name="Check-All Approved" xml:space="preserve">
+    <value>选取所有核准</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="City:" xml:space="preserve">
+    <value>城市：</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="Client --&gt; TeamLead" xml:space="preserve">
+    <value>客户--&gt;团队领导</value>
+  </data>
+  <data name="Client Amount (BaseCurrency)" xml:space="preserve">
+    <value>客户总额 （本币）</value>
+  </data>
+  <data name="Client Contact" xml:space="preserve">
+    <value>客户联系方式</value>
+  </data>
+  <data name="Client Contact Information" xml:space="preserve">
+    <value>客户联系信息</value>
+  </data>
+  <data name="Client Contact List" xml:space="preserve">
+    <value>客户联络名单</value>
+  </data>
+  <data name="Client Contact Name" xml:space="preserve">
+    <value>客户联系人姓名</value>
+  </data>
+  <data name="Client Contact:" xml:space="preserve">
+    <value>客户联系方式：</value>
+  </data>
+  <data name="Client Contacts" xml:space="preserve">
+    <value>客户联系方式</value>
+  </data>
+  <data name="Client Department" xml:space="preserve">
+    <value>主管部门</value>
+  </data>
+  <data name="Client Department Code" xml:space="preserve">
+    <value>主管部门编号</value>
+  </data>
+  <data name="Client Department Information" xml:space="preserve">
+    <value>主管部门信息</value>
+  </data>
+  <data name="Client Department List" xml:space="preserve">
+    <value>主管部门列表</value>
+  </data>
+  <data name="Client Department Location" xml:space="preserve">
+    <value>主管部门所在地</value>
+  </data>
+  <data name="Client Department Name" xml:space="preserve">
+    <value>主管部门名称</value>
+  </data>
+  <data name="Client Department:" xml:space="preserve">
+    <value>主管部门：</value>
+  </data>
+  <data name="Client Departments" xml:space="preserve">
+    <value>主管部门</value>
+  </data>
+  <data name="Client Id" xml:space="preserve">
+    <value>客户Id</value>
+  </data>
+  <data name="Client List" xml:space="preserve">
+    <value>客户名单</value>
+  </data>
+  <data name="Client Name" xml:space="preserve">
+    <value>客户名称</value>
+  </data>
+  <data name="Client Name:" xml:space="preserve">
+    <value>客户名称：</value>
+  </data>
+  <data name="Client Nick" xml:space="preserve">
+    <value>客户昵称</value>
+  </data>
+  <data name="Client Nick:" xml:space="preserve">
+    <value>客户昵称：</value>
+  </data>
+  <data name="Client:" xml:space="preserve">
+    <value>客户：</value>
+  </data>
+  <data name="ClientList-ListOfAllClientsDefinedByAccount" xml:space="preserve">
+    <value>客户列表-列出所有帐户定义的客户</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="Clients Information" xml:space="preserve">
+    <value>客户信息</value>
+  </data>
+  <data name="Clients:" xml:space="preserve">
+    <value>客户：</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="Column Order" xml:space="preserve">
+    <value>列排序</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="Comments By:" xml:space="preserve">
+    <value>评论人：</value>
+  </data>
+  <data name="Comments Information" xml:space="preserve">
+    <value>评论信息</value>
+  </data>
+  <data name="Comments List" xml:space="preserve">
+    <value>评论列表</value>
+  </data>
+  <data name="Comments:" xml:space="preserve">
+    <value>评论：</value>
+  </data>
+  <data name="Company Own Logo" xml:space="preserve">
+    <value>公司自己的徽标：</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Completed (%)" xml:space="preserve">
+    <value>完成（ ％ ）</value>
+  </data>
+  <data name="Completed Status:" xml:space="preserve">
+    <value>完成状态：</value>
+  </data>
+  <data name="Completed%:" xml:space="preserve">
+    <value>完成％ ：</value>
+  </data>
+  <data name="Completed:" xml:space="preserve">
+    <value>完成：</value>
+  </data>
+  <data name="Computer Hardware" xml:space="preserve">
+    <value>计算机硬件</value>
+  </data>
+  <data name="Consolidated" xml:space="preserve">
+    <value>综合</value>
+  </data>
+  <data name="Construction" xml:space="preserve">
+    <value>建设</value>
+  </data>
+  <data name="Consultant" xml:space="preserve">
+    <value>顾问</value>
+  </data>
+  <data name="Consume Hours" xml:space="preserve">
+    <value>花费时间</value>
+  </data>
+  <data name="Consumed" xml:space="preserve">
+    <value>花费的</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>承包商</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Copy Activities" xml:space="preserve">
+    <value>复制活动</value>
+  </data>
+  <data name="Copy From" xml:space="preserve">
+    <value>复制自:</value>
+  </data>
+  <data name="Copy Timesheet" xml:space="preserve">
+    <value>复制工时表</value>
+  </data>
+  <data name="Copyright 2007 - 2009 Livetecs LLC. All rights reserved." xml:space="preserve">
+    <value>版权所有2007 - 2011 Livetecs公司。保留所有权利。</value>
+  </data>
+  <data name="Cost Center" xml:space="preserve">
+    <value>成本中心</value>
+  </data>
+  <data name="Cost Center Code" xml:space="preserve">
+    <value>成本中心编号</value>
+  </data>
+  <data name="Cost Center Code:" xml:space="preserve">
+    <value>成本中心编号：</value>
+  </data>
+  <data name="Cost Center Information" xml:space="preserve">
+    <value>成本中心的信息</value>
+  </data>
+  <data name="Cost Center List" xml:space="preserve">
+    <value>成本中心名单</value>
+  </data>
+  <data name="Cost Center:" xml:space="preserve">
+    <value>成本中心：</value>
+  </data>
+  <data name="Costing" xml:space="preserve">
+    <value>花费</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>合计</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>国家</value>
+  </data>
+  <data name="Country:" xml:space="preserve">
+    <value>国家：</value>
+  </data>
+  <data name="Created Date From:" xml:space="preserve">
+    <value>创建起始日期：</value>
+  </data>
+  <data name="Created Date Upto:" xml:space="preserve">
+    <value>创建终止日期：</value>
+  </data>
+  <data name="Creates a billing summary report per client, per project for each task within a selected date range." xml:space="preserve">
+    <value>创建一个在选定日期范围的每个项目和客户的每个任务的结算摘要。</value>
+  </data>
+  <data name="CSV" xml:space="preserve">
+    <value>CSV格式</value>
+  </data>
+  <data name="CSV Import Export" xml:space="preserve">
+    <value>CSV格式输入输出</value>
+  </data>
+  <data name="Currencies" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="Currencies Information" xml:space="preserve">
+    <value>货币信息</value>
+  </data>
+  <data name="Currencies List" xml:space="preserve">
+    <value>货币列表</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="Currency Already Exist" xml:space="preserve">
+    <value>货币已经存在</value>
+  </data>
+  <data name="Currency Code" xml:space="preserve">
+    <value>货币代码</value>
+  </data>
+  <data name="Currency Currency:" xml:space="preserve">
+    <value>当前货币：</value>
+  </data>
+  <data name="Currency Symbol" xml:space="preserve">
+    <value>货币符号：</value>
+  </data>
+  <data name="Currency:" xml:space="preserve">
+    <value>货币：</value>
+  </data>
+  <data name="Current Base Currency:" xml:space="preserve">
+    <value>当前本币：</value>
+  </data>
+  <data name="Current Date:" xml:space="preserve">
+    <value>当前日期：</value>
+  </data>
+  <data name="Current Week:" xml:space="preserve">
+    <value>本周：</value>
+  </data>
+  <data name="Customer can request their personalized customization." xml:space="preserve">
+    <value>客户可以要求个性化定制。</value>
+  </data>
+  <data name="Customer Information" xml:space="preserve">
+    <value>客户信息</value>
+  </data>
+  <data name="Customizable" xml:space="preserve">
+    <value>可定制</value>
+  </data>
+  <data name="Customize" xml:space="preserve">
+    <value>自定义</value>
+  </data>
+  <data name="Customized" xml:space="preserve">
+    <value>定制</value>
+  </data>
+  <data name="Daily Expense Approval Pending Notification" xml:space="preserve">
+    <value>每天费用批准的待定通知</value>
+  </data>
+  <data name="Daily Time Off Approval Pending Notification" xml:space="preserve">
+    <value>每天的请假批准待定通知</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification" xml:space="preserve">
+    <value>每天输入的时间等待通知</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Administrator" xml:space="preserve">
+    <value>每天输入的时间待定通知到管理员</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Employee Manager" xml:space="preserve">
+    <value>每天输入的时间待定通知到部门经理</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Project Manager" xml:space="preserve">
+    <value>每天输入的时间待定通知到项目经理</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Team Lead" xml:space="preserve">
+    <value>每天输入的时间待定通知给团队领导</value>
+  </data>
+  <data name="Daily Timesheet" xml:space="preserve">
+    <value>每日时间表</value>
+  </data>
+  <data name="Daily Timesheet Approval Pending Notification" xml:space="preserve">
+    <value>每日工时审批待定通知</value>
+  </data>
+  <data name="Data Source" xml:space="preserve">
+    <value>数据源</value>
+  </data>
+  <data name="Data Source:" xml:space="preserve">
+    <value>数据源：</value>
+  </data>
+  <data name="Database Backup" xml:space="preserve">
+    <value>数据库备份</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Date Range:" xml:space="preserve">
+    <value>日期范围：</value>
+  </data>
+  <data name="Date:" xml:space="preserve">
+    <value>日期：</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>白天</value>
+  </data>
+  <data name="Day No" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Day No." xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Day Off" xml:space="preserve">
+    <value>休息日</value>
+  </data>
+  <data name="Day View" xml:space="preserve">
+    <value>每天检视</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Days Off" xml:space="preserve">
+    <value>休息日</value>
+  </data>
+  <data name="Days Off:" xml:space="preserve">
+    <value>休息日：</value>
+  </data>
+  <data name="Deadline" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="Deadline:" xml:space="preserve">
+    <value>截止日期：</value>
+  </data>
+  <data name="DeadlineDate" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>默认</value>
+  </data>
+  <data name="Default Billing Rate" xml:space="preserve">
+    <value>默认结算率</value>
+  </data>
+  <data name="Default Billing Rate:" xml:space="preserve">
+    <value>默认结算率：</value>
+  </data>
+  <data name="Default Cost Center" xml:space="preserve">
+    <value>默认成本中心</value>
+  </data>
+  <data name="Default Currency" xml:space="preserve">
+    <value>默认的货币</value>
+  </data>
+  <data name="Default Currency:" xml:space="preserve">
+    <value>默认的货币：</value>
+  </data>
+  <data name="Default Department" xml:space="preserve">
+    <value>默认部门</value>
+  </data>
+  <data name="Default Expense Rate:" xml:space="preserve">
+    <value>默认费用率：</value>
+  </data>
+  <data name="Default Location" xml:space="preserve">
+    <value>默认所在地</value>
+  </data>
+  <data name="Default Milestone" xml:space="preserve">
+    <value>默认里程碑</value>
+  </data>
+  <data name="Default Page" xml:space="preserve">
+    <value>默认页：</value>
+  </data>
+  <data name="Default Priority" xml:space="preserve">
+    <value>默认优先级</value>
+  </data>
+  <data name="Default Time Entry Mode:" xml:space="preserve">
+    <value>默认上班时间模式：</value>
+  </data>
+  <data name="Delete Selected Item" xml:space="preserve">
+    <value>删除所选项目</value>
+  </data>
+  <data name="Delete_cofirmation" xml:space="preserve">
+    <value>您是否确实要删除这个项目？</value>
+  </data>
+  <data name="Delete_text" xml:space="preserve">
+    <value>删除文本</value>
+  </data>
+  <data name="Demo" xml:space="preserve">
+    <value>演示</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="Department Code" xml:space="preserve">
+    <value>部门编号</value>
+  </data>
+  <data name="Department Code:" xml:space="preserve">
+    <value>部门编号：</value>
+  </data>
+  <data name="Department Id" xml:space="preserve">
+    <value>部门ID</value>
+  </data>
+  <data name="Department Information" xml:space="preserve">
+    <value>部门信息</value>
+  </data>
+  <data name="Department List" xml:space="preserve">
+    <value>部门列表</value>
+  </data>
+  <data name="Department List - List Of All Departments Defined By Account" xml:space="preserve">
+    <value>部门列表-列出所有部门</value>
+  </data>
+  <data name="Department Name" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="Department Name:" xml:space="preserve">
+    <value>部门名称：</value>
+  </data>
+  <data name="Department Wise Timesheet Report" xml:space="preserve">
+    <value>部门智能工时报告</value>
+  </data>
+  <data name="Department:" xml:space="preserve">
+    <value>部门：</value>
+  </data>
+  <data name="DepartmentName" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="Departments" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="Description:" xml:space="preserve">
+    <value>描述：</value>
+  </data>
+  <data name="Detail Expense Report" xml:space="preserve">
+    <value>详细费用报告</value>
+  </data>
+  <data name="Detail report of employee absence in specified data range. Helpfull for payroll department to get list of absent in specified date range." xml:space="preserve">
+    <value>指定数据情况下员工详细的请假报告。有助于工资部门获得请假报表。</value>
+  </data>
+  <data name="Detail report of employee absence in specified data range.Helpfull for payroll department to get list of absent in specified date range." xml:space="preserve">
+    <value>指定数据情况下员工详细的请假报告。有助于工资部门获得请假报表。</value>
+  </data>
+  <data name="Detail Task Report" xml:space="preserve">
+    <value>详细的任务报告</value>
+  </data>
+  <data name="Detail Time Sheet Report" xml:space="preserve">
+    <value>详细的工时报告</value>
+  </data>
+  <data name="Detail TimeSheet Report" xml:space="preserve">
+    <value>详细工时报告</value>
+  </data>
+  <data name="Detailed" xml:space="preserve">
+    <value>详细</value>
+  </data>
+  <data name="Disable Account" xml:space="preserve">
+    <value>禁用的帐户</value>
+  </data>
+  <data name="Disable My Account" xml:space="preserve">
+    <value>禁用我的帐号</value>
+  </data>
+  <data name="Disable Your Account" xml:space="preserve">
+    <value>停用您的帐户</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="Disabled Editing Of Rate:" xml:space="preserve">
+    <value>禁止编辑比率：</value>
+  </data>
+  <data name="Disabled:" xml:space="preserve">
+    <value>禁用：</value>
+  </data>
+  <data name="Disabled_text" xml:space="preserve">
+    <value>禁止的文字</value>
+  </data>
+  <data name="Disabling account will stop any activities in your TimeLive account. Your employee will not be able to login in TimeLive." xml:space="preserve">
+    <value>禁用的帐户将会停止任何活动。您的员工将无法登录TimeLive 。</value>
+  </data>
+  <data name="Discription:" xml:space="preserve">
+    <value>描述：</value>
+  </data>
+  <data name="Downloadable" xml:space="preserve">
+    <value>可供下载</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>有效期</value>
+  </data>
+  <data name="Duration:" xml:space="preserve">
+    <value>有效期：</value>
+  </data>
+  <data name="Earn Hours" xml:space="preserve">
+    <value>挣得小时数</value>
+  </data>
+  <data name="Earn Period" xml:space="preserve">
+    <value>挣得时间</value>
+  </data>
+  <data name="Earned" xml:space="preserve">
+    <value>挣得</value>
+  </data>
+  <data name="Earned Hours" xml:space="preserve">
+    <value>挣得小时数</value>
+  </data>
+  <data name="Edit_text" xml:space="preserve">
+    <value>编辑文本</value>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>教育</value>
+  </data>
+  <data name="Electric Appliances" xml:space="preserve">
+    <value>电器</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>邮件地址</value>
+  </data>
+  <data name="EMail Address:" xml:space="preserve">
+    <value>邮件地址：</value>
+  </data>
+  <data name="EMail Notification" xml:space="preserve">
+    <value>电子邮件通知</value>
+  </data>
+  <data name="EMail Notification Preferences" xml:space="preserve">
+    <value>邮件提醒设置首选项</value>
+  </data>
+  <data name="EMail Preference" xml:space="preserve">
+    <value>电子邮件首选项</value>
+  </data>
+  <data name="EMailAddress" xml:space="preserve">
+    <value>电子邮件地址</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>员工</value>
+  </data>
+  <data name="Employee Absence Detail Report" xml:space="preserve">
+    <value>员工请假详细的报告</value>
+  </data>
+  <data name="Employee Add Notification" xml:space="preserve">
+    <value>职工添加通知</value>
+  </data>
+  <data name="Employee Attendance" xml:space="preserve">
+    <value>员工考勤</value>
+  </data>
+  <data name="Employee Attendance Information" xml:space="preserve">
+    <value>员工考勤信息</value>
+  </data>
+  <data name="Employee Attendance List" xml:space="preserve">
+    <value>员工考勤名单</value>
+  </data>
+  <data name="Employee Attendance Summary Report" xml:space="preserve">
+    <value>员工考勤总结报告</value>
+  </data>
+  <data name="Employee Code" xml:space="preserve">
+    <value>员工编号</value>
+  </data>
+  <data name="Employee Code:" xml:space="preserve">
+    <value>员工编号：</value>
+  </data>
+  <data name="Employee Cost" xml:space="preserve">
+    <value>员工成本</value>
+  </data>
+  <data name="Employee Cost (BaseCurrency)" xml:space="preserve">
+    <value>员工成本（ 本币 ）</value>
+  </data>
+  <data name="Employee Id" xml:space="preserve">
+    <value>员工ID</value>
+  </data>
+  <data name="Employee Information" xml:space="preserve">
+    <value>员工信息</value>
+  </data>
+  <data name="Employee List" xml:space="preserve">
+    <value>员工名单</value>
+  </data>
+  <data name="Employee List Report" xml:space="preserve">
+    <value>员工名单报告</value>
+  </data>
+  <data name="Employee Manager" xml:space="preserve">
+    <value>管理人员</value>
+  </data>
+  <data name="Employee Manager Expense Entry Approvals" xml:space="preserve">
+    <value>管理人员费用入口许可</value>
+  </data>
+  <data name="Employee Manager Time Entry Approvals" xml:space="preserve">
+    <value>管理人员时间入口许可</value>
+  </data>
+  <data name="Employee Manager Time Off Approvals" xml:space="preserve">
+    <value>管理人员请假许可</value>
+  </data>
+  <data name="Employee Manager:" xml:space="preserve">
+    <value>管理人员：</value>
+  </data>
+  <data name="Employee Name" xml:space="preserve">
+    <value>员工姓名</value>
+  </data>
+  <data name="Employee Name:" xml:space="preserve">
+    <value>员工姓名：</value>
+  </data>
+  <data name="Employee Project" xml:space="preserve">
+    <value>员工项目</value>
+  </data>
+  <data name="Employee Project Utilization Report" xml:space="preserve">
+    <value>员工项目利用情况报告</value>
+  </data>
+  <data name="Employee Rate" xml:space="preserve">
+    <value>雇员费率</value>
+  </data>
+  <data name="Employee Rate (BaseCurrency)" xml:space="preserve">
+    <value>雇员费率（ 本币）</value>
+  </data>
+  <data name="Employee Rate Currency" xml:space="preserve">
+    <value>员工花费货币</value>
+  </data>
+  <data name="Employee Rate Currency:" xml:space="preserve">
+    <value>员工花费货币：</value>
+  </data>
+  <data name="Employee Rate:" xml:space="preserve">
+    <value>员工费率：</value>
+  </data>
+  <data name="Employee Status:" xml:space="preserve">
+    <value>雇员状态：</value>
+  </data>
+  <data name="Employee Time Of Policy:" xml:space="preserve">
+    <value>员工的时间政策：</value>
+  </data>
+  <data name="Employee Time off" xml:space="preserve">
+    <value>员工的休假</value>
+  </data>
+  <data name="Employee Time Off Detail" xml:space="preserve">
+    <value>员工休假明细</value>
+  </data>
+  <data name="Employee Timesheet Submission Status Report" xml:space="preserve">
+    <value>员工的工时提交状态报告</value>
+  </data>
+  <data name="Employee Type" xml:space="preserve">
+    <value>员工类型</value>
+  </data>
+  <data name="Employee Type Information" xml:space="preserve">
+    <value>员工类型信息</value>
+  </data>
+  <data name="Employee Type List" xml:space="preserve">
+    <value>员工类型列表</value>
+  </data>
+  <data name="Employee Type:" xml:space="preserve">
+    <value>员工类型：</value>
+  </data>
+  <data name="Employee Types" xml:space="preserve">
+    <value>员工类型</value>
+  </data>
+  <data name="Employee:" xml:space="preserve">
+    <value>员工：</value>
+  </data>
+  <data name="EmployeeList-ListOfAllEmployeesDefinedByAccount" xml:space="preserve">
+    <value>员工列表-列出所有员工</value>
+  </data>
+  <data name="Employees" xml:space="preserve">
+    <value>员工</value>
+  </data>
+  <data name="Employees:" xml:space="preserve">
+    <value>员工：</value>
+  </data>
+  <data name="Enable Disable" xml:space="preserve">
+    <value>启用/禁用</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="End Date:" xml:space="preserve">
+    <value>结束日期：</value>
+  </data>
+  <data name="End Time" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="End Timer" xml:space="preserve">
+    <value>结束定时器</value>
+  </data>
+  <data name="End Timer and Save" xml:space="preserve">
+    <value>结束定时器并保存</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="Entered" xml:space="preserve">
+    <value>进入</value>
+  </data>
+  <data name="Entertainment" xml:space="preserve">
+    <value>娱乐</value>
+  </data>
+  <data name="Entry View Type" xml:space="preserve">
+    <value>进入查看类型</value>
+  </data>
+  <data name="Estimated Amount (Base Currency)" xml:space="preserve">
+    <value>估计金额（本币）</value>
+  </data>
+  <data name="Estimated Cost" xml:space="preserve">
+    <value>估计费用</value>
+  </data>
+  <data name="Estimated Cost (BaseCurrency)" xml:space="preserve">
+    <value>估计费用（本币）</value>
+  </data>
+  <data name="Estimated Cost:" xml:space="preserve">
+    <value>估计费用：</value>
+  </data>
+  <data name="Estimated Duration" xml:space="preserve">
+    <value>预计持续时间</value>
+  </data>
+  <data name="Estimated Hours:" xml:space="preserve">
+    <value>估计小时数：</value>
+  </data>
+  <data name="Estimated Time" xml:space="preserve">
+    <value>估计时间</value>
+  </data>
+  <data name="Estimated Time (Hours):" xml:space="preserve">
+    <value>估计时间（小时） ：</value>
+  </data>
+  <data name="Estimates" xml:space="preserve">
+    <value>估计</value>
+  </data>
+  <data name="Euro Member Countries" xml:space="preserve">
+    <value>欧盟成员国</value>
+  </data>
+  <data name="Exchange Rate" xml:space="preserve">
+    <value>汇率</value>
+  </data>
+  <data name="Exchange Rate History" xml:space="preserve">
+    <value>汇率历史</value>
+  </data>
+  <data name="Exchange Rate Information" xml:space="preserve">
+    <value>汇率信息</value>
+  </data>
+  <data name="Exchange Rate List" xml:space="preserve">
+    <value>汇率列表</value>
+  </data>
+  <data name="Exchange Rate:" xml:space="preserve">
+    <value>汇率：</value>
+  </data>
+  <data name="Expense" xml:space="preserve">
+    <value>花费</value>
+  </data>
+  <data name="Expense Approval" xml:space="preserve">
+    <value>费用审批</value>
+  </data>
+  <data name="Expense Approval Activity" xml:space="preserve">
+    <value>费用审批活动</value>
+  </data>
+  <data name="Expense Approval Detail" xml:space="preserve">
+    <value>费用审批内容</value>
+  </data>
+  <data name="Expense Approval Type" xml:space="preserve">
+    <value>费用审批类型</value>
+  </data>
+  <data name="Expense Approval Type:" xml:space="preserve">
+    <value>费用审批类型：</value>
+  </data>
+  <data name="Expense Billing List" xml:space="preserve">
+    <value>费用结算清单</value>
+  </data>
+  <data name="Expense Billing Worksheet" xml:space="preserve">
+    <value>费用结算表</value>
+  </data>
+  <data name="Expense By Client Report" xml:space="preserve">
+    <value>按客户的费用报告</value>
+  </data>
+  <data name="Expense By Clients Report" xml:space="preserve">
+    <value>按客户的费用报告</value>
+  </data>
+  <data name="Expense Description" xml:space="preserve">
+    <value>费用说明</value>
+  </data>
+  <data name="Expense Entry" xml:space="preserve">
+    <value>费用录入</value>
+  </data>
+  <data name="Expense Entry Approval" xml:space="preserve">
+    <value>费用录入审批</value>
+  </data>
+  <data name="Expense Entry Approval Activity" xml:space="preserve">
+    <value>费用录入审批活动</value>
+  </data>
+  <data name="Expense Entry Approved Notification" xml:space="preserve">
+    <value>费用录入审批通知</value>
+  </data>
+  <data name="Expense Entry Approver" xml:space="preserve">
+    <value>费用录入审批人</value>
+  </data>
+  <data name="Expense Entry Archive" xml:space="preserve">
+    <value>费用录入档案</value>
+  </data>
+  <data name="Expense Entry Audit" xml:space="preserve">
+    <value>费用录入审计</value>
+  </data>
+  <data name="Expense Entry Date:" xml:space="preserve">
+    <value>费用录入日期：</value>
+  </data>
+  <data name="Expense Entry End Date:" xml:space="preserve">
+    <value>费用录入结束日期：</value>
+  </data>
+  <data name="Expense Entry Id:" xml:space="preserve">
+    <value>费用录入ID ：</value>
+  </data>
+  <data name="Expense Entry Information" xml:space="preserve">
+    <value>费用录入信息</value>
+  </data>
+  <data name="Expense Entry List" xml:space="preserve">
+    <value>费用录入名单</value>
+  </data>
+  <data name="Expense Entry Rejected Notification" xml:space="preserve">
+    <value>费用录入拒绝后的通知</value>
+  </data>
+  <data name="Expense Entry Start Date:" xml:space="preserve">
+    <value>费用录入开始日期：</value>
+  </data>
+  <data name="Expense Information" xml:space="preserve">
+    <value>费用信息</value>
+  </data>
+  <data name="Expense List" xml:space="preserve">
+    <value>费用清单</value>
+  </data>
+  <data name="Expense Management" xml:space="preserve">
+    <value>费用管理</value>
+  </data>
+  <data name="Expense Name" xml:space="preserve">
+    <value>费用名称</value>
+  </data>
+  <data name="Expense Name (Expense Type)" xml:space="preserve">
+    <value>费用名称（费用类型）</value>
+  </data>
+  <data name="Expense Name:" xml:space="preserve">
+    <value>费用名称：</value>
+  </data>
+  <data name="Expense Setup" xml:space="preserve">
+    <value>费用安装</value>
+  </data>
+  <data name="Expense Sheet" xml:space="preserve">
+    <value>费用表</value>
+  </data>
+  <data name="Expense Sheet Audit" xml:space="preserve">
+    <value>费用表审计</value>
+  </data>
+  <data name="Expense Sheet Audit Trail Report" xml:space="preserve">
+    <value>费用表审计测试报告</value>
+  </data>
+  <data name="Expense sheet copied successfully." xml:space="preserve">
+    <value>费用表复制成功。</value>
+  </data>
+  <data name="Expense Sheet List" xml:space="preserve">
+    <value>费用表名单</value>
+  </data>
+  <data name="Expense Sheet Print Footer:" xml:space="preserve">
+    <value>费用表打印页脚：</value>
+  </data>
+  <data name="Expense Sheet Report" xml:space="preserve">
+    <value>费用表报告</value>
+  </data>
+  <data name="Expense Sheet Status" xml:space="preserve">
+    <value>费用表状态</value>
+  </data>
+  <data name="Expense Tracking" xml:space="preserve">
+    <value>费用跟踪</value>
+  </data>
+  <data name="Expense Type" xml:space="preserve">
+    <value>费用类型</value>
+  </data>
+  <data name="Expense Type Information" xml:space="preserve">
+    <value>费用类型信息</value>
+  </data>
+  <data name="Expense Type List" xml:space="preserve">
+    <value>费用类型列表</value>
+  </data>
+  <data name="Expense Type:" xml:space="preserve">
+    <value>费用类型：</value>
+  </data>
+  <data name="Expense Types" xml:space="preserve">
+    <value>费用类型</value>
+  </data>
+  <data name="Expense:" xml:space="preserve">
+    <value>费用：</value>
+  </data>
+  <data name="Expenses" xml:space="preserve">
+    <value>费用</value>
+  </data>
+  <data name="EXPENSES1" xml:space="preserve">
+    <value>费用</value>
+  </data>
+  <data name="Expert technical support at any hour via email." xml:space="preserve">
+    <value>在任何时间通过电子邮件由专家提供技术支持。</value>
+  </data>
+  <data name="Expiry Date:" xml:space="preserve">
+    <value>终止日期：</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>输出</value>
+  </data>
+  <data name="External User" xml:space="preserve">
+    <value>外部用户</value>
+  </data>
+  <data name="External User Client" xml:space="preserve">
+    <value>外部用户客户</value>
+  </data>
+  <data name="External User Client:" xml:space="preserve">
+    <value>外部用户客户：</value>
+  </data>
+  <data name="External User Id" xml:space="preserve">
+    <value>外部用户ID</value>
+  </data>
+  <data name="External User Information" xml:space="preserve">
+    <value>外部用户信息</value>
+  </data>
+  <data name="External User List" xml:space="preserve">
+    <value>外部用户列表</value>
+  </data>
+  <data name="External Users" xml:space="preserve">
+    <value>外部用户</value>
+  </data>
+  <data name="ExternalUser" xml:space="preserve">
+    <value>外部用户</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>传真</value>
+  </data>
+  <data name="Fax:" xml:space="preserve">
+    <value>传真：</value>
+  </data>
+  <data name="Feature" xml:space="preserve">
+    <value>特征</value>
+  </data>
+  <data name="Feature Management" xml:space="preserve">
+    <value>特征管理</value>
+  </data>
+  <data name="Field Name" xml:space="preserve">
+    <value>字段名称</value>
+  </data>
+  <data name="File Name" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="File Path:" xml:space="preserve">
+    <value>文件路径：</value>
+  </data>
+  <data name="File Type:" xml:space="preserve">
+    <value>文件类型：</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>姓氏</value>
+  </data>
+  <data name="First Name:" xml:space="preserve">
+    <value>姓氏：</value>
+  </data>
+  <data name="Fixed Bid" xml:space="preserve">
+    <value>固定买入</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>食物</value>
+  </data>
+  <data name="Forgot Your Password? Click Here" xml:space="preserve">
+    <value>忘记了密码？点击这里</value>
+  </data>
+  <data name="Formula" xml:space="preserve">
+    <value>公式</value>
+  </data>
+  <data name="Formula Field 1" xml:space="preserve">
+    <value>公式字段1</value>
+  </data>
+  <data name="Formula Field 2" xml:space="preserve">
+    <value>公式字段2</value>
+  </data>
+  <data name="Formula Field 3" xml:space="preserve">
+    <value>公式字段3</value>
+  </data>
+  <data name="Formula Field 4" xml:space="preserve">
+    <value>公式字段4</value>
+  </data>
+  <data name="Formula Field 5" xml:space="preserve">
+    <value>公式字段5</value>
+  </data>
+  <data name="Formula:" xml:space="preserve">
+    <value>公式：</value>
+  </data>
+  <data name="FreeLite" xml:space="preserve">
+    <value>免费建兴</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="From Email Address:" xml:space="preserve">
+    <value>从电子邮件地址：</value>
+  </data>
+  <data name="From Email Display Name" xml:space="preserve">
+    <value>从电子邮件显示名称：</value>
+  </data>
+  <data name="Full Summary" xml:space="preserve">
+    <value>摘要全文</value>
+  </data>
+  <data name="Full-time Hourly" xml:space="preserve">
+    <value>全日制小时 </value>
+  </data>
+  <data name="Full-time Salaried" xml:space="preserve">
+    <value>全职受薪</value>
+  </data>
+  <data name="Fully downloadable on local server or individual system for single user." xml:space="preserve">
+    <value>本地服务器和个人系统针对单用户完全可下载的。</value>
+  </data>
+  <data name="Fully Team based collaboration suite" xml:space="preserve">
+    <value>充分团队协作套件</value>
+  </data>
+  <data name="Gas" xml:space="preserve">
+    <value>燃气</value>
+  </data>
+  <data name="Generate Attendance detail report for a given user for a given period. User can select different parameters like employee startdate enddate." xml:space="preserve">
+    <value>生成某一用户在一定时间内的出勤详细报告。用户可以选择不同的参数，如雇员，开始日期，结束日期。</value>
+  </data>
+  <data name="Generate Attendance detail report for a given user for a given period. User can select different parameters like employee, startdate, enddate." xml:space="preserve">
+    <value>生成某一用户在一定时间内的出勤详细报告。用户可以选择不同的参数，如雇员，开始日期，结束日期。</value>
+  </data>
+  <data name="Generate Expense Sheet Audit Trail Report" xml:space="preserve">
+    <value>生成费用表审计测试报告</value>
+  </data>
+  <data name="Generate Timesheet Audit Trail" xml:space="preserve">
+    <value>生成工时表审计测试报告</value>
+  </data>
+  <data name="Generates a department wise timesheet report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>为某用户在某段时间内生成智能的部门工时报告。用户可选择报告中的细节。</value>
+  </data>
+  <data name="Generates a employee wise project activity summary report with expense detail." xml:space="preserve">
+    <value>生成带有花费明细的智能化员工项目活动报告。</value>
+  </data>
+  <data name="Generates a employee wise project summary report with expense detail." xml:space="preserve">
+    <value>生成带有花费明细的智能化项目报告。</value>
+  </data>
+  <data name="Generates a expense report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>生成特定用户在特定时间内的费用支出报告。用户可以选择报告中的细节。</value>
+  </data>
+  <data name="Generates a project expense detail report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>生成特定用户在特定时间内的费用支出明细报告。用户可以选择报告中的细节。</value>
+  </data>
+  <data name="Generates a project wise billing report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>生成特定用户在特定时间内的项目结算报告。用户可以选择报告中的细节。</value>
+  </data>
+  <data name="Generates a task summary report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>生成特定用户在特定时间内的任务概况报告。用户可以选择报告中的细节。</value>
+  </data>
+  <data name="Generates a timesheet report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>生成特定用户在特定时间内的工时报告。用户可以选择报告中的细节。</value>
+  </data>
+  <data name="Generates employee wise summarize report for time entries with missing entries." xml:space="preserve">
+    <value>生成员工录入的丢失的时间条目汇总报告</value>
+  </data>
+  <data name="Get_text" xml:space="preserve">
+    <value>获取文本</value>
+  </data>
+  <data name="Goto Login page" xml:space="preserve">
+    <value>转到登录页</value>
+  </data>
+  <data name="Grand Total" xml:space="preserve">
+    <value>总计</value>
+  </data>
+  <data name="Grand Total:" xml:space="preserve">
+    <value>总计：</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>组</value>
+  </data>
+  <data name="Group Order" xml:space="preserve">
+    <value>组次序</value>
+  </data>
+  <data name="GST" xml:space="preserve">
+    <value>消费税</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="High" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="Hired Date:" xml:space="preserve">
+    <value>聘用日期：</value>
+  </data>
+  <data name="Holiday" xml:space="preserve">
+    <value>节假</value>
+  </data>
+  <data name="Holiday Date" xml:space="preserve">
+    <value>节假日期</value>
+  </data>
+  <data name="Holiday Date:" xml:space="preserve">
+    <value>节假日期：</value>
+  </data>
+  <data name="Holiday Information" xml:space="preserve">
+    <value>节假信息</value>
+  </data>
+  <data name="Holiday List" xml:space="preserve">
+    <value>节假表</value>
+  </data>
+  <data name="Holiday Name" xml:space="preserve">
+    <value>节假名称</value>
+  </data>
+  <data name="Holiday Name:" xml:space="preserve">
+    <value>节假名称：</value>
+  </data>
+  <data name="Holiday Select" xml:space="preserve">
+    <value>节假选择</value>
+  </data>
+  <data name="Holiday Type" xml:space="preserve">
+    <value>节假类型</value>
+  </data>
+  <data name="Holiday Type Detail" xml:space="preserve">
+    <value>节假类型详述</value>
+  </data>
+  <data name="Holiday Type Information" xml:space="preserve">
+    <value>节假类型信息</value>
+  </data>
+  <data name="Holiday Type List" xml:space="preserve">
+    <value>节假类型列表</value>
+  </data>
+  <data name="Holiday Type Name:" xml:space="preserve">
+    <value>节假类型名称：</value>
+  </data>
+  <data name="Holiday Type:" xml:space="preserve">
+    <value>节假类型：</value>
+  </data>
+  <data name="Holiday Types" xml:space="preserve">
+    <value>节假类型</value>
+  </data>
+  <data name="Holiday Year" xml:space="preserve">
+    <value>节假年份</value>
+  </data>
+  <data name="Holiday Year:" xml:space="preserve">
+    <value>节假年份:</value>
+  </data>
+  <data name="Holidays" xml:space="preserve">
+    <value>节假</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="Home Phone No." xml:space="preserve">
+    <value>家庭电话号码</value>
+  </data>
+  <data name="Home Phone No:" xml:space="preserve">
+    <value>首页电话号码：</value>
+  </data>
+  <data name="Hosted Solution (ASP)" xml:space="preserve">
+    <value>托管解决方案(ASP)</value>
+  </data>
+  <data name="Hotel" xml:space="preserve">
+    <value>酒店</value>
+  </data>
+  <data name="Hotel Tax" xml:space="preserve">
+    <value>酒店税</value>
+  </data>
+  <data name="Hotel Tax:" xml:space="preserve">
+    <value>酒店税：</value>
+  </data>
+  <data name="Hourly" xml:space="preserve">
+    <value>每小时</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>小时</value>
+  </data>
+  <data name="Hours Off" xml:space="preserve">
+    <value>小时假</value>
+  </data>
+  <data name="Hours Off:" xml:space="preserve">
+    <value>小时假：</value>
+  </data>
+  <data name="Hours Per Day" xml:space="preserve">
+    <value>每天小时数</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="ID1" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>忽略</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="Import / Export" xml:space="preserve">
+    <value>导入/导出</value>
+  </data>
+  <data name="Import / Export CSV" xml:space="preserve">
+    <value>导入/导出CSV</value>
+  </data>
+  <data name="Import Export" xml:space="preserve">
+    <value>导入导出</value>
+  </data>
+  <data name="In Approval" xml:space="preserve">
+    <value>在审批中</value>
+  </data>
+  <data name="In Progress" xml:space="preserve">
+    <value>在进展中</value>
+  </data>
+  <data name="In/Out" xml:space="preserve">
+    <value>输入/输出</value>
+  </data>
+  <data name="In/Out:" xml:space="preserve">
+    <value>输入/输出：</value>
+  </data>
+  <data name="InActive" xml:space="preserve">
+    <value>有效</value>
+  </data>
+  <data name="Include Date Range" xml:space="preserve">
+    <value>包括日期范围</value>
+  </data>
+  <data name="Include Date Range:" xml:space="preserve">
+    <value>包括日期范围：</value>
+  </data>
+  <data name="Initial Day Of The Month" xml:space="preserve">
+    <value>本月起始日</value>
+  </data>
+  <data name="Initial Day Of The Month:" xml:space="preserve">
+    <value>本月起始日：</value>
+  </data>
+  <data name="Initial Days Of The Period" xml:space="preserve">
+    <value>这一时期的起始日</value>
+  </data>
+  <data name="Initial Days Of The Period:" xml:space="preserve">
+    <value>这一时期的起始日：</value>
+  </data>
+  <data name="Initial Set To Hours" xml:space="preserve">
+    <value>初始设置到小时</value>
+  </data>
+  <data name="Instant Setup" xml:space="preserve">
+    <value>即时安装</value>
+  </data>
+  <data name="Integrated module to manage your projects tasks within same integrated tool." xml:space="preserve">
+    <value>在相同的集成工具内用来管理项目任务的集成模块。</value>
+  </data>
+  <data name="Integrated module to record track and monitor project expenses" xml:space="preserve">
+    <value>记录、跟踪和监控项目的开支集成模块</value>
+  </data>
+  <data name="Integrated timesheet in both hosted and downloadable version" xml:space="preserve">
+    <value>在主机板和可下载版中都具有的模块。</value>
+  </data>
+  <data name="Invalid username or password" xml:space="preserve">
+    <value>无效的用户名或密码</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>发票</value>
+  </data>
+  <data name="Invoice #:" xml:space="preserve">
+    <value>发票号码:</value>
+  </data>
+  <data name="Invoice Date" xml:space="preserve">
+    <value>发票日期</value>
+  </data>
+  <data name="Invoice Date:" xml:space="preserve">
+    <value>发票日期：</value>
+  </data>
+  <data name="Invoice Details" xml:space="preserve">
+    <value>发票明细</value>
+  </data>
+  <data name="Invoice Information" xml:space="preserve">
+    <value>发票信息</value>
+  </data>
+  <data name="Invoice Management" xml:space="preserve">
+    <value>时间费用发票</value>
+  </data>
+  <data name="Invoice No" xml:space="preserve">
+    <value>发票编号</value>
+  </data>
+  <data name="Invoice No Prefix:" xml:space="preserve">
+    <value>发票编号前缀：</value>
+  </data>
+  <data name="Invoice No." xml:space="preserve">
+    <value>发票编号</value>
+  </data>
+  <data name="Invoice No:" xml:space="preserve">
+    <value>发票编号：</value>
+  </data>
+  <data name="Invoice Report" xml:space="preserve">
+    <value>发票报告</value>
+  </data>
+  <data name="Invoice Summary Report" xml:space="preserve">
+    <value>发票概要报表</value>
+  </data>
+  <data name="Is Active" xml:space="preserve">
+    <value>是活动的</value>
+  </data>
+  <data name="Is Billable" xml:space="preserve">
+    <value>是收费的</value>
+  </data>
+  <data name="Is Completed" xml:space="preserve">
+    <value>是完成的</value>
+  </data>
+  <data name="Is For All Employees" xml:space="preserve">
+    <value>是为所有员工</value>
+  </data>
+  <data name="Is For All Project Task" xml:space="preserve">
+    <value>是为所有项目任务</value>
+  </data>
+  <data name="Is Parent Task" xml:space="preserve">
+    <value>是父任务</value>
+  </data>
+  <data name="Is ReOpen" xml:space="preserve">
+    <value>是重开的</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>是活动的</value>
+  </data>
+  <data name="IsBillable" xml:space="preserve">
+    <value>是收费的</value>
+  </data>
+  <data name="IsDisabled:" xml:space="preserve">
+    <value>已禁用：</value>
+  </data>
+  <data name="IsReOpen" xml:space="preserve">
+    <value>是重开的</value>
+  </data>
+  <data name="IsReOpen:" xml:space="preserve">
+    <value>是重开的：</value>
+  </data>
+  <data name="Issue" xml:space="preserve">
+    <value>问题</value>
+  </data>
+  <data name="Japan, Yen" xml:space="preserve">
+    <value>日本，日元</value>
+  </data>
+  <data name="Job Title:" xml:space="preserve">
+    <value>职位：</value>
+  </data>
+  <data name="Just click on [Go to login page] below to navigate to login page." xml:space="preserve">
+    <value>点击[转到登录页]，转到下面的登录页。</value>
+  </data>
+  <data name="Last Earned Date" xml:space="preserve">
+    <value>最后挣得日期</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="Last Name:" xml:space="preserve">
+    <value>名字：</value>
+  </data>
+  <data name="LDAP Role:" xml:space="preserve">
+    <value>LDAP角色：</value>
+  </data>
+  <data name="Leave Summary Report" xml:space="preserve">
+    <value>离开总结报告</value>
+  </data>
+  <data name="Leave Type" xml:space="preserve">
+    <value>离开类型</value>
+  </data>
+  <data name="License Activated Successfully." xml:space="preserve">
+    <value>授权激活成功。</value>
+  </data>
+  <data name="License Activation" xml:space="preserve">
+    <value>许可证激活</value>
+  </data>
+  <data name="License Key" xml:space="preserve">
+    <value>授权码：</value>
+  </data>
+  <data name="License Keys" xml:space="preserve">
+    <value>许可证：</value>
+  </data>
+  <data name="List / View" xml:space="preserve">
+    <value>列表/查看</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>所在地</value>
+  </data>
+  <data name="Location Id" xml:space="preserve">
+    <value>所在地编号</value>
+  </data>
+  <data name="Location Information" xml:space="preserve">
+    <value>所在地信息</value>
+  </data>
+  <data name="Location List" xml:space="preserve">
+    <value>所在地列表</value>
+  </data>
+  <data name="Location Name" xml:space="preserve">
+    <value>所在地名称</value>
+  </data>
+  <data name="Location:" xml:space="preserve">
+    <value>所在地：</value>
+  </data>
+  <data name="LocationListOfAllLocationDefinedByAccount" xml:space="preserve">
+    <value>所在地列表-列出所有定义的所在地</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>所在地</value>
+  </data>
+  <data name="Lock In-Approval Records" xml:space="preserve">
+    <value>锁住审批/核准记录:</value>
+  </data>
+  <data name="Lock Submitted Records" xml:space="preserve">
+    <value>锁住提交记录：</value>
+  </data>
+  <data name="LoggedIn As:" xml:space="preserve">
+    <value>登录为：</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="Login / Employee Information" xml:space="preserve">
+    <value>登录/员工信息</value>
+  </data>
+  <data name="Login Email Address" xml:space="preserve">
+    <value>登录电子邮件地址</value>
+  </data>
+  <data name="Login Email Address:" xml:space="preserve">
+    <value>登录电子邮件地址：</value>
+  </data>
+  <data name="Login Information" xml:space="preserve">
+    <value>登录信息</value>
+  </data>
+  <data name="Login:" xml:space="preserve">
+    <value>登录：</value>
+  </data>
+  <data name="Logo size (180x50) px" xml:space="preserve">
+    <value>标志大小（ 180x50 ）px</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="Low" xml:space="preserve">
+    <value>低</value>
+  </data>
+  <data name="Machine Key:" xml:space="preserve">
+    <value>机器码：</value>
+  </data>
+  <data name="Machine Name:" xml:space="preserve">
+    <value>机器名称：</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="Manage Project" xml:space="preserve">
+    <value>管理项目</value>
+  </data>
+  <data name="Manage Terminology" xml:space="preserve">
+    <value>管理术语</value>
+  </data>
+  <data name="Manual Activation" xml:space="preserve">
+    <value>手动激活</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>市场营销</value>
+  </data>
+  <data name="Master Card" xml:space="preserve">
+    <value>Master Card</value>
+  </data>
+  <data name="Maximum Available" xml:space="preserve">
+    <value>最大可用</value>
+  </data>
+  <data name="Maximum Hours Per Day" xml:space="preserve">
+    <value>每日最多工时</value>
+  </data>
+  <data name="Maximum Hours Per Day:" xml:space="preserve">
+    <value>每日最多工时:</value>
+  </data>
+  <data name="Maximum Hours Per Week" xml:space="preserve">
+    <value>每周最多工时</value>
+  </data>
+  <data name="Maximum Hours Per Week:" xml:space="preserve">
+    <value>每周最多工时:</value>
+  </data>
+  <data name="Medical" xml:space="preserve">
+    <value>医疗</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>中</value>
+  </data>
+  <data name="Middle Name" xml:space="preserve">
+    <value>NULL</value>
+  </data>
+  <data name="Middle Name:" xml:space="preserve">
+    <value>NULL：</value>
+  </data>
+  <data name="Milestone" xml:space="preserve">
+    <value>里程碑</value>
+  </data>
+  <data name="Milestone Date" xml:space="preserve">
+    <value>里程碑日期</value>
+  </data>
+  <data name="Milestone Date:" xml:space="preserve">
+    <value>里程碑日期：</value>
+  </data>
+  <data name="Milestone Description" xml:space="preserve">
+    <value>里程碑描述</value>
+  </data>
+  <data name="Milestone Description:" xml:space="preserve">
+    <value>里程碑描述：</value>
+  </data>
+  <data name="Milestone:" xml:space="preserve">
+    <value>里程碑：</value>
+  </data>
+  <data name="Milestones" xml:space="preserve">
+    <value>里程碑</value>
+  </data>
+  <data name="Minimum Hours Per Day" xml:space="preserve">
+    <value>每天最少小时数</value>
+  </data>
+  <data name="Minimum Hours Per Day:" xml:space="preserve">
+    <value>每天最少小时数:</value>
+  </data>
+  <data name="Minimum Hours Per Week" xml:space="preserve">
+    <value>每星期最少小时数</value>
+  </data>
+  <data name="Minimum Hours Per Week:" xml:space="preserve">
+    <value>每星期最少小时数:</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="Miss" xml:space="preserve">
+    <value>Miss</value>
+  </data>
+  <data name="Mitarbeiter-Manager" xml:space="preserve">
+    <value>员工管理</value>
+  </data>
+  <data name="Mobile Phone No." xml:space="preserve">
+    <value>移动电话号码</value>
+  </data>
+  <data name="Mobile Phone No:" xml:space="preserve">
+    <value>移动电话号码：</value>
+  </data>
+  <data name="Module Name" xml:space="preserve">
+    <value>模块名称</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="Month No" xml:space="preserve">
+    <value>月份</value>
+  </data>
+  <data name="Month No." xml:space="preserve">
+    <value>月份</value>
+  </data>
+  <data name="Monthly" xml:space="preserve">
+    <value>每月</value>
+  </data>
+  <data name="Move Down" xml:space="preserve">
+    <value>下移</value>
+  </data>
+  <data name="Move Up" xml:space="preserve">
+    <value>上移</value>
+  </data>
+  <data name="Mr." xml:space="preserve">
+    <value>Mr.</value>
+  </data>
+  <data name="Mrs." xml:space="preserve">
+    <value>Mrs.</value>
+  </data>
+  <data name="My" xml:space="preserve">
+    <value>我的</value>
+  </data>
+  <data name="My Area" xml:space="preserve">
+    <value>我的工作区</value>
+  </data>
+  <data name="MY AREA CAPS" xml:space="preserve">
+    <value>我的工作区</value>
+  </data>
+  <data name="My Expense Entries" xml:space="preserve">
+    <value>我的费用条目</value>
+  </data>
+  <data name="My Expense Sheet" xml:space="preserve">
+    <value>我的费用表</value>
+  </data>
+  <data name="My Open Timesheet Periods" xml:space="preserve">
+    <value>我的开放的工时时期</value>
+  </data>
+  <data name="My Periods" xml:space="preserve">
+    <value>我的日期</value>
+  </data>
+  <data name="My Preferences" xml:space="preserve">
+    <value>我的首选项</value>
+  </data>
+  <data name="My Profile" xml:space="preserve">
+    <value>我的简介</value>
+  </data>
+  <data name="My Projects" xml:space="preserve">
+    <value>我的项目</value>
+  </data>
+  <data name="My Projects Expense Entry Approvals" xml:space="preserve">
+    <value>我的项目费用录入许可</value>
+  </data>
+  <data name="My Projects Time Entry Approvals" xml:space="preserve">
+    <value>我的项目时间录入许可</value>
+  </data>
+  <data name="My Reported Tasks" xml:space="preserve">
+    <value>报告的任务</value>
+  </data>
+  <data name="My Reports" xml:space="preserve">
+    <value>我的报告</value>
+  </data>
+  <data name="My Task List" xml:space="preserve">
+    <value>我的任务列表</value>
+  </data>
+  <data name="My Task Summary" xml:space="preserve">
+    <value>我的任务摘要</value>
+  </data>
+  <data name="My Tasks" xml:space="preserve">
+    <value>我的任务</value>
+  </data>
+  <data name="My Team Expense Entry Approvals" xml:space="preserve">
+    <value>我的团队费用录入许可</value>
+  </data>
+  <data name="My Team Time Entry Approvals:" xml:space="preserve">
+    <value>我的团队时间录入许可：</value>
+  </data>
+  <data name="My Teams" xml:space="preserve">
+    <value>我的团队</value>
+  </data>
+  <data name="My Time Off" xml:space="preserve">
+    <value>我的休息时间</value>
+  </data>
+  <data name="My Timesheet" xml:space="preserve">
+    <value>我的工时</value>
+  </data>
+  <data name="MYAREA" xml:space="preserve">
+    <value>我的工作区</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="Name:" xml:space="preserve">
+    <value>姓名：</value>
+  </data>
+  <data name="Net Amount" xml:space="preserve">
+    <value>净额</value>
+  </data>
+  <data name="Net Amount ()" xml:space="preserve">
+    <value>净额（）</value>
+  </data>
+  <data name="Net Amount (BaseCurrency)" xml:space="preserve">
+    <value>净额（ 本币）</value>
+  </data>
+  <data name="Net Amount:" xml:space="preserve">
+    <value>净额：</value>
+  </data>
+  <data name="NetAmount" xml:space="preserve">
+    <value>净额</value>
+  </data>
+  <data name="New Value" xml:space="preserve">
+    <value>新的价值</value>
+  </data>
+  <data name="New_text" xml:space="preserve">
+    <value>新的文本</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一个</value>
+  </data>
+  <data name="Next Date" xml:space="preserve">
+    <value>下一天</value>
+  </data>
+  <data name="Next Week" xml:space="preserve">
+    <value>下周</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="No Of Blank Rows In Timesheet" xml:space="preserve">
+    <value>工时表中空白行号：</value>
+  </data>
+  <data name="No. Of Blank Rows In TimeSheet" xml:space="preserve">
+    <value>工时表中空白行号：</value>
+  </data>
+  <data name="Non Billable" xml:space="preserve">
+    <value>不收费</value>
+  </data>
+  <data name="Non-Billable" xml:space="preserve">
+    <value>不收费</value>
+  </data>
+  <data name="Non-billable Hours" xml:space="preserve">
+    <value>不收费时间</value>
+  </data>
+  <data name="Non-Billable Total Hours" xml:space="preserve">
+    <value>不收费总时数</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="Non-working day" xml:space="preserve">
+    <value>非工作日</value>
+  </data>
+  <data name="Not Approved" xml:space="preserve">
+    <value>不允许</value>
+  </data>
+  <data name="Not Billed" xml:space="preserve">
+    <value>未结算</value>
+  </data>
+  <data name="Not Entered" xml:space="preserve">
+    <value>未输入</value>
+  </data>
+  <data name="Not Submitted" xml:space="preserve">
+    <value>未提交</value>
+  </data>
+  <data name="Not Submitted:" xml:space="preserve">
+    <value>未提交：</value>
+  </data>
+  <data name="Note : Approval Not Required For This Time Entry" xml:space="preserve">
+    <value>注：本次时间录入不需要审批</value>
+  </data>
+  <data name="Note : Approved" xml:space="preserve">
+    <value>注：核定</value>
+  </data>
+  <data name="Note : Not Submitted - Waiting For Submit" xml:space="preserve">
+    <value>注：未提交-等待提交</value>
+  </data>
+  <data name="Note : Rejected - Waiting For Re-Submit" xml:space="preserve">
+    <value>注：拒绝-等待重新提交</value>
+  </data>
+  <data name="Note : Submitted - Waiting For Approval" xml:space="preserve">
+    <value>注：已提交-等待批准</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>注</value>
+  </data>
+  <data name="Notes:" xml:space="preserve">
+    <value>注：</value>
+  </data>
+  <data name="Notification of events / reports via email in order to update users without signing in system" xml:space="preserve">
+    <value>通过电子邮件通知事件/报告，以便于不登录系统的用户得到消息</value>
+  </data>
+  <data name="Number of Users" xml:space="preserve">
+    <value>用户数量：</value>
+  </data>
+  <data name="Number of Users:" xml:space="preserve">
+    <value>用户数量：</value>
+  </data>
+  <data name="Office Assets" xml:space="preserve">
+    <value>办公资产</value>
+  </data>
+  <data name="Old Value" xml:space="preserve">
+    <value>旧值</value>
+  </data>
+  <data name="OnHold" xml:space="preserve">
+    <value>搁置</value>
+  </data>
+  <data name="Online Activation" xml:space="preserve">
+    <value>在线激活</value>
+  </data>
+  <data name="Organization Name" xml:space="preserve">
+    <value>组织名称</value>
+  </data>
+  <data name="Organization Setup" xml:space="preserve">
+    <value>组织设置</value>
+  </data>
+  <data name="OT" xml:space="preserve">
+    <value>OT</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>其它</value>
+  </data>
+  <data name="Others" xml:space="preserve">
+    <value>其它</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>加班费</value>
+  </data>
+  <data name="Package Plan:" xml:space="preserve">
+    <value>打包计划：</value>
+  </data>
+  <data name="Package:" xml:space="preserve">
+    <value>打包：</value>
+  </data>
+  <data name="Page Description" xml:space="preserve">
+    <value>页面描述</value>
+  </data>
+  <data name="Page Permissions" xml:space="preserve">
+    <value>网页的权限</value>
+  </data>
+  <data name="Page Size" xml:space="preserve">
+    <value>页面大小</value>
+  </data>
+  <data name="Page Size:" xml:space="preserve">
+    <value>页面大小：</value>
+  </data>
+  <data name="Paid" xml:space="preserve">
+    <value>支付</value>
+  </data>
+  <data name="Paid:" xml:space="preserve">
+    <value>支付：</value>
+  </data>
+  <data name="Parent Task Code" xml:space="preserve">
+    <value>父任务编号</value>
+  </data>
+  <data name="Parent Task Name" xml:space="preserve">
+    <value>父任务名称</value>
+  </data>
+  <data name="Parent Task:" xml:space="preserve">
+    <value>父任务：</value>
+  </data>
+  <data name="Parent:" xml:space="preserve">
+    <value>父：</value>
+  </data>
+  <data name="ParentTaskName" xml:space="preserve">
+    <value>父任务名称</value>
+  </data>
+  <data name="Parking" xml:space="preserve">
+    <value>停车</value>
+  </data>
+  <data name="Part-time Hourly" xml:space="preserve">
+    <value>按小时兼职</value>
+  </data>
+  <data name="Part-time Salaried" xml:space="preserve">
+    <value>兼职受薪</value>
+  </data>
+  <data name="Party Name:" xml:space="preserve">
+    <value>当事方名称：</value>
+  </data>
+  <data name="PartyName" xml:space="preserve">
+    <value>当事方名称</value>
+  </data>
+  <data name="PartyNick" xml:space="preserve">
+    <value>当事方昵称</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Password Expiry Period" xml:space="preserve">
+    <value>密码有效期：</value>
+  </data>
+  <data name="Password:" xml:space="preserve">
+    <value>密码：</value>
+  </data>
+  <data name="Pause Timer" xml:space="preserve">
+    <value>暂停定时器</value>
+  </data>
+  <data name="Payment Method" xml:space="preserve">
+    <value>付款方式</value>
+  </data>
+  <data name="Payment Method Information" xml:space="preserve">
+    <value>付款方式信息</value>
+  </data>
+  <data name="Payment Method:" xml:space="preserve">
+    <value>付款方式：</value>
+  </data>
+  <data name="Per Hour" xml:space="preserve">
+    <value>每小时</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>时间段</value>
+  </data>
+  <data name="Period Type" xml:space="preserve">
+    <value>时间段类型</value>
+  </data>
+  <data name="Period View" xml:space="preserve">
+    <value>时间段查看</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>权限</value>
+  </data>
+  <data name="Personal Information" xml:space="preserve">
+    <value>个人信息</value>
+  </data>
+  <data name="Personal Leave" xml:space="preserve">
+    <value>个人假期</value>
+  </data>
+  <data name="Personal Profile" xml:space="preserve">
+    <value>个人档案</value>
+  </data>
+  <data name="Petrol" xml:space="preserve">
+    <value>汽油</value>
+  </data>
+  <data name="Phone #" xml:space="preserve">
+    <value>电话＃</value>
+  </data>
+  <data name="Phone No" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="Please select employee." xml:space="preserve">
+    <value>请选择员工。</value>
+  </data>
+  <data name="PO Number" xml:space="preserve">
+    <value>邮政信箱号码</value>
+  </data>
+  <data name="PO Number:" xml:space="preserve">
+    <value>邮政信箱号码：</value>
+  </data>
+  <data name="Populate Un-Billed Records" xml:space="preserve">
+    <value>填充帐单记录</value>
+  </data>
+  <data name="Preferences" xml:space="preserve">
+    <value>首选项</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>前缀</value>
+  </data>
+  <data name="Prefix:" xml:space="preserve">
+    <value>前缀：</value>
+  </data>
+  <data name="Preiod" xml:space="preserve">
+    <value>时期</value>
+  </data>
+  <data name="Present Days" xml:space="preserve">
+    <value>当前天</value>
+  </data>
+  <data name="Previous Date" xml:space="preserve">
+    <value>前一日</value>
+  </data>
+  <data name="Previous Week" xml:space="preserve">
+    <value>前一周</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="Print Invoice" xml:space="preserve">
+    <value>打印发票</value>
+  </data>
+  <data name="Priorities" xml:space="preserve">
+    <value>优先事项</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>优先</value>
+  </data>
+  <data name="priority information" xml:space="preserve">
+    <value>优先信息</value>
+  </data>
+  <data name="Priority Information:" xml:space="preserve">
+    <value>优先的信息：</value>
+  </data>
+  <data name="Priority List" xml:space="preserve">
+    <value>优先名单</value>
+  </data>
+  <data name="Priority Order:" xml:space="preserve">
+    <value>优先顺序：</value>
+  </data>
+  <data name="Priority:" xml:space="preserve">
+    <value>优先顺序：</value>
+  </data>
+  <data name="Proceed" xml:space="preserve">
+    <value>推进</value>
+  </data>
+  <data name="Proceed_text" xml:space="preserve">
+    <value>推进</value>
+  </data>
+  <data name="Profit" xml:space="preserve">
+    <value>利润</value>
+  </data>
+  <data name="Profit (BaseCurrency)" xml:space="preserve">
+    <value>利润（ 本币）</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="Project / Task Setup" xml:space="preserve">
+    <value>项目/任务设置</value>
+  </data>
+  <data name="Project Activity Summary Report" xml:space="preserve">
+    <value>项目活动的总结报告</value>
+  </data>
+  <data name="Project Admin" xml:space="preserve">
+    <value>项目管理</value>
+  </data>
+  <data name="Project Administration" xml:space="preserve">
+    <value>项目管理</value>
+  </data>
+  <data name="Project And Employee Information" xml:space="preserve">
+    <value>项目和员工信息</value>
+  </data>
+  <data name="Project Billing Rate" xml:space="preserve">
+    <value>工程结算费率</value>
+  </data>
+  <data name="Project Billing Rate Type" xml:space="preserve">
+    <value>工程结算费率类型</value>
+  </data>
+  <data name="Project Billing Type" xml:space="preserve">
+    <value>工程结算类型</value>
+  </data>
+  <data name="Project Billing Type:" xml:space="preserve">
+    <value>工程结算类型：</value>
+  </data>
+  <data name="Project Code" xml:space="preserve">
+    <value>项目编号</value>
+  </data>
+  <data name="Project Code:" xml:space="preserve">
+    <value>项目编号：</value>
+  </data>
+  <data name="Project Cost And Revenue Report" xml:space="preserve">
+    <value>项目的成本和收益报告</value>
+  </data>
+  <data name="Project Cost Report" xml:space="preserve">
+    <value>项目费用支出报告</value>
+  </data>
+  <data name="Project Deadline" xml:space="preserve">
+    <value>项目截止日期</value>
+  </data>
+  <data name="Project Description" xml:space="preserve">
+    <value>项目描述</value>
+  </data>
+  <data name="Project Description:" xml:space="preserve">
+    <value>项目描述：</value>
+  </data>
+  <data name="Project Employee List" xml:space="preserve">
+    <value>项目员工名单</value>
+  </data>
+  <data name="Project Employees" xml:space="preserve">
+    <value>项目员工</value>
+  </data>
+  <data name="Project Expense Detail Report" xml:space="preserve">
+    <value>项目支出明细报告</value>
+  </data>
+  <data name="Project Id" xml:space="preserve">
+    <value>项目ID</value>
+  </data>
+  <data name="Project Id:" xml:space="preserve">
+    <value>项目ID：</value>
+  </data>
+  <data name="Project Information" xml:space="preserve">
+    <value>项目信息</value>
+  </data>
+  <data name="Project List" xml:space="preserve">
+    <value>项目列表</value>
+  </data>
+  <data name="Project List Report" xml:space="preserve">
+    <value>项目列表报告</value>
+  </data>
+  <data name="Project Management" xml:space="preserve">
+    <value>项目管理</value>
+  </data>
+  <data name="Project Manager" xml:space="preserve">
+    <value>项目经理</value>
+  </data>
+  <data name="Project Manager Pages" xml:space="preserve">
+    <value>项目经理页面</value>
+  </data>
+  <data name="Project Manager Reports" xml:space="preserve">
+    <value>项目经理报告</value>
+  </data>
+  <data name="Project Manager:" xml:space="preserve">
+    <value>项目经理：</value>
+  </data>
+  <data name="Project Milestone" xml:space="preserve">
+    <value>项目里程碑</value>
+  </data>
+  <data name="Project Milestone Information" xml:space="preserve">
+    <value>项目里程碑信息</value>
+  </data>
+  <data name="Project Milestone List" xml:space="preserve">
+    <value>项目里程碑列表</value>
+  </data>
+  <data name="Project Milestones" xml:space="preserve">
+    <value>项目里程碑</value>
+  </data>
+  <data name="Project Name" xml:space="preserve">
+    <value>项目名称</value>
+  </data>
+  <data name="Project Name:" xml:space="preserve">
+    <value>项目名称：</value>
+  </data>
+  <data name="Project Preferences" xml:space="preserve">
+    <value>项目首选项</value>
+  </data>
+  <data name="Project Reports" xml:space="preserve">
+    <value>项目报告</value>
+  </data>
+  <data name="Project Role" xml:space="preserve">
+    <value>项目角色</value>
+  </data>
+  <data name="Project Roles" xml:space="preserve">
+    <value>项目角色</value>
+  </data>
+  <data name="Project Start Date" xml:space="preserve">
+    <value>项目开始日期</value>
+  </data>
+  <data name="Project Status" xml:space="preserve">
+    <value>项目状态</value>
+  </data>
+  <data name="Project Status:" xml:space="preserve">
+    <value>项目状态：</value>
+  </data>
+  <data name="Project Task" xml:space="preserve">
+    <value>项目任务</value>
+  </data>
+  <data name="Project Task Attachment" xml:space="preserve">
+    <value>项目任务附件</value>
+  </data>
+  <data name="Project Task Attachment Information" xml:space="preserve">
+    <value>项目任务附件信息</value>
+  </data>
+  <data name="Project Task Information" xml:space="preserve">
+    <value>项目任务信息</value>
+  </data>
+  <data name="Project Task List" xml:space="preserve">
+    <value>项目任务列表</value>
+  </data>
+  <data name="Project Task Name:" xml:space="preserve">
+    <value>项目任务名称：</value>
+  </data>
+  <data name="Project Tasks" xml:space="preserve">
+    <value>项目任务</value>
+  </data>
+  <data name="Project Tasks:" xml:space="preserve">
+    <value>项目任务：</value>
+  </data>
+  <data name="Project Team" xml:space="preserve">
+    <value>项目小组</value>
+  </data>
+  <data name="Project Template" xml:space="preserve">
+    <value>项目模板</value>
+  </data>
+  <data name="Project Template Information" xml:space="preserve">
+    <value>项目模板信息</value>
+  </data>
+  <data name="Project Template List" xml:space="preserve">
+    <value>项目模板列表</value>
+  </data>
+  <data name="Project Template:" xml:space="preserve">
+    <value>项目模板：</value>
+  </data>
+  <data name="Project Templates" xml:space="preserve">
+    <value>项目模板</value>
+  </data>
+  <data name="Project Type" xml:space="preserve">
+    <value>项目类型</value>
+  </data>
+  <data name="Project Type Information" xml:space="preserve">
+    <value>项目类型信息</value>
+  </data>
+  <data name="Project Type Information:" xml:space="preserve">
+    <value>项目类型信息：</value>
+  </data>
+  <data name="Project Type List" xml:space="preserve">
+    <value>项目类型列表</value>
+  </data>
+  <data name="Project Type:" xml:space="preserve">
+    <value>项目类型：</value>
+  </data>
+  <data name="Project Types" xml:space="preserve">
+    <value>项目类型</value>
+  </data>
+  <data name="Project/Client" xml:space="preserve">
+    <value>项目/客户</value>
+  </data>
+  <data name="Project:" xml:space="preserve">
+    <value>项目：</value>
+  </data>
+  <data name="Project_List_Of_All_Projects_Defined_By_Account" xml:space="preserve">
+    <value>项目清单-按用户列出的所有项目</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="Projects:" xml:space="preserve">
+    <value>项目：</value>
+  </data>
+  <data name="PROJECTS1" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="ProjectType" xml:space="preserve">
+    <value>项目类型</value>
+  </data>
+  <data name="Provide Your Information" xml:space="preserve">
+    <value>提供您的资料</value>
+  </data>
+  <data name="PST" xml:space="preserve">
+    <value>PST</value>
+  </data>
+  <data name="PST:" xml:space="preserve">
+    <value>PST：</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="Quantity Caption" xml:space="preserve">
+    <value>数量说明</value>
+  </data>
+  <data name="Quantity Caption:" xml:space="preserve">
+    <value>数量说明：</value>
+  </data>
+  <data name="Quantity:" xml:space="preserve">
+    <value>数量：</value>
+  </data>
+  <data name="Quickbooks (IIF)" xml:space="preserve">
+    <value>Quickbooks (IIF)</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>费率</value>
+  </data>
+  <data name="Rate:" xml:space="preserve">
+    <value>费率：</value>
+  </data>
+  <data name="Reimburse" xml:space="preserve">
+    <value>报销</value>
+  </data>
+  <data name="Reimburse:" xml:space="preserve">
+    <value>报销：</value>
+  </data>
+  <data name="Reimbursement Currency:" xml:space="preserve">
+    <value>报销货币：</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>被拒绝</value>
+  </data>
+  <data name="Rejected By :" xml:space="preserve">
+    <value>被拒绝：</value>
+  </data>
+  <data name="Rejected By Employee Name" xml:space="preserve">
+    <value>拒绝的员工姓名</value>
+  </data>
+  <data name="Rejected Date" xml:space="preserve">
+    <value>被拒绝的日期</value>
+  </data>
+  <data name="Rejected Hours" xml:space="preserve">
+    <value>被拒绝时间</value>
+  </data>
+  <data name="Rejected On" xml:space="preserve">
+    <value>被拒绝</value>
+  </data>
+  <data name="Rejected On :" xml:space="preserve">
+    <value>被拒绝：</value>
+  </data>
+  <data name="Rejected:" xml:space="preserve">
+    <value>被拒绝：</value>
+  </data>
+  <data name="Report By:" xml:space="preserve">
+    <value>报告人：</value>
+  </data>
+  <data name="Report Category:" xml:space="preserve">
+    <value>报告类别：</value>
+  </data>
+  <data name="Report Column" xml:space="preserve">
+    <value>报告列</value>
+  </data>
+  <data name="Report DataSource" xml:space="preserve">
+    <value>报告数据源</value>
+  </data>
+  <data name="Report Definition" xml:space="preserve">
+    <value>报告定义</value>
+  </data>
+  <data name="Report Definition Information" xml:space="preserve">
+    <value>报告定义信息</value>
+  </data>
+  <data name="Report Description:" xml:space="preserve">
+    <value>报告说明：</value>
+  </data>
+  <data name="Report Design" xml:space="preserve">
+    <value>报表设计</value>
+  </data>
+  <data name="Report Footer:" xml:space="preserve">
+    <value>报表页脚：</value>
+  </data>
+  <data name="Report for generating summary of employee leaves like sick leave casual leave etc in specified range." xml:space="preserve">
+    <value>生成员工请假报告，比如在指定的范围的病假、事假等。</value>
+  </data>
+  <data name="Report for generating summary of employee leaves like sick leave, casual leave etc in specified range." xml:space="preserve">
+    <value>生成员工请假报告，比如在指定的范围的病假、事假等。</value>
+  </data>
+  <data name="Report Header:" xml:space="preserve">
+    <value>报告标题：</value>
+  </data>
+  <data name="Report Id:" xml:space="preserve">
+    <value>报告ID ：</value>
+  </data>
+  <data name="Report Information" xml:space="preserve">
+    <value>报告信息</value>
+  </data>
+  <data name="Report Name" xml:space="preserve">
+    <value>报告名称</value>
+  </data>
+  <data name="Report Name:" xml:space="preserve">
+    <value>报告名称：</value>
+  </data>
+  <data name="Report Permission" xml:space="preserve">
+    <value>报告权限</value>
+  </data>
+  <data name="Report Title:" xml:space="preserve">
+    <value>报告主题：</value>
+  </data>
+  <data name="Report Type:" xml:space="preserve">
+    <value>报告类型：</value>
+  </data>
+  <data name="REPORTS1" xml:space="preserve">
+    <value>报告</value>
+  </data>
+  <data name="Request Required" xml:space="preserve">
+    <value>必需的请求</value>
+  </data>
+  <data name="Reset at" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="Reset Hours" xml:space="preserve">
+    <value>重置时间</value>
+  </data>
+  <data name="Reset Policy" xml:space="preserve">
+    <value>重置政策</value>
+  </data>
+  <data name="Reset To Zero" xml:space="preserve">
+    <value>重置为零</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="Role Information" xml:space="preserve">
+    <value>角色信息</value>
+  </data>
+  <data name="Role List" xml:space="preserve">
+    <value>角色列表</value>
+  </data>
+  <data name="Role Permissions" xml:space="preserve">
+    <value>角色权限</value>
+  </data>
+  <data name="Role Wise Billing Rate" xml:space="preserve">
+    <value>角色智能结算费率</value>
+  </data>
+  <data name="Role:" xml:space="preserve">
+    <value>角色：</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="Root Level" xml:space="preserve">
+    <value>根层级</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="Save_cofirmation" xml:space="preserve">
+    <value>确认保存</value>
+  </data>
+  <data name="Save_Confirmation_DayView" xml:space="preserve">
+    <value>确认保存</value>
+  </data>
+  <data name="Save_Confirmation_Invoice" xml:space="preserve">
+    <value>确认保存</value>
+  </data>
+  <data name="Save_text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Scheduled Email Send Time" xml:space="preserve">
+    <value>排程的电子邮件发送时间：</value>
+  </data>
+  <data name="Scheduled Email Sent Time" xml:space="preserve">
+    <value>排程的电子邮件发送时间：</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Search Employees:" xml:space="preserve">
+    <value>搜索员工：</value>
+  </data>
+  <data name="Search Parameter" xml:space="preserve">
+    <value>搜索参数</value>
+  </data>
+  <data name="Search Parameters" xml:space="preserve">
+    <value>搜索参数</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="Select Assigned To:" xml:space="preserve">
+    <value>选择分配给：</value>
+  </data>
+  <data name="Select Datasource:" xml:space="preserve">
+    <value>选择数据源：</value>
+  </data>
+  <data name="Select Employee" xml:space="preserve">
+    <value>选择员工</value>
+  </data>
+  <data name="Select Employee:" xml:space="preserve">
+    <value>选择员工：</value>
+  </data>
+  <data name="Select Option" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="Select Project Tasks" xml:space="preserve">
+    <value>选择项目任务</value>
+  </data>
+  <data name="Select Project:" xml:space="preserve">
+    <value>选择项目：</value>
+  </data>
+  <data name="Select Role" xml:space="preserve">
+    <value>选择角色：</value>
+  </data>
+  <data name="Select Tasks" xml:space="preserve">
+    <value>选择任务</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>选定</value>
+  </data>
+  <data name="Selected_text" xml:space="preserve">
+    <value>选定</value>
+  </data>
+  <data name="Selection" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="Session Time Out" xml:space="preserve">
+    <value>连接超时：</value>
+  </data>
+  <data name="Sheet Approved" xml:space="preserve">
+    <value>表核准</value>
+  </data>
+  <data name="Sheet Date" xml:space="preserve">
+    <value>表日期</value>
+  </data>
+  <data name="Sheet Description" xml:space="preserve">
+    <value>表说明</value>
+  </data>
+  <data name="Sheet InApproval" xml:space="preserve">
+    <value>在审批的表</value>
+  </data>
+  <data name="Sheet Rejected" xml:space="preserve">
+    <value>被拒绝的表</value>
+  </data>
+  <data name="Sheet Submitted" xml:space="preserve">
+    <value>已提交的表</value>
+  </data>
+  <data name="Sheet Submitted Date" xml:space="preserve">
+    <value>表提交日期</value>
+  </data>
+  <data name="Show Additional Task Information Type:" xml:space="preserve">
+    <value>显示更多任务信息类型：</value>
+  </data>
+  <data name="Show All" xml:space="preserve">
+    <value>显示所有</value>
+  </data>
+  <data name="Show Client In Timesheet:" xml:space="preserve">
+    <value>在工时表中显示客户:</value>
+  </data>
+  <data name="Show Clock Start/End" xml:space="preserve">
+    <value>查看时钟开始/结束：</value>
+  </data>
+  <data name="Show Company Logo:" xml:space="preserve">
+    <value>显示公司标志：</value>
+  </data>
+  <data name="Show Company Own Logo" xml:space="preserve">
+    <value>查看公司自己的徽标：</value>
+  </data>
+  <data name="Show Completed Project In Timesheet:" xml:space="preserve">
+    <value>在时间表显示已完成的项目：</value>
+  </data>
+  <data name="Show Completed Task in TimeSheet:" xml:space="preserve">
+    <value>在时间表显示已完成的项目：</value>
+  </data>
+  <data name="Show Cost Center In TimeSheet" xml:space="preserve">
+    <value>在工时表中显示成本中心：</value>
+  </data>
+  <data name="Show Data" xml:space="preserve">
+    <value>显示数据</value>
+  </data>
+  <data name="Show Description In Period View" xml:space="preserve">
+    <value>在时间段视图中显示描述</value>
+  </data>
+  <data name="Show Description In Period View:" xml:space="preserve">
+    <value>在时间段视图中显示描述：</value>
+  </data>
+  <data name="Show Description In Week View:" xml:space="preserve">
+    <value>在周视图中显示描述：</value>
+  </data>
+  <data name="Show Project For TimeOff:" xml:space="preserve">
+    <value>显示休假期间的项目：</value>
+  </data>
+  <data name="Show Quantity" xml:space="preserve">
+    <value>查看数量</value>
+  </data>
+  <data name="Show Quantity:" xml:space="preserve">
+    <value>查看数量：</value>
+  </data>
+  <data name="Show Report" xml:space="preserve">
+    <value>查看报告</value>
+  </data>
+  <data name="Show ShowAll in Approval Popup:" xml:space="preserve">
+    <value>在审批弹出窗口显示“全部显示”：</value>
+  </data>
+  <data name="Show Summary" xml:space="preserve">
+    <value>查看摘要</value>
+  </data>
+  <data name="Show Task In Expense Sheet:" xml:space="preserve">
+    <value>在费用表中显示任务：</value>
+  </data>
+  <data name="Show TimeOff In Timesheet:" xml:space="preserve">
+    <value>在工时表中显示假期：</value>
+  </data>
+  <data name="Show Work Type In TimeSheet" xml:space="preserve">
+    <value>在工时表中显示工作类型</value>
+  </data>
+  <data name="Show_text" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="ShowData" xml:space="preserve">
+    <value>显示数据</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>病假</value>
+  </data>
+  <data name="Sign Up" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="Single tool to monitor employee attendance offdays vacation leave" xml:space="preserve">
+    <value>一个单一的工具来监测员工出勤、休假、请假等</value>
+  </data>
+  <data name="Sort Order" xml:space="preserve">
+    <value>排列顺序</value>
+  </data>
+  <data name="Sort Order:" xml:space="preserve">
+    <value>排序顺序:</value>
+  </data>
+  <data name="Specific Employee" xml:space="preserve">
+    <value>特定的员工</value>
+  </data>
+  <data name="Specific Employee Expense Entry Approvals" xml:space="preserve">
+    <value>特定的员工费用开支录入许可</value>
+  </data>
+  <data name="Specific Employee Time Entry Approvals" xml:space="preserve">
+    <value>特定的员工时间录入许可</value>
+  </data>
+  <data name="Specific Employee Time Off Approvals" xml:space="preserve">
+    <value>特定的员工休假许可</value>
+  </data>
+  <data name="Specific External Expense Entry Approvals" xml:space="preserve">
+    <value>特定的外部费用开支录入许可</value>
+  </data>
+  <data name="Specific External User" xml:space="preserve">
+    <value>特定的外部用户</value>
+  </data>
+  <data name="Specific External User Time Entry Approvals" xml:space="preserve">
+    <value>特定的外部用户时间录入许可</value>
+  </data>
+  <data name="ST" xml:space="preserve">
+    <value>ST</value>
+  </data>
+  <data name="Standard" xml:space="preserve">
+    <value>标准</value>
+  </data>
+  <data name="Standard and Formats" xml:space="preserve">
+    <value>标准和格式：</value>
+  </data>
+  <data name="Standards and Formats" xml:space="preserve">
+    <value>标准和格式：</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="Start Date:" xml:space="preserve">
+    <value>开始日期：</value>
+  </data>
+  <data name="Start Time" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="Start Timer" xml:space="preserve">
+    <value>启动定时器</value>
+  </data>
+  <data name="Started" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="State / Province" xml:space="preserve">
+    <value>省/市</value>
+  </data>
+  <data name="State / Province:" xml:space="preserve">
+    <value>省/市</value>
+  </data>
+  <data name="State Sales Tax" xml:space="preserve">
+    <value>营业税</value>
+  </data>
+  <data name="State Sales Tax:" xml:space="preserve">
+    <value>营业税：</value>
+  </data>
+  <data name="State:" xml:space="preserve">
+    <value>国家：</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Status :" xml:space="preserve">
+    <value>状态：</value>
+  </data>
+  <data name="Status : Approved" xml:space="preserve">
+    <value>状态：已同意</value>
+  </data>
+  <data name="Status : Rejected" xml:space="preserve">
+    <value>状态：已拒绝</value>
+  </data>
+  <data name="Status : Submitted" xml:space="preserve">
+    <value>状态：已提交</value>
+  </data>
+  <data name="Status Information" xml:space="preserve">
+    <value>状态信息</value>
+  </data>
+  <data name="Status Legend" xml:space="preserve">
+    <value>Status Legend</value>
+  </data>
+  <data name="Status List" xml:space="preserve">
+    <value>状态列表</value>
+  </data>
+  <data name="Status Type" xml:space="preserve">
+    <value>状态类型</value>
+  </data>
+  <data name="Status Type:" xml:space="preserve">
+    <value>状态类型：</value>
+  </data>
+  <data name="Status Types" xml:space="preserve">
+    <value>状态类型</value>
+  </data>
+  <data name="Status:" xml:space="preserve">
+    <value>状态：</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>所有项目组织</value>
+  </data>
+  <data name="strmsg" xml:space="preserve">
+    <value>您应该选择“项目小组”成员加入这个项目的任务。</value>
+  </data>
+  <data name="Sub Total" xml:space="preserve">
+    <value>小计</value>
+  </data>
+  <data name="Sub Total:" xml:space="preserve">
+    <value>小计：</value>
+  </data>
+  <data name="Submission Status:" xml:space="preserve">
+    <value>提交状态：</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>提交审批</value>
+  </data>
+  <data name="Submit_text" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Submitted" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Submitted By :" xml:space="preserve">
+    <value>提交：</value>
+  </data>
+  <data name="Submitted By:" xml:space="preserve">
+    <value>提交人：</value>
+  </data>
+  <data name="Submitted Date" xml:space="preserve">
+    <value>提交日期</value>
+  </data>
+  <data name="Submitted Hours" xml:space="preserve">
+    <value>提交时间</value>
+  </data>
+  <data name="Submitted On" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Submitted On :" xml:space="preserve">
+    <value>提交：</value>
+  </data>
+  <data name="Submitted On:" xml:space="preserve">
+    <value>提交：</value>
+  </data>
+  <data name="Submitted:" xml:space="preserve">
+    <value>提交：</value>
+  </data>
+  <data name="Sum" xml:space="preserve">
+    <value>总和</value>
+  </data>
+  <data name="Summarized:" xml:space="preserve">
+    <value>总结：</value>
+  </data>
+  <data name="Summary of all project tasks status. Usefull for project manager to get a high level view of whole project status." xml:space="preserve">
+    <value>总结所有项目任务状态。有益于项目经理获得整个项目状态的高水平查看。</value>
+  </data>
+  <data name="Summary of employee attendance helpful for user and administrator to generate summary of employee attendance for payroll purpose." xml:space="preserve">
+    <value>总结所有员工出勤情况。有益于管理员获得工资发放情况。</value>
+  </data>
+  <data name="Summary of Expenses occurred on project. Can be generated based on project client employee and data range." xml:space="preserve">
+    <value>总结项目发生的费用开支情况，可以根据项目、客户、员工和数据范围生成。</value>
+  </data>
+  <data name="Summary of Expenses occurred on project. Can be generated based on project, client, employee and data range." xml:space="preserve">
+    <value>总结项目发生的费用开支情况，可以根据项目、客户、员工和数据范围生成。</value>
+  </data>
+  <data name="Summary of Invoice Report." xml:space="preserve">
+    <value>总结发票报告。</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>星期日</value>
+  </data>
+  <data name="Supplies" xml:space="preserve">
+    <value>供给</value>
+  </data>
+  <data name="Switzerland, Franc" xml:space="preserve">
+    <value>瑞士，法郎</value>
+  </data>
+  <data name="Symbol" xml:space="preserve">
+    <value>符号</value>
+  </data>
+  <data name="SystemApproverType" xml:space="preserve">
+    <value>系统审批人类型</value>
+  </data>
+  <data name="SystemEMailNotification" xml:space="preserve">
+    <value>系统的电子邮件通知</value>
+  </data>
+  <data name="SystemSecurityCategory" xml:space="preserve">
+    <value>系统的安全性分类</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="Task / Project" xml:space="preserve">
+    <value>任务/项目</value>
+  </data>
+  <data name="Task Add Notification" xml:space="preserve">
+    <value>任务和通知</value>
+  </data>
+  <data name="Task Billing By Project/Clients Report" xml:space="preserve">
+    <value>按项目/客户报告分类的任务结算</value>
+  </data>
+  <data name="Task Billing By Projects/Clients" xml:space="preserve">
+    <value>按项目/客户分类的任务结算</value>
+  </data>
+  <data name="Task Billing By Projects/Clients Report" xml:space="preserve">
+    <value>按项目/客户报告分类的任务结算</value>
+  </data>
+  <data name="Task Code" xml:space="preserve">
+    <value>任务编号</value>
+  </data>
+  <data name="Task Code:" xml:space="preserve">
+    <value>任务编号：</value>
+  </data>
+  <data name="Task Description" xml:space="preserve">
+    <value>任务描述</value>
+  </data>
+  <data name="Task Description:" xml:space="preserve">
+    <value>任务描述：</value>
+  </data>
+  <data name="Task Estimated Cost" xml:space="preserve">
+    <value>任务的估算成本</value>
+  </data>
+  <data name="Task Estimated Cost (BaseCurrency)" xml:space="preserve">
+    <value>任务的估算成本（ 本币）</value>
+  </data>
+  <data name="Task Estimated Hours" xml:space="preserve">
+    <value>任务时间估计</value>
+  </data>
+  <data name="Task Id:" xml:space="preserve">
+    <value>任务ID：</value>
+  </data>
+  <data name="Task Name" xml:space="preserve">
+    <value>任务名称</value>
+  </data>
+  <data name="Task Name:" xml:space="preserve">
+    <value>任务名称：</value>
+  </data>
+  <data name="Task Open" xml:space="preserve">
+    <value>任务开放</value>
+  </data>
+  <data name="Task Status" xml:space="preserve">
+    <value>任务状态</value>
+  </data>
+  <data name="Task Status Summary Report" xml:space="preserve">
+    <value>任务状态总结报告</value>
+  </data>
+  <data name="Task Status:" xml:space="preserve">
+    <value>任务状态：</value>
+  </data>
+  <data name="Task Summary Report" xml:space="preserve">
+    <value>任务总结报告</value>
+  </data>
+  <data name="Task Type" xml:space="preserve">
+    <value>任务类型</value>
+  </data>
+  <data name="Task Type Information" xml:space="preserve">
+    <value>任务类型信息</value>
+  </data>
+  <data name="Task Type List" xml:space="preserve">
+    <value>任务类型列表</value>
+  </data>
+  <data name="Task Type:" xml:space="preserve">
+    <value>任务类型：</value>
+  </data>
+  <data name="Task Types" xml:space="preserve">
+    <value>任务类型</value>
+  </data>
+  <data name="Task Update Notification" xml:space="preserve">
+    <value>任务更新通知</value>
+  </data>
+  <data name="TaskBillingByProjectsClientsReport" xml:space="preserve">
+    <value>按项目/客户报告分类的任务结算</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="TASKS1" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="Tax" xml:space="preserve">
+    <value>税</value>
+  </data>
+  <data name="Tax (BaseCurrency)" xml:space="preserve">
+    <value>税（ 本币）</value>
+  </data>
+  <data name="Tax 1" xml:space="preserve">
+    <value>税务1</value>
+  </data>
+  <data name="Tax 1:" xml:space="preserve">
+    <value>税务1 ：</value>
+  </data>
+  <data name="Tax 2" xml:space="preserve">
+    <value>税务2</value>
+  </data>
+  <data name="Tax 2:" xml:space="preserve">
+    <value>税务2 ：</value>
+  </data>
+  <data name="Tax Amount" xml:space="preserve">
+    <value>税额</value>
+  </data>
+  <data name="Tax Code" xml:space="preserve">
+    <value>税法</value>
+  </data>
+  <data name="Tax Code Information" xml:space="preserve">
+    <value>税法信息</value>
+  </data>
+  <data name="Tax Code:" xml:space="preserve">
+    <value>税法：</value>
+  </data>
+  <data name="Tax Zone" xml:space="preserve">
+    <value>税区</value>
+  </data>
+  <data name="Tax Zone Information" xml:space="preserve">
+    <value>税区信息</value>
+  </data>
+  <data name="Tax Zone List" xml:space="preserve">
+    <value>税区名单</value>
+  </data>
+  <data name="Tax Zone:" xml:space="preserve">
+    <value>税区：</value>
+  </data>
+  <data name="Tax:" xml:space="preserve">
+    <value>税：</value>
+  </data>
+  <data name="TaxCode 1" xml:space="preserve">
+    <value>税法1</value>
+  </data>
+  <data name="TaxCode 2" xml:space="preserve">
+    <value>税法2</value>
+  </data>
+  <data name="Taxi" xml:space="preserve">
+    <value>出租车</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>团队</value>
+  </data>
+  <data name="Team Based Collaboration" xml:space="preserve">
+    <value>团队协作</value>
+  </data>
+  <data name="Team Lead" xml:space="preserve">
+    <value>团队领导</value>
+  </data>
+  <data name="Team Lead -&amp;gt; Project Manager" xml:space="preserve">
+    <value>团队领导-项目经理</value>
+  </data>
+  <data name="Team Lead --&gt; Client" xml:space="preserve">
+    <value>团队领导-客户</value>
+  </data>
+  <data name="Team Lead --&gt; Project Manager" xml:space="preserve">
+    <value>团队领导-项目经理</value>
+  </data>
+  <data name="Team Lead:" xml:space="preserve">
+    <value>团队领导：</value>
+  </data>
+  <data name="Team Leader" xml:space="preserve">
+    <value>团队领导</value>
+  </data>
+  <data name="TeamLead" xml:space="preserve">
+    <value>团队领导</value>
+  </data>
+  <data name="Team-Lead" xml:space="preserve">
+    <value>团队领导</value>
+  </data>
+  <data name="Technology" xml:space="preserve">
+    <value>技术</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="Telephone:" xml:space="preserve">
+    <value>电话：</value>
+  </data>
+  <data name="Telephone1" xml:space="preserve">
+    <value>电话1</value>
+  </data>
+  <data name="Telephone1:" xml:space="preserve">
+    <value>电话1：</value>
+  </data>
+  <data name="Telephone2" xml:space="preserve">
+    <value>电话2</value>
+  </data>
+  <data name="Telephone2:" xml:space="preserve">
+    <value>电话2：</value>
+  </data>
+  <data name="Termination Date:" xml:space="preserve">
+    <value>终止日期：</value>
+  </data>
+  <data name="Terminology Name" xml:space="preserve">
+    <value>术语名称</value>
+  </data>
+  <data name="Thank you for your interest your TimeLive account has been activated." xml:space="preserve">
+    <value>感谢您关注，您的TimeLive帐户已经启用。</value>
+  </data>
+  <data name="This Email Address will be [Administrator] login name." xml:space="preserve">
+    <value>此电子邮件地址将是[管理员]的登录名。</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="Time Billing List" xml:space="preserve">
+    <value>时间结算清单</value>
+  </data>
+  <data name="Time Billing Worksheet" xml:space="preserve">
+    <value>时间结算表</value>
+  </data>
+  <data name="Time Entry" xml:space="preserve">
+    <value>时间录入</value>
+  </data>
+  <data name="Time Entry Approval Activity" xml:space="preserve">
+    <value>时间录入审批活动</value>
+  </data>
+  <data name="Time Entry Approver" xml:space="preserve">
+    <value>时间录入审批人</value>
+  </data>
+  <data name="Time Entry Archive" xml:space="preserve">
+    <value>时间录入档案</value>
+  </data>
+  <data name="Time Entry Date" xml:space="preserve">
+    <value>时间录入日期</value>
+  </data>
+  <data name="Time Entry Date :" xml:space="preserve">
+    <value>时间录入日期：</value>
+  </data>
+  <data name="Time Entry Date:" xml:space="preserve">
+    <value>时间录入日期：</value>
+  </data>
+  <data name="Time Entry Day View" xml:space="preserve">
+    <value>时间录入按天查看</value>
+  </data>
+  <data name="Time Entry Format" xml:space="preserve">
+    <value>时间录入格式：</value>
+  </data>
+  <data name="Time Entry Period" xml:space="preserve">
+    <value>时间录入周期</value>
+  </data>
+  <data name="Time Entry Period View" xml:space="preserve">
+    <value>时间录入周期查看</value>
+  </data>
+  <data name="Time Entry Status - Approved" xml:space="preserve">
+    <value>时间录入状态-已同意</value>
+  </data>
+  <data name="Time Entry Status - Not Submitted" xml:space="preserve">
+    <value>时间录入状态-未提交</value>
+  </data>
+  <data name="Time Entry Status - Rejected" xml:space="preserve">
+    <value>时间录入状态-被拒绝</value>
+  </data>
+  <data name="Time Entry Status - Submitted" xml:space="preserve">
+    <value>时间入学状态-已提交</value>
+  </data>
+  <data name="Time Entry Time Card View" xml:space="preserve">
+    <value>时间录入时间卡查看</value>
+  </data>
+  <data name="Time Entry Week View" xml:space="preserve">
+    <value>时间录入周视图</value>
+  </data>
+  <data name="Time Entry Week View Read-only" xml:space="preserve">
+    <value>时间录入周查看-只读</value>
+  </data>
+  <data name="Time Expense Billing" xml:space="preserve">
+    <value>时间费用结算</value>
+  </data>
+  <data name="Time Expense Billing List" xml:space="preserve">
+    <value>时间费用结算列表</value>
+  </data>
+  <data name="Time Expense Invoice" xml:space="preserve">
+    <value>时间费用发票</value>
+  </data>
+  <data name="Time Expense Invoice List" xml:space="preserve">
+    <value>时间费用发票列表</value>
+  </data>
+  <data name="Time In" xml:space="preserve">
+    <value>工作时间</value>
+  </data>
+  <data name="Time Off" xml:space="preserve">
+    <value>休假时间</value>
+  </data>
+  <data name="Time Off Approval" xml:space="preserve">
+    <value>休假审批</value>
+  </data>
+  <data name="Time Off Approval Type:" xml:space="preserve">
+    <value>休假审批类型：</value>
+  </data>
+  <data name="Time Off Approval1" xml:space="preserve">
+    <value>休假审批</value>
+  </data>
+  <data name="Time Off Approved Notification" xml:space="preserve">
+    <value>休假核准通知书</value>
+  </data>
+  <data name="Time Off Description" xml:space="preserve">
+    <value>休假说明</value>
+  </data>
+  <data name="Time Off End Date:" xml:space="preserve">
+    <value>休假结束日期：</value>
+  </data>
+  <data name="Time Off Policies" xml:space="preserve">
+    <value>休假政策</value>
+  </data>
+  <data name="Time Off Policies Detail" xml:space="preserve">
+    <value>休假政策详细</value>
+  </data>
+  <data name="Time Off Policies Detail List" xml:space="preserve">
+    <value>休假政策详细列表</value>
+  </data>
+  <data name="Time Off Policy" xml:space="preserve">
+    <value>休假政策</value>
+  </data>
+  <data name="Time Off Policy Information" xml:space="preserve">
+    <value>休假政策信息</value>
+  </data>
+  <data name="Time Off Policy List" xml:space="preserve">
+    <value>休假政策列表</value>
+  </data>
+  <data name="Time Off Policy:" xml:space="preserve">
+    <value>休假政策：</value>
+  </data>
+  <data name="Time Off Rejected Notification" xml:space="preserve">
+    <value>休假被拒绝的通知</value>
+  </data>
+  <data name="Time Off Request" xml:space="preserve">
+    <value>休假请求</value>
+  </data>
+  <data name="Time Off Request Information" xml:space="preserve">
+    <value>休假请求信息</value>
+  </data>
+  <data name="Time Off Request Required:" xml:space="preserve">
+    <value>休假请假要求：</value>
+  </data>
+  <data name="Time Off Setup" xml:space="preserve">
+    <value>请假设置</value>
+  </data>
+  <data name="Time Off Start Date:" xml:space="preserve">
+    <value>请假开始日期：</value>
+  </data>
+  <data name="Time Off Status" xml:space="preserve">
+    <value>请假状态</value>
+  </data>
+  <data name="Time Off Type" xml:space="preserve">
+    <value>请假类型</value>
+  </data>
+  <data name="Time Off Types" xml:space="preserve">
+    <value>请假类型</value>
+  </data>
+  <data name="Time Off Types Information" xml:space="preserve">
+    <value>请假类型信息</value>
+  </data>
+  <data name="Time Off Types List" xml:space="preserve">
+    <value>请假类型列表</value>
+  </data>
+  <data name="Time Off Types:" xml:space="preserve">
+    <value>请假类型：</value>
+  </data>
+  <data name="Time Out" xml:space="preserve">
+    <value>超时</value>
+  </data>
+  <data name="Time Sheet" xml:space="preserve">
+    <value>时间表</value>
+  </data>
+  <data name="Time Sheet Approval" xml:space="preserve">
+    <value>时间表审批</value>
+  </data>
+  <data name="Time Sheet Approval Type" xml:space="preserve">
+    <value>时间表审批类型</value>
+  </data>
+  <data name="Time Sheet Approval Type:" xml:space="preserve">
+    <value>时间表审批类型：</value>
+  </data>
+  <data name="Time Sheet Approvals" xml:space="preserve">
+    <value>时间表审批</value>
+  </data>
+  <data name="Time:" xml:space="preserve">
+    <value>时间：</value>
+  </data>
+  <data name="TimeEntry_Validation" xml:space="preserve">
+    <value>您必须选择“任务”在连续为了节省“时间录入”记录。</value>
+  </data>
+  <data name="TimeIn" xml:space="preserve">
+    <value>时间内</value>
+  </data>
+  <data name="TimeLive supports unlimited users support up to 30 days. After 30 days it converts to 5 users free account" xml:space="preserve">
+    <value>（ TimeLive支持无限用户支持最多30天。 30天之后，它转换为5个用户免费帐户）</value>
+  </data>
+  <data name="TimeOut" xml:space="preserve">
+    <value>超时</value>
+  </data>
+  <data name="Timer" xml:space="preserve">
+    <value>定时器</value>
+  </data>
+  <data name="TIMESHEET" xml:space="preserve">
+    <value>时间表</value>
+  </data>
+  <data name="Timesheet &amp; Expense Sheet Print Info:" xml:space="preserve">
+    <value>时间表及费用表打印信息：</value>
+  </data>
+  <data name="Timesheet / Project / Billing" xml:space="preserve">
+    <value>工时/项目/结算</value>
+  </data>
+  <data name="TimeSheet Approval" xml:space="preserve">
+    <value>工时审批</value>
+  </data>
+  <data name="Timesheet Approval Activity" xml:space="preserve">
+    <value>工时审批活动</value>
+  </data>
+  <data name="Timesheet Approval Detail" xml:space="preserve">
+    <value>工时审批详细</value>
+  </data>
+  <data name="Timesheet Approval Type" xml:space="preserve">
+    <value>工时审批类型</value>
+  </data>
+  <data name="Timesheet Approved Notification" xml:space="preserve">
+    <value>工时核定通知</value>
+  </data>
+  <data name="Timesheet Audit" xml:space="preserve">
+    <value>审计工时</value>
+  </data>
+  <data name="Timesheet Audit Trail Report" xml:space="preserve">
+    <value>工时审计跟踪报告</value>
+  </data>
+  <data name="Timesheet Billing List" xml:space="preserve">
+    <value>工时结算列表</value>
+  </data>
+  <data name="Timesheet Description" xml:space="preserve">
+    <value>工时描述</value>
+  </data>
+  <data name="Timesheet Period" xml:space="preserve">
+    <value>工时周期</value>
+  </data>
+  <data name="Timesheet Period Audit" xml:space="preserve">
+    <value>工时周期审计</value>
+  </data>
+  <data name="Timesheet Period List" xml:space="preserve">
+    <value>工时周期列表</value>
+  </data>
+  <data name="Timesheet Period Type" xml:space="preserve">
+    <value>工时周期类型</value>
+  </data>
+  <data name="Timesheet Period Type Information" xml:space="preserve">
+    <value>工时周期类型信息</value>
+  </data>
+  <data name="Timesheet Period Type:" xml:space="preserve">
+    <value>工时周期类型：</value>
+  </data>
+  <data name="Timesheet Period Types" xml:space="preserve">
+    <value>工时周期分类</value>
+  </data>
+  <data name="Timesheet Periods" xml:space="preserve">
+    <value>工时周期</value>
+  </data>
+  <data name="Timesheet Print" xml:space="preserve">
+    <value>时间表打印</value>
+  </data>
+  <data name="Timesheet Print Footer:" xml:space="preserve">
+    <value>时间表打印页脚:</value>
+  </data>
+  <data name="Timesheet Rejected Notification" xml:space="preserve">
+    <value>工时驳回通知</value>
+  </data>
+  <data name="Timesheet Setup" xml:space="preserve">
+    <value>设定时间表</value>
+  </data>
+  <data name="Timesheet Status" xml:space="preserve">
+    <value>时间表状态</value>
+  </data>
+  <data name="Timesheet Status :" xml:space="preserve">
+    <value>时间表状态：</value>
+  </data>
+  <data name="Timesheet Status:" xml:space="preserve">
+    <value>时间表状态：</value>
+  </data>
+  <data name="Timesheet Submission Report" xml:space="preserve">
+    <value>时间表提交报告</value>
+  </data>
+  <data name="Timesheet Total :" xml:space="preserve">
+    <value>时间表总计：</value>
+  </data>
+  <data name="Timesheet Total:" xml:space="preserve">
+    <value>时间表总计：</value>
+  </data>
+  <data name="Timezone" xml:space="preserve">
+    <value>时区</value>
+  </data>
+  <data name="TimeZone:" xml:space="preserve">
+    <value>时区：</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="Title:" xml:space="preserve">
+    <value>标题：</value>
+  </data>
+  <data name="Toll Free: 1-866-252-2107" xml:space="preserve">
+    <value>免费电话： 1-866-252-2107</value>
+  </data>
+  <data name="Toll Free: 1-888-666-8154" xml:space="preserve">
+    <value>免费电话： 1-888-666-8154</value>
+  </data>
+  <data name="Tolls" xml:space="preserve">
+    <value>通行费</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>共计</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>总金额</value>
+  </data>
+  <data name="Total Duration" xml:space="preserve">
+    <value>总时间</value>
+  </data>
+  <data name="Total Hours" xml:space="preserve">
+    <value>总时数</value>
+  </data>
+  <data name="Total Reimbursement" xml:space="preserve">
+    <value>偿还总额</value>
+  </data>
+  <data name="Total Reimbursement:" xml:space="preserve">
+    <value>偿还总额：</value>
+  </data>
+  <data name="Total Time" xml:space="preserve">
+    <value>总时间</value>
+  </data>
+  <data name="Total Time:" xml:space="preserve">
+    <value>总时间：</value>
+  </data>
+  <data name="Total:" xml:space="preserve">
+    <value>总计：</value>
+  </data>
+  <data name="TotalAbsent" xml:space="preserve">
+    <value>共计缺席：</value>
+  </data>
+  <data name="TotalPresent" xml:space="preserve">
+    <value>共计现状：</value>
+  </data>
+  <data name="TotalTime" xml:space="preserve">
+    <value>总时间</value>
+  </data>
+  <data name="TR" xml:space="preserve">
+    <value>TR</value>
+  </data>
+  <data name="Track and Monitor" xml:space="preserve">
+    <value>跟踪和监控</value>
+  </data>
+  <data name="Track and Monitor Your bugs" xml:space="preserve">
+    <value>跟踪和监控您的错误</value>
+  </data>
+  <data name="Track and monitor your projects / tasks / timesheets / expenses / bugs with easy to use reports and graphs." xml:space="preserve">
+    <value>跟踪和监控您的项目/任务/时间表/费用/错误与易于使用的报告和图表。</value>
+  </data>
+  <data name="Training" xml:space="preserve">
+    <value>培训</value>
+  </data>
+  <data name="Travel" xml:space="preserve">
+    <value>旅行</value>
+  </data>
+  <data name="Trial" xml:space="preserve">
+    <value>试用</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="Un Approved" xml:space="preserve">
+    <value>Un Approved</value>
+  </data>
+  <data name="Un Billable" xml:space="preserve">
+    <value>Un Billable</value>
+  </data>
+  <data name="Un Completed" xml:space="preserve">
+    <value>Un Completed</value>
+  </data>
+  <data name="Unable To Activate License" xml:space="preserve">
+    <value>无法激活许可</value>
+  </data>
+  <data name="UnActive" xml:space="preserve">
+    <value>无效</value>
+  </data>
+  <data name="UnCheck All" xml:space="preserve">
+    <value>全部取消</value>
+  </data>
+  <data name="UnCheck All Approved" xml:space="preserve">
+    <value>取消所有核准</value>
+  </data>
+  <data name="Uncheck-All" xml:space="preserve">
+    <value>取消所有</value>
+  </data>
+  <data name="Uncheck-All Approved" xml:space="preserve">
+    <value>取消所有核准</value>
+  </data>
+  <data name="Uncompleted" xml:space="preserve">
+    <value>未完成</value>
+  </data>
+  <data name="United Kingdom, Pounds" xml:space="preserve">
+    <value>英国，磅</value>
+  </data>
+  <data name="United State Dollar" xml:space="preserve">
+    <value>美国美元</value>
+  </data>
+  <data name="Unlimited User Support Expiry:" xml:space="preserve">
+    <value>无限用户支持到期：</value>
+  </data>
+  <data name="Unlimited users support expiry:" xml:space="preserve">
+    <value>无限用户支持到期：</value>
+  </data>
+  <data name="UnPaid" xml:space="preserve">
+    <value>未付</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Update all record within this range" xml:space="preserve">
+    <value>更新所有记录在此范围</value>
+  </data>
+  <data name="Update all records within this range:" xml:space="preserve">
+    <value>更新所有记录在此范围：</value>
+  </data>
+  <data name="Update By" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Update Currencies" xml:space="preserve">
+    <value>更新货币</value>
+  </data>
+  <data name="Update Date" xml:space="preserve">
+    <value>更新日期</value>
+  </data>
+  <data name="Update Email Notification Preferences" xml:space="preserve">
+    <value>更新电子邮件通知偏好</value>
+  </data>
+  <data name="Update existing records:" xml:space="preserve">
+    <value>更新现有的记录：</value>
+  </data>
+  <data name="Update Expense Entry Approvals" xml:space="preserve">
+    <value>更新费用录入许可</value>
+  </data>
+  <data name="Update Time Entry and Expense Entry Records As Billed" xml:space="preserve">
+    <value>更新时间录入和支出项记录、账单</value>
+  </data>
+  <data name="Update Time Entry Approvals" xml:space="preserve">
+    <value>更新时间录入许可</value>
+  </data>
+  <data name="Update Time Entry Records As Billed" xml:space="preserve">
+    <value>更新时间录入记录、账单</value>
+  </data>
+  <data name="Update Time Off" xml:space="preserve">
+    <value>更新请假</value>
+  </data>
+  <data name="Update Time Off Approvals" xml:space="preserve">
+    <value>更新请假许可</value>
+  </data>
+  <data name="Update_text" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Updated By" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Updated Date" xml:space="preserve">
+    <value>更新日期</value>
+  </data>
+  <data name="Upload Company Own Logo" xml:space="preserve">
+    <value>上传自己的徽标公司</value>
+  </data>
+  <data name="Upload File" xml:space="preserve">
+    <value>上传文件：</value>
+  </data>
+  <data name="Upload Own Company Logo" xml:space="preserve">
+    <value>上传自己的公司徽标</value>
+  </data>
+  <data name="Upload Report Icon:" xml:space="preserve">
+    <value>上传报告标示：</value>
+  </data>
+  <data name="Upload_text" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="Urgent" xml:space="preserve">
+    <value>紧急</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>网址</value>
+  </data>
+  <data name="Use Employee Own Billing Rate" xml:space="preserve">
+    <value>使用员工自己的结算费率</value>
+  </data>
+  <data name="Use Project Employee Billing Rate" xml:space="preserve">
+    <value>使用项目员工结算费率</value>
+  </data>
+  <data name="Use Project Roles Billing Rate" xml:space="preserve">
+    <value>使用项目角色结算费率</value>
+  </data>
+  <data name="Use Project Task Billing Rate" xml:space="preserve">
+    <value>使用项目任务结算费率</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="User Defined Name" xml:space="preserve">
+    <value>用户定义的名称</value>
+  </data>
+  <data name="User Interface Language" xml:space="preserve">
+    <value>用户界面语言</value>
+  </data>
+  <data name="User Interface Language:" xml:space="preserve">
+    <value>用户界面语言：</value>
+  </data>
+  <data name="User Name" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="User Name:" xml:space="preserve">
+    <value>用户名：</value>
+  </data>
+  <data name="User Pages" xml:space="preserve">
+    <value>用户页面</value>
+  </data>
+  <data name="Username is required." xml:space="preserve">
+    <value>用户名是必需的。</value>
+  </data>
+  <data name="Username:" xml:space="preserve">
+    <value>用户名：</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="Users Reports" xml:space="preserve">
+    <value>用户报告</value>
+  </data>
+  <data name="V 2.93" xml:space="preserve">
+    <value>v 2.93</value>
+  </data>
+  <data name="Vacation" xml:space="preserve">
+    <value>假期</value>
+  </data>
+  <data name="Value 1 Base Currency Unit X New Currency Units" xml:space="preserve">
+    <value>值1相应的货币单位= X新的货币单位</value>
+  </data>
+  <data name="VAT" xml:space="preserve">
+    <value>增值税</value>
+  </data>
+  <data name="VAT:" xml:space="preserve">
+    <value>增值税：</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>验证</value>
+  </data>
+  <data name="Verify Password" xml:space="preserve">
+    <value>验证密码</value>
+  </data>
+  <data name="Verify Password:" xml:space="preserve">
+    <value>验证密码：</value>
+  </data>
+  <data name="Verify:" xml:space="preserve">
+    <value>验证：</value>
+  </data>
+  <data name="Visa" xml:space="preserve">
+    <value>签证</value>
+  </data>
+  <data name="Web based fully hosted solution (ASP Based)" xml:space="preserve">
+    <value>基于Web的完全托管解决方案（基于ASP）</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>网址</value>
+  </data>
+  <data name="Website:" xml:space="preserve">
+    <value>网址：</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="Week No" xml:space="preserve">
+    <value>周号</value>
+  </data>
+  <data name="Week No." xml:space="preserve">
+    <value>周号</value>
+  </data>
+  <data name="Week Start Day" xml:space="preserve">
+    <value>一周起始日</value>
+  </data>
+  <data name="Week Start Day:" xml:space="preserve">
+    <value>一周起始日:</value>
+  </data>
+  <data name="Week TimeSheet Summary" xml:space="preserve">
+    <value>时间表一周综述</value>
+  </data>
+  <data name="Week View" xml:space="preserve">
+    <value>周视图</value>
+  </data>
+  <data name="Weekly Timesheet" xml:space="preserve">
+    <value>每周时间表</value>
+  </data>
+  <data name="Welfair" xml:space="preserve">
+    <value>福利</value>
+  </data>
+  <data name="Windows Based" xml:space="preserve">
+    <value>基于Windows</value>
+  </data>
+  <data name="Windows based installable on server and local system" xml:space="preserve">
+    <value>基于Windows服务器和本地系统</value>
+  </data>
+  <data name="Work Phone No." xml:space="preserve">
+    <value>工作电话号码</value>
+  </data>
+  <data name="Work Phone No:" xml:space="preserve">
+    <value>工作电话号码：</value>
+  </data>
+  <data name="Work Type" xml:space="preserve">
+    <value>工作类型</value>
+  </data>
+  <data name="Work Type Code" xml:space="preserve">
+    <value>工作类型代码</value>
+  </data>
+  <data name="Work Type Code:" xml:space="preserve">
+    <value>工作类型代码：</value>
+  </data>
+  <data name="Work Type Information" xml:space="preserve">
+    <value>工作类型信息</value>
+  </data>
+  <data name="Work Type List" xml:space="preserve">
+    <value>工作类型列表</value>
+  </data>
+  <data name="Work Type List:" xml:space="preserve">
+    <value>工作类型列表：</value>
+  </data>
+  <data name="Work Type:" xml:space="preserve">
+    <value>工作类型：</value>
+  </data>
+  <data name="Work Types" xml:space="preserve">
+    <value>工作类型</value>
+  </data>
+  <data name="Working Day" xml:space="preserve">
+    <value>工作日</value>
+  </data>
+  <data name="Working Day Type" xml:space="preserve">
+    <value>工作日类型</value>
+  </data>
+  <data name="Working Day Type Information" xml:space="preserve">
+    <value>工作日类型信息</value>
+  </data>
+  <data name="Working Day Type List" xml:space="preserve">
+    <value>工作日类型列表</value>
+  </data>
+  <data name="Working Day Type:" xml:space="preserve">
+    <value>工作日类型：</value>
+  </data>
+  <data name="Working Days" xml:space="preserve">
+    <value>工作日</value>
+  </data>
+  <data name="Working Days List" xml:space="preserve">
+    <value>工作日列表</value>
+  </data>
+  <data name="Working Days:" xml:space="preserve">
+    <value>工作日：</value>
+  </data>
+  <data name="WorkingDay" xml:space="preserve">
+    <value>工作日</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="You can log-in in TimeLive using your administrator email address and password which you entered in registration form." xml:space="preserve">
+    <value>您可以登录在TimeLive使用您的管理员电子邮件地址和密码，您所输入的登记表格。</value>
+  </data>
+  <data name="You may have to check your JUNK E-MAIL folder. If you do not receive further instructions please contact support using the following toll free numbers:" xml:space="preserve">
+    <value>您可能需要检查您的垃圾邮件文件夹中。如果您没有收到进一步的指示，请联系支持使用以下免费电话：</value>
+  </data>
+  <data name="Your password and instructions have been e-mailed to" xml:space="preserve">
+    <value>您的密码和说明已发送到电子邮件</value>
+  </data>
+  <data name="Your Web TimeSheet Account is Ready" xml:space="preserve">
+    <value>您的网页已准备就绪</value>
+  </data>
+  <data name="Zip Code" xml:space="preserve">
+    <value>邮编</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>邮编：</value>
+  </data>
+  <data name="ZipCode:" xml:space="preserve">
+    <value>邮编：</value>
+  </data>
+  <data name="Enable Password Complexity:" xml:space="preserve">
+    <value>启用复杂密码：</value>
+  </data>
+  <data name="Auto Generate Project Code:" xml:space="preserve">
+    <value>自动生成项目代码：</value>
+  </data>
+  <data name="Invoice Billing Type:" xml:space="preserve">
+    <value>发票的开票类型：</value>
+  </data>
+  <data name="Invoice Footer:" xml:space="preserve">
+    <value>发票页脚：</value>
+  </data>
+  <data name="License Users Usage:" xml:space="preserve">
+    <value>授权用户的使用情况：</value>
+  </data>
+  <data name="Show Billing Rate In Invoice Report:" xml:space="preserve">
+    <value>在发票报表中显示结算费率：</value>
+  </data>
+  <data name="Show Percentage In Timesheet:" xml:space="preserve">
+    <value>在工时表中显示百分比：</value>
+  </data>
+  <data name="Show Project Name In Invoice Report:" xml:space="preserve">
+    <value>在发票报告中显示项目名称：</value>
+  </data>
+  <data name="Time Entry Clock Format:" xml:space="preserve">
+    <value>时间录入时钟格式：</value>
+  </data>
+  <data name="Time Entry Hours Format:" xml:space="preserve">
+    <value>时间录入时钟格式：</value>
+  </data>
+  <data name="Timesheet Periods Overdue:" xml:space="preserve">
+    <value>逾期工时周期：</value>
+  </data>
+  <data name="Add Custom Field" xml:space="preserve">
+    <value>添加自定义字段</value>
+  </data>
+  <data name="Custom Field" xml:space="preserve">
+    <value>自定义字段</value>
+  </data>
+  <data name="Custom Field Caption" xml:space="preserve">
+    <value>自定义字段标题</value>
+  </data>
+  <data name="Custom Field Information" xml:space="preserve">
+    <value>自定义字段信息</value>
+  </data>
+  <data name="Custom Field List" xml:space="preserve">
+    <value>自定义字段列表</value>
+  </data>
+  <data name="Custom Field Manage" xml:space="preserve">
+    <value>自定义字段管理</value>
+  </data>
+  <data name="Custom Field Manage List" xml:space="preserve">
+    <value>自定义字段管理列表</value>
+  </data>
+  <data name="Custom Field Name" xml:space="preserve">
+    <value>自定义字段名称</value>
+  </data>
+  <data name="Custom Field Name:" xml:space="preserve">
+    <value>自定义字段名称:</value>
+  </data>
+  <data name="Data Type" xml:space="preserve">
+    <value>数据类型</value>
+  </data>
+  <data name="Database Field Name" xml:space="preserve">
+    <value>数据库域名</value>
+  </data>
+  <data name="Default Value" xml:space="preserve">
+    <value>默认值</value>
+  </data>
+  <data name="IsDisable:" xml:space="preserve">
+    <value>是禁用的</value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>是必需的</value>
+  </data>
+  <data name="IsRequired:" xml:space="preserve">
+    <value>是必需的:</value>
+  </data>
+  <data name="Maximum Length:" xml:space="preserve">
+    <value>最大长度:</value>
+  </data>
+  <data name="Maximum Value:" xml:space="preserve">
+    <value>最大值:</value>
+  </data>
+  <data name="Minimum Value:" xml:space="preserve">
+    <value>最小值:</value>
+  </data>
+  <data name="Options:" xml:space="preserve">
+    <value>选项:</value>
+  </data>
+  <data name="Show Client Department In Project:" xml:space="preserve">
+    <value>在项目中显示主管部门：</value>
+  </data>
+  <data name="Show Client Name In Task:" xml:space="preserve">
+    <value>在任务中显示客户：</value>
+  </data>
+  <data name="Show Copy Activities Button In Timesheet:" xml:space="preserve">
+    <value>在时间表显示复制活动的按钮：</value>
+  </data>
+  <data name="Show Copy Timesheet Button:" xml:space="preserve">
+    <value>显示复制时间表按钮：</value>
+  </data>
+  <data name="Show Cost Center In Timesheet By:" xml:space="preserve">
+    <value>在工时表中显示成本中心：</value>
+  </data>
+  <data name="Show Entry Date In Invoice Report:" xml:space="preserve">
+    <value>在发票报表中显示录入时间：</value>
+  </data>
+  <data name="Show Project Name In Task:" xml:space="preserve">
+    <value>在任务中显示项目名称：</value>
+  </data>
+  <data name="Show Task Percentage In Timesheet:" xml:space="preserve">
+    <value>在工时表中显示任务百分比：</value>
+  </data>
+  <data name="Sort Timesheet By:" xml:space="preserve">
+    <value>工时表排序：</value>
+  </data>
+  <data name="Use Electronic Signature:" xml:space="preserve">
+    <value>使用电子签名：</value>
+  </data>
+  <data name="Dashboard Setting" xml:space="preserve">
+    <value>公告栏设置</value>
+  </data>
+  <data name="Click on chart for more information" xml:space="preserve">
+    <value>点击上图的更多信息，</value>
+  </data>
+  <data name="Export Offline Timesheet" xml:space="preserve">
+    <value>导出离线时间表</value>
+  </data>
+  <data name="Gantt" xml:space="preserve">
+    <value>甘特图</value>
+  </data>
+  <data name="My Projects by Status Count" xml:space="preserve">
+    <value>我的项目状态计数</value>
+  </data>
+  <data name="My Tasks By Completed %" xml:space="preserve">
+    <value>我的任务完成％</value>
+  </data>
+  <data name="My Tasks by Duration" xml:space="preserve">
+    <value>我的任务时间</value>
+  </data>
+  <data name="My Tasks by Status Count" xml:space="preserve">
+    <value>我的任务状态计数</value>
+  </data>
+  <data name="Choose File" xml:space="preserve">
+    <value>选择“文件”</value>
+  </data>
+  <data name="Electronic signature size (Width 180px Height 50px)" xml:space="preserve">
+    <value>电子签名尺寸（宽180px，高度50像素）</value>
+  </data>
+  <data name="Electronic Signature:" xml:space="preserve">
+    <value>电子签名：</value>
+  </data>
+  <data name="Force Password Change:" xml:space="preserve">
+    <value>强制密码更改：</value>
+  </data>
+  <data name="Image size (Width 64px Height 64px)" xml:space="preserve">
+    <value>影像尺寸（宽64PX高度64PX）</value>
+  </data>
+  <data name="Image:" xml:space="preserve">
+    <value>图片：</value>
+  </data>
+  <data name="No File Chosen" xml:space="preserve">
+    <value>没有选择文件</value>
+  </data>
+  <data name="Profile Picture" xml:space="preserve">
+    <value>资料图片</value>
+  </data>
+  <data name="Show Employee Profile Picture:" xml:space="preserve">
+    <value>显示员工资料图片：</value>
+  </data>
+  <data name="Current Password:" xml:space="preserve">
+    <value>密码：</value>
+  </data>
+  <data name="Project Task Employee" xml:space="preserve">
+    <value>项目工作员工</value>
+  </data>
+  <data name="Project Task Employee Report" xml:space="preserve">
+    <value>“项目任务雇员报告</value>
+  </data>
+  <data name="Project Team Report" xml:space="preserve">
+    <value>项目小组报告</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>加</value>
+  </data>
+  <data name="Manage Approval" xml:space="preserve">
+    <value>管理认证</value>
+  </data>
+  <data name="Manage Approvals" xml:space="preserve">
+    <value>管理认证</value>
+  </data>
+  <data name="Import Offline Timesheet" xml:space="preserve">
+    <value>导入离线时间表</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>菜单</value>
+  </data>
+  <data name="Time Off Records" xml:space="preserve">
+    <value>记录时间关</value>
+  </data>
+  <data name="Timesheet Records" xml:space="preserve">
+    <value>时间表记录</value>
+  </data>
+  <data name="Timesheet Type:" xml:space="preserve">
+    <value>时间表类型：</value>
+  </data>
+  <data name="Due Date" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="Due Date:" xml:space="preserve">
+    <value>截止日期：</value>
+  </data>
+  <data name="Mass Update" xml:space="preserve">
+    <value>批量更新</value>
+  </data>
+  <data name="No Data Available" xml:space="preserve">
+    <value>无可用数据</value>
+  </data>
+  <data name="Task Attachment" xml:space="preserve">
+    <value>任务附件</value>
+  </data>
+  <data name="Task Billing Rate" xml:space="preserve">
+    <value>任务计费率</value>
+  </data>
+  <data name="Task Estimates" xml:space="preserve">
+    <value>任务估算</value>
+  </data>
+  <data name="Task Parameters" xml:space="preserve">
+    <value>工作参数</value>
+  </data>
+  <data name="Calculate Task Percentage Automatically:" xml:space="preserve">
+    <value>自动计算任务的百分比：</value>
+  </data>
+  <data name="Enable Offline Timesheet:" xml:space="preserve">
+    <value>启用离线时间表：</value>
+  </data>
+  <data name="Expense Informaion" xml:space="preserve">
+    <value>费用湖北信息</value>
+  </data>
+  <data name="From Email Address :" xml:space="preserve">
+    <value>电邮地址：</value>
+  </data>
+  <data name="General Information" xml:space="preserve">
+    <value>一般资料</value>
+  </data>
+  <data name="General Preferences" xml:space="preserve">
+    <value>“一般首选项”</value>
+  </data>
+  <data name="Include Current Year In Project Code:" xml:space="preserve">
+    <value>包括本年度在项目代码：</value>
+  </data>
+  <data name="Invoice Setup" xml:space="preserve">
+    <value>发票设置</value>
+  </data>
+  <data name="Logo size (Width 180px Height 50px)" xml:space="preserve">
+    <value>标志尺寸（宽180px，高度50像素）</value>
+  </data>
+  <data name="No Expiry" xml:space="preserve">
+    <value>未到期</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="Organization Information" xml:space="preserve">
+    <value>组织信息</value>
+  </data>
+  <data name="Project Code Prefix:" xml:space="preserve">
+    <value>项目代码前缀：</value>
+  </data>
+  <data name="Project Setup" xml:space="preserve">
+    <value>项目设置</value>
+  </data>
+  <data name="Show Additional Project Information Type in Timesheet:" xml:space="preserve">
+    <value>显示的时间表其它项目信息类型：</value>
+  </data>
+  <data name="Show Completed Project In Project List:" xml:space="preserve">
+    <value>在项目列表中显示已完成的项目：</value>
+  </data>
+  <data name="Show Employee Name In Invoice Report:" xml:space="preserve">
+    <value>在发票上报告，显示员工姓名：</value>
+  </data>
+  <data name="Task Information" xml:space="preserve">
+    <value>任务信息</value>
+  </data>
+  <data name="Task Setup" xml:space="preserve">
+    <value>任务设置</value>
+  </data>
+  <data name="Time Off Information" xml:space="preserve">
+    <value>时间关闭信息</value>
+  </data>
+  <data name="Timesheet Information" xml:space="preserve">
+    <value>时间表信息</value>
+  </data>
+  <data name="Custom Field Setting for Client" xml:space="preserve">
+    <value>客户端的自定义字段设置为</value>
+  </data>
+  <data name="Data Type:" xml:space="preserve">
+    <value>数据类型：</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>需要</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="Custom Field Caption:" xml:space="preserve">
+    <value>自定义字段标题：</value>
+  </data>
+  <data name="Default Value:" xml:space="preserve">
+    <value>默认值：</value>
+  </data>
+  <data name="Entity Type" xml:space="preserve">
+    <value>实体类型</value>
+  </data>
+  <data name="From Email Address" xml:space="preserve">
+    <value>从电子邮件地址</value>
+  </data>
+  <data name="Daily TimeEntry Notification" xml:space="preserve">
+    <value>“每日TimeEntry通知</value>
+  </data>
+  <data name="Daily TimeEntry Notification To Administrator" xml:space="preserve">
+    <value>每日TimeEntry通知到管理员</value>
+  </data>
+  <data name="Daily TimeEntry Notification To Employee Manager" xml:space="preserve">
+    <value>每日TimeEntry通知雇员经理</value>
+  </data>
+  <data name="Daily TimeEntry Notification To Project Manager" xml:space="preserve">
+    <value>为项目经理的“每日TimeEntry通知</value>
+  </data>
+  <data name="Daily TimeEntry Notification To Team Lead" xml:space="preserve">
+    <value>为了团队领导的“每日TimeEntry通知</value>
+  </data>
+  <data name="Enable / Disable" xml:space="preserve">
+    <value>启用/禁用</value>
+  </data>
+  <data name="Expense Entry Approved Notification To Approver" xml:space="preserve">
+    <value>费用录入为审批者批准通知</value>
+  </data>
+  <data name="Expense Entry Rejected Notification To Approver" xml:space="preserve">
+    <value>费用录入为审批者拒绝通知</value>
+  </data>
+  <data name="Instant Expense Approval Pending Notification" xml:space="preserve">
+    <value>即时费用待审批的通知</value>
+  </data>
+  <data name="Instant Timesheet Approval Pending Notification" xml:space="preserve">
+    <value>即时时间表待审批的通知</value>
+  </data>
+  <data name="Is Vendor:" xml:space="preserve">
+    <value>是卖方：</value>
+  </data>
+  <data name="IsVendor:" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Timesheet Approved Notification To Approver" xml:space="preserve">
+    <value>时间表为审批者批准通知</value>
+  </data>
+  <data name="Timesheet Due Notification" xml:space="preserve">
+    <value>时间表正式通知</value>
+  </data>
+  <data name="Timesheet Overdue Notification" xml:space="preserve">
+    <value>时间表逾期通知</value>
+  </data>
+  <data name="Timesheet Overdue Notification To Administrator" xml:space="preserve">
+    <value>时间表逾期未通知到管理员</value>
+  </data>
+  <data name="Timesheet Overdue Notification To Employee Manager" xml:space="preserve">
+    <value>时间表逾期向雇员管理的通知</value>
+  </data>
+  <data name="Timesheet Overdue Notification To Project Manager" xml:space="preserve">
+    <value>项目经理的时间表逾期通知</value>
+  </data>
+  <data name="Timesheet Overdue Notification To Team Lead" xml:space="preserve">
+    <value>团队领导的时间表逾期通知</value>
+  </data>
+  <data name="Timesheet Rejected Notification To Approver" xml:space="preserve">
+    <value>时间表为审批者被拒绝的通知</value>
+  </data>
+  <data name="Day of Month" xml:space="preserve">
+    <value>日期（月）</value>
+  </data>
+  <data name="Days After Due Date" xml:space="preserve">
+    <value>截止日期后的天数</value>
+  </data>
+  <data name="Enable Balance Validation For Time Off:" xml:space="preserve">
+    <value>启用对于时间的资产负债验证关：</value>
+  </data>
+  <data name="Is Time Off Approval:" xml:space="preserve">
+    <value>是批准时间关闭：</value>
+  </data>
+  <data name="Lock All Next Timesheets:" xml:space="preserve">
+    <value>全部锁定下一个时间表：</value>
+  </data>
+  <data name="Lock All Period Except Next:" xml:space="preserve">
+    <value>全部锁定期除下一步：</value>
+  </data>
+  <data name="Lock All Period Except Previous:" xml:space="preserve">
+    <value>除前全部锁定期：</value>
+  </data>
+  <data name="Lock All Previous Timesheets:" xml:space="preserve">
+    <value>锁定所有先前的时间表：</value>
+  </data>
+  <data name="Lock Next Timesheet Periods:" xml:space="preserve">
+    <value>锁定下一个时间表阶段：</value>
+  </data>
+  <data name="Lock Previous Timesheet Periods:" xml:space="preserve">
+    <value>锁定前的时间表阶段：</value>
+  </data>
+  <data name="Lock Previous/Next Timesheets On:" xml:space="preserve">
+    <value>上一张/下一张时间表锁定在：</value>
+  </data>
+  <data name="Maximum Percentage Per Day:" xml:space="preserve">
+    <value>每日的最大百分比：</value>
+  </data>
+  <data name="Maximum Percentage Per Period:" xml:space="preserve">
+    <value>每期的最大百分比：</value>
+  </data>
+  <data name="Minimum Percentage Per Day:" xml:space="preserve">
+    <value>每日的最低百分比：</value>
+  </data>
+  <data name="Minimum Percentage Per Period:" xml:space="preserve">
+    <value>每期的最低百分比：</value>
+  </data>
+  <data name="No Locking" xml:space="preserve">
+    <value>无锁</value>
+  </data>
+  <data name="On Due Date" xml:space="preserve">
+    <value>到期日</value>
+  </data>
+  <data name="Overdue After Days" xml:space="preserve">
+    <value>逾期后，天</value>
+  </data>
+  <data name="Timesheet Overdue:" xml:space="preserve">
+    <value>时间表逾期：</value>
+  </data>
+  <data name="License Manager" xml:space="preserve">
+    <value>许可证管理</value>
+  </data>
+  <data name="Please Select a Task" xml:space="preserve">
+    <value>请选择一个任务</value>
+  </data>
+  <data name="Succesfully Updated" xml:space="preserve">
+    <value>成功与更新</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+</root>

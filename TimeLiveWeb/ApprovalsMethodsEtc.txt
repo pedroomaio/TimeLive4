@@ -1,0 +1,5 @@
+﻿** - Aonde as grids em ctlTimeSheetApprovalSummary vão buscar os dados - **
+AccountEmployeeTimeEntryBll.GetApprovalEntriesEmployeeManagerForTimeOff()
+
+** - Aonde estão as grids de approvals - ** 
+ctlTimeSheetApprovalSummary

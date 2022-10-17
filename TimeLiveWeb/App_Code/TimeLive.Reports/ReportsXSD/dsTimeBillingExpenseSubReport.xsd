@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTimeBillingExpenseSubReport" targetNamespace="http://tempuri.org/dsTimeBillingExpenseSubReport.xsd" xmlns:mstns="http://tempuri.org/dsTimeBillingExpenseSubReport.xsd" xmlns="http://tempuri.org/dsTimeBillingExpenseSubReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AccountTimeExpenseBillingExpenseTableAdapter" GeneratorDataComponentClassName="AccountTimeExpenseBillingExpenseTableAdapter" Name="AccountTimeExpenseBillingExpense" UserDataComponentName="AccountTimeExpenseBillingExpenseTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     AccountTimeExpenseBillingExpense.AccountTimeExpenseBillingExpenseId, AccountTimeExpenseBillingExpense.AccountTimeExpenseBillingId, 
+                      AccountTimeExpenseBillingExpense.AccountId, AccountTimeExpenseBillingExpense.AccountProjectId, 
+                      AccountTimeExpenseBillingExpense.AccountExpenseTypeId, AccountTimeExpenseBillingExpense.AccountExpenseId, 
+                      AccountTimeExpenseBillingExpense.Description, AccountTimeExpenseBillingExpense.ActualExpenseAmount, 
+                      AccountTimeExpenseBillingExpense.BilledExpenseAmount, SystemCurrency.CurrencyCode
+FROM         AccountTimeExpenseBillingExpense INNER JOIN
+                      AccountTimeExpenseBilling ON 
+                      AccountTimeExpenseBillingExpense.AccountTimeExpenseBillingId = AccountTimeExpenseBilling.AccountTimeExpenseBillingId INNER JOIN
+                      AccountCurrency ON AccountTimeExpenseBilling.AccountCurrencyId = AccountCurrency.AccountCurrencyId INNER JOIN
+                      SystemCurrency ON AccountCurrency.SystemCurrencyId = SystemCurrency.CurrencyId</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AccountTimeExpenseBillingExpenseId" DataSetColumn="AccountTimeExpenseBillingExpenseId" />
+              <Mapping SourceColumn="AccountTimeExpenseBillingId" DataSetColumn="AccountTimeExpenseBillingId" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="AccountProjectId" DataSetColumn="AccountProjectId" />
+              <Mapping SourceColumn="AccountExpenseTypeId" DataSetColumn="AccountExpenseTypeId" />
+              <Mapping SourceColumn="AccountExpenseId" DataSetColumn="AccountExpenseId" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="ActualExpenseAmount" DataSetColumn="ActualExpenseAmount" />
+              <Mapping SourceColumn="BilledExpenseAmount" DataSetColumn="BilledExpenseAmount" />
+              <Mapping SourceColumn="CurrencyCode" DataSetColumn="CurrencyCode" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByAccountTimeExpenseBillingId" GetMethodModifier="Public" GetMethodName="GetDataByAccountTimeExpenseBillingId" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByAccountTimeExpenseBillingId" UserSourceName="GetDataByAccountTimeExpenseBillingId">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     AccountTimeExpenseBillingExpense.AccountTimeExpenseBillingExpenseId, AccountTimeExpenseBillingExpense.AccountTimeExpenseBillingId, 
+                      AccountTimeExpenseBillingExpense.AccountId, AccountTimeExpenseBillingExpense.AccountProjectId, AccountTimeExpenseBillingExpense.AccountExpenseTypeId, 
+                      AccountTimeExpenseBillingExpense.AccountExpenseId, AccountTimeExpenseBillingExpense.Description, 
+                      ISNULL(AccountTimeExpenseBillingExpense.ActualExpenseAmount, 0) AS ActualExpenseAmount, ISNULL(AccountTimeExpenseBillingExpense.BilledExpenseAmount, 
+                      0) AS BilledExpenseAmount, SystemCurrency.CurrencyCode, AccountProject.ProjectName
+FROM         AccountTimeExpenseBillingExpense INNER JOIN
+                      AccountTimeExpenseBilling ON 
+                      AccountTimeExpenseBillingExpense.AccountTimeExpenseBillingId = AccountTimeExpenseBilling.AccountTimeExpenseBillingId INNER JOIN
+                      AccountCurrency ON AccountTimeExpenseBilling.AccountCurrencyId = AccountCurrency.AccountCurrencyId INNER JOIN
+                      SystemCurrency ON AccountCurrency.SystemCurrencyId = SystemCurrency.CurrencyId LEFT OUTER JOIN
+                      AccountProject ON AccountTimeExpenseBillingExpense.AccountProjectId = AccountProject.AccountProjectId
+WHERE     (AccountTimeExpenseBillingExpense.AccountTimeExpenseBillingId = @AccountTimeExpenseBillingId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="AccountTimeExpenseBillingId" ColumnName="AccountTimeExpenseBillingId" DataSourceName="TLSanja.dbo.AccountTimeExpenseBillingExpense" DataTypeServer="uniqueidentifier" DbType="Guid" Direction="Input" ParameterName="@AccountTimeExpenseBillingId" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="16" SourceColumn="AccountTimeExpenseBillingId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTimeBillingExpenseSubReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsTimeBillingExpenseSubReport" msprop:Generator_UserDSName="dsTimeBillingExpenseSubReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AccountTimeExpenseBillingExpense" msprop:Generator_UserTableName="AccountTimeExpenseBillingExpense" msprop:Generator_RowEvArgName="AccountTimeExpenseBillingExpenseRowChangeEvent" msprop:Generator_TableVarName="tableAccountTimeExpenseBillingExpense" msprop:Generator_TablePropName="AccountTimeExpenseBillingExpense" msprop:Generator_RowDeletingName="AccountTimeExpenseBillingExpenseRowDeleting" msprop:Generator_RowChangingName="AccountTimeExpenseBillingExpenseRowChanging" msprop:Generator_RowDeletedName="AccountTimeExpenseBillingExpenseRowDeleted" msprop:Generator_TableClassName="AccountTimeExpenseBillingExpenseDataTable" msprop:Generator_RowChangedName="AccountTimeExpenseBillingExpenseRowChanged" msprop:Generator_RowEvHandlerName="AccountTimeExpenseBillingExpenseRowChangeEventHandler" msprop:Generator_RowClassName="AccountTimeExpenseBillingExpenseRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountTimeExpenseBillingExpenseId" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnAccountTimeExpenseBillingExpenseId" msprop:Generator_ColumnPropNameInRow="AccountTimeExpenseBillingExpenseId" msprop:Generator_ColumnPropNameInTable="AccountTimeExpenseBillingExpenseIdColumn" msprop:Generator_UserColumnName="AccountTimeExpenseBillingExpenseId" type="xs:string" />
+              <xs:element name="AccountTimeExpenseBillingId" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnAccountTimeExpenseBillingId" msprop:Generator_ColumnPropNameInRow="AccountTimeExpenseBillingId" msprop:Generator_ColumnPropNameInTable="AccountTimeExpenseBillingIdColumn" msprop:Generator_UserColumnName="AccountTimeExpenseBillingId" type="xs:string" />
+              <xs:element name="AccountId" msprop:Generator_ColumnVarNameInTable="columnAccountId" msprop:Generator_ColumnPropNameInRow="AccountId" msprop:Generator_ColumnPropNameInTable="AccountIdColumn" msprop:Generator_UserColumnName="AccountId" type="xs:int" />
+              <xs:element name="AccountProjectId" msprop:Generator_ColumnVarNameInTable="columnAccountProjectId" msprop:Generator_ColumnPropNameInRow="AccountProjectId" msprop:Generator_ColumnPropNameInTable="AccountProjectIdColumn" msprop:Generator_UserColumnName="AccountProjectId" type="xs:int" minOccurs="0" />
+              <xs:element name="AccountExpenseTypeId" msprop:Generator_ColumnVarNameInTable="columnAccountExpenseTypeId" msprop:Generator_ColumnPropNameInRow="AccountExpenseTypeId" msprop:Generator_ColumnPropNameInTable="AccountExpenseTypeIdColumn" msprop:Generator_UserColumnName="AccountExpenseTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="AccountExpenseId" msprop:Generator_ColumnVarNameInTable="columnAccountExpenseId" msprop:Generator_ColumnPropNameInRow="AccountExpenseId" msprop:Generator_ColumnPropNameInTable="AccountExpenseIdColumn" msprop:Generator_UserColumnName="AccountExpenseId" type="xs:int" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActualExpenseAmount" msprop:Generator_ColumnVarNameInTable="columnActualExpenseAmount" msprop:Generator_ColumnPropNameInRow="ActualExpenseAmount" msprop:Generator_ColumnPropNameInTable="ActualExpenseAmountColumn" msprop:Generator_UserColumnName="ActualExpenseAmount" type="xs:double" minOccurs="0" />
+              <xs:element name="BilledExpenseAmount" msprop:Generator_ColumnVarNameInTable="columnBilledExpenseAmount" msprop:Generator_ColumnPropNameInRow="BilledExpenseAmount" msprop:Generator_ColumnPropNameInTable="BilledExpenseAmountColumn" msprop:Generator_UserColumnName="BilledExpenseAmount" type="xs:double" minOccurs="0" />
+              <xs:element name="CurrencyCode" msprop:Generator_ColumnVarNameInTable="columnCurrencyCode" msprop:Generator_ColumnPropNameInRow="CurrencyCode" msprop:Generator_ColumnPropNameInTable="CurrencyCodeColumn" msprop:Generator_UserColumnName="CurrencyCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,3 @@
+﻿CREATE QUEUE [dbo].[SMEResponseQueue]
+    WITH POISON_MESSAGE_HANDLING(STATUS = OFF);
+

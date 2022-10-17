@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDetailExpenseReport" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=TimeLive\Sqlexpress;Initial Catalog=TimeLive;Persist Security Info=True;User ID=sa;Password=sa123" IsAppSettingsProperty="False" Modifier="Assembly" Name="Connection" ParameterPrefix="@" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vueAccountExpenseEntryAdapter" Name="vueAccountExpenseEntry" UserDataComponentName="vueAccountExpenseEntryAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeLive.dbo.vueAccountExpenseEntry" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     EmployeeName, AccountExpenseName, ProjectName, AccountExpenseEntryId, AccountExpenseEntryDate, AccountId, AccountEmployeeId, 
+                      AccountProjectId, AccountExpenseId, Amount, TeamLeadApproved, ProjectManagerApproved, AdministratorApproved, Approved, CreatedOn, 
+                      CreatedByEmployeeId, ModifiedOn, ModifiedByEmployeeId, PartyName, AccountClientId, Description, ExpenseType, AccountExpenseTypeId, 
+                      LeaderEmployeeId, IsBillable, Rejected, EmployeeCode, Reimburse, AccountCurrencyId, CurrencyCode, IsQuantityField, QuantityFieldCaption, 
+                      AccountBaseCurrencyId, ExchangeRate, TaxAmount, NetAmount, Submitted, TimeSheetApprovalTypeId, ExpenseApprovalTypeId, 
+                      ProjectManagerEmployeeId, TimeSheetApprovalPathId, AccountLocationId
+FROM         vueAccountExpenseEntry</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="AccountExpenseName" DataSetColumn="AccountExpenseName" />
+              <Mapping SourceColumn="ProjectName" DataSetColumn="ProjectName" />
+              <Mapping SourceColumn="AccountExpenseEntryId" DataSetColumn="AccountExpenseEntryId" />
+              <Mapping SourceColumn="AccountExpenseEntryDate" DataSetColumn="AccountExpenseEntryDate" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="AccountEmployeeId" DataSetColumn="AccountEmployeeId" />
+              <Mapping SourceColumn="AccountProjectId" DataSetColumn="AccountProjectId" />
+              <Mapping SourceColumn="AccountExpenseId" DataSetColumn="AccountExpenseId" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="TeamLeadApproved" DataSetColumn="TeamLeadApproved" />
+              <Mapping SourceColumn="ProjectManagerApproved" DataSetColumn="ProjectManagerApproved" />
+              <Mapping SourceColumn="AdministratorApproved" DataSetColumn="AdministratorApproved" />
+              <Mapping SourceColumn="Approved" DataSetColumn="Approved" />
+              <Mapping SourceColumn="CreatedOn" DataSetColumn="CreatedOn" />
+              <Mapping SourceColumn="CreatedByEmployeeId" DataSetColumn="CreatedByEmployeeId" />
+              <Mapping SourceColumn="ModifiedOn" DataSetColumn="ModifiedOn" />
+              <Mapping SourceColumn="ModifiedByEmployeeId" DataSetColumn="ModifiedByEmployeeId" />
+              <Mapping SourceColumn="PartyName" DataSetColumn="PartyName" />
+              <Mapping SourceColumn="AccountClientId" DataSetColumn="AccountClientId" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="ExpenseType" DataSetColumn="ExpenseType" />
+              <Mapping SourceColumn="AccountExpenseTypeId" DataSetColumn="AccountExpenseTypeId" />
+              <Mapping SourceColumn="LeaderEmployeeId" DataSetColumn="LeaderEmployeeId" />
+              <Mapping SourceColumn="IsBillable" DataSetColumn="IsBillable" />
+              <Mapping SourceColumn="Rejected" DataSetColumn="Rejected" />
+              <Mapping SourceColumn="EmployeeCode" DataSetColumn="EmployeeCode" />
+              <Mapping SourceColumn="Reimburse" DataSetColumn="Reimburse" />
+              <Mapping SourceColumn="AccountCurrencyId" DataSetColumn="AccountCurrencyId" />
+              <Mapping SourceColumn="CurrencyCode" DataSetColumn="CurrencyCode" />
+              <Mapping SourceColumn="IsQuantityField" DataSetColumn="IsQuantityField" />
+              <Mapping SourceColumn="QuantityFieldCaption" DataSetColumn="QuantityFieldCaption" />
+              <Mapping SourceColumn="AccountBaseCurrencyId" DataSetColumn="AccountBaseCurrencyId" />
+              <Mapping SourceColumn="ExchangeRate" DataSetColumn="ExchangeRate" />
+              <Mapping SourceColumn="TaxAmount" DataSetColumn="TaxAmount" />
+              <Mapping SourceColumn="NetAmount" DataSetColumn="NetAmount" />
+              <Mapping SourceColumn="Submitted" DataSetColumn="Submitted" />
+              <Mapping SourceColumn="TimeSheetApprovalTypeId" DataSetColumn="TimeSheetApprovalTypeId" />
+              <Mapping SourceColumn="ExpenseApprovalTypeId" DataSetColumn="ExpenseApprovalTypeId" />
+              <Mapping SourceColumn="ProjectManagerEmployeeId" DataSetColumn="ProjectManagerEmployeeId" />
+              <Mapping SourceColumn="TimeSheetApprovalPathId" DataSetColumn="TimeSheetApprovalPathId" />
+              <Mapping SourceColumn="AccountLocationId" DataSetColumn="AccountLocationId" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDetailExpenseReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vueAccountExpenseEntry">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmployeeName" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="151" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountExpenseName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountExpenseEntryId" type="xs:int" />
+              <xs:element name="AccountExpenseEntryDate" type="xs:dateTime" />
+              <xs:element name="AccountId" type="xs:int" />
+              <xs:element name="AccountEmployeeId" type="xs:int" />
+              <xs:element name="AccountProjectId" type="xs:int" />
+              <xs:element name="AccountExpenseId" type="xs:int" />
+              <xs:element name="Amount" type="xs:double" />
+              <xs:element name="TeamLeadApproved" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ProjectManagerApproved" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AdministratorApproved" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Approved" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CreatedOn" type="xs:dateTime" />
+              <xs:element name="CreatedByEmployeeId" type="xs:int" />
+              <xs:element name="ModifiedOn" type="xs:dateTime" />
+              <xs:element name="ModifiedByEmployeeId" type="xs:int" />
+              <xs:element name="PartyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountClientId" type="xs:int" minOccurs="0" />
+              <xs:element name="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExpenseType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountExpenseTypeId" type="xs:int" />
+              <xs:element name="LeaderEmployeeId" type="xs:int" minOccurs="0" />
+              <xs:element name="IsBillable" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Rejected" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EmployeeCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reimburse" type="xs:boolean" />
+              <xs:element name="AccountCurrencyId" type="xs:int" minOccurs="0" />
+              <xs:element name="CurrencyCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsQuantityField" type="xs:boolean" minOccurs="0" />
+              <xs:element name="QuantityFieldCaption" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountBaseCurrencyId" type="xs:int" minOccurs="0" />
+              <xs:element name="ExchangeRate" type="xs:double" minOccurs="0" />
+              <xs:element name="TaxAmount" msdata:ReadOnly="true" type="xs:double" minOccurs="0" />
+              <xs:element name="NetAmount" msdata:ReadOnly="true" type="xs:double" minOccurs="0" />
+              <xs:element name="Submitted" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TimeSheetApprovalTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpenseApprovalTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="ProjectManagerEmployeeId" type="xs:int" minOccurs="0" />
+              <xs:element name="TimeSheetApprovalPathId" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="AccountLocationId" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//vueAccountExpenseEntry" />
+      <xs:field xpath="AccountExpenseEntryId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

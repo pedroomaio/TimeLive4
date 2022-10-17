@@ -1,0 +1,65 @@
+﻿
+CREATE VIEW dbo.vueAccountProjectTaskOnlyForReport
+AS
+SELECT     dbo.vueAccountProjectTaskForReport.AccountProjectTaskId, dbo.vueAccountProjectTaskForReport.AccountProjectId, 
+                      dbo.vueAccountProjectTaskForReport.ParentAccountProjectTaskId, dbo.vueAccountProjectTaskForReport.TaskName, 
+                      dbo.vueAccountProjectTaskForReport.TaskDescription, dbo.vueAccountProjectTaskForReport.AccountTaskTypeId, dbo.vueAccountProjectTaskForReport.DeadlineDate, 
+                      dbo.vueAccountProjectTaskForReport.CompletedPercent, dbo.vueAccountProjectTaskForReport.Completed, dbo.vueAccountProjectTaskForReport.IsParentTask, 
+                      dbo.vueAccountProjectTaskForReport.IsForAllEmployees, dbo.vueAccountProjectTaskForReport.AccountPriorityId, dbo.vueAccountProjectTaskForReport.TaskStatusId, 
+                      dbo.vueAccountProjectTaskForReport.CreatedOn, dbo.vueAccountProjectTaskForReport.CreatedByEmployeeId, dbo.vueAccountProjectTaskForReport.ModifiedOn, 
+                      dbo.vueAccountProjectTaskForReport.ModifiedByEmployeeId, dbo.vueAccountProjectTaskForReport.TaskStatus, 
+                      dbo.vueAccountProjectTaskForReport.CreatedByFirstName, dbo.vueAccountProjectTaskForReport.CreatedByLastName, dbo.vueAccountProjectTaskForReport.Priority, 
+                      dbo.vueAccountProjectTaskForReport.ProjectName, ISNULL(dbo.vueAccountProjectTaskForReport.ProjectCode, N'') AS ProjectCode, 
+                      dbo.vueAccountProjectTaskForReport.TaskType, dbo.vueAccountProjectTaskForReport.AccountId, dbo.vueAccountProjectTaskForReport.AccountProjectMilestoneId, 
+                      dbo.vueAccountProjectTaskForReport.MilestoneDescription, dbo.vueAccountProjectTaskForReport.IsReOpen, 
+                      dbo.vueAccountProjectTaskForReport.ModifiedByFirstName, dbo.vueAccountProjectTaskForReport.ModifiedByLastName, 
+                      ISNULL(dbo.vueAccountProjectTaskForReport.EstimatedCost, 0) AS EstimatedCost, ISNULL(dbo.vueAccountProjectTaskForReport.EstimatedHours, 0) 
+                      AS EstimatedHours, dbo.vueAccountProjectTaskForReport.EstimatedTimeSpentUnit, dbo.vueAccountProjectTaskForReport.AccountEmployeeId, 
+                      dbo.vueAccountProjectTaskForReport.IsDisabled, ISNULL(dbo.vueAccountProjectTaskForReport.TaskCode, N'') AS TaskCode, 
+                      dbo.vueAccountProjectTaskForReport.IsTemplate, ISNULL(dbo.vueAccountProjectTaskForReport.IsForAllProjectTask, 0) AS IsForAllProjectTask, 
+                      ISNULL(dbo.vueAccountProjectTaskForReport.IsBillable, 0) AS IsBillable, dbo.vueAccountProjectTaskForReport.AccountClientId, 
+                      ISNULL(dbo.vueAccountProjectTaskForReport.ClientNick, N'') AS ClientNick, dbo.vueAccountProjectTaskForReport.ClientName, 
+                      dbo.vueAccountProjectTaskForReport.Duration, ISNULL(dbo.vueAccountProjectTaskForReport.ParentTaskName, N'') AS ParentTaskName, 
+                      SUM(ISNULL(dbo.rptvueAccountEmployeeTimeEntry.BillableTotalHours, 0)) AS BillableTotalHours, 
+                      SUM(ISNULL(dbo.rptvueAccountEmployeeTimeEntry.NonBillableTotalHours, 0)) AS NonBillableTotalHours, dbo.vueAccountProjectTaskForReport.EstimatedCurrencyId, 
+                      dbo.vueAccountProjectTaskForReport.EstimatedCurrencyCode, SUM(ISNULL(dbo.rptvueAccountEmployeeTimeEntry.TotalHours, 0)) AS TotalHours, 
+                      SUM(ISNULL(dbo.rptvueAccountEmployeeTimeEntry.CurrencyEmployeeCost, 0)) AS CurrencyEmployeeCost, ISNULL(dbo.vueAccountCurrency.ExchangeRate, 0) 
+                      AS EstimatedCurrencyExchangeRate, SUM(ISNULL(dbo.rptvueAccountEmployeeTimeEntry.CurrencyAmount, 0)) AS CurrencyAmount, 
+                      ISNULL(dbo.vueAccountProjectTaskForReport.ProjectDescription, N'') AS ProjectDescription, dbo.vueAccountProjectTaskForReport.MilestoneDate, 
+                      dbo.vueAccountProjectTaskForReport.StartDate, dbo.vueAccountProjectTaskForReport.CustomField1, dbo.vueAccountProjectTaskForReport.CustomField2, 
+                      dbo.vueAccountProjectTaskForReport.CustomField3, dbo.vueAccountProjectTaskForReport.CustomField4, dbo.vueAccountProjectTaskForReport.CustomField5, 
+                      dbo.vueAccountProjectTaskForReport.CustomField6, dbo.vueAccountProjectTaskForReport.CustomField7, dbo.vueAccountProjectTaskForReport.CustomField8, 
+                      dbo.vueAccountProjectTaskForReport.CustomField9, dbo.vueAccountProjectTaskForReport.CustomField10, dbo.vueAccountProjectTaskForReport.CustomField11, 
+                      dbo.vueAccountProjectTaskForReport.CustomField12, dbo.vueAccountProjectTaskForReport.CustomField13, dbo.vueAccountProjectTaskForReport.CustomField14, 
+                      dbo.vueAccountProjectTaskForReport.CustomField15
+FROM         dbo.vueAccountProjectTaskForReport LEFT OUTER JOIN
+                      dbo.vueAccountCurrency ON dbo.vueAccountProjectTaskForReport.EstimatedCurrencyId = dbo.vueAccountCurrency.AccountCurrencyId LEFT OUTER JOIN
+                      dbo.rptvueAccountEmployeeTimeEntry ON 
+                      dbo.vueAccountProjectTaskForReport.AccountProjectTaskId = dbo.rptvueAccountEmployeeTimeEntry.AccountProjectTaskId
+WHERE     (dbo.vueAccountProjectTaskForReport.IsParentTask <> 1)
+GROUP BY dbo.vueAccountProjectTaskForReport.AccountProjectTaskId, dbo.vueAccountProjectTaskForReport.AccountProjectId, 
+                      dbo.vueAccountProjectTaskForReport.ParentAccountProjectTaskId, dbo.vueAccountProjectTaskForReport.TaskName, 
+                      dbo.vueAccountProjectTaskForReport.TaskDescription, dbo.vueAccountProjectTaskForReport.AccountTaskTypeId, dbo.vueAccountProjectTaskForReport.DeadlineDate, 
+                      dbo.vueAccountProjectTaskForReport.CompletedPercent, dbo.vueAccountProjectTaskForReport.Completed, dbo.vueAccountProjectTaskForReport.IsParentTask, 
+                      dbo.vueAccountProjectTaskForReport.IsForAllEmployees, dbo.vueAccountProjectTaskForReport.AccountPriorityId, dbo.vueAccountProjectTaskForReport.CreatedOn, 
+                      dbo.vueAccountProjectTaskForReport.TaskStatusId, dbo.vueAccountProjectTaskForReport.CreatedByEmployeeId, 
+                      dbo.vueAccountProjectTaskForReport.ModifiedByEmployeeId, dbo.vueAccountProjectTaskForReport.ModifiedOn, dbo.vueAccountProjectTaskForReport.TaskStatus, 
+                      dbo.vueAccountProjectTaskForReport.CreatedByFirstName, dbo.vueAccountProjectTaskForReport.CreatedByLastName, dbo.vueAccountProjectTaskForReport.Priority, 
+                      dbo.vueAccountProjectTaskForReport.ProjectName, ISNULL(dbo.vueAccountProjectTaskForReport.ProjectCode, N''), dbo.vueAccountProjectTaskForReport.TaskType, 
+                      dbo.vueAccountProjectTaskForReport.AccountId, dbo.vueAccountProjectTaskForReport.AccountProjectMilestoneId, dbo.vueAccountProjectTaskForReport.IsReOpen, 
+                      dbo.vueAccountProjectTaskForReport.MilestoneDescription, dbo.vueAccountProjectTaskForReport.ModifiedByFirstName, 
+                      dbo.vueAccountProjectTaskForReport.ModifiedByLastName, ISNULL(dbo.vueAccountProjectTaskForReport.EstimatedCost, 0), 
+                      ISNULL(dbo.vueAccountProjectTaskForReport.EstimatedHours, 0), dbo.vueAccountProjectTaskForReport.EstimatedTimeSpentUnit, 
+                      dbo.vueAccountProjectTaskForReport.AccountEmployeeId, dbo.vueAccountProjectTaskForReport.IsDisabled, ISNULL(dbo.vueAccountProjectTaskForReport.TaskCode, 
+                      N''), dbo.vueAccountProjectTaskForReport.IsTemplate, ISNULL(dbo.vueAccountProjectTaskForReport.IsForAllProjectTask, 0), 
+                      ISNULL(dbo.vueAccountProjectTaskForReport.IsBillable, 0), dbo.vueAccountProjectTaskForReport.AccountClientId, 
+                      ISNULL(dbo.vueAccountProjectTaskForReport.ClientNick, N''), dbo.vueAccountProjectTaskForReport.ClientName, dbo.vueAccountProjectTaskForReport.Duration, 
+                      ISNULL(dbo.vueAccountProjectTaskForReport.ParentTaskName, N''), dbo.vueAccountProjectTaskForReport.EstimatedCurrencyId, 
+                      dbo.vueAccountProjectTaskForReport.EstimatedCurrencyCode, dbo.vueAccountCurrency.ExchangeRate, 
+                      ISNULL(dbo.vueAccountProjectTaskForReport.ProjectDescription, N''), dbo.vueAccountProjectTaskForReport.MilestoneDate, 
+                      dbo.vueAccountProjectTaskForReport.StartDate, dbo.vueAccountProjectTaskForReport.CustomField1, dbo.vueAccountProjectTaskForReport.CustomField2, 
+                      dbo.vueAccountProjectTaskForReport.CustomField3, dbo.vueAccountProjectTaskForReport.CustomField4, dbo.vueAccountProjectTaskForReport.CustomField5, 
+                      dbo.vueAccountProjectTaskForReport.CustomField6, dbo.vueAccountProjectTaskForReport.CustomField7, dbo.vueAccountProjectTaskForReport.CustomField8, 
+                      dbo.vueAccountProjectTaskForReport.CustomField9, dbo.vueAccountProjectTaskForReport.CustomField10, dbo.vueAccountProjectTaskForReport.CustomField11, 
+                      dbo.vueAccountProjectTaskForReport.CustomField12, dbo.vueAccountProjectTaskForReport.CustomField13, dbo.vueAccountProjectTaskForReport.CustomField14, 
+                      dbo.vueAccountProjectTaskForReport.CustomField15

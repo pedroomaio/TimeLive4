@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDepartmentWiseTimesheetReportForXtrReport" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=TimeLive\Sqlexpress;Initial Catalog=TimeLive;Persist Security Info=True;User ID=sa;Password=sa123" IsAppSettingsProperty="False" Modifier="Assembly" Name="Connection" ParameterPrefix="@" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vueAccountEmployeeTimeEntryAdapter" Name="vueAccountEmployeeTimeEntry" UserDataComponentName="vueAccountEmployeeTimeEntryAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeLive.dbo.vueAccountEmployeeTimeEntry" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     EmployeeName, ProjectName, TaskName, TotalTime, Approved, AccountEmployeeId, AccountProjectId, TeamLeadApproved, ProjectManagerApproved, 
+                      AdministratorApproved, AccountEmployeeTimeEntryId, StartTime, EndTime, TimeEntryDate, Description, AccountId, TotalMinutes, WeekDay, 
+                      AccountPartyId, PartyName, AccountProjectTaskId, BillingType, LeaderEmployeeId, ProjectManagerEmployeeId, TimeSheetApprovalTypeId, 
+                      ExpenseApprovalTypeId, IsBillable, Rejected, BillingRate, ProjectBillingRateTypeId, EmployeeCode, AccountDepartmentId, DepartmentName, 
+                      EstimatedCost, EstimatedTimeSpent, Submitted, AccountLocationId
+FROM         vueAccountEmployeeTimeEntry</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="ProjectName" DataSetColumn="ProjectName" />
+              <Mapping SourceColumn="TaskName" DataSetColumn="TaskName" />
+              <Mapping SourceColumn="TotalTime" DataSetColumn="TotalTime" />
+              <Mapping SourceColumn="Approved" DataSetColumn="Approved" />
+              <Mapping SourceColumn="AccountEmployeeId" DataSetColumn="AccountEmployeeId" />
+              <Mapping SourceColumn="AccountProjectId" DataSetColumn="AccountProjectId" />
+              <Mapping SourceColumn="TeamLeadApproved" DataSetColumn="TeamLeadApproved" />
+              <Mapping SourceColumn="ProjectManagerApproved" DataSetColumn="ProjectManagerApproved" />
+              <Mapping SourceColumn="AdministratorApproved" DataSetColumn="AdministratorApproved" />
+              <Mapping SourceColumn="AccountEmployeeTimeEntryId" DataSetColumn="AccountEmployeeTimeEntryId" />
+              <Mapping SourceColumn="StartTime" DataSetColumn="StartTime" />
+              <Mapping SourceColumn="EndTime" DataSetColumn="EndTime" />
+              <Mapping SourceColumn="TimeEntryDate" DataSetColumn="TimeEntryDate" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="TotalMinutes" DataSetColumn="TotalMinutes" />
+              <Mapping SourceColumn="WeekDay" DataSetColumn="WeekDay" />
+              <Mapping SourceColumn="AccountPartyId" DataSetColumn="AccountPartyId" />
+              <Mapping SourceColumn="PartyName" DataSetColumn="PartyName" />
+              <Mapping SourceColumn="AccountProjectTaskId" DataSetColumn="AccountProjectTaskId" />
+              <Mapping SourceColumn="BillingType" DataSetColumn="BillingType" />
+              <Mapping SourceColumn="LeaderEmployeeId" DataSetColumn="LeaderEmployeeId" />
+              <Mapping SourceColumn="ProjectManagerEmployeeId" DataSetColumn="ProjectManagerEmployeeId" />
+              <Mapping SourceColumn="TimeSheetApprovalTypeId" DataSetColumn="TimeSheetApprovalTypeId" />
+              <Mapping SourceColumn="ExpenseApprovalTypeId" DataSetColumn="ExpenseApprovalTypeId" />
+              <Mapping SourceColumn="IsBillable" DataSetColumn="IsBillable" />
+              <Mapping SourceColumn="Rejected" DataSetColumn="Rejected" />
+              <Mapping SourceColumn="BillingRate" DataSetColumn="BillingRate" />
+              <Mapping SourceColumn="ProjectBillingRateTypeId" DataSetColumn="ProjectBillingRateTypeId" />
+              <Mapping SourceColumn="EmployeeCode" DataSetColumn="EmployeeCode" />
+              <Mapping SourceColumn="AccountDepartmentId" DataSetColumn="AccountDepartmentId" />
+              <Mapping SourceColumn="DepartmentName" DataSetColumn="DepartmentName" />
+              <Mapping SourceColumn="EstimatedCost" DataSetColumn="EstimatedCost" />
+              <Mapping SourceColumn="EstimatedTimeSpent" DataSetColumn="EstimatedTimeSpent" />
+              <Mapping SourceColumn="Submitted" DataSetColumn="Submitted" />
+              <Mapping SourceColumn="AccountLocationId" DataSetColumn="AccountLocationId" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDepartmentWiseTimesheetReportForXtrReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vueAccountEmployeeTimeEntry">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmployeeName" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="151" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TaskName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalTime" type="xs:dateTime" />
+              <xs:element name="Approved" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AccountEmployeeId" type="xs:int" />
+              <xs:element name="AccountProjectId" type="xs:int" />
+              <xs:element name="TeamLeadApproved" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ProjectManagerApproved" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AdministratorApproved" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AccountEmployeeTimeEntryId" type="xs:int" />
+              <xs:element name="StartTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TimeEntryDate" type="xs:dateTime" />
+              <xs:element name="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountId" type="xs:int" />
+              <xs:element name="TotalMinutes" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="WeekDay" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="AccountPartyId" type="xs:int" minOccurs="0" />
+              <xs:element name="PartyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountProjectTaskId" type="xs:long" />
+              <xs:element name="BillingType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LeaderEmployeeId" type="xs:int" minOccurs="0" />
+              <xs:element name="ProjectManagerEmployeeId" type="xs:int" />
+              <xs:element name="TimeSheetApprovalTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="ExpenseApprovalTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="IsBillable" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Rejected" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BillingRate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProjectBillingRateTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="EmployeeCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountDepartmentId" type="xs:int" minOccurs="0" />
+              <xs:element name="DepartmentName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EstimatedCost" type="xs:double" minOccurs="0" />
+              <xs:element name="EstimatedTimeSpent" type="xs:double" minOccurs="0" />
+              <xs:element name="Submitted" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AccountLocationId" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

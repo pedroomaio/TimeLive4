@@ -1,0 +1,4521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="]" xml:space="preserve">
+    <value>Bare klikk på &amp;quot;Gå til påloggingssiden&amp;quot; nedenfor for å gå til innloggingssiden.</value>
+  </data>
+  <data name="&lt;All&gt;" xml:space="preserve">
+    <value>&lt;Alle&gt;</value>
+  </data>
+  <data name="&lt;None&gt;" xml:space="preserve">
+    <value>&lt;Ingen&gt;</value>
+  </data>
+  <data name="&lt;RootLevel&gt;" xml:space="preserve">
+    <value>&lt;Rot nivå&gt;</value>
+  </data>
+  <data name="100% satisfaction guaranteed or your money back" xml:space="preserve">
+    <value>100% fornøyd garanti eller pengene tilbake</value>
+  </data>
+  <data name="24x7 Customer Support" xml:space="preserve">
+    <value>24x7 Kundeservice</value>
+  </data>
+  <data name="30 Day Money Back Guarantee" xml:space="preserve">
+    <value>30 dager pengene tilbake garanti</value>
+  </data>
+  <data name="Absence" xml:space="preserve">
+    <value>Fravær</value>
+  </data>
+  <data name="Absence Description" xml:space="preserve">
+    <value>Fraværsbeskrivelse</value>
+  </data>
+  <data name="Absence Description:" xml:space="preserve">
+    <value>Fraværsbeskrivelse:</value>
+  </data>
+  <data name="Absence Summary Report" xml:space="preserve">
+    <value>Fraværsrapport</value>
+  </data>
+  <data name="Absence Type" xml:space="preserve">
+    <value>Fraværstype</value>
+  </data>
+  <data name="Absence Type Information" xml:space="preserve">
+    <value>Type fraværsinformasjon</value>
+  </data>
+  <data name="Absence Type List" xml:space="preserve">
+    <value>Liste fraværstype</value>
+  </data>
+  <data name="Absence Types" xml:space="preserve">
+    <value>Fraværstyper</value>
+  </data>
+  <data name="Absence:" xml:space="preserve">
+    <value>Fravær:</value>
+  </data>
+  <data name="Absent" xml:space="preserve">
+    <value>Fraværende</value>
+  </data>
+  <data name="Access Allowed From IP:" xml:space="preserve">
+    <value>Adgang tillatt fra IP:</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Konto</value>
+  </data>
+  <data name="Account Disable" xml:space="preserve">
+    <value>Deaktiver konto</value>
+  </data>
+  <data name="Account Employee Timesheet Submission Status Report" xml:space="preserve">
+    <value>Konto ansattes innleverte timeskjema statusrapport</value>
+  </data>
+  <data name="Account Expiry" xml:space="preserve">
+    <value>Konto utløp</value>
+  </data>
+  <data name="Account Id" xml:space="preserve">
+    <value>Konto-ID</value>
+  </data>
+  <data name="Account Information (Organization Information)" xml:space="preserve">
+    <value>Kontoinformasjon (Organisasjons informasjon)</value>
+  </data>
+  <data name="Account Invoice Form" xml:space="preserve">
+    <value>Konto fakturaskjema</value>
+  </data>
+  <data name="Account Location" xml:space="preserve">
+    <value>Kontosted</value>
+  </data>
+  <data name="Account Login" xml:space="preserve">
+    <value>Logg inn</value>
+  </data>
+  <data name="Account Name" xml:space="preserve">
+    <value>Kontonavn:</value>
+  </data>
+  <data name="Account Priority" xml:space="preserve">
+    <value>Kontoprioritet</value>
+  </data>
+  <data name="Account Setup" xml:space="preserve">
+    <value>Kontoregistrering</value>
+  </data>
+  <data name="Account Time Expense Billing" xml:space="preserve">
+    <value>Konto time utgifts fakturering</value>
+  </data>
+  <data name="Account Time Expense Billing Information" xml:space="preserve">
+    <value>Konto time utgifts faktureringsinformasjon</value>
+  </data>
+  <data name="Account Type Id" xml:space="preserve">
+    <value>Kontotype-ID</value>
+  </data>
+  <data name="Activate" xml:space="preserve">
+    <value>Aktiver</value>
+  </data>
+  <data name="Activation Failed" xml:space="preserve">
+    <value>Aktivisering mislyktes</value>
+  </data>
+  <data name="Activation_text" xml:space="preserve">
+    <value>Aktivering</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Aktiv</value>
+  </data>
+  <data name="Active Status:" xml:space="preserve">
+    <value>Aktiv status:</value>
+  </data>
+  <data name="Activities" xml:space="preserve">
+    <value>Aktiviteter</value>
+  </data>
+  <data name="Activity Code" xml:space="preserve">
+    <value>Aktivitetskode</value>
+  </data>
+  <data name="Activity Name" xml:space="preserve">
+    <value>Aktivitetsnavn</value>
+  </data>
+  <data name="Actual Amount" xml:space="preserve">
+    <value>Faktisk beløp</value>
+  </data>
+  <data name="Actual Amount (BaseCurrency)" xml:space="preserve">
+    <value>Faktisk beløp (Grunnbeløp)</value>
+  </data>
+  <data name="Actual Billing Rate" xml:space="preserve">
+    <value>Faktisk timepris</value>
+  </data>
+  <data name="Actual Cost (BaseCurrency)" xml:space="preserve">
+    <value>Faktisk kostnad (Grunnkostnad)</value>
+  </data>
+  <data name="Actual Hours" xml:space="preserve">
+    <value>Faktiske timer</value>
+  </data>
+  <data name="Actual Time" xml:space="preserve">
+    <value>Virkelig tid</value>
+  </data>
+  <data name="Add Client" xml:space="preserve">
+    <value>Legg Client</value>
+  </data>
+  <data name="Add Employee" xml:space="preserve">
+    <value>Legg Medarbeider</value>
+  </data>
+  <data name="Add New Expense Sheet" xml:space="preserve">
+    <value>Legg til nytt utgiftsskjema</value>
+  </data>
+  <data name="Add New Report" xml:space="preserve">
+    <value>Legg til ny rapport</value>
+  </data>
+  <data name="Add Project" xml:space="preserve">
+    <value>Legg Project</value>
+  </data>
+  <data name="Add Task" xml:space="preserve">
+    <value>Legg til oppgave</value>
+  </data>
+  <data name="Add Time Off Request" xml:space="preserve">
+    <value>Legg til Time Av Forespørsel</value>
+  </data>
+  <data name="Add_text" xml:space="preserve">
+    <value>Legg til</value>
+  </data>
+  <data name="Address Line 1:" xml:space="preserve">
+    <value>Adresselinje 1:</value>
+  </data>
+  <data name="Address Line 2:" xml:space="preserve">
+    <value>Adresselinje 2:</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>Adresse1</value>
+  </data>
+  <data name="Address1:" xml:space="preserve">
+    <value>Adresse1:</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>Adresse2</value>
+  </data>
+  <data name="Address2:" xml:space="preserve">
+    <value>Adresse2:</value>
+  </data>
+  <data name="Admin Options" xml:space="preserve">
+    <value>Admin valg</value>
+  </data>
+  <data name="Admin Pages" xml:space="preserve">
+    <value>Admin sider</value>
+  </data>
+  <data name="Admin Reports" xml:space="preserve">
+    <value>Admin rapporter</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administrasjon</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="Administrator / Project Reports" xml:space="preserve">
+    <value>Administrator / Prosjektrapporter</value>
+  </data>
+  <data name="Administrator Password:" xml:space="preserve">
+    <value>Administrator passord:</value>
+  </data>
+  <data name="Administrator Username:" xml:space="preserve">
+    <value>Administrator brukernavn:</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Avansert</value>
+  </data>
+  <data name="Air" xml:space="preserve">
+    <value>Fly</value>
+  </data>
+  <data name="Air Travel" xml:space="preserve">
+    <value>Flytrafikk</value>
+  </data>
+  <data name="Airport Tax" xml:space="preserve">
+    <value>Flyplass skatt</value>
+  </data>
+  <data name="Airport Tax :" xml:space="preserve">
+    <value>Flyplass skatt:</value>
+  </data>
+  <data name="Airport Tax:" xml:space="preserve">
+    <value>Flyplass skatt:</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="All Client Report" xml:space="preserve">
+    <value>Alle klienter rapporter</value>
+  </data>
+  <data name="All Clients of Organization" xml:space="preserve">
+    <value>Alle klienter i organisasjonen</value>
+  </data>
+  <data name="All Clients Report" xml:space="preserve">
+    <value>Alle klienter rapport</value>
+  </data>
+  <data name="All Department Report" xml:space="preserve">
+    <value>Alle avdelinger rapport</value>
+  </data>
+  <data name="All Departments of Organization" xml:space="preserve">
+    <value>Alle avdelinger i organisasjonen</value>
+  </data>
+  <data name="All Departments Report" xml:space="preserve">
+    <value>Alle avdelingers rapport</value>
+  </data>
+  <data name="All Employee Task:" xml:space="preserve">
+    <value>Alle ansatte med aktiviteter:</value>
+  </data>
+  <data name="All Employees Of Organization" xml:space="preserve">
+    <value>Alle ansatte i organisasjonen</value>
+  </data>
+  <data name="All Employees Report" xml:space="preserve">
+    <value>Alle ansatte rapport</value>
+  </data>
+  <data name="All Expenses" xml:space="preserve">
+    <value>Alle utgifter</value>
+  </data>
+  <data name="All External User Report" xml:space="preserve">
+    <value>Alle eksterne brukere rapport</value>
+  </data>
+  <data name="All External Users Report" xml:space="preserve">
+    <value>Alle eksterne brukere rapport</value>
+  </data>
+  <data name="All Location Report" xml:space="preserve">
+    <value>Lokasjonsrapport</value>
+  </data>
+  <data name="All Locations Report" xml:space="preserve">
+    <value>Alle lokasjoner rapport</value>
+  </data>
+  <data name="All Open Expenses" xml:space="preserve">
+    <value>Alle åpne utgifter</value>
+  </data>
+  <data name="All Project Task:" xml:space="preserve">
+    <value>Alle prosjektaktiviteter</value>
+  </data>
+  <data name="All Projects of Organization" xml:space="preserve">
+    <value>Alle prosjektene til organisasjonen</value>
+  </data>
+  <data name="All Projects Report" xml:space="preserve">
+    <value>Alle prosjekter rapport</value>
+  </data>
+  <data name="Allow All" xml:space="preserve">
+    <value>Tillat alle</value>
+  </data>
+  <data name="Allow Customization" xml:space="preserve">
+    <value>Tillat tilpasning</value>
+  </data>
+  <data name="Allow Own Approval" xml:space="preserve">
+    <value>Tillat egen godkjenning</value>
+  </data>
+  <data name="Allow Own Project" xml:space="preserve">
+    <value>Tillat eget prosjekt</value>
+  </data>
+  <data name="Allow Own Report" xml:space="preserve">
+    <value>Tillat egen rapport</value>
+  </data>
+  <data name="Allow Own Sub-Ordinates" xml:space="preserve">
+    <value>Tillat egen under- ordinert</value>
+  </data>
+  <data name="Allow Own Team" xml:space="preserve">
+    <value>Tillat eget team</value>
+  </data>
+  <data name="American Express" xml:space="preserve">
+    <value>American Express</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Beløp</value>
+  </data>
+  <data name="Amount (BaseCurrency)" xml:space="preserve">
+    <value>Beløp (Basisvaluta)</value>
+  </data>
+  <data name="Amount:" xml:space="preserve">
+    <value>Beløp:</value>
+  </data>
+  <data name="Application Preference" xml:space="preserve">
+    <value>Programinnstilling</value>
+  </data>
+  <data name="Application Preferences" xml:space="preserve">
+    <value>Programinnstillinger</value>
+  </data>
+  <data name="Application Setup" xml:space="preserve">
+    <value>Søknad Setup</value>
+  </data>
+  <data name="Approval Date" xml:space="preserve">
+    <value>Godkjenningsdato</value>
+  </data>
+  <data name="Approval Not Required" xml:space="preserve">
+    <value>Godkjenning ikke påkrevd</value>
+  </data>
+  <data name="Approval Path" xml:space="preserve">
+    <value>Godkjenningssti</value>
+  </data>
+  <data name="Approval Sequence" xml:space="preserve">
+    <value>Godkjenningssekvens</value>
+  </data>
+  <data name="Approval Status" xml:space="preserve">
+    <value>Godkjenningsstatus</value>
+  </data>
+  <data name="Approval Status:" xml:space="preserve">
+    <value>Godkjenningsstatus:</value>
+  </data>
+  <data name="Approval Type" xml:space="preserve">
+    <value>Godkjenningstype</value>
+  </data>
+  <data name="Approval Type List" xml:space="preserve">
+    <value>Godkjenningstype liste</value>
+  </data>
+  <data name="Approval Type Name" xml:space="preserve">
+    <value>Godkjenningstype navn</value>
+  </data>
+  <data name="Approval Type Name:" xml:space="preserve">
+    <value>Godkjenningstype navn:</value>
+  </data>
+  <data name="Approval Type:" xml:space="preserve">
+    <value>Godkjenningstype:</value>
+  </data>
+  <data name="Approval Types" xml:space="preserve">
+    <value>Godkjenningstyper</value>
+  </data>
+  <data name="Approvals" xml:space="preserve">
+    <value>Godkjenninger</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Godkjent</value>
+  </data>
+  <data name="Approved By :" xml:space="preserve">
+    <value>Godkjent av:</value>
+  </data>
+  <data name="Approved By Employee Name" xml:space="preserve">
+    <value>Godkjent av Ansattenavn</value>
+  </data>
+  <data name="Approved By:" xml:space="preserve">
+    <value>Godkjent av:</value>
+  </data>
+  <data name="Approved Date" xml:space="preserve">
+    <value>Godkjent dato</value>
+  </data>
+  <data name="Approved On" xml:space="preserve">
+    <value>Godkjent på</value>
+  </data>
+  <data name="Approved On :" xml:space="preserve">
+    <value>Godkjent på:</value>
+  </data>
+  <data name="Approved Status:" xml:space="preserve">
+    <value>Godkjent status:</value>
+  </data>
+  <data name="Approved:" xml:space="preserve">
+    <value>Godkjent:</value>
+  </data>
+  <data name="Approver Comments" xml:space="preserve">
+    <value>Godkjenners kommentar</value>
+  </data>
+  <data name="Approver Email Address" xml:space="preserve">
+    <value>Godkjenners e-postadresse</value>
+  </data>
+  <data name="Approver Name" xml:space="preserve">
+    <value>Godkjenners navn</value>
+  </data>
+  <data name="Approver Type" xml:space="preserve">
+    <value>Godkjenners type</value>
+  </data>
+  <data name="Approver's Comments" xml:space="preserve">
+    <value>Godkjenners kommentarer</value>
+  </data>
+  <data name="Apprvoed Hours" xml:space="preserve">
+    <value>Godkjente timer</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>Arkiv</value>
+  </data>
+  <data name="Assign To" xml:space="preserve">
+    <value>Tilordne til</value>
+  </data>
+  <data name="Assigned By" xml:space="preserve">
+    <value>Tilordnes av</value>
+  </data>
+  <data name="Assigned To" xml:space="preserve">
+    <value>Tilordnet til</value>
+  </data>
+  <data name="Assigned To:" xml:space="preserve">
+    <value>Assigned til:</value>
+  </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Vedlegg</value>
+  </data>
+  <data name="Attachment Add Notification" xml:space="preserve">
+    <value>Vedlegg legg ved notis</value>
+  </data>
+  <data name="Attachment Information" xml:space="preserve">
+    <value>Vedleggsinformasjon</value>
+  </data>
+  <data name="Attachment List" xml:space="preserve">
+    <value>Vedleggsliste</value>
+  </data>
+  <data name="Attachment Name" xml:space="preserve">
+    <value>Vedleggsnavn</value>
+  </data>
+  <data name="Attachment Name:" xml:space="preserve">
+    <value>Vedleggsnavn:</value>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>Vedlegg</value>
+  </data>
+  <data name="Attendance" xml:space="preserve">
+    <value>Oppmøte</value>
+  </data>
+  <data name="Attendance Date" xml:space="preserve">
+    <value>Dato for oppmøte</value>
+  </data>
+  <data name="Attendance Detail Report" xml:space="preserve">
+    <value>Detaljrapport oppmøte</value>
+  </data>
+  <data name="AttendanceDate" xml:space="preserve">
+    <value>Oppmøtedato</value>
+  </data>
+  <data name="AttendanceDetailReport" xml:space="preserve">
+    <value>Detaljrapport oppmøte</value>
+  </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Tilsyn</value>
+  </data>
+  <data name="Audit Trail" xml:space="preserve">
+    <value>Revisjonsspor</value>
+  </data>
+  <data name="Audit Trial" xml:space="preserve">
+    <value>Revisjonsspor</value>
+  </data>
+  <data name="Australia, Dollars" xml:space="preserve">
+    <value>Australia, dollar</value>
+  </data>
+  <data name="Authentication Setting" xml:space="preserve">
+    <value>Autentiseringsinnstillinger</value>
+  </data>
+  <data name="Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="Auto Rental" xml:space="preserve">
+    <value>Bilutleie</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Tilgjengelig</value>
+  </data>
+  <data name="Available Hours" xml:space="preserve">
+    <value>Tilgjengelig Timer</value>
+  </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>Standardvaluta</value>
+  </data>
+  <data name="Base Currency:" xml:space="preserve">
+    <value>Standardvaluta:</value>
+  </data>
+  <data name="Begin Date" xml:space="preserve">
+    <value>Startdato</value>
+  </data>
+  <data name="Begin Date:" xml:space="preserve">
+    <value>Startdato:</value>
+  </data>
+  <data name="Bill Date" xml:space="preserve">
+    <value>Fakturadato</value>
+  </data>
+  <data name="Bill Date :" xml:space="preserve">
+    <value>Fakturadato :</value>
+  </data>
+  <data name="Bill Date:" xml:space="preserve">
+    <value>Fakturadato:</value>
+  </data>
+  <data name="Bill Hours" xml:space="preserve">
+    <value>Faktura timer</value>
+  </data>
+  <data name="Billable" xml:space="preserve">
+    <value>Fakturerbare</value>
+  </data>
+  <data name="Billable Hours" xml:space="preserve">
+    <value>Fakturerbare timer</value>
+  </data>
+  <data name="Billable Total Hours" xml:space="preserve">
+    <value>Fakturerbare totale timer</value>
+  </data>
+  <data name="Billable:" xml:space="preserve">
+    <value>Fakturerbar:</value>
+  </data>
+  <data name="Billed" xml:space="preserve">
+    <value>Fakturert</value>
+  </data>
+  <data name="Billed Amount" xml:space="preserve">
+    <value>Fakturert beløp</value>
+  </data>
+  <data name="Billed:" xml:space="preserve">
+    <value>Fakturert:</value>
+  </data>
+  <data name="Billing" xml:space="preserve">
+    <value>Fakturering</value>
+  </data>
+  <data name="Billing Address :" xml:space="preserve">
+    <value>Faktureringsadresse:</value>
+  </data>
+  <data name="Billing Address:" xml:space="preserve">
+    <value>Faktureringsadresse:</value>
+  </data>
+  <data name="Billing Amount" xml:space="preserve">
+    <value>Beløp til fakturering</value>
+  </data>
+  <data name="Billing Amount (BaseCurrency)" xml:space="preserve">
+    <value>Beløp til fakturering (Standardvaluta)</value>
+  </data>
+  <data name="Billing Category" xml:space="preserve">
+    <value>Faktureringskategori</value>
+  </data>
+  <data name="Billing Category:" xml:space="preserve">
+    <value>Faktureringskategori:</value>
+  </data>
+  <data name="Billing Cycle End Date" xml:space="preserve">
+    <value>Faktureringssyklusens sluttdato</value>
+  </data>
+  <data name="Billing Cycle End Date:" xml:space="preserve">
+    <value>Faktureringssyklusens sluttdato:</value>
+  </data>
+  <data name="Billing Cycle Start Date" xml:space="preserve">
+    <value>Faktureringssyklusens startdato</value>
+  </data>
+  <data name="Billing Cycle Start Date:" xml:space="preserve">
+    <value>Faktureringssyklusens startdato:</value>
+  </data>
+  <data name="Billing Rate" xml:space="preserve">
+    <value>Faktureringsrate</value>
+  </data>
+  <data name="Billing Rate (BaseCurrency)" xml:space="preserve">
+    <value>Faktureringsrate (Standardvaluta)</value>
+  </data>
+  <data name="Billing Rate Currency" xml:space="preserve">
+    <value>Faktureringsrate valuta</value>
+  </data>
+  <data name="Billing Rate Currency:" xml:space="preserve">
+    <value>Faktureringsrate valuta:</value>
+  </data>
+  <data name="Billing Rate End Date:" xml:space="preserve">
+    <value>Faktureringsrate sluttdato:</value>
+  </data>
+  <data name="Billing Rate History" xml:space="preserve">
+    <value>Faktureringsrate historie</value>
+  </data>
+  <data name="Billing Rate Information" xml:space="preserve">
+    <value>Faktureringsrate informasjon</value>
+  </data>
+  <data name="Billing Rate List" xml:space="preserve">
+    <value>Prisliste fakturering</value>
+  </data>
+  <data name="Billing Rate Start Date:" xml:space="preserve">
+    <value>Faktureringsrate startdato:</value>
+  </data>
+  <data name="Billing Rate Type" xml:space="preserve">
+    <value>Faktureringsrate type</value>
+  </data>
+  <data name="Billing Rate Type:" xml:space="preserve">
+    <value>Faktureringsrate type:</value>
+  </data>
+  <data name="Billing Rate:" xml:space="preserve">
+    <value>Faktureringsrate:</value>
+  </data>
+  <data name="Billing Rates" xml:space="preserve">
+    <value>Faktureringsrater</value>
+  </data>
+  <data name="Billing Report" xml:space="preserve">
+    <value>Faktureringsrapport</value>
+  </data>
+  <data name="Billing Setup" xml:space="preserve">
+    <value>Fakturering Setup</value>
+  </data>
+  <data name="Billing Type" xml:space="preserve">
+    <value>Faktureringstype</value>
+  </data>
+  <data name="Billing Type Information" xml:space="preserve">
+    <value>Informasjon om faktureringstype</value>
+  </data>
+  <data name="Billing Type List" xml:space="preserve">
+    <value>Liste faktureringstype</value>
+  </data>
+  <data name="Billing Type:" xml:space="preserve">
+    <value>Faktureringstype:</value>
+  </data>
+  <data name="Billing Types" xml:space="preserve">
+    <value>Faktureringstyper</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>Begge</value>
+  </data>
+  <data name="Both downloadable version and hosted version can be setup instantly." xml:space="preserve">
+    <value>Både nedlastbar og driftet versjon kan settes opp umiddelbart.</value>
+  </data>
+  <data name="Browse_text" xml:space="preserve">
+    <value>Bla ....</value>
+  </data>
+  <data name="Bug" xml:space="preserve">
+    <value>Bug</value>
+  </data>
+  <data name="Buy Tracking" xml:space="preserve">
+    <value>Kjøp sporing</value>
+  </data>
+  <data name="Canada, Dollars" xml:space="preserve">
+    <value>Canada, dollar</value>
+  </data>
+  <data name="Cancel_text" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Avbrutt</value>
+  </data>
+  <data name="Caption" xml:space="preserve">
+    <value>Tekst</value>
+  </data>
+  <data name="Car" xml:space="preserve">
+    <value>Bil</value>
+  </data>
+  <data name="Car Mileage" xml:space="preserve">
+    <value>Bil km.</value>
+  </data>
+  <data name="Carry Forward" xml:space="preserve">
+    <value>Fremførbare</value>
+  </data>
+  <data name="Carry Over" xml:space="preserve">
+    <value>Carry Over</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>Kontant</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="Change Base Currency" xml:space="preserve">
+    <value>Endre standardvaluta</value>
+  </data>
+  <data name="Change plan to..." xml:space="preserve">
+    <value>Endre plan til ...</value>
+  </data>
+  <data name="Check All" xml:space="preserve">
+    <value>Sjekk alle</value>
+  </data>
+  <data name="Check All Approved" xml:space="preserve">
+    <value>Sjekk alle godkjente</value>
+  </data>
+  <data name="Check-All" xml:space="preserve">
+    <value>Sjek alle</value>
+  </data>
+  <data name="Check-All Approved" xml:space="preserve">
+    <value>Sjekk alle godkjente</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>By</value>
+  </data>
+  <data name="City:" xml:space="preserve">
+    <value>By:</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Klient</value>
+  </data>
+  <data name="Client --&gt; TeamLead" xml:space="preserve">
+    <value>Klient -&gt; Teamleder</value>
+  </data>
+  <data name="Client Amount (BaseCurrency)" xml:space="preserve">
+    <value>Klient beløp (Standardvaluta)</value>
+  </data>
+  <data name="Client Contact" xml:space="preserve">
+    <value>Klient kontakt</value>
+  </data>
+  <data name="Client Contact Information" xml:space="preserve">
+    <value>Klient kontaktinformasjon</value>
+  </data>
+  <data name="Client Contact List" xml:space="preserve">
+    <value>Klient kontaktliste</value>
+  </data>
+  <data name="Client Contact Name" xml:space="preserve">
+    <value>Klientnavn, kontaktperson</value>
+  </data>
+  <data name="Client Contact:" xml:space="preserve">
+    <value>Klientkontakt:</value>
+  </data>
+  <data name="Client Contacts" xml:space="preserve">
+    <value>Klientkontakter</value>
+  </data>
+  <data name="Client Department" xml:space="preserve">
+    <value>Klientens avdeling</value>
+  </data>
+  <data name="Client Department Code" xml:space="preserve">
+    <value>Klientens avdelingskode</value>
+  </data>
+  <data name="Client Department Information" xml:space="preserve">
+    <value>Klientens avdelingsinformasjon</value>
+  </data>
+  <data name="Client Department List" xml:space="preserve">
+    <value>Klientens avdelingsliste</value>
+  </data>
+  <data name="Client Department Location" xml:space="preserve">
+    <value>Klientens avdelingslokasjon</value>
+  </data>
+  <data name="Client Department Name" xml:space="preserve">
+    <value>Klientens avdelingsnavn</value>
+  </data>
+  <data name="Client Department:" xml:space="preserve">
+    <value>Klientens avdeling:</value>
+  </data>
+  <data name="Client Departments" xml:space="preserve">
+    <value>Klientenes avdelinger</value>
+  </data>
+  <data name="Client Id" xml:space="preserve">
+    <value>Klient ID</value>
+  </data>
+  <data name="Client List" xml:space="preserve">
+    <value>Klientliste</value>
+  </data>
+  <data name="Client Name" xml:space="preserve">
+    <value>Klientnavn</value>
+  </data>
+  <data name="Client Name:" xml:space="preserve">
+    <value>Klientnavn:</value>
+  </data>
+  <data name="Client Nick" xml:space="preserve">
+    <value>Klient etternavn</value>
+  </data>
+  <data name="Client Nick:" xml:space="preserve">
+    <value>Klient etternavn:</value>
+  </data>
+  <data name="Client:" xml:space="preserve">
+    <value>Klient:</value>
+  </data>
+  <data name="ClientList-ListOfAllClientsDefinedByAccount" xml:space="preserve">
+    <value>Klientliste - Liste over alle klienter som er definert med konto</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Klienter</value>
+  </data>
+  <data name="Clients Information" xml:space="preserve">
+    <value>Klientinformasjon</value>
+  </data>
+  <data name="Clients:" xml:space="preserve">
+    <value>Klienter:</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Kode</value>
+  </data>
+  <data name="Column Order" xml:space="preserve">
+    <value>Bestillingskolonne</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Kommentarer</value>
+  </data>
+  <data name="Comments By:" xml:space="preserve">
+    <value>Kommentarer av:</value>
+  </data>
+  <data name="Comments Information" xml:space="preserve">
+    <value>Kommentarinformasjon</value>
+  </data>
+  <data name="Comments List" xml:space="preserve">
+    <value>Kommentarliste</value>
+  </data>
+  <data name="Comments:" xml:space="preserve">
+    <value>Kommentarer:</value>
+  </data>
+  <data name="Company Own Logo" xml:space="preserve">
+    <value>Firmalogo</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Fullført</value>
+  </data>
+  <data name="Completed (%)" xml:space="preserve">
+    <value>Fullført (%)</value>
+  </data>
+  <data name="Completed Status:" xml:space="preserve">
+    <value>Fullført status:</value>
+  </data>
+  <data name="Completed%:" xml:space="preserve">
+    <value>Fullført%:</value>
+  </data>
+  <data name="Completed:" xml:space="preserve">
+    <value>Fullført:</value>
+  </data>
+  <data name="CompletedPercent" xml:space="preserve">
+    <value>Fullført prosent</value>
+  </data>
+  <data name="Computer Hardware" xml:space="preserve">
+    <value>Datamaskinutstyr</value>
+  </data>
+  <data name="Consolidated" xml:space="preserve">
+    <value>Konsolidert</value>
+  </data>
+  <data name="Construction" xml:space="preserve">
+    <value>Konstruksjon</value>
+  </data>
+  <data name="Consultant" xml:space="preserve">
+    <value>Konsulent</value>
+  </data>
+  <data name="Consume Hours" xml:space="preserve">
+    <value>Bruker Timer</value>
+  </data>
+  <data name="Consumed" xml:space="preserve">
+    <value>Forbrukt</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Kontakter</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>Innleid</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Kopier</value>
+  </data>
+  <data name="Copy Activities" xml:space="preserve">
+    <value>Kopier Aktiviteter</value>
+  </data>
+  <data name="Copy From" xml:space="preserve">
+    <value>Kopier fra</value>
+  </data>
+  <data name="Copy Timesheet" xml:space="preserve">
+    <value>Kopier Timeliste</value>
+  </data>
+  <data name="Copy_Conformation_Message_DayView" xml:space="preserve">
+    <value>Er du sikker på å kopiere den angitte datoens data til dagens dato? </value>
+  </data>
+  <data name="Copy_Conformation_Message_WeekView" xml:space="preserve">
+    <value>Er du sikker på å kopiere den spesifiserte ukes data til gjeldende uke? </value>
+  </data>
+  <data name="Copyright 2007 - 2009 Livetecs LLC. All rights reserved." xml:space="preserve">
+    <value>Kopirett 2007 - 2011 Livetecs LLC. Alle rettigheter reservert.</value>
+  </data>
+  <data name="Cost Center" xml:space="preserve">
+    <value>Kostnadssenter</value>
+  </data>
+  <data name="Cost Center Code" xml:space="preserve">
+    <value>Kode kostnadssenter</value>
+  </data>
+  <data name="Cost Center Code:" xml:space="preserve">
+    <value>Kode kostnadssenter:</value>
+  </data>
+  <data name="Cost Center Information" xml:space="preserve">
+    <value>Informasjon kostnadssenter</value>
+  </data>
+  <data name="Cost Center List" xml:space="preserve">
+    <value>Liste kostnadssenter</value>
+  </data>
+  <data name="Cost Center:" xml:space="preserve">
+    <value>Kostnadssenter:</value>
+  </data>
+  <data name="Costing" xml:space="preserve">
+    <value>Kostnader</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Telling</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="Country:" xml:space="preserve">
+    <value>Land:</value>
+  </data>
+  <data name="Created Date From:" xml:space="preserve">
+    <value>Opprettet fra dato:</value>
+  </data>
+  <data name="Created Date Upto:" xml:space="preserve">
+    <value>Opprettet dato til og med:</value>
+  </data>
+  <data name="Creates a billing summary report per client, per project for each task within a selected date range." xml:space="preserve">
+    <value>Oppretter en faktureringssammendrag- rapport per klient, per prosjekt for hver oppgave innenfor en valgt datoperiode.</value>
+  </data>
+  <data name="CSV" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="CSV Import Export" xml:space="preserve">
+    <value>CSV import og eksport</value>
+  </data>
+  <data name="Currencies" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="Currencies Information" xml:space="preserve">
+    <value>Valutainformasjon</value>
+  </data>
+  <data name="Currencies List" xml:space="preserve">
+    <value>Valutaliste</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="Currency Already Exist" xml:space="preserve">
+    <value>Valuta eksisterer allerede</value>
+  </data>
+  <data name="Currency Code" xml:space="preserve">
+    <value>Valutakode</value>
+  </data>
+  <data name="Currency Currency:" xml:space="preserve">
+    <value>Nåværende valuta:</value>
+  </data>
+  <data name="Currency Symbol" xml:space="preserve">
+    <value>Valutasymbol</value>
+  </data>
+  <data name="Currency:" xml:space="preserve">
+    <value>Valuta:</value>
+  </data>
+  <data name="CurrencyAmount" xml:space="preserve">
+    <value>Valutabeløp</value>
+  </data>
+  <data name="Current Base Currency:" xml:space="preserve">
+    <value>Nåværende standardvaluta</value>
+  </data>
+  <data name="Current Date:" xml:space="preserve">
+    <value>Dato:</value>
+  </data>
+  <data name="Current Week:" xml:space="preserve">
+    <value>Uke:</value>
+  </data>
+  <data name="Customer can request their personalized customization." xml:space="preserve">
+    <value>Kunden kan be om sin personlige tilpasning.</value>
+  </data>
+  <data name="Customer Information" xml:space="preserve">
+    <value>Kundeinformasjon</value>
+  </data>
+  <data name="Customizable" xml:space="preserve">
+    <value>Tilpasningsbar</value>
+  </data>
+  <data name="Customize" xml:space="preserve">
+    <value>Tilpass</value>
+  </data>
+  <data name="Customized" xml:space="preserve">
+    <value>Tilpasset</value>
+  </data>
+  <data name="Daily Expense Approval Pending Notification" xml:space="preserve">
+    <value>Daglig varsel på utgiftsgodkjenning</value>
+  </data>
+  <data name="Daily Time Off Approval Pending Notification" xml:space="preserve">
+    <value>Daglig Tid Off Godkjenning Pending Notification</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification" xml:space="preserve">
+    <value>Daglig varsel på timeregistrering</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Administrator" xml:space="preserve">
+    <value>Daglig Tid Entry Venter melding til Administrator</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Employee Manager" xml:space="preserve">
+    <value>Daglig Tid Entry Venter melding til Arbeidstaker Manager</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Project Manager" xml:space="preserve">
+    <value>Daglig Tid Entry Venter melding til Project Manager</value>
+  </data>
+  <data name="Daily TimeEntry Pending Notification To Team Lead" xml:space="preserve">
+    <value>Daglig Tid Entry Venter melding til Team Lead</value>
+  </data>
+  <data name="Daily Timesheet" xml:space="preserve">
+    <value>Daglig Timeliste</value>
+  </data>
+  <data name="Daily Timesheet Approval Pending Notification" xml:space="preserve">
+    <value>Daglig varsel på timegodkjenning</value>
+  </data>
+  <data name="Data Source" xml:space="preserve">
+    <value>Datakilde</value>
+  </data>
+  <data name="Data Source:" xml:space="preserve">
+    <value>Datakilde:</value>
+  </data>
+  <data name="Database Backup" xml:space="preserve">
+    <value>Database Backup</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Dato</value>
+  </data>
+  <data name="Date Range:" xml:space="preserve">
+    <value>Datoperiode:</value>
+  </data>
+  <data name="Date:" xml:space="preserve">
+    <value>Dato:</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Dag</value>
+  </data>
+  <data name="Day No" xml:space="preserve">
+    <value>Dag Nei</value>
+  </data>
+  <data name="Day No." xml:space="preserve">
+    <value>Dag nr.</value>
+  </data>
+  <data name="Day Off" xml:space="preserve">
+    <value>Day Off</value>
+  </data>
+  <data name="Day View" xml:space="preserve">
+    <value>Dagsoversikt</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Dager</value>
+  </data>
+  <data name="Days Off" xml:space="preserve">
+    <value>Days Off</value>
+  </data>
+  <data name="Days Off:" xml:space="preserve">
+    <value>Fridager:</value>
+  </data>
+  <data name="Deadline" xml:space="preserve">
+    <value>Tidsfrist</value>
+  </data>
+  <data name="Deadline:" xml:space="preserve">
+    <value>Tidsfrist:</value>
+  </data>
+  <data name="DeadlineDate" xml:space="preserve">
+    <value>Dato tidsfrist</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Default Billing Rate" xml:space="preserve">
+    <value>Standard faktureringsrate</value>
+  </data>
+  <data name="Default Billing Rate:" xml:space="preserve">
+    <value>Standard faktureringsrate:</value>
+  </data>
+  <data name="Default Cost Center" xml:space="preserve">
+    <value>Standard kostnadssenter</value>
+  </data>
+  <data name="Default Currency" xml:space="preserve">
+    <value>Standard valuta</value>
+  </data>
+  <data name="Default Currency:" xml:space="preserve">
+    <value>Standard valuta:</value>
+  </data>
+  <data name="Default Department" xml:space="preserve">
+    <value>Standard avdeling</value>
+  </data>
+  <data name="Default Expense Rate:" xml:space="preserve">
+    <value>Standard utgiftsrate:</value>
+  </data>
+  <data name="Default Location" xml:space="preserve">
+    <value>Standard sted</value>
+  </data>
+  <data name="Default Milestone" xml:space="preserve">
+    <value>Standard milepel</value>
+  </data>
+  <data name="Default Page" xml:space="preserve">
+    <value>Standard side:</value>
+  </data>
+  <data name="Default Priority" xml:space="preserve">
+    <value>Standard prioritet</value>
+  </data>
+  <data name="Default Time Entry Mode:" xml:space="preserve">
+    <value>Standard modus timeregistrering</value>
+  </data>
+  <data name="Delete Selected Item" xml:space="preserve">
+    <value>Slett valgte elementet</value>
+  </data>
+  <data name="Delete_cofirmation" xml:space="preserve">
+    <value>Er du sikker på at du vil slette denne oppføringen?</value>
+  </data>
+  <data name="Delete_text" xml:space="preserve">
+    <value>Slette</value>
+  </data>
+  <data name="Demo" xml:space="preserve">
+    <value>Demo</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Avdeling</value>
+  </data>
+  <data name="Department Code" xml:space="preserve">
+    <value>Avdelingskode</value>
+  </data>
+  <data name="Department Code:" xml:space="preserve">
+    <value>Avdelingskode:</value>
+  </data>
+  <data name="Department Id" xml:space="preserve">
+    <value>Avdelings-ID</value>
+  </data>
+  <data name="Department Information" xml:space="preserve">
+    <value>Avdelingsinfomasjon</value>
+  </data>
+  <data name="Department List" xml:space="preserve">
+    <value>Avdelingsliste</value>
+  </data>
+  <data name="Department List - List Of All Departments Defined By Account" xml:space="preserve">
+    <value>Avdelingsliste - Liste over alle avdelinger definert ved konto</value>
+  </data>
+  <data name="Department Name" xml:space="preserve">
+    <value>Avdelingsnavn</value>
+  </data>
+  <data name="Department Name:" xml:space="preserve">
+    <value>Avdelingsnavn:</value>
+  </data>
+  <data name="Department Wise Timesheet Report" xml:space="preserve">
+    <value>Avdelingsvis timeskjema rapport</value>
+  </data>
+  <data name="Department:" xml:space="preserve">
+    <value>Avdeling:</value>
+  </data>
+  <data name="Departments" xml:space="preserve">
+    <value>Avdelinger</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="Description:" xml:space="preserve">
+    <value>Beskrivelse:</value>
+  </data>
+  <data name="Detail Expense Report" xml:space="preserve">
+    <value>Utgiftsrapport, detaljert</value>
+  </data>
+  <data name="Detail report of employee absence in specified data range. Helpfull for payroll department to get list of absent in specified date range." xml:space="preserve">
+    <value>Detaljrapport over ansattes fravær i spesifiserte tidsrom. </value>
+  </data>
+  <data name="Detail report of employee absence in specified data range.Helpfull for payroll department to get list of absent in specified date range." xml:space="preserve">
+    <value>Detaljrapport over ansattes fravær i spesifiserte tidsrom. </value>
+  </data>
+  <data name="Detail Task Report" xml:space="preserve">
+    <value>Detaljert aktivitetsrapport</value>
+  </data>
+  <data name="Detail Time Sheet Report" xml:space="preserve">
+    <value>Detaljert timeskjema</value>
+  </data>
+  <data name="Detail TimeSheet Report" xml:space="preserve">
+    <value>Detaljert timeskjema</value>
+  </data>
+  <data name="Detailed" xml:space="preserve">
+    <value>Detaljert</value>
+  </data>
+  <data name="Disable Account" xml:space="preserve">
+    <value>Deaktiver konto</value>
+  </data>
+  <data name="Disable My Account" xml:space="preserve">
+    <value>Deaktiver min konto</value>
+  </data>
+  <data name="Disable Your Account" xml:space="preserve">
+    <value>Deaktivere din konto</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Deaktivert</value>
+  </data>
+  <data name="Disabled Editing Of Rate:" xml:space="preserve">
+    <value>Deaktivert redigering av pris:</value>
+  </data>
+  <data name="Disabled:" xml:space="preserve">
+    <value>Deaktivert:</value>
+  </data>
+  <data name="Disabled_text" xml:space="preserve">
+    <value>Deaktivret</value>
+  </data>
+  <data name="Disabling account will stop any activities in your TimeLive account. Your employee will not be able to login in TimeLive." xml:space="preserve">
+    <value>Deaktivering av konto vil stoppe alle aktiviteter i din TimeLive konto. Dine ansatte vil ikke kunne logge seg inn i TimeLive.</value>
+  </data>
+  <data name="Discription:" xml:space="preserve">
+    <value>Beskrivelse:</value>
+  </data>
+  <data name="Downloadable" xml:space="preserve">
+    <value>Nedlastbar</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Varighet</value>
+  </data>
+  <data name="Duration:" xml:space="preserve">
+    <value>Varighet:</value>
+  </data>
+  <data name="Earn Hours" xml:space="preserve">
+    <value>Tjen Timer</value>
+  </data>
+  <data name="Earn Period" xml:space="preserve">
+    <value>Tjen Periode</value>
+  </data>
+  <data name="Earned" xml:space="preserve">
+    <value>Opptjente</value>
+  </data>
+  <data name="Earned Hours" xml:space="preserve">
+    <value>Opptjente Timer</value>
+  </data>
+  <data name="Edit_text" xml:space="preserve">
+    <value>Rediger</value>
+  </data>
+  <data name="Education" xml:space="preserve">
+    <value>Utdanning</value>
+  </data>
+  <data name="Electric Appliances" xml:space="preserve">
+    <value>Elektriske innretninger</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>E-postadresse</value>
+  </data>
+  <data name="EMail Address:" xml:space="preserve">
+    <value>E-postadresse:</value>
+  </data>
+  <data name="EMail Notification" xml:space="preserve">
+    <value>E-postvarsel</value>
+  </data>
+  <data name="EMail Notification Preferences" xml:space="preserve">
+    <value>Innstillinger E-post varsling</value>
+  </data>
+  <data name="EMail Preference" xml:space="preserve">
+    <value>Innstillinger E-post</value>
+  </data>
+  <data name="EMailAddress" xml:space="preserve">
+    <value>E-postadresse</value>
+  </data>
+  <data name="Employed" xml:space="preserve">
+    <value>Ansatt</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Ansatte</value>
+  </data>
+  <data name="Employee Absence Detail Report" xml:space="preserve">
+    <value>Detaljert fravær, Ansatte</value>
+  </data>
+  <data name="Employee Add Notification" xml:space="preserve">
+    <value>Ansatte Legg til melding</value>
+  </data>
+  <data name="Employee Attendance" xml:space="preserve">
+    <value>Ansatte Til stede</value>
+  </data>
+  <data name="Employee Attendance Information" xml:space="preserve">
+    <value>Ansatte Tilstede informasjon</value>
+  </data>
+  <data name="Employee Attendance List" xml:space="preserve">
+    <value>Tilstedeliste Ansatte</value>
+  </data>
+  <data name="Employee Attendance Summary Report" xml:space="preserve">
+    <value>Tilstedeliste Ansattte, samendrag</value>
+  </data>
+  <data name="Employee Code" xml:space="preserve">
+    <value>Ansatt nr</value>
+  </data>
+  <data name="Employee Code:" xml:space="preserve">
+    <value>Ansatt nr:</value>
+  </data>
+  <data name="Employee Cost" xml:space="preserve">
+    <value>Ansatte Kostnad</value>
+  </data>
+  <data name="Employee Cost (BaseCurrency)" xml:space="preserve">
+    <value>Ansatte Kostnad (Standardvaluta)</value>
+  </data>
+  <data name="Employee Id" xml:space="preserve">
+    <value>Ansatt-ID</value>
+  </data>
+  <data name="Employee Information" xml:space="preserve">
+    <value>Ansatt Informasjon</value>
+  </data>
+  <data name="Employee List" xml:space="preserve">
+    <value>Ansattliste</value>
+  </data>
+  <data name="Employee List Report" xml:space="preserve">
+    <value>Ansattliste rapport</value>
+  </data>
+  <data name="Employee Manager" xml:space="preserve">
+    <value>Ansattes leder</value>
+  </data>
+  <data name="Employee Manager Expense Entry Approvals" xml:space="preserve">
+    <value>Ansattes leder utgiftsgodkjenning</value>
+  </data>
+  <data name="Employee Manager Time Entry Approvals" xml:space="preserve">
+    <value>Ansattes leder timegodkjenninger</value>
+  </data>
+  <data name="Employee Manager Time Off Approvals" xml:space="preserve">
+    <value>Arbeidstaker Manager Time Off godkjenninger</value>
+  </data>
+  <data name="Employee Manager:" xml:space="preserve">
+    <value>Ansattes leder:</value>
+  </data>
+  <data name="Employee Name" xml:space="preserve">
+    <value>Ansattes navn</value>
+  </data>
+  <data name="Employee Name:" xml:space="preserve">
+    <value>Ansattes navn:</value>
+  </data>
+  <data name="Employee Project" xml:space="preserve">
+    <value>Arbeidstaker Project</value>
+  </data>
+  <data name="Employee Project Utilization Report" xml:space="preserve">
+    <value>Ansattes prosjektutnyttelses rapport</value>
+  </data>
+  <data name="Employee Rate" xml:space="preserve">
+    <value>Ansattes timesats</value>
+  </data>
+  <data name="Employee Rate (BaseCurrency)" xml:space="preserve">
+    <value>Ansattes timesats (Standardvaluta)</value>
+  </data>
+  <data name="Employee Rate Currency" xml:space="preserve">
+    <value>Ansattes timesats valuta</value>
+  </data>
+  <data name="Employee Rate Currency:" xml:space="preserve">
+    <value>Ansattes timesats valuta:</value>
+  </data>
+  <data name="Employee Rate:" xml:space="preserve">
+    <value>Ansattes timesats:</value>
+  </data>
+  <data name="Employee Status:" xml:space="preserve">
+    <value>Ansattes status:</value>
+  </data>
+  <data name="Employee Time Of Policy:" xml:space="preserve">
+    <value>Arbeidstaker Time Of Policy:</value>
+  </data>
+  <data name="Employee Time off" xml:space="preserve">
+    <value>Arbeidstaker fri</value>
+  </data>
+  <data name="Employee Time Off Detail" xml:space="preserve">
+    <value>Arbeidstaker Time Av Detalj</value>
+  </data>
+  <data name="Employee Timesheet Submission Status Report" xml:space="preserve">
+    <value>Ansattes leverte timelister statusrapport</value>
+  </data>
+  <data name="Employee Type" xml:space="preserve">
+    <value>Ansatt type</value>
+  </data>
+  <data name="Employee Type Information" xml:space="preserve">
+    <value>Ansatt type informasjon</value>
+  </data>
+  <data name="Employee Type List" xml:space="preserve">
+    <value>Ansatt type liste</value>
+  </data>
+  <data name="Employee Type:" xml:space="preserve">
+    <value>Ansatt type:</value>
+  </data>
+  <data name="Employee Types" xml:space="preserve">
+    <value>Ansatt typer</value>
+  </data>
+  <data name="Employee:" xml:space="preserve">
+    <value>Medarbeider:</value>
+  </data>
+  <data name="EmployeeList-ListOfAllEmployeesDefinedByAccount" xml:space="preserve">
+    <value>Ansattliste - Liste over alle ansatte som er definert ved konto</value>
+  </data>
+  <data name="Employees" xml:space="preserve">
+    <value>Ansatte</value>
+  </data>
+  <data name="Employees:" xml:space="preserve">
+    <value>Ansatte:</value>
+  </data>
+  <data name="Enable Disable" xml:space="preserve">
+    <value>Aktiver / deaktiver</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Aktivert</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>Sluttdato</value>
+  </data>
+  <data name="End Date:" xml:space="preserve">
+    <value>Sluttdato:</value>
+  </data>
+  <data name="End Time" xml:space="preserve">
+    <value>Sluttid</value>
+  </data>
+  <data name="End Timer" xml:space="preserve">
+    <value>Slutt Timer</value>
+  </data>
+  <data name="End Timer and Save" xml:space="preserve">
+    <value>Slutt Timer og Lagre</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>Sluttid</value>
+  </data>
+  <data name="Entered" xml:space="preserve">
+    <value>Startet</value>
+  </data>
+  <data name="Entertainment" xml:space="preserve">
+    <value>Underholdning</value>
+  </data>
+  <data name="Entry View Type" xml:space="preserve">
+    <value>Se på registreringstype</value>
+  </data>
+  <data name="Estimated Amount (Base Currency)" xml:space="preserve">
+    <value>Anslått beløp (Standardvaluta)</value>
+  </data>
+  <data name="Estimated Cost" xml:space="preserve">
+    <value>Anslått pris</value>
+  </data>
+  <data name="Estimated Cost (BaseCurrency)" xml:space="preserve">
+    <value>Anslått pris (Standradvaluta)</value>
+  </data>
+  <data name="Estimated Cost:" xml:space="preserve">
+    <value>Anslått pris:</value>
+  </data>
+  <data name="Estimated Duration" xml:space="preserve">
+    <value>Estimert varighet</value>
+  </data>
+  <data name="Estimated Hours:" xml:space="preserve">
+    <value>Beregnede timer:</value>
+  </data>
+  <data name="Estimated Time" xml:space="preserve">
+    <value>Estimert tid</value>
+  </data>
+  <data name="Estimated Time (Hours):" xml:space="preserve">
+    <value>Beregnet tid (timer):</value>
+  </data>
+  <data name="Estimates" xml:space="preserve">
+    <value>Estimater</value>
+  </data>
+  <data name="Euro Member Countries" xml:space="preserve">
+    <value>Euro medlemsland</value>
+  </data>
+  <data name="Exchange Rate" xml:space="preserve">
+    <value>Valutakurs</value>
+  </data>
+  <data name="Exchange Rate History" xml:space="preserve">
+    <value>Valutakurs historie</value>
+  </data>
+  <data name="Exchange Rate Information" xml:space="preserve">
+    <value>Valutakurs informasjon</value>
+  </data>
+  <data name="Exchange Rate List" xml:space="preserve">
+    <value>Valutakurs liste</value>
+  </data>
+  <data name="Exchange Rate:" xml:space="preserve">
+    <value>Valutakurs:</value>
+  </data>
+  <data name="Expense" xml:space="preserve">
+    <value>Utgift</value>
+  </data>
+  <data name="Expense Approval" xml:space="preserve">
+    <value>Utgiftsgodkjenning</value>
+  </data>
+  <data name="Expense Approval Activity" xml:space="preserve">
+    <value>Utgiftsgodkjenning aktivitet</value>
+  </data>
+  <data name="Expense Approval Detail" xml:space="preserve">
+    <value>Utgiftsgodkjenning detaljer</value>
+  </data>
+  <data name="Expense Approval Type" xml:space="preserve">
+    <value>Utgiftsgodkjenning type</value>
+  </data>
+  <data name="Expense Approval Type:" xml:space="preserve">
+    <value>Utgiftsgodkjenning type:</value>
+  </data>
+  <data name="Expense Billing List" xml:space="preserve">
+    <value>Fakturaliste utgifter</value>
+  </data>
+  <data name="Expense Billing Worksheet" xml:space="preserve">
+    <value>Utgifter regneark</value>
+  </data>
+  <data name="Expense By Client Report" xml:space="preserve">
+    <value>Rapport, Utgifter for klient</value>
+  </data>
+  <data name="Expense By Clients Report" xml:space="preserve">
+    <value>Rapport, Utgifter Pr. klient</value>
+  </data>
+  <data name="Expense Entry" xml:space="preserve">
+    <value>Registrere utgifter</value>
+  </data>
+  <data name="Expense Entry Approval" xml:space="preserve">
+    <value>Utgiftsregistrering godkjenning</value>
+  </data>
+  <data name="Expense Entry Approval Activity" xml:space="preserve">
+    <value>Utgiftsregistrering godkjenningsaktivitet</value>
+  </data>
+  <data name="Expense Entry Approved Notification" xml:space="preserve">
+    <value>Utgiftsregistrering godkjenningsmelding</value>
+  </data>
+  <data name="Expense Entry Approver" xml:space="preserve">
+    <value>Utgiftsregistrering godkjenner</value>
+  </data>
+  <data name="Expense Entry Archive" xml:space="preserve">
+    <value>Utgiftsregistrering</value>
+  </data>
+  <data name="Expense Entry Audit" xml:space="preserve">
+    <value>Expense Entry Tilsyn</value>
+  </data>
+  <data name="Expense Entry Date:" xml:space="preserve">
+    <value>Utgiftsregistrering registreringsdato:</value>
+  </data>
+  <data name="Expense Entry End Date:" xml:space="preserve">
+    <value>Utgiftsregistrering sluttdato:</value>
+  </data>
+  <data name="Expense Entry Id:" xml:space="preserve">
+    <value>Utgiftsregistrering Id:</value>
+  </data>
+  <data name="Expense Entry Information" xml:space="preserve">
+    <value>Utgiftsregistrering informasjon</value>
+  </data>
+  <data name="Expense Entry List" xml:space="preserve">
+    <value>Utgiftsregistrering liste</value>
+  </data>
+  <data name="Expense Entry Rejected Notification" xml:space="preserve">
+    <value>Utgiftsregistrering avvist melding:</value>
+  </data>
+  <data name="Expense Entry Start Date:" xml:space="preserve">
+    <value>Utgiftsregistrering startdato:</value>
+  </data>
+  <data name="Expense Information" xml:space="preserve">
+    <value>Utgiftsregistrering informasjon</value>
+  </data>
+  <data name="Expense List" xml:space="preserve">
+    <value>Utgiftsliste</value>
+  </data>
+  <data name="Expense Management" xml:space="preserve">
+    <value>Utgiftsadministrasjon</value>
+  </data>
+  <data name="Expense Name" xml:space="preserve">
+    <value>Utgiftsnavn</value>
+  </data>
+  <data name="Expense Name (Expense Type)" xml:space="preserve">
+    <value>Utgiftsnavn (utgiftstype)</value>
+  </data>
+  <data name="Expense Name:" xml:space="preserve">
+    <value>Utgiftsnavn:</value>
+  </data>
+  <data name="Expense Setup" xml:space="preserve">
+    <value>Expense Setup</value>
+  </data>
+  <data name="Expense Sheet" xml:space="preserve">
+    <value>Utgiftsskjema</value>
+  </data>
+  <data name="Expense Sheet Audit" xml:space="preserve">
+    <value>Expense Sheet Tilsyn</value>
+  </data>
+  <data name="Expense Sheet Audit Trail Report" xml:space="preserve">
+    <value>Bekostning Sheet Audit Trail rapport</value>
+  </data>
+  <data name="Expense sheet copied successfully." xml:space="preserve">
+    <value>Utgiftsskjema kopiert.</value>
+  </data>
+  <data name="Expense Sheet List" xml:space="preserve">
+    <value>Utgiftsskjema liste</value>
+  </data>
+  <data name="Expense Sheet Report" xml:space="preserve">
+    <value>Utgiftsskjema rapport</value>
+  </data>
+  <data name="Expense Sheet Status" xml:space="preserve">
+    <value>Utgiftsskjema status</value>
+  </data>
+  <data name="Expense Tracking" xml:space="preserve">
+    <value>Utgiftssporing</value>
+  </data>
+  <data name="Expense Type" xml:space="preserve">
+    <value>Utgiftstype</value>
+  </data>
+  <data name="Expense Type Information" xml:space="preserve">
+    <value>Utgiftstype informasjon</value>
+  </data>
+  <data name="Expense Type List" xml:space="preserve">
+    <value>Utgiftstype liste</value>
+  </data>
+  <data name="Expense Type:" xml:space="preserve">
+    <value>Utgiftstype:</value>
+  </data>
+  <data name="Expense Types" xml:space="preserve">
+    <value>Utgiftstyper</value>
+  </data>
+  <data name="Expense:" xml:space="preserve">
+    <value>Utgift:</value>
+  </data>
+  <data name="Expenses" xml:space="preserve">
+    <value>Utgifter</value>
+  </data>
+  <data name="EXPENSES1" xml:space="preserve">
+    <value>UTGIFTER</value>
+  </data>
+  <data name="ExpenseType" xml:space="preserve">
+    <value>Utgiftstype</value>
+  </data>
+  <data name="Expert technical support at any hour via email." xml:space="preserve">
+    <value>Teknisk support 08-16 via e-post.</value>
+  </data>
+  <data name="Expiry Date:" xml:space="preserve">
+    <value>Utløpsdato:</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Eksport</value>
+  </data>
+  <data name="External User" xml:space="preserve">
+    <value>Ekstern bruker</value>
+  </data>
+  <data name="External User Client" xml:space="preserve">
+    <value>Ekstern brukerklient</value>
+  </data>
+  <data name="External User Client:" xml:space="preserve">
+    <value>Ekstern brukerklient:</value>
+  </data>
+  <data name="External User Id" xml:space="preserve">
+    <value>Ekstern bruker-ID</value>
+  </data>
+  <data name="External User Information" xml:space="preserve">
+    <value>Ekstern brukerinformasjon</value>
+  </data>
+  <data name="External User List" xml:space="preserve">
+    <value>Ekstern brukerliste</value>
+  </data>
+  <data name="External Users" xml:space="preserve">
+    <value>Eksterne brukere</value>
+  </data>
+  <data name="ExternalUser" xml:space="preserve">
+    <value>Eksterne bruker</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Faks</value>
+  </data>
+  <data name="Feature" xml:space="preserve">
+    <value>Feature</value>
+  </data>
+  <data name="Feature Management" xml:space="preserve">
+    <value>Feature Management</value>
+  </data>
+  <data name="Field Name" xml:space="preserve">
+    <value>Feltnavn</value>
+  </data>
+  <data name="File Name" xml:space="preserve">
+    <value>Filnavn</value>
+  </data>
+  <data name="File Path:" xml:space="preserve">
+    <value>Filbane:</value>
+  </data>
+  <data name="File Type:" xml:space="preserve">
+    <value>Filtype:</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>Fornavn</value>
+  </data>
+  <data name="First Name:" xml:space="preserve">
+    <value>Fornavn:</value>
+  </data>
+  <data name="Fixed Bid" xml:space="preserve">
+    <value>Fastavtale</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>Mat</value>
+  </data>
+  <data name="Forgot Your Password? Click Here" xml:space="preserve">
+    <value>Glemt passordet? Klikk her</value>
+  </data>
+  <data name="Formula" xml:space="preserve">
+    <value>Formel</value>
+  </data>
+  <data name="Formula Field 1" xml:space="preserve">
+    <value>Formel felt 1</value>
+  </data>
+  <data name="Formula Field 2" xml:space="preserve">
+    <value>Formel felt 2</value>
+  </data>
+  <data name="Formula Field 3" xml:space="preserve">
+    <value>Formel felt 3</value>
+  </data>
+  <data name="Formula Field 4" xml:space="preserve">
+    <value>Formel felt 4</value>
+  </data>
+  <data name="Formula Field 5" xml:space="preserve">
+    <value>Formel felt 5</value>
+  </data>
+  <data name="Formula:" xml:space="preserve">
+    <value>Formel:</value>
+  </data>
+  <data name="FreeLite" xml:space="preserve">
+    <value>Fritid</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>Fre</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Fredag</value>
+  </data>
+  <data name="From Email Address:" xml:space="preserve">
+    <value>Fra E-postadresse:</value>
+  </data>
+  <data name="From Email Display Name" xml:space="preserve">
+    <value>Fra E-post navn</value>
+  </data>
+  <data name="Full Summary" xml:space="preserve">
+    <value>Sum</value>
+  </data>
+  <data name="Full-time Hourly" xml:space="preserve">
+    <value>Fulltid timebasert</value>
+  </data>
+  <data name="Full-time Salaried" xml:space="preserve">
+    <value>Fulltid fastlønn</value>
+  </data>
+  <data name="Fully downloadable on local server or individual system for single user." xml:space="preserve">
+    <value>Fullt nedlastbar på lokal server eller system for én bruker.</value>
+  </data>
+  <data name="Fully Team based collaboration suite" xml:space="preserve">
+    <value>Fullt teambasert samarbeidspakke</value>
+  </data>
+  <data name="Gas" xml:space="preserve">
+    <value>Gass</value>
+  </data>
+  <data name="Generate Attendance detail report for a given user for a given period. User can select different parameters like employee startdate enddate." xml:space="preserve">
+    <value>Generer tilstederapport for en gitt bruker for en gitt periode. Bruker kan velge parametere som start og slutt dato.</value>
+  </data>
+  <data name="Generate Attendance detail report for a given user for a given period. User can select different parameters like employee, startdate, enddate." xml:space="preserve">
+    <value>Generer tilstederapport for en gitt bruker for en gitt periode. Bruker kan velge parametere som ansatt, start og slutt dato.</value>
+  </data>
+  <data name="Generate Expense Sheet Audit Trail Report" xml:space="preserve">
+    <value>Generer Expense Sheet revisjonsspor rapport</value>
+  </data>
+  <data name="Generate Timesheet Audit Trail" xml:space="preserve">
+    <value>Generer Timeliste Audit Trail</value>
+  </data>
+  <data name="Generates a department wise timesheet report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Genererer avdelingsvis timeliste rapport for en gitt bruker for en gitt tidsperiode. Brukeren kan velge hvilke detaljer som skal vises i rapporten.</value>
+  </data>
+  <data name="Generates a employee wise project activity summary report with expense detail." xml:space="preserve">
+    <value>Genererer avdelingsvis prosjektaktivitet oppsummeringsrapporten med regningsdetaljer.</value>
+  </data>
+  <data name="Generates a employee wise project summary report with expense detail." xml:space="preserve">
+    <value>Genererer ansattsvis prosjektsammendragsrapport med regningsdetaljer.</value>
+  </data>
+  <data name="Generates a expense report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Genererer en utgiftsrapport for en gitt bruker for en gitt tidsperiode.  Brukeren kan velge hvilke detaljer som skal vises i rapporten.</value>
+  </data>
+  <data name="Generates a project expense detail report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Genererer en detaljert prosjektutgiftsrapport for en gitt bruker for en gitt tidsperiode.  Brukeren kan velge hvilke detaljer som skal vises i rapporten.</value>
+  </data>
+  <data name="Generates a project wise billing report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Genererer en detaljert prosjektfaktureringsrapport for en gitt bruker for en gitt tidsperiode.  Brukeren kan velge hvilke detaljer som skal vises i rapporten.</value>
+  </data>
+  <data name="Generates a task summary report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Genererer en aktivitetsrapport for en gitt bruker for en gitt tidsperiode.  Brukeren kan velge hvilke detaljer som skal vises i rapporten.</value>
+  </data>
+  <data name="Generates a timesheet report for a given user for a given time period. The user can select the details to be included in the report." xml:space="preserve">
+    <value>Genererer en timelisterapport for en gitt bruker for en gitt tidsperiode.  Brukeren kan velge hvilke detaljer som skal vises i rapporten.</value>
+  </data>
+  <data name="Generates employee wise summarize report for time entries with missing entries." xml:space="preserve">
+    <value>Genererer en ansattrapport med manglende oppføringer.</value>
+  </data>
+  <data name="Get_text" xml:space="preserve">
+    <value>Hent tekst</value>
+  </data>
+  <data name="Goto Login page" xml:space="preserve">
+    <value>Gå til login- siden</value>
+  </data>
+  <data name="Grand Total" xml:space="preserve">
+    <value>Totalt</value>
+  </data>
+  <data name="Grand Total:" xml:space="preserve">
+    <value>Totalsum:</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Gruppe</value>
+  </data>
+  <data name="Group Order" xml:space="preserve">
+    <value>Gruppe sortering</value>
+  </data>
+  <data name="GST" xml:space="preserve">
+    <value>GST</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Hjelp</value>
+  </data>
+  <data name="High" xml:space="preserve">
+    <value>Høy</value>
+  </data>
+  <data name="Hired Date:" xml:space="preserve">
+    <value>Ansatt dato:</value>
+  </data>
+  <data name="Holiday" xml:space="preserve">
+    <value>Ferie</value>
+  </data>
+  <data name="Holiday Date" xml:space="preserve">
+    <value>Holiday Dato</value>
+  </data>
+  <data name="Holiday Date:" xml:space="preserve">
+    <value>Holiday Dato:</value>
+  </data>
+  <data name="Holiday Information" xml:space="preserve">
+    <value>Holiday Informasjon</value>
+  </data>
+  <data name="Holiday List" xml:space="preserve">
+    <value>Holiday List</value>
+  </data>
+  <data name="Holiday Name" xml:space="preserve">
+    <value>Holiday Navn</value>
+  </data>
+  <data name="Holiday Name:" xml:space="preserve">
+    <value>Holiday Navn:</value>
+  </data>
+  <data name="Holiday Select" xml:space="preserve">
+    <value>Høytider</value>
+  </data>
+  <data name="Holiday Type" xml:space="preserve">
+    <value>Holiday Type</value>
+  </data>
+  <data name="Holiday Type Detail" xml:space="preserve">
+    <value>Holiday Type Detalj</value>
+  </data>
+  <data name="Holiday Type Information" xml:space="preserve">
+    <value>Holiday Type Informasjon</value>
+  </data>
+  <data name="Holiday Type List" xml:space="preserve">
+    <value>Holiday Type Liste</value>
+  </data>
+  <data name="Holiday Type Name:" xml:space="preserve">
+    <value>Holiday Type Navn:</value>
+  </data>
+  <data name="Holiday Type:" xml:space="preserve">
+    <value>Holiday Type:</value>
+  </data>
+  <data name="Holiday Types" xml:space="preserve">
+    <value>Holiday Typer</value>
+  </data>
+  <data name="Holiday Year" xml:space="preserve">
+    <value>Ferieåret</value>
+  </data>
+  <data name="Holiday Year:" xml:space="preserve">
+    <value>Ferieåret:</value>
+  </data>
+  <data name="Holidays" xml:space="preserve">
+    <value>Høytider</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Hjem</value>
+  </data>
+  <data name="Home Phone No." xml:space="preserve">
+    <value>Tlf. Hjem </value>
+  </data>
+  <data name="Home Phone No:" xml:space="preserve">
+    <value>Tlf. Hjem:</value>
+  </data>
+  <data name="HomePhoneNo" xml:space="preserve">
+    <value>Hjem telefonnr</value>
+  </data>
+  <data name="Hosted Solution (ASP)" xml:space="preserve">
+    <value>Fjerndrift (ASP)</value>
+  </data>
+  <data name="Hotel" xml:space="preserve">
+    <value>Hotell</value>
+  </data>
+  <data name="Hotel Tax" xml:space="preserve">
+    <value>Hotelskatt</value>
+  </data>
+  <data name="Hotel Tax:" xml:space="preserve">
+    <value>Hotelskatt:</value>
+  </data>
+  <data name="Hourly" xml:space="preserve">
+    <value>Pr. time</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Timer</value>
+  </data>
+  <data name="Hours Off" xml:space="preserve">
+    <value>Timer Av</value>
+  </data>
+  <data name="Hours Off:" xml:space="preserve">
+    <value>Timer Av:</value>
+  </data>
+  <data name="Hours Per Day" xml:space="preserve">
+    <value>Timer per dag</value>
+  </data>
+  <data name="Hours Per Day:" xml:space="preserve">
+    <value>Timer per dag:</value>
+  </data>
+  <data name="Hours Per Week" xml:space="preserve">
+    <value>Timer pr uke</value>
+  </data>
+  <data name="Hours Per Week:" xml:space="preserve">
+    <value>Timer pr uke:</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="ID1" xml:space="preserve">
+    <value>ID1</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignorer</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Import / Export" xml:space="preserve">
+    <value>Import / Eksport</value>
+  </data>
+  <data name="Import / Export CSV" xml:space="preserve">
+    <value>Import / Eksport CSV</value>
+  </data>
+  <data name="Import Export" xml:space="preserve">
+    <value>Import Ekport</value>
+  </data>
+  <data name="In Approval" xml:space="preserve">
+    <value>I godkjenning</value>
+  </data>
+  <data name="In Progress" xml:space="preserve">
+    <value>Pågår</value>
+  </data>
+  <data name="In/Out" xml:space="preserve">
+    <value>Inn / Ut</value>
+  </data>
+  <data name="In/Out:" xml:space="preserve">
+    <value>Inn / Ut:</value>
+  </data>
+  <data name="InActive" xml:space="preserve">
+    <value>Inaktiv</value>
+  </data>
+  <data name="Include Date Range" xml:space="preserve">
+    <value>Inkluder tidsperiode</value>
+  </data>
+  <data name="Include Date Range:" xml:space="preserve">
+    <value>Inkluder tidsperiode:</value>
+  </data>
+  <data name="Initial Day Of The Month" xml:space="preserve">
+    <value>Første dag i måneden</value>
+  </data>
+  <data name="Initial Day Of The Month:" xml:space="preserve">
+    <value>Første dag i måneden:</value>
+  </data>
+  <data name="Initial Days Of The Month" xml:space="preserve">
+    <value>Første dagene i måneden</value>
+  </data>
+  <data name="Initial Days Of The Period" xml:space="preserve">
+    <value>Første dagene av perioden</value>
+  </data>
+  <data name="Initial Days Of The Period:" xml:space="preserve">
+    <value>Initial Days Of The Periode:</value>
+  </data>
+  <data name="Initial Set To Hours" xml:space="preserve">
+    <value>Første sett til timer</value>
+  </data>
+  <data name="Instant Setup" xml:space="preserve">
+    <value>Kontinuerlig oppsett</value>
+  </data>
+  <data name="Integrated module to manage your projects tasks within same integrated tool." xml:space="preserve">
+    <value>Integrert modul for å administrere prosjekter og oppgaver innenfor samme verktøy.</value>
+  </data>
+  <data name="Integrated module to record track and monitor project expenses" xml:space="preserve">
+    <value>Integrert modul til å spore og overvåke prosjektet med timer og utgifter</value>
+  </data>
+  <data name="Integrated timesheet in both hosted and downloadable version" xml:space="preserve">
+    <value>Integrert timeliste for både ASP- og nedlastbar versjon</value>
+  </data>
+  <data name="Invalid username or password" xml:space="preserve">
+    <value>Ugyldig brukernavn eller passord</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Faktura</value>
+  </data>
+  <data name="Invoice #:" xml:space="preserve">
+    <value>Faktura nr.:</value>
+  </data>
+  <data name="Invoice Date" xml:space="preserve">
+    <value>Fakturadato</value>
+  </data>
+  <data name="Invoice Date :" xml:space="preserve">
+    <value>Fakturadato:</value>
+  </data>
+  <data name="Invoice Date:" xml:space="preserve">
+    <value>Fakturadato:</value>
+  </data>
+  <data name="Invoice Details" xml:space="preserve">
+    <value>Fakturadetaljer</value>
+  </data>
+  <data name="Invoice Information" xml:space="preserve">
+    <value>Fakturainformasjon</value>
+  </data>
+  <data name="Invoice No" xml:space="preserve">
+    <value>Faktura nr.</value>
+  </data>
+  <data name="Invoice No Prefix:" xml:space="preserve">
+    <value>Fakturanr. Prefix:</value>
+  </data>
+  <data name="Invoice No." xml:space="preserve">
+    <value>Faktura nr.</value>
+  </data>
+  <data name="Invoice No:" xml:space="preserve">
+    <value>Faktura nr:</value>
+  </data>
+  <data name="Invoice Report" xml:space="preserve">
+    <value>Faktura rapport</value>
+  </data>
+  <data name="Invoice Summary Report" xml:space="preserve">
+    <value>Fakturasammendrag rapport</value>
+  </data>
+  <data name="Is Active" xml:space="preserve">
+    <value>Er aktiv</value>
+  </data>
+  <data name="Is Billable" xml:space="preserve">
+    <value>Er fakturerbar</value>
+  </data>
+  <data name="Is Completed" xml:space="preserve">
+    <value>Er fullført</value>
+  </data>
+  <data name="Is For All Employees" xml:space="preserve">
+    <value>Er for alle ansatte</value>
+  </data>
+  <data name="Is For All Project Task" xml:space="preserve">
+    <value>Er for alle prosjektaktivitetene</value>
+  </data>
+  <data name="Is Parent Task" xml:space="preserve">
+    <value>Er foreldre- aktivitet</value>
+  </data>
+  <data name="Is ReOpen" xml:space="preserve">
+    <value>Er gjenåpnet</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>Er aktiv</value>
+  </data>
+  <data name="IsBillable" xml:space="preserve">
+    <value>Er fakturerbar</value>
+  </data>
+  <data name="IsDisabled:" xml:space="preserve">
+    <value>IsDisabled:</value>
+  </data>
+  <data name="IsForAllEmployees" xml:space="preserve">
+    <value>Er for alle ansatte</value>
+  </data>
+  <data name="IsForAllProjectTask" xml:space="preserve">
+    <value>Er for alle aktiviteter</value>
+  </data>
+  <data name="IsParentTask" xml:space="preserve">
+    <value>Er opphavs aktivitet</value>
+  </data>
+  <data name="IsReOpen" xml:space="preserve">
+    <value>Er gjenåpnet</value>
+  </data>
+  <data name="IsReOpen:" xml:space="preserve">
+    <value>Er gjenåpnet:</value>
+  </data>
+  <data name="Issue" xml:space="preserve">
+    <value>Utgave</value>
+  </data>
+  <data name="Japan, Yen" xml:space="preserve">
+    <value>Japan, yen</value>
+  </data>
+  <data name="Job Title:" xml:space="preserve">
+    <value>Stillingstittel:</value>
+  </data>
+  <data name="Just click on [Go to login page] below to navigate to login page." xml:space="preserve">
+    <value>Bare klikk på [Gå til påloggingssiden] nedenfor for å gå til innloggingssiden.</value>
+  </data>
+  <data name="Last Earned Date" xml:space="preserve">
+    <value>Siste Opptjent Dato</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>Etternavn</value>
+  </data>
+  <data name="Last Name:" xml:space="preserve">
+    <value>Etternavn:</value>
+  </data>
+  <data name="LDAP Role:" xml:space="preserve">
+    <value>LDAP rolle:</value>
+  </data>
+  <data name="Leave Summary Report" xml:space="preserve">
+    <value>Fravær rapport</value>
+  </data>
+  <data name="Leave Type" xml:space="preserve">
+    <value>Fraværs type</value>
+  </data>
+  <data name="License Activated Successfully." xml:space="preserve">
+    <value>Lisens aktivert.</value>
+  </data>
+  <data name="License Activation" xml:space="preserve">
+    <value>Aktivering av lisens</value>
+  </data>
+  <data name="License Keys" xml:space="preserve">
+    <value>Lisensnøkler:</value>
+  </data>
+  <data name="List / View" xml:space="preserve">
+    <value>Liste / Se på</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Sted</value>
+  </data>
+  <data name="Location Id" xml:space="preserve">
+    <value>Sted ID</value>
+  </data>
+  <data name="Location Information" xml:space="preserve">
+    <value>Stedsinformasjon</value>
+  </data>
+  <data name="Location List" xml:space="preserve">
+    <value>Lokasjonsliste</value>
+  </data>
+  <data name="Location Name" xml:space="preserve">
+    <value>Stedsnavn</value>
+  </data>
+  <data name="Location:" xml:space="preserve">
+    <value>Sted:</value>
+  </data>
+  <data name="LocationListOfAllLocationDefinedByAccount" xml:space="preserve">
+    <value>Lokasjonsliste - Liste over alle steder definert ved konto</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Lokasjoner</value>
+  </data>
+  <data name="Lock In-Approval Records" xml:space="preserve">
+    <value>Lås I-Godkjenning / Godkjent Records:</value>
+  </data>
+  <data name="Lock Submitted Records" xml:space="preserve">
+    <value>Lås godkjente data</value>
+  </data>
+  <data name="LoggedIn As:" xml:space="preserve">
+    <value>Logget inn som:</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Innlogging</value>
+  </data>
+  <data name="Login / Employee Information" xml:space="preserve">
+    <value>Innlogging / ansattinformasjon</value>
+  </data>
+  <data name="Login Email Address" xml:space="preserve">
+    <value>Innlogging e-postadresse</value>
+  </data>
+  <data name="Login Email Address:" xml:space="preserve">
+    <value>Innlogging e-postadresse:</value>
+  </data>
+  <data name="Login Information" xml:space="preserve">
+    <value>Innloggingsinformasjon</value>
+  </data>
+  <data name="Login:" xml:space="preserve">
+    <value>Innlogging:</value>
+  </data>
+  <data name="Logo size (180x50) px" xml:space="preserve">
+    <value>Logo størrelse (180x50) piksler</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logg ut</value>
+  </data>
+  <data name="Low" xml:space="preserve">
+    <value>Lav</value>
+  </data>
+  <data name="Machine Key:" xml:space="preserve">
+    <value>Maskinnøkkel:</value>
+  </data>
+  <data name="Machine Name:" xml:space="preserve">
+    <value>Maskinnavn:</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Behandle</value>
+  </data>
+  <data name="Manage Project" xml:space="preserve">
+    <value>Administrere prosjekt</value>
+  </data>
+  <data name="Manage Terminology" xml:space="preserve">
+    <value>Administrere terminologi</value>
+  </data>
+  <data name="Manual Activation" xml:space="preserve">
+    <value>Manuell aktivisering</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Markedsføring</value>
+  </data>
+  <data name="Master Card" xml:space="preserve">
+    <value>Master Card</value>
+  </data>
+  <data name="Maximum Available" xml:space="preserve">
+    <value>Maksimum Tilgjengelig</value>
+  </data>
+  <data name="Maximum Hours Per Day" xml:space="preserve">
+    <value>Maksimum timer per dag</value>
+  </data>
+  <data name="Maximum Hours Per Week" xml:space="preserve">
+    <value>Maksimum timer per uke</value>
+  </data>
+  <data name="Medical" xml:space="preserve">
+    <value>Medisinsk</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="Middle Name" xml:space="preserve">
+    <value>Mellomnavn</value>
+  </data>
+  <data name="Middle Name:" xml:space="preserve">
+    <value>Mellomnavn:</value>
+  </data>
+  <data name="Milestone" xml:space="preserve">
+    <value>Milepæl</value>
+  </data>
+  <data name="Milestone Date" xml:space="preserve">
+    <value>Milepel dato</value>
+  </data>
+  <data name="Milestone Date:" xml:space="preserve">
+    <value>Milepel dato:</value>
+  </data>
+  <data name="Milestone Description" xml:space="preserve">
+    <value>Milepel beskrivelse</value>
+  </data>
+  <data name="Milestone Description:" xml:space="preserve">
+    <value>Milepel beskrivelse:</value>
+  </data>
+  <data name="Milestone:" xml:space="preserve">
+    <value>Milepel:</value>
+  </data>
+  <data name="Milestones" xml:space="preserve">
+    <value>Milepeler</value>
+  </data>
+  <data name="Minimum Hours Per Day" xml:space="preserve">
+    <value>Minimum timer per dag</value>
+  </data>
+  <data name="Minimum Hours Per Week" xml:space="preserve">
+    <value>Minimum timer per uke</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>Minutter</value>
+  </data>
+  <data name="Miss" xml:space="preserve">
+    <value>Fru</value>
+  </data>
+  <data name="Mobile Phone No." xml:space="preserve">
+    <value>Mobiltelefon nr.</value>
+  </data>
+  <data name="Mobile Phone No:" xml:space="preserve">
+    <value>Mobiltelefon nr.:</value>
+  </data>
+  <data name="MobilePhoneNo" xml:space="preserve">
+    <value>Mobiltelefon nr</value>
+  </data>
+  <data name="Module Name" xml:space="preserve">
+    <value>Modulnavn</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>Man</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Mandag</value>
+  </data>
+  <data name="Month No" xml:space="preserve">
+    <value>Måned nr</value>
+  </data>
+  <data name="Month No." xml:space="preserve">
+    <value>Måned nr.</value>
+  </data>
+  <data name="Monthly" xml:space="preserve">
+    <value>Månedlig</value>
+  </data>
+  <data name="Move Down" xml:space="preserve">
+    <value>Flytt ned</value>
+  </data>
+  <data name="Move Up" xml:space="preserve">
+    <value>Flytt opp</value>
+  </data>
+  <data name="Mr." xml:space="preserve">
+    <value>Mr.</value>
+  </data>
+  <data name="Mrs." xml:space="preserve">
+    <value>Fru</value>
+  </data>
+  <data name="My" xml:space="preserve">
+    <value>Mitt</value>
+  </data>
+  <data name="My Area" xml:space="preserve">
+    <value>Mitt område</value>
+  </data>
+  <data name="MY AREA CAPS" xml:space="preserve">
+    <value>MITT OMRÅDE</value>
+  </data>
+  <data name="My Expense Entries" xml:space="preserve">
+    <value>Mine utgiftsoppføringser</value>
+  </data>
+  <data name="My Expense Sheet" xml:space="preserve">
+    <value>Mitt utgiftsskjemaer</value>
+  </data>
+  <data name="My Open Timesheet Periods" xml:space="preserve">
+    <value>Min Open Timeliste Perioder</value>
+  </data>
+  <data name="My Periods" xml:space="preserve">
+    <value>Min Perioder</value>
+  </data>
+  <data name="My Preferences" xml:space="preserve">
+    <value>Mine innstillinger</value>
+  </data>
+  <data name="My Profile" xml:space="preserve">
+    <value>Min profil</value>
+  </data>
+  <data name="My Projects" xml:space="preserve">
+    <value>Mine prosjekter</value>
+  </data>
+  <data name="My Projects Expense Entry Approvals" xml:space="preserve">
+    <value>Mine prosjekter med utgiftsgodkjenninger</value>
+  </data>
+  <data name="My Projects Time Entry Approvals" xml:space="preserve">
+    <value>Mine prosjekter med timegodkjenninger</value>
+  </data>
+  <data name="My Reported Tasks" xml:space="preserve">
+    <value>Mine rapporterte aktiviteter</value>
+  </data>
+  <data name="My Reports" xml:space="preserve">
+    <value>Mine rapporter</value>
+  </data>
+  <data name="My Task List" xml:space="preserve">
+    <value>Mine aktiviteter</value>
+  </data>
+  <data name="My Task Summary" xml:space="preserve">
+    <value>Sammendrag, Mine aktiviteter</value>
+  </data>
+  <data name="My Tasks" xml:space="preserve">
+    <value>Mine aktiviteter</value>
+  </data>
+  <data name="My Team Expense Entry Approvals" xml:space="preserve">
+    <value>Godkjenning av registrerte utgifter for mitt team</value>
+  </data>
+  <data name="My Team Time Entry Approvals:" xml:space="preserve">
+    <value>Godkjenning av registrerte utgifter for mitt team:</value>
+  </data>
+  <data name="My Teams" xml:space="preserve">
+    <value>Mine team</value>
+  </data>
+  <data name="My Time Off" xml:space="preserve">
+    <value>My Time Av</value>
+  </data>
+  <data name="My Timesheet" xml:space="preserve">
+    <value>Mitt timeskjema</value>
+  </data>
+  <data name="MYAREA" xml:space="preserve">
+    <value>MITT OMRÅDE</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Navn</value>
+  </data>
+  <data name="Name:" xml:space="preserve">
+    <value>Navn:</value>
+  </data>
+  <data name="Net Amount" xml:space="preserve">
+    <value>Netto beløp</value>
+  </data>
+  <data name="Net Amount ()" xml:space="preserve">
+    <value>Netto beløp ()</value>
+  </data>
+  <data name="Net Amount (BaseCurrency)" xml:space="preserve">
+    <value>Netto beløp (Standardvaluta)</value>
+  </data>
+  <data name="Net Amount:" xml:space="preserve">
+    <value>Netto beløp:</value>
+  </data>
+  <data name="NetAmount" xml:space="preserve">
+    <value>Netto beløp</value>
+  </data>
+  <data name="New Value" xml:space="preserve">
+    <value>Ny verdi</value>
+  </data>
+  <data name="New_text" xml:space="preserve">
+    <value>Ny</value>
+  </data>
+  <data name="Next Date" xml:space="preserve">
+    <value>Neste dato</value>
+  </data>
+  <data name="Next Week" xml:space="preserve">
+    <value>Neste uke</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nr</value>
+  </data>
+  <data name="No. Of Blank Rows In TimeSheet" xml:space="preserve">
+    <value>Antall blanke rader i timeregistreringen:</value>
+  </data>
+  <data name="Non Billable" xml:space="preserve">
+    <value>Ikke fakturerbare</value>
+  </data>
+  <data name="Non Reimbursement" xml:space="preserve">
+    <value>Ikke godtgjørelse</value>
+  </data>
+  <data name="Non-Billable" xml:space="preserve">
+    <value>Ikke fakturerbar</value>
+  </data>
+  <data name="Non-billable Hours" xml:space="preserve">
+    <value>Ikke fakturerbare timer</value>
+  </data>
+  <data name="Non-Billable Total Hours" xml:space="preserve">
+    <value>Ikke fakturerbare antall timer</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="Non-working day" xml:space="preserve">
+    <value>Ikke-arbeidsdag</value>
+  </data>
+  <data name="Not Approved" xml:space="preserve">
+    <value>Ikke godkjent</value>
+  </data>
+  <data name="Not Billed" xml:space="preserve">
+    <value>Ikke fakturert</value>
+  </data>
+  <data name="Not Entered" xml:space="preserve">
+    <value>Ikke registrert</value>
+  </data>
+  <data name="Not Submitted" xml:space="preserve">
+    <value>Ikke levert</value>
+  </data>
+  <data name="Not Submitted:" xml:space="preserve">
+    <value>Ikke levert:</value>
+  </data>
+  <data name="Note : Approval Not Required For This Time Entry" xml:space="preserve">
+    <value>Merk: Godkjenning ikke er nødvendig for denne registreringen</value>
+  </data>
+  <data name="Note : Approved" xml:space="preserve">
+    <value>Merk: Godkjent</value>
+  </data>
+  <data name="Note : Not Submitted - Waiting For Submit" xml:space="preserve">
+    <value>Merk: Ikke levert- venter på sending</value>
+  </data>
+  <data name="Note : Rejected - Waiting For Re-Submit" xml:space="preserve">
+    <value>Merk: Avvist - venter på re- sending</value>
+  </data>
+  <data name="Note : Submitted - Waiting For Approval" xml:space="preserve">
+    <value>Merk: Innleverte - venter på godkjenning</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Merknader</value>
+  </data>
+  <data name="Notes:" xml:space="preserve">
+    <value>Merknader:</value>
+  </data>
+  <data name="Notification of events / reports via email in order to update users without signing in system" xml:space="preserve">
+    <value>Varsel om hendelser / rapporter via e-post for å oppdatere brukere uten å logge på systemet</value>
+  </data>
+  <data name="Number of Users" xml:space="preserve">
+    <value>Antall brukere:</value>
+  </data>
+  <data name="Number of Users:" xml:space="preserve">
+    <value>Antall brukere:</value>
+  </data>
+  <data name="Office Assets" xml:space="preserve">
+    <value>Firma eiendeler</value>
+  </data>
+  <data name="Old Value" xml:space="preserve">
+    <value>Gammel verdi</value>
+  </data>
+  <data name="OnHold" xml:space="preserve">
+    <value>På vent</value>
+  </data>
+  <data name="Online Activation" xml:space="preserve">
+    <value>Online aktivisering</value>
+  </data>
+  <data name="Organization Name" xml:space="preserve">
+    <value>Organisasjonsnavn</value>
+  </data>
+  <data name="Organization Setup" xml:space="preserve">
+    <value>Organisasjonsinstillinger</value>
+  </data>
+  <data name="OT" xml:space="preserve">
+    <value>OT</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Andre</value>
+  </data>
+  <data name="Others" xml:space="preserve">
+    <value>Andre</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>Overtid</value>
+  </data>
+  <data name="Package Plan:" xml:space="preserve">
+    <value>Pakkeplan:</value>
+  </data>
+  <data name="Package:" xml:space="preserve">
+    <value>Pakke:</value>
+  </data>
+  <data name="Page Description" xml:space="preserve">
+    <value>Pakkebeskrivelse</value>
+  </data>
+  <data name="Page Permissions" xml:space="preserve">
+    <value>Pakketillatelser</value>
+  </data>
+  <data name="Page Size" xml:space="preserve">
+    <value>Pakkestørrelse</value>
+  </data>
+  <data name="Paid" xml:space="preserve">
+    <value>Betalt</value>
+  </data>
+  <data name="Paid:" xml:space="preserve">
+    <value>Betalt:</value>
+  </data>
+  <data name="Parent Task Code" xml:space="preserve">
+    <value>Overordnet aktivitetskode</value>
+  </data>
+  <data name="Parent Task Name" xml:space="preserve">
+    <value>Overordnet aktivitetsnavn</value>
+  </data>
+  <data name="Parent Task:" xml:space="preserve">
+    <value>Overordnet oppgave:</value>
+  </data>
+  <data name="Parent:" xml:space="preserve">
+    <value>Overordnet:</value>
+  </data>
+  <data name="Parking" xml:space="preserve">
+    <value>Parkering</value>
+  </data>
+  <data name="Part-time Hourly" xml:space="preserve">
+    <value>Deltid time</value>
+  </data>
+  <data name="Part-time Salaried" xml:space="preserve">
+    <value>Deltid lønnede</value>
+  </data>
+  <data name="Party Name:" xml:space="preserve">
+    <value>Deltid navn:</value>
+  </data>
+  <data name="PartyName" xml:space="preserve">
+    <value>Deltid  navn</value>
+  </data>
+  <data name="PartyNick" xml:space="preserve">
+    <value>Deltid kallenavn</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Passord</value>
+  </data>
+  <data name="Password:" xml:space="preserve">
+    <value>Passord:</value>
+  </data>
+  <data name="Pause Timer" xml:space="preserve">
+    <value>Pause Timer</value>
+  </data>
+  <data name="Payment Method" xml:space="preserve">
+    <value>Betalingsmåte</value>
+  </data>
+  <data name="Payment Method Information" xml:space="preserve">
+    <value>Betalingsmåte informasjon</value>
+  </data>
+  <data name="Payment Method:" xml:space="preserve">
+    <value>Betalingsmåte:</value>
+  </data>
+  <data name="Per Hour" xml:space="preserve">
+    <value>Per time</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Periode</value>
+  </data>
+  <data name="Period Type" xml:space="preserve">
+    <value>Periode Type</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>Tillatelser</value>
+  </data>
+  <data name="Personal Information" xml:space="preserve">
+    <value>Personlig informasjon</value>
+  </data>
+  <data name="Personal Leave" xml:space="preserve">
+    <value>Personlig igjen</value>
+  </data>
+  <data name="Personal Profile" xml:space="preserve">
+    <value>Personlig profil</value>
+  </data>
+  <data name="Petrol" xml:space="preserve">
+    <value>Bensin</value>
+  </data>
+  <data name="Phone #" xml:space="preserve">
+    <value>Telfon nr</value>
+  </data>
+  <data name="Phone No" xml:space="preserve">
+    <value>Telefon nr</value>
+  </data>
+  <data name="Please select employee." xml:space="preserve">
+    <value>Velg ansatt.</value>
+  </data>
+  <data name="PO Number" xml:space="preserve">
+    <value>PO-nummer</value>
+  </data>
+  <data name="PO Number :" xml:space="preserve">
+    <value>PO-nummer:</value>
+  </data>
+  <data name="PO Number:" xml:space="preserve">
+    <value>PO-nummer:</value>
+  </data>
+  <data name="Populate Un-Billed Records" xml:space="preserve">
+    <value>Vis ufakturerte registreringer</value>
+  </data>
+  <data name="Preferences" xml:space="preserve">
+    <value>Innstillinger</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>Prefiks</value>
+  </data>
+  <data name="Prefix:" xml:space="preserve">
+    <value>Prefiks:</value>
+  </data>
+  <data name="Present Days" xml:space="preserve">
+    <value>Tidligere dager</value>
+  </data>
+  <data name="Previous Date" xml:space="preserve">
+    <value>Forrige dato</value>
+  </data>
+  <data name="Previous Week" xml:space="preserve">
+    <value>Forrige uke</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Skriv ut</value>
+  </data>
+  <data name="Print Invoice" xml:space="preserve">
+    <value>Skriv ut faktura</value>
+  </data>
+  <data name="Priorities" xml:space="preserve">
+    <value>Prioriteter</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Prioritet</value>
+  </data>
+  <data name="priority information" xml:space="preserve">
+    <value>Prioritesinformasjon</value>
+  </data>
+  <data name="Priority Information:" xml:space="preserve">
+    <value>Prioritesinformasjon:</value>
+  </data>
+  <data name="Priority List" xml:space="preserve">
+    <value>Prioritetsliste</value>
+  </data>
+  <data name="Priority Order:" xml:space="preserve">
+    <value>Prioritetsrekkefølge</value>
+  </data>
+  <data name="Priority:" xml:space="preserve">
+    <value>Prioritet:</value>
+  </data>
+  <data name="Proceed" xml:space="preserve">
+    <value>Fortsett</value>
+  </data>
+  <data name="Proceed_text" xml:space="preserve">
+    <value>Fortsett</value>
+  </data>
+  <data name="Profit" xml:space="preserve">
+    <value>Profitt</value>
+  </data>
+  <data name="Profit (BaseCurrency)" xml:space="preserve">
+    <value>Profitt (Standardvaluta)</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Prosjekt</value>
+  </data>
+  <data name="Project / Task Setup" xml:space="preserve">
+    <value>Prosjekt / Oppgave Setup</value>
+  </data>
+  <data name="Project Activity Summary Report" xml:space="preserve">
+    <value>Prosjekt aktivitestrapport</value>
+  </data>
+  <data name="Project Admin" xml:space="preserve">
+    <value>Prosjekt Admin</value>
+  </data>
+  <data name="Project Administration" xml:space="preserve">
+    <value>Prosjekt Administrasjon</value>
+  </data>
+  <data name="Project And Employee Information" xml:space="preserve">
+    <value>Prosjekt og arbeidstakerinformasjon</value>
+  </data>
+  <data name="Project Billing Rate" xml:space="preserve">
+    <value>Prosjekt timesats</value>
+  </data>
+  <data name="Project Billing Rate Type" xml:space="preserve">
+    <value>Timesats type</value>
+  </data>
+  <data name="Project Billing Type" xml:space="preserve">
+    <value>Faktureringstype</value>
+  </data>
+  <data name="Project Billing Type:" xml:space="preserve">
+    <value>Timesats type:</value>
+  </data>
+  <data name="Project Code" xml:space="preserve">
+    <value>Prosjektkode</value>
+  </data>
+  <data name="Project Code:" xml:space="preserve">
+    <value>Prosjektkode:</value>
+  </data>
+  <data name="Project Cost And Revenue Report" xml:space="preserve">
+    <value>Prosjektkostnader og inntekts rapport</value>
+  </data>
+  <data name="Project Cost Report" xml:space="preserve">
+    <value>Prosjektkostnader rapport</value>
+  </data>
+  <data name="Project Deadline" xml:space="preserve">
+    <value>Prosjekt tidsfrist</value>
+  </data>
+  <data name="Project Description" xml:space="preserve">
+    <value>Prosjektbeskrivelse</value>
+  </data>
+  <data name="Project Description:" xml:space="preserve">
+    <value>Prosjektbeskrivelse:</value>
+  </data>
+  <data name="Project Employee List" xml:space="preserve">
+    <value>Prosjektet ansattliste</value>
+  </data>
+  <data name="Project Employees" xml:space="preserve">
+    <value>Prosjektansatte</value>
+  </data>
+  <data name="Project Expense Detail Report" xml:space="preserve">
+    <value>Detaljert rapport, Prosjektutgifter</value>
+  </data>
+  <data name="Project Id" xml:space="preserve">
+    <value>Prosjekt ID</value>
+  </data>
+  <data name="Project Id:" xml:space="preserve">
+    <value>Prosjekt Id:</value>
+  </data>
+  <data name="Project Information" xml:space="preserve">
+    <value>Prosjektinformasjon</value>
+  </data>
+  <data name="Project List" xml:space="preserve">
+    <value>Prosjektliste</value>
+  </data>
+  <data name="Project List Report" xml:space="preserve">
+    <value>Prosjektliste rapport</value>
+  </data>
+  <data name="Project Management" xml:space="preserve">
+    <value>Prosjektledelse</value>
+  </data>
+  <data name="Project Manager" xml:space="preserve">
+    <value>Prosjektleder</value>
+  </data>
+  <data name="Project Manager Pages" xml:space="preserve">
+    <value>Prosjektleders sider</value>
+  </data>
+  <data name="Project Manager Reports" xml:space="preserve">
+    <value>Prosjektleders rapporter</value>
+  </data>
+  <data name="Project Manager:" xml:space="preserve">
+    <value>Prosjektleder:</value>
+  </data>
+  <data name="Project Milestone" xml:space="preserve">
+    <value>Prosjekt milepæl</value>
+  </data>
+  <data name="Project Milestone Information" xml:space="preserve">
+    <value>Prosjekt milepælinformasjon</value>
+  </data>
+  <data name="Project Milestone List" xml:space="preserve">
+    <value>Prosjekt milepælliste</value>
+  </data>
+  <data name="Project Milestones" xml:space="preserve">
+    <value>Prosjekt milepæler</value>
+  </data>
+  <data name="Project Name" xml:space="preserve">
+    <value>Prosjektnavn</value>
+  </data>
+  <data name="Project Name:" xml:space="preserve">
+    <value>Prosjektnavn:</value>
+  </data>
+  <data name="Project Preferences" xml:space="preserve">
+    <value>Prosjekt innstillinger</value>
+  </data>
+  <data name="Project Reports" xml:space="preserve">
+    <value>Prosjektrapporter</value>
+  </data>
+  <data name="Project Role" xml:space="preserve">
+    <value>Prosjektrolle</value>
+  </data>
+  <data name="Project Roles" xml:space="preserve">
+    <value>Prosjektroller</value>
+  </data>
+  <data name="Project Start Date" xml:space="preserve">
+    <value>Prosjekt startdato</value>
+  </data>
+  <data name="Project Status" xml:space="preserve">
+    <value>Prosjekt status</value>
+  </data>
+  <data name="Project Status:" xml:space="preserve">
+    <value>Prosjet status:</value>
+  </data>
+  <data name="Project Task" xml:space="preserve">
+    <value>Prosjektaktivitet</value>
+  </data>
+  <data name="Project Task Attachment" xml:space="preserve">
+    <value>Prosjektaktivites- vedlegg</value>
+  </data>
+  <data name="Project Task Attachment Information" xml:space="preserve">
+    <value>Prosjektaktivites- vedleggsinformasjon</value>
+  </data>
+  <data name="Project Task Information" xml:space="preserve">
+    <value>Prosjektaktivitets- infomasjon</value>
+  </data>
+  <data name="Project Task List" xml:space="preserve">
+    <value>Prosjektaktivitets- liste</value>
+  </data>
+  <data name="Project Task Name:" xml:space="preserve">
+    <value>Prosjektaktivitetens navn:</value>
+  </data>
+  <data name="Project Tasks" xml:space="preserve">
+    <value>Prosjektaktiviteter</value>
+  </data>
+  <data name="Project Tasks:" xml:space="preserve">
+    <value>Prosjektaktiviteter:</value>
+  </data>
+  <data name="Project Team" xml:space="preserve">
+    <value>Prosjekt- team</value>
+  </data>
+  <data name="Project Template" xml:space="preserve">
+    <value>Prosjektmal</value>
+  </data>
+  <data name="Project Template Information" xml:space="preserve">
+    <value>Prosjektmal informasjon</value>
+  </data>
+  <data name="Project Template List" xml:space="preserve">
+    <value>Prosjektmal liste</value>
+  </data>
+  <data name="Project Template:" xml:space="preserve">
+    <value>Prosjektmal:</value>
+  </data>
+  <data name="Project Templates" xml:space="preserve">
+    <value>Prosjektmaler</value>
+  </data>
+  <data name="Project Type" xml:space="preserve">
+    <value>Prosjekttype</value>
+  </data>
+  <data name="Project Type Information" xml:space="preserve">
+    <value>Prosjekttype informasjon</value>
+  </data>
+  <data name="Project Type Information:" xml:space="preserve">
+    <value>Prosjekttype informasjon:</value>
+  </data>
+  <data name="Project Type List" xml:space="preserve">
+    <value>Prosjekttype liste</value>
+  </data>
+  <data name="Project Type:" xml:space="preserve">
+    <value>Prosjekttype:</value>
+  </data>
+  <data name="Project Types" xml:space="preserve">
+    <value>Prosjekttyper</value>
+  </data>
+  <data name="Project/Client" xml:space="preserve">
+    <value>Prosjekt / Klient</value>
+  </data>
+  <data name="Project:" xml:space="preserve">
+    <value>Prosjekt:</value>
+  </data>
+  <data name="Project_List_Of_All_Projects_Defined_By_Account" xml:space="preserve">
+    <value>Projektliste - Liste over alle prosjekter som er definert ved konto</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Prosjekter</value>
+  </data>
+  <data name="Projects:" xml:space="preserve">
+    <value>Prosjekter:</value>
+  </data>
+  <data name="PROJECTS1" xml:space="preserve">
+    <value>PROSJEKTER</value>
+  </data>
+  <data name="ProjectType" xml:space="preserve">
+    <value>Prosjekttype</value>
+  </data>
+  <data name="Provide Your Information" xml:space="preserve">
+    <value>Gi dine opplysninger</value>
+  </data>
+  <data name="PST" xml:space="preserve">
+    <value>PST</value>
+  </data>
+  <data name="PST:" xml:space="preserve">
+    <value>PST:</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Antall</value>
+  </data>
+  <data name="Quantity Caption" xml:space="preserve">
+    <value>Antall beskrivelse</value>
+  </data>
+  <data name="Quantity Caption:" xml:space="preserve">
+    <value>Antall beskrivelse:</value>
+  </data>
+  <data name="Quantity:" xml:space="preserve">
+    <value>Antall:</value>
+  </data>
+  <data name="Quickbooks (IIF)" xml:space="preserve">
+    <value>QuickBooks (IIF)</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Sats</value>
+  </data>
+  <data name="Rate:" xml:space="preserve">
+    <value>Sats:</value>
+  </data>
+  <data name="Reimburse" xml:space="preserve">
+    <value>Refusjon</value>
+  </data>
+  <data name="Reimburse:" xml:space="preserve">
+    <value>Refusjon:</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>Refusjon</value>
+  </data>
+  <data name="Reimbursement Currency:" xml:space="preserve">
+    <value>Refusjonvaluta:</value>
+  </data>
+  <data name="Reimbursement Status:" xml:space="preserve">
+    <value>Refusjonsstatus:</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Avvist</value>
+  </data>
+  <data name="Rejected By :" xml:space="preserve">
+    <value>Avvist av:</value>
+  </data>
+  <data name="Rejected By Employee Name" xml:space="preserve">
+    <value>Avvist av Ansattenavn</value>
+  </data>
+  <data name="Rejected Date" xml:space="preserve">
+    <value>Avvist Dato</value>
+  </data>
+  <data name="Rejected Hours" xml:space="preserve">
+    <value>Avvist timer</value>
+  </data>
+  <data name="Rejected On" xml:space="preserve">
+    <value>Avvist på</value>
+  </data>
+  <data name="Rejected On :" xml:space="preserve">
+    <value>Avvist på:</value>
+  </data>
+  <data name="Rejected:" xml:space="preserve">
+    <value>Avvist:</value>
+  </data>
+  <data name="Report By:" xml:space="preserve">
+    <value>Rapport ved:</value>
+  </data>
+  <data name="Report Category:" xml:space="preserve">
+    <value>Rapportkategori:</value>
+  </data>
+  <data name="Report Column" xml:space="preserve">
+    <value>Rappportkolonne</value>
+  </data>
+  <data name="Report DataSource" xml:space="preserve">
+    <value>Rapportdatakilde</value>
+  </data>
+  <data name="Report Definition" xml:space="preserve">
+    <value>Rapportdefininsjon</value>
+  </data>
+  <data name="Report Definition Information" xml:space="preserve">
+    <value>Rapportdefinisjon Informasjon</value>
+  </data>
+  <data name="Report Description:" xml:space="preserve">
+    <value>Rapportbeskrivelse</value>
+  </data>
+  <data name="Report Design" xml:space="preserve">
+    <value>Rapportdesign</value>
+  </data>
+  <data name="Report Footer:" xml:space="preserve">
+    <value>Rapport bunntekst</value>
+  </data>
+  <data name="Report for generating summary of employee leaves like sick leave casual leave etc in specified range." xml:space="preserve">
+    <value>Rapport for generering av sammendrag av ansattes sykefravær og tilfeldig fravær.</value>
+  </data>
+  <data name="Report for generating summary of employee leaves like sick leave, casual leave etc in specified range." xml:space="preserve">
+    <value>Rapport for generering av sammendrag av ansattes sykefravær og tilfeldig fravær. i angitt tidsperiode.</value>
+  </data>
+  <data name="Report Header:" xml:space="preserve">
+    <value>Rapport topptekst:</value>
+  </data>
+  <data name="Report Id:" xml:space="preserve">
+    <value>Rapport ID:</value>
+  </data>
+  <data name="Report Information" xml:space="preserve">
+    <value>Rapport informasjon</value>
+  </data>
+  <data name="Report Name" xml:space="preserve">
+    <value>Rapportnavn</value>
+  </data>
+  <data name="Report Name:" xml:space="preserve">
+    <value>Rapportnavn:</value>
+  </data>
+  <data name="Report Permission" xml:space="preserve">
+    <value>Rapport tillatelse</value>
+  </data>
+  <data name="Report Title:" xml:space="preserve">
+    <value>Rapport tittel:</value>
+  </data>
+  <data name="Report Type:" xml:space="preserve">
+    <value>Rapport type:</value>
+  </data>
+  <data name="REPORTS1" xml:space="preserve">
+    <value>RAPPORTER</value>
+  </data>
+  <data name="Request Required" xml:space="preserve">
+    <value>Forespørsel Påkrevd</value>
+  </data>
+  <data name="Reset Hours" xml:space="preserve">
+    <value>Tilbakestill Timer</value>
+  </data>
+  <data name="Reset Policy" xml:space="preserve">
+    <value>Tilbakestill Policy</value>
+  </data>
+  <data name="Reset To Zero" xml:space="preserve">
+    <value>Tilbakestill til null</value>
+  </data>
+  <data name="Resigned" xml:space="preserve">
+    <value>Resignert</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rolle</value>
+  </data>
+  <data name="Role Information" xml:space="preserve">
+    <value>Rolleinformasjon</value>
+  </data>
+  <data name="Role List" xml:space="preserve">
+    <value>Rolleliste</value>
+  </data>
+  <data name="Role Permissions" xml:space="preserve">
+    <value>Rolletillatelser</value>
+  </data>
+  <data name="Role Wise Billing Rate" xml:space="preserve">
+    <value>Rollevis faktureringspris</value>
+  </data>
+  <data name="Role:" xml:space="preserve">
+    <value>Rolle:</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roller</value>
+  </data>
+  <data name="Root Level" xml:space="preserve">
+    <value>Rotnivå</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>Lør</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Lørdag</value>
+  </data>
+  <data name="Save_cofirmation" xml:space="preserve">
+    <value>Du må klikke på Send-knappen for å sende disse postene for godkjenning.</value>
+  </data>
+  <data name="Save_Confirmation_DayView" xml:space="preserve">
+    <value>Du må klikke på Send-knappen i Ukesvisning for å sende disse postene for godkjenning.</value>
+  </data>
+  <data name="Save_Confirmation_Invoice" xml:space="preserve">
+    <value>Faktura er lagret.</value>
+  </data>
+  <data name="Save_text" xml:space="preserve">
+    <value>Lagre</value>
+  </data>
+  <data name="Scheduled Email Send Time" xml:space="preserve">
+    <value>Planlagt sendetid for e-post</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Søk</value>
+  </data>
+  <data name="Search Employees:" xml:space="preserve">
+    <value>Søk etter ansatte:</value>
+  </data>
+  <data name="Search Parameter" xml:space="preserve">
+    <value>Søk parameter</value>
+  </data>
+  <data name="Search Parameters" xml:space="preserve">
+    <value>Søkeparametere</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Velg</value>
+  </data>
+  <data name="Select Assigned To:" xml:space="preserve">
+    <value>Velg tilordnet til:</value>
+  </data>
+  <data name="Select Datasource:" xml:space="preserve">
+    <value>Velg datakilde:</value>
+  </data>
+  <data name="Select Employee" xml:space="preserve">
+    <value>Velg ansatt</value>
+  </data>
+  <data name="Select Employee:" xml:space="preserve">
+    <value>Velg ansatt:</value>
+  </data>
+  <data name="Select Option" xml:space="preserve">
+    <value>Velg alternativ</value>
+  </data>
+  <data name="Select Project Tasks" xml:space="preserve">
+    <value>Velg prosjektaktiviteter</value>
+  </data>
+  <data name="Select Project:" xml:space="preserve">
+    <value>Velg prosjekt:</value>
+  </data>
+  <data name="Select Role" xml:space="preserve">
+    <value>Velg rolle:</value>
+  </data>
+  <data name="Select Tasks" xml:space="preserve">
+    <value>Velg aktivitet</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Utvalgte</value>
+  </data>
+  <data name="Selected_text" xml:space="preserve">
+    <value>Utvalgte</value>
+  </data>
+  <data name="Selection" xml:space="preserve">
+    <value>Utvalg</value>
+  </data>
+  <data name="Session Time Out" xml:space="preserve">
+    <value>Sesjonen utløp:</value>
+  </data>
+  <data name="Sheet Approved" xml:space="preserve">
+    <value>Skjema godkjent</value>
+  </data>
+  <data name="Sheet Date" xml:space="preserve">
+    <value>Skjema dato</value>
+  </data>
+  <data name="Sheet Description" xml:space="preserve">
+    <value>Skjema beskrivelse</value>
+  </data>
+  <data name="Sheet InApproval" xml:space="preserve">
+    <value>Skjema i godkjenning</value>
+  </data>
+  <data name="Sheet Rejected" xml:space="preserve">
+    <value>Skjema avvist</value>
+  </data>
+  <data name="Sheet Submitted" xml:space="preserve">
+    <value>Skjema innlevert</value>
+  </data>
+  <data name="Sheet Submitted Date" xml:space="preserve">
+    <value>Skjema innlevert dato</value>
+  </data>
+  <data name="Show Additional Task Information Type:" xml:space="preserve">
+    <value>Vis ytterligere aktivitetsinformasjon</value>
+  </data>
+  <data name="Show All" xml:space="preserve">
+    <value>Vis alle</value>
+  </data>
+  <data name="Show Client In Timesheet:" xml:space="preserve">
+    <value>Vis klienter i timeskjema</value>
+  </data>
+  <data name="Show Clock Start/End" xml:space="preserve">
+    <value>Vis klokke start/ slutt</value>
+  </data>
+  <data name="Show Company Logo:" xml:space="preserve">
+    <value>Vis bedriftens logo:</value>
+  </data>
+  <data name="Show Company Own Logo" xml:space="preserve">
+    <value>Vis bedriftens egen logo:</value>
+  </data>
+  <data name="Show Completed Project In Timesheet:" xml:space="preserve">
+    <value>Vis fullførte Prosjekt I Timeliste:</value>
+  </data>
+  <data name="Show Completed Task in TimeSheet:" xml:space="preserve">
+    <value>Vis fullførte aktiviteter i timeregistreringen:</value>
+  </data>
+  <data name="Show Cost Center In TimeSheet" xml:space="preserve">
+    <value>Vis kostandssenter i timeregistreringen:</value>
+  </data>
+  <data name="Show Data" xml:space="preserve">
+    <value>Vis data</value>
+  </data>
+  <data name="Show Description In Week View:" xml:space="preserve">
+    <value>Vis beskrivelse i ukesvisning:</value>
+  </data>
+  <data name="Show Project For TimeOff:" xml:space="preserve">
+    <value>Vis Project For Time Av:</value>
+  </data>
+  <data name="Show Quantity" xml:space="preserve">
+    <value>Vis antall</value>
+  </data>
+  <data name="Show Quantity:" xml:space="preserve">
+    <value>Vis antall:</value>
+  </data>
+  <data name="Show Report" xml:space="preserve">
+    <value>Vis rapport</value>
+  </data>
+  <data name="Show Summary" xml:space="preserve">
+    <value>Vis oppsummert</value>
+  </data>
+  <data name="Show TimeOff In Timesheet:" xml:space="preserve">
+    <value>Vis fri i Timeliste:</value>
+  </data>
+  <data name="Show Work Type In TimeSheet" xml:space="preserve">
+    <value>Vis arbeidstype i timeskjema</value>
+  </data>
+  <data name="Show_text" xml:space="preserve">
+    <value>Vis</value>
+  </data>
+  <data name="ShowData" xml:space="preserve">
+    <value>Vis data</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Sykefravær</value>
+  </data>
+  <data name="Sign Up" xml:space="preserve">
+    <value>Delta</value>
+  </data>
+  <data name="Single tool to monitor employee attendance offdays vacation leave" xml:space="preserve">
+    <value>Enkelt verktøy for å overvåke ansattes tilstedeværelse, ferie og permisjon</value>
+  </data>
+  <data name="Sort Order" xml:space="preserve">
+    <value>Sorteringsrekkefølge</value>
+  </data>
+  <data name="Sort Order:" xml:space="preserve">
+    <value>Sorteringsrekkefølge:</value>
+  </data>
+  <data name="Specific Employee" xml:space="preserve">
+    <value>Spesifik ansatt</value>
+  </data>
+  <data name="Specific Employee Expense Entry Approvals" xml:space="preserve">
+    <value>Spesifik ansatt godkjente utgiftsregistreringer</value>
+  </data>
+  <data name="Specific Employee Time Entry Approvals" xml:space="preserve">
+    <value>Spesifikk ansatt godkjente timeregistreringer</value>
+  </data>
+  <data name="Specific Employee Time Off Approvals" xml:space="preserve">
+    <value>Spesifikk ansatte Tid Off godkjenninger</value>
+  </data>
+  <data name="Specific External Expense Entry Approvals" xml:space="preserve">
+    <value>Spesifik ekstern godkjente utgiftsregistreringer</value>
+  </data>
+  <data name="Specific External User" xml:space="preserve">
+    <value>Spesifik ekstern bruker</value>
+  </data>
+  <data name="Specific External User Time Entry Approvals" xml:space="preserve">
+    <value>Spesifik ekstern godkjente timeregistreringer</value>
+  </data>
+  <data name="ST" xml:space="preserve">
+    <value>ST</value>
+  </data>
+  <data name="Standard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Standards and Formats" xml:space="preserve">
+    <value>Standarder og formater:</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>Startdato</value>
+  </data>
+  <data name="Start Date:" xml:space="preserve">
+    <value>Startdato:</value>
+  </data>
+  <data name="Start Time" xml:space="preserve">
+    <value>Starttid</value>
+  </data>
+  <data name="Start Timer" xml:space="preserve">
+    <value>Start Timer</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Startdato</value>
+  </data>
+  <data name="Started" xml:space="preserve">
+    <value>Startet</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Starttid</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Stat</value>
+  </data>
+  <data name="State / Province" xml:space="preserve">
+    <value>Fylke</value>
+  </data>
+  <data name="State / Province:" xml:space="preserve">
+    <value>Fylke:</value>
+  </data>
+  <data name="State Sales Tax" xml:space="preserve">
+    <value>Merverdiavgift</value>
+  </data>
+  <data name="State Sales Tax:" xml:space="preserve">
+    <value>Merverdiavgift:</value>
+  </data>
+  <data name="State:" xml:space="preserve">
+    <value>Fylke:</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Status :" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="Status : Approved" xml:space="preserve">
+    <value>Status: Godkjent</value>
+  </data>
+  <data name="Status : Rejected" xml:space="preserve">
+    <value>Status: Avvist</value>
+  </data>
+  <data name="Status : Submitted" xml:space="preserve">
+    <value>Status: Innlevert</value>
+  </data>
+  <data name="Status Information" xml:space="preserve">
+    <value>Statusinformasjon</value>
+  </data>
+  <data name="Status Legend" xml:space="preserve">
+    <value>Statusbeskrivelse</value>
+  </data>
+  <data name="Status List" xml:space="preserve">
+    <value>Statusliste</value>
+  </data>
+  <data name="Status Type" xml:space="preserve">
+    <value>Statustype</value>
+  </data>
+  <data name="Status Type:" xml:space="preserve">
+    <value>Statustype:</value>
+  </data>
+  <data name="Status Types" xml:space="preserve">
+    <value>Statustyper</value>
+  </data>
+  <data name="Status:" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="strmsg" xml:space="preserve">
+    <value>Du må være''Prosjekt Team''medlem for å legge aktiviteten i dette prosjektet.</value>
+  </data>
+  <data name="Sub Total" xml:space="preserve">
+    <value>Delsum</value>
+  </data>
+  <data name="Sub Total:" xml:space="preserve">
+    <value>Delsum:</value>
+  </data>
+  <data name="Submission Status:" xml:space="preserve">
+    <value>Innleveringsstatus:</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Send inn til godkjenning</value>
+  </data>
+  <data name="Submit_text" xml:space="preserve">
+    <value>Sende inn</value>
+  </data>
+  <data name="Submitted" xml:space="preserve">
+    <value>Innlevert</value>
+  </data>
+  <data name="Submitted By :" xml:space="preserve">
+    <value>Innlevert av:</value>
+  </data>
+  <data name="Submitted By:" xml:space="preserve">
+    <value>Innlevert av:</value>
+  </data>
+  <data name="Submitted Date" xml:space="preserve">
+    <value>Innelvert dato</value>
+  </data>
+  <data name="Submitted Hours" xml:space="preserve">
+    <value>Innelvere timer</value>
+  </data>
+  <data name="Submitted On" xml:space="preserve">
+    <value>Lagt inn på</value>
+  </data>
+  <data name="Submitted On :" xml:space="preserve">
+    <value>Levert:</value>
+  </data>
+  <data name="Submitted On:" xml:space="preserve">
+    <value>Levert:</value>
+  </data>
+  <data name="Submitted:" xml:space="preserve">
+    <value>Sendt:</value>
+  </data>
+  <data name="Sum" xml:space="preserve">
+    <value>Sum</value>
+  </data>
+  <data name="Summarized:" xml:space="preserve">
+    <value>Oppsummert:</value>
+  </data>
+  <data name="Summary of all project tasks status. Usefull for project manager to get a high level view of whole project status." xml:space="preserve">
+    <value>Sammendrag av alle prosjektaktiviteters status. Nyttig for prosjektledere for å få en høynivå oversikt over prosjektstatus.</value>
+  </data>
+  <data name="Summary of employee attendance helpful for user and administrator to generate summary of employee attendance for payroll purpose." xml:space="preserve">
+    <value>Oppsummering av årets frammøte. Nyttig for brukeren og administrator for å generere sammendrag av årets frammøte for lønnsformål.</value>
+  </data>
+  <data name="Summary of Expenses occurred on project. Can be generated based on project client employee and data range." xml:space="preserve">
+    <value>Oppsummering av utgifter på prosjektet. Kan genereres basert på prosjekt, klient, ansatt og tidsrom.</value>
+  </data>
+  <data name="Summary of Expenses occurred on project. Can be generated based on project, client, employee and data range." xml:space="preserve">
+    <value>Oppsummering av utgifter på prosjektet. Kan genereres basert på prosjekt, klient, ansatt og tidsrom.</value>
+  </data>
+  <data name="Summary of Invoice Report." xml:space="preserve">
+    <value>Sammendrag av fakturarapport.</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>Søn</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Søndag</value>
+  </data>
+  <data name="Supplies" xml:space="preserve">
+    <value>Leveranser</value>
+  </data>
+  <data name="Switzerland, Franc" xml:space="preserve">
+    <value>Sveits, franc</value>
+  </data>
+  <data name="Symbol" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="SystemEMailNotification" xml:space="preserve">
+    <value>System E-postvarsel</value>
+  </data>
+  <data name="SystemSecurityCategory" xml:space="preserve">
+    <value>System sikkerhetskategori</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Oppgave</value>
+  </data>
+  <data name="Task / Project" xml:space="preserve">
+    <value>Oppgave / Prosjekt</value>
+  </data>
+  <data name="Task Add Notification" xml:space="preserve">
+    <value>Legg inn melding</value>
+  </data>
+  <data name="Task Billing By Project/Clients Report" xml:space="preserve">
+    <value>Fakturering ved prosjekt/ klientrapporter</value>
+  </data>
+  <data name="Task Billing By Projects/Clients" xml:space="preserve">
+    <value>Fakturering ved prosjekter/ klienter</value>
+  </data>
+  <data name="Task Billing By Projects/Clients Report" xml:space="preserve">
+    <value>Fakturering ved prosjekter/ klientrapporter</value>
+  </data>
+  <data name="Task Code" xml:space="preserve">
+    <value>Oppgavekode</value>
+  </data>
+  <data name="Task Code:" xml:space="preserve">
+    <value>Aktivitetskode:</value>
+  </data>
+  <data name="Task Description" xml:space="preserve">
+    <value>Oppgavebeskrivelse</value>
+  </data>
+  <data name="Task Description:" xml:space="preserve">
+    <value>Oppgavebeskrivelse:</value>
+  </data>
+  <data name="Task Estimated Cost" xml:space="preserve">
+    <value>Anslått pris</value>
+  </data>
+  <data name="Task Estimated Cost (BaseCurrency)" xml:space="preserve">
+    <value>Anslått pris (Standardvaluta)</value>
+  </data>
+  <data name="Task Estimated Hours" xml:space="preserve">
+    <value>Beregnede timer</value>
+  </data>
+  <data name="Task Id:" xml:space="preserve">
+    <value>Oppgave Id:</value>
+  </data>
+  <data name="Task Name" xml:space="preserve">
+    <value>Oppgavenavn</value>
+  </data>
+  <data name="Task Name:" xml:space="preserve">
+    <value>Oppgavenavn:</value>
+  </data>
+  <data name="Task Open" xml:space="preserve">
+    <value>Oppgave åpen</value>
+  </data>
+  <data name="Task Status" xml:space="preserve">
+    <value>Oppgave status</value>
+  </data>
+  <data name="Task Status Summary Report" xml:space="preserve">
+    <value>Oppgave statusrapport</value>
+  </data>
+  <data name="Task Status:" xml:space="preserve">
+    <value>Oppgave status:</value>
+  </data>
+  <data name="Task Summary Report" xml:space="preserve">
+    <value>Oppgaverapport</value>
+  </data>
+  <data name="Task Type" xml:space="preserve">
+    <value>Oppgavetype</value>
+  </data>
+  <data name="Task Type Information" xml:space="preserve">
+    <value>Oppgavetype informasjon</value>
+  </data>
+  <data name="Task Type List" xml:space="preserve">
+    <value>Oppgavetype liste</value>
+  </data>
+  <data name="Task Type:" xml:space="preserve">
+    <value>Oppgavetype:</value>
+  </data>
+  <data name="Task Types" xml:space="preserve">
+    <value>Oppgavetyper</value>
+  </data>
+  <data name="Task Update Notification" xml:space="preserve">
+    <value>Oppdater varsling</value>
+  </data>
+  <data name="TaskBillingByProjectsClientsReport" xml:space="preserve">
+    <value>Faktura ved prosjekt og klient- rapport</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>Oppgaver</value>
+  </data>
+  <data name="TASKS1" xml:space="preserve">
+    <value>OPPGAVER</value>
+  </data>
+  <data name="Tax" xml:space="preserve">
+    <value>Avgift</value>
+  </data>
+  <data name="Tax (BaseCurrency)" xml:space="preserve">
+    <value>Avgift (Standardvaluta)</value>
+  </data>
+  <data name="Tax 1" xml:space="preserve">
+    <value>Avgift 1</value>
+  </data>
+  <data name="Tax 1:" xml:space="preserve">
+    <value>Avgift 1:</value>
+  </data>
+  <data name="Tax 2" xml:space="preserve">
+    <value>Avgift 2</value>
+  </data>
+  <data name="Tax 2:" xml:space="preserve">
+    <value>Avgift 2:</value>
+  </data>
+  <data name="Tax Amount" xml:space="preserve">
+    <value>Avgiftsbeløp</value>
+  </data>
+  <data name="Tax Code" xml:space="preserve">
+    <value>Avgiftskode</value>
+  </data>
+  <data name="Tax Code Information" xml:space="preserve">
+    <value>Avgiftskodeinformasjon</value>
+  </data>
+  <data name="Tax Code:" xml:space="preserve">
+    <value>Avgiftskode</value>
+  </data>
+  <data name="Tax Zone" xml:space="preserve">
+    <value>Avgiftssone</value>
+  </data>
+  <data name="Tax Zone Information" xml:space="preserve">
+    <value>Avgiftssoneinformasjon</value>
+  </data>
+  <data name="Tax Zone List" xml:space="preserve">
+    <value>Avgiftssoneliste</value>
+  </data>
+  <data name="Tax Zone:" xml:space="preserve">
+    <value>Avgiftssone</value>
+  </data>
+  <data name="Tax:" xml:space="preserve">
+    <value>Avgift:</value>
+  </data>
+  <data name="TaxAmount" xml:space="preserve">
+    <value>Avgiftsbeløp</value>
+  </data>
+  <data name="TaxCode 1" xml:space="preserve">
+    <value>Avgiftskode 1</value>
+  </data>
+  <data name="TaxCode 2" xml:space="preserve">
+    <value>Avgiftskode 2</value>
+  </data>
+  <data name="Taxi" xml:space="preserve">
+    <value>Drosje</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="Team Based Collaboration" xml:space="preserve">
+    <value>Teambasert samarbeid</value>
+  </data>
+  <data name="Team Lead" xml:space="preserve">
+    <value>Teamleder</value>
+  </data>
+  <data name="Team Lead -&amp;gt; Project Manager" xml:space="preserve">
+    <value>Teamleder -&gt; Prosjektleder</value>
+  </data>
+  <data name="Team Lead --&gt; Client" xml:space="preserve">
+    <value>Teamleder -&gt; Klient</value>
+  </data>
+  <data name="Team Lead --&gt; Project Manager" xml:space="preserve">
+    <value>Teamleder -&gt; Prosjektleder</value>
+  </data>
+  <data name="Team Lead:" xml:space="preserve">
+    <value>Teamleder:</value>
+  </data>
+  <data name="Team Leader" xml:space="preserve">
+    <value>Teamleder</value>
+  </data>
+  <data name="TeamLead" xml:space="preserve">
+    <value>Teamledelse</value>
+  </data>
+  <data name="Team-Lead" xml:space="preserve">
+    <value>Team-ledelse</value>
+  </data>
+  <data name="Technology" xml:space="preserve">
+    <value>Teknologi</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="Telephone1" xml:space="preserve">
+    <value>Telefon 1</value>
+  </data>
+  <data name="Telephone2" xml:space="preserve">
+    <value>Telefon 2</value>
+  </data>
+  <data name="Terminated" xml:space="preserve">
+    <value>Avsluttet</value>
+  </data>
+  <data name="Termination Date:" xml:space="preserve">
+    <value>Avslutnings dato:</value>
+  </data>
+  <data name="Terminology Name" xml:space="preserve">
+    <value>Terminologi navn</value>
+  </data>
+  <data name="Thank you for your interest your TimeLive account has been activated." xml:space="preserve">
+    <value>Takk for interessen din, TimeLive kontoen har blitt aktivert.</value>
+  </data>
+  <data name="This Email Address will be [Administrator] login name." xml:space="preserve">
+    <value>Denne e-postadressen vil bli [Administrator] påloggingsnavn.</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>Tor</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Torsdag</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Tid</value>
+  </data>
+  <data name="Time Billing List" xml:space="preserve">
+    <value>Faktureringsliste</value>
+  </data>
+  <data name="Time Billing Worksheet" xml:space="preserve">
+    <value>Faktureringsskjema</value>
+  </data>
+  <data name="Time Entry" xml:space="preserve">
+    <value>Tidregistrering</value>
+  </data>
+  <data name="Time Entry Approval Activity" xml:space="preserve">
+    <value>Tidregistrering godkjenne aktivitet</value>
+  </data>
+  <data name="Time Entry Approver" xml:space="preserve">
+    <value>Tidregistrering godkjenner</value>
+  </data>
+  <data name="Time Entry Archive" xml:space="preserve">
+    <value>Tidregistrering</value>
+  </data>
+  <data name="Time Entry Date" xml:space="preserve">
+    <value>Tidregistrering dato</value>
+  </data>
+  <data name="Time Entry Date :" xml:space="preserve">
+    <value>Tidregistrering dato:</value>
+  </data>
+  <data name="Time Entry Date:" xml:space="preserve">
+    <value>Tidregistrering dato:</value>
+  </data>
+  <data name="Time Entry Day View" xml:space="preserve">
+    <value>Tidregistrering dagsoversikt</value>
+  </data>
+  <data name="Time Entry DayView" xml:space="preserve">
+    <value>Tidregistrering dagsoversikt</value>
+  </data>
+  <data name="Time Entry Format" xml:space="preserve">
+    <value>Tidregistrering format</value>
+  </data>
+  <data name="Time Entry Period" xml:space="preserve">
+    <value>Tidregistrering periode</value>
+  </data>
+  <data name="Time Entry Period View" xml:space="preserve">
+    <value>Mitt timeskjema</value>
+  </data>
+  <data name="Time Entry Status - Approved" xml:space="preserve">
+    <value>Tidregistrering - godkjent</value>
+  </data>
+  <data name="Time Entry Status - Not Submitted" xml:space="preserve">
+    <value>Tidregistrering - ikke levert</value>
+  </data>
+  <data name="Time Entry Status - Rejected" xml:space="preserve">
+    <value>Tidregistrering - avvist</value>
+  </data>
+  <data name="Time Entry Status - Submitted" xml:space="preserve">
+    <value>Tidregistrering - levert</value>
+  </data>
+  <data name="Time Entry Time Card View" xml:space="preserve">
+    <value>Tidregistrering vis timekort</value>
+  </data>
+  <data name="Time Entry Week View" xml:space="preserve">
+    <value>Ukesoversikt Tidsregistrering</value>
+  </data>
+  <data name="Time Expense Billing" xml:space="preserve">
+    <value>Time utgiftsfakturering</value>
+  </data>
+  <data name="Time Expense Billing List" xml:space="preserve">
+    <value>Timeutgifts faktureringsliste</value>
+  </data>
+  <data name="Time Expense Invoice" xml:space="preserve">
+    <value>Timeutgifts fakturering</value>
+  </data>
+  <data name="Time Expense Invoice List" xml:space="preserve">
+    <value>Timeutgifts faktureringsliste</value>
+  </data>
+  <data name="Time In" xml:space="preserve">
+    <value>Tid inn</value>
+  </data>
+  <data name="Time Off" xml:space="preserve">
+    <value>Time Av</value>
+  </data>
+  <data name="Time Off Approval" xml:space="preserve">
+    <value>Time Av Godkjenning</value>
+  </data>
+  <data name="Time Off Approval Type:" xml:space="preserve">
+    <value>Time Av Godkjenning Type:</value>
+  </data>
+  <data name="Time Off Approved Notification" xml:space="preserve">
+    <value>Time Off Godkjent Melding</value>
+  </data>
+  <data name="Time Off Description" xml:space="preserve">
+    <value>Time Av Beskrivelse</value>
+  </data>
+  <data name="Time Off End Date:" xml:space="preserve">
+    <value>Tid Off Sluttdato:</value>
+  </data>
+  <data name="Time Off Policies Detail" xml:space="preserve">
+    <value>Time Av Retningslinjer Detalj</value>
+  </data>
+  <data name="Time Off Policies Detail List" xml:space="preserve">
+    <value>Time Av Retningslinjer Detail Liste</value>
+  </data>
+  <data name="Time Off Policy" xml:space="preserve">
+    <value>Time Av Policy</value>
+  </data>
+  <data name="Time Off Policy Information" xml:space="preserve">
+    <value>Time Av Policy Informasjon</value>
+  </data>
+  <data name="Time Off Policy List" xml:space="preserve">
+    <value>Time Av Policy Liste</value>
+  </data>
+  <data name="Time Off Policy:" xml:space="preserve">
+    <value>Tid Off Policy:</value>
+  </data>
+  <data name="Time Off Rejected Notification" xml:space="preserve">
+    <value>Time Av Avvist Anmeldelse</value>
+  </data>
+  <data name="Time Off Request" xml:space="preserve">
+    <value>Time Av Forespørsel</value>
+  </data>
+  <data name="Time Off Request Information" xml:space="preserve">
+    <value>Time Av Be om informasjon</value>
+  </data>
+  <data name="Time Off Request Required:" xml:space="preserve">
+    <value>Time Av Forespørsel påkrevd:</value>
+  </data>
+  <data name="Time Off Setup" xml:space="preserve">
+    <value>Time Off Setup</value>
+  </data>
+  <data name="Time Off Start Date:" xml:space="preserve">
+    <value>Tid Off Startdato:</value>
+  </data>
+  <data name="Time Off Status" xml:space="preserve">
+    <value>Time Av Status</value>
+  </data>
+  <data name="Time Off Type" xml:space="preserve">
+    <value>Time Av Type</value>
+  </data>
+  <data name="Time Off Types" xml:space="preserve">
+    <value>Time Av Typer</value>
+  </data>
+  <data name="Time Off Types Information" xml:space="preserve">
+    <value>Time Av Typer informasjon</value>
+  </data>
+  <data name="Time Off Types List" xml:space="preserve">
+    <value>Time Av Typer Liste</value>
+  </data>
+  <data name="Time Off Types:" xml:space="preserve">
+    <value>Tid Off Typer:</value>
+  </data>
+  <data name="Time Out" xml:space="preserve">
+    <value>Tid ut</value>
+  </data>
+  <data name="Time Sheet" xml:space="preserve">
+    <value>Timeskjema</value>
+  </data>
+  <data name="Time Sheet Approval" xml:space="preserve">
+    <value>Timeskjema godkjenning</value>
+  </data>
+  <data name="Time Sheet Approval Type" xml:space="preserve">
+    <value>Timeskjema godkjenningstype</value>
+  </data>
+  <data name="Time Sheet Approval Type:" xml:space="preserve">
+    <value>Timeskjema godkjenningstype:</value>
+  </data>
+  <data name="Time Sheet Approvals" xml:space="preserve">
+    <value>Timeskjema godkjenninger</value>
+  </data>
+  <data name="Time:" xml:space="preserve">
+    <value>Tid:</value>
+  </data>
+  <data name="TimeEntry_Validation" xml:space="preserve">
+    <value>Du må velge aktiviteter for å lagre timeposter</value>
+  </data>
+  <data name="TimeEntryDate" xml:space="preserve">
+    <value>Tidregistreringsdato</value>
+  </data>
+  <data name="TimeIn" xml:space="preserve">
+    <value>Tid inn</value>
+  </data>
+  <data name="TimeLive supports unlimited users support up to 30 days. After 30 days it converts to 5 users free account" xml:space="preserve">
+    <value>(TimeLive støtter et ubegrenset antall brukere opptil 30 dager. Etter 30 dager konverterer den til 5 brukere)</value>
+  </data>
+  <data name="TimeOut" xml:space="preserve">
+    <value>Tid ut</value>
+  </data>
+  <data name="Timer" xml:space="preserve">
+    <value>Timer</value>
+  </data>
+  <data name="TIMESHEET" xml:space="preserve">
+    <value>TIMELISTE</value>
+  </data>
+  <data name="Timesheet / Project / Billing" xml:space="preserve">
+    <value>Timeliste / Prosjekt / Fakturering</value>
+  </data>
+  <data name="TimeSheet Approval" xml:space="preserve">
+    <value>Godkjenning Timeliste</value>
+  </data>
+  <data name="Timesheet Approval Activity" xml:space="preserve">
+    <value>Godkjenning Timelister</value>
+  </data>
+  <data name="Timesheet Approval Detail" xml:space="preserve">
+    <value>Godkjenning Timelister, detaljert</value>
+  </data>
+  <data name="Timesheet Approval Type" xml:space="preserve">
+    <value>Timeliste godkjenning type</value>
+  </data>
+  <data name="Timesheet Approved Notification" xml:space="preserve">
+    <value>Timeliste godkjenning melding</value>
+  </data>
+  <data name="Timesheet Audit" xml:space="preserve">
+    <value>Timeliste Tilsyn</value>
+  </data>
+  <data name="Timesheet Audit Trail Report" xml:space="preserve">
+    <value>Timesheet Audit Trail rapport</value>
+  </data>
+  <data name="Timesheet Billing List" xml:space="preserve">
+    <value>Timeliste faktureringsliste</value>
+  </data>
+  <data name="Timesheet Period" xml:space="preserve">
+    <value>Timeliste periode</value>
+  </data>
+  <data name="Timesheet Period Audit" xml:space="preserve">
+    <value>Timeliste Periode Tilsyn</value>
+  </data>
+  <data name="Timesheet Period List" xml:space="preserve">
+    <value>Timeliste Periode Liste</value>
+  </data>
+  <data name="Timesheet Period Type" xml:space="preserve">
+    <value>Timeliste Periode Type</value>
+  </data>
+  <data name="Timesheet Period Type Information" xml:space="preserve">
+    <value>Timeliste Periode Type Informasjon</value>
+  </data>
+  <data name="Timesheet Period Type:" xml:space="preserve">
+    <value>Timeliste Periode Type:</value>
+  </data>
+  <data name="Timesheet Period Types" xml:space="preserve">
+    <value>Timeliste Periode Typer</value>
+  </data>
+  <data name="Timesheet Periods" xml:space="preserve">
+    <value>Timeregistrering Perioder</value>
+  </data>
+  <data name="Timesheet Rejected Notification" xml:space="preserve">
+    <value>Timeliste avvist melding</value>
+  </data>
+  <data name="Timesheet Setup" xml:space="preserve">
+    <value>Timeregistrering Setup</value>
+  </data>
+  <data name="Timesheet Status" xml:space="preserve">
+    <value>Timeliste Status</value>
+  </data>
+  <data name="Timesheet Status :" xml:space="preserve">
+    <value>Status Timeliste:</value>
+  </data>
+  <data name="Timesheet Status:" xml:space="preserve">
+    <value>Timeliste Status:</value>
+  </data>
+  <data name="Timesheet Submission Report" xml:space="preserve">
+    <value>Innleveringsrapport Timeliste</value>
+  </data>
+  <data name="Timesheet Total :" xml:space="preserve">
+    <value>Timeliste Totalt:</value>
+  </data>
+  <data name="Timesheet Total:" xml:space="preserve">
+    <value>Timeliste Totalt:</value>
+  </data>
+  <data name="Timezone" xml:space="preserve">
+    <value>Tidssone</value>
+  </data>
+  <data name="TimeZone:" xml:space="preserve">
+    <value>Tidssone:</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Tittel</value>
+  </data>
+  <data name="Title:" xml:space="preserve">
+    <value>Tittel:</value>
+  </data>
+  <data name="Toll Free: 1-866-252-2107" xml:space="preserve">
+    <value>Avgiftsfritt: 1-866-252-2107</value>
+  </data>
+  <data name="Toll Free: 1-888-666-8154" xml:space="preserve">
+    <value>Avgiftsfritt:1-888-666-8154</value>
+  </data>
+  <data name="Tolls" xml:space="preserve">
+    <value>Bompenger</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Totalt</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Totalt beløp</value>
+  </data>
+  <data name="Total Duration" xml:space="preserve">
+    <value>Total varighet</value>
+  </data>
+  <data name="Total Hours" xml:space="preserve">
+    <value>Totalt antall timer</value>
+  </data>
+  <data name="Total Reimbursement" xml:space="preserve">
+    <value>Total refusjon</value>
+  </data>
+  <data name="Total Reimbursement:" xml:space="preserve">
+    <value>Totalt Refusjon:</value>
+  </data>
+  <data name="Total Time" xml:space="preserve">
+    <value>Total tid</value>
+  </data>
+  <data name="Total Time:" xml:space="preserve">
+    <value>Total tid:</value>
+  </data>
+  <data name="Total:" xml:space="preserve">
+    <value>Totalt:</value>
+  </data>
+  <data name="TotalAbsent" xml:space="preserve">
+    <value>Totalt fraværende:</value>
+  </data>
+  <data name="TotalHours" xml:space="preserve">
+    <value>Totale timer</value>
+  </data>
+  <data name="TotalPresent" xml:space="preserve">
+    <value>Totalt tilstede:</value>
+  </data>
+  <data name="TotalTime" xml:space="preserve">
+    <value>Totaltid</value>
+  </data>
+  <data name="TR" xml:space="preserve">
+    <value>TR</value>
+  </data>
+  <data name="Track and Monitor" xml:space="preserve">
+    <value>Spor og følg opp</value>
+  </data>
+  <data name="Track and Monitor Your bugs" xml:space="preserve">
+    <value>Spor og følg opp feil</value>
+  </data>
+  <data name="Track and monitor your projects / tasks / timesheets / expenses / bugs with easy to use reports and graphs." xml:space="preserve">
+    <value>Spor og følg opp dine prosjekter / aktiviteter / timelister / utgifter / defekter med brukervennlige rapporter og grafer.</value>
+  </data>
+  <data name="Training" xml:space="preserve">
+    <value>Opplæring</value>
+  </data>
+  <data name="Travel" xml:space="preserve">
+    <value>Reise</value>
+  </data>
+  <data name="Trial" xml:space="preserve">
+    <value>Prøve</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>Tir</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Tirsdag</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Un Approved" xml:space="preserve">
+    <value>Ikke- godkjente</value>
+  </data>
+  <data name="Un Billable" xml:space="preserve">
+    <value>Ikke- fakturerbare</value>
+  </data>
+  <data name="Un Completed" xml:space="preserve">
+    <value>Ikke fullførte</value>
+  </data>
+  <data name="Unable To Activate License" xml:space="preserve">
+    <value>Kan ikke aktivere lisens</value>
+  </data>
+  <data name="UnActive" xml:space="preserve">
+    <value>Inaktiv</value>
+  </data>
+  <data name="UnCheck All" xml:space="preserve">
+    <value>Fjern valg av alle</value>
+  </data>
+  <data name="UnCheck All Approved" xml:space="preserve">
+    <value>Fjern valg av alle godkjente</value>
+  </data>
+  <data name="Uncheck-All" xml:space="preserve">
+    <value>Fjern valg av alle</value>
+  </data>
+  <data name="Uncheck-All Approved" xml:space="preserve">
+    <value>Fjern valg av alle godkjente</value>
+  </data>
+  <data name="Uncompleted" xml:space="preserve">
+    <value>Uavsluttede</value>
+  </data>
+  <data name="United Kingdom, Pounds" xml:space="preserve">
+    <value>Storbritannia, pund</value>
+  </data>
+  <data name="United State Dollar" xml:space="preserve">
+    <value>United State, dollar</value>
+  </data>
+  <data name="Unlimited users support expiry:" xml:space="preserve">
+    <value>Ubegrensede brukere støtte utløper:</value>
+  </data>
+  <data name="UnPaid" xml:space="preserve">
+    <value>Ubetalt</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Oppdater</value>
+  </data>
+  <data name="Update all record within this range" xml:space="preserve">
+    <value>Oppdater alle poster innenfor dette området</value>
+  </data>
+  <data name="Update all records within this range:" xml:space="preserve">
+    <value>Oppdater alle poster innenfor dette området:</value>
+  </data>
+  <data name="Update By" xml:space="preserve">
+    <value>Oppdater Av</value>
+  </data>
+  <data name="Update Currencies" xml:space="preserve">
+    <value>Oppdater valutaer</value>
+  </data>
+  <data name="Update Date" xml:space="preserve">
+    <value>Oppdater dato</value>
+  </data>
+  <data name="Update Email Notification Preferences" xml:space="preserve">
+    <value>Oppdater E-postvarsel innstillinger</value>
+  </data>
+  <data name="Update existing records:" xml:space="preserve">
+    <value>Oppdatere eksisterende poster:</value>
+  </data>
+  <data name="Update Expense Entry Approvals" xml:space="preserve">
+    <value>Oppdater godkjenning av utgiftsregistreringer</value>
+  </data>
+  <data name="Update Time Entry and Expense Entry Records As Billed" xml:space="preserve">
+    <value>Oppdater timer og utgifter som fakturert</value>
+  </data>
+  <data name="Update Time Entry Approvals" xml:space="preserve">
+    <value>Oppdater timegodkjenninger</value>
+  </data>
+  <data name="Update Time Entry Records As Billed" xml:space="preserve">
+    <value>Oppdater timer som fakturert</value>
+  </data>
+  <data name="Update Time Off" xml:space="preserve">
+    <value>Oppdatert Av</value>
+  </data>
+  <data name="Update Time Off Approvals" xml:space="preserve">
+    <value>Oppdatert Off godkjenninger</value>
+  </data>
+  <data name="Update_text" xml:space="preserve">
+    <value>Oppdatering</value>
+  </data>
+  <data name="Updated By" xml:space="preserve">
+    <value>Oppdatert av</value>
+  </data>
+  <data name="Updated Date" xml:space="preserve">
+    <value>Oppdatert dato</value>
+  </data>
+  <data name="Upload Company Own Logo" xml:space="preserve">
+    <value>Last opp firmalogo</value>
+  </data>
+  <data name="Upload File" xml:space="preserve">
+    <value>Last opp fil:</value>
+  </data>
+  <data name="Upload Report Icon:" xml:space="preserve">
+    <value>Last opp rapport- ikon:</value>
+  </data>
+  <data name="Upload_text" xml:space="preserve">
+    <value>Last opp</value>
+  </data>
+  <data name="Urgent" xml:space="preserve">
+    <value>Haster</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="Use Employee Own Billing Rate" xml:space="preserve">
+    <value>Bruk ansattes egen timesats</value>
+  </data>
+  <data name="Use Project Employee Billing Rate" xml:space="preserve">
+    <value>Bruk prosjektansattes timesats</value>
+  </data>
+  <data name="Use Project Roles Billing Rate" xml:space="preserve">
+    <value>Bruk prosjektrollens timesats</value>
+  </data>
+  <data name="Use Project Task Billing Rate" xml:space="preserve">
+    <value>Bruk prosjektaktivitetens timesats</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Bruker</value>
+  </data>
+  <data name="User Defined Name" xml:space="preserve">
+    <value>Brukerdefinert navn</value>
+  </data>
+  <data name="User Interface Language" xml:space="preserve">
+    <value>SpråkBrukergrensesnitt</value>
+  </data>
+  <data name="User Interface Language:" xml:space="preserve">
+    <value>Språk Brukergrensesnitt:</value>
+  </data>
+  <data name="User Name" xml:space="preserve">
+    <value>Brukernavn</value>
+  </data>
+  <data name="User Name:" xml:space="preserve">
+    <value>Brukernavn:</value>
+  </data>
+  <data name="User Pages" xml:space="preserve">
+    <value>Brukersider</value>
+  </data>
+  <data name="Username is required." xml:space="preserve">
+    <value>Brukernavn er påkrevd.</value>
+  </data>
+  <data name="Username:" xml:space="preserve">
+    <value>Brukernavn:</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Brukere</value>
+  </data>
+  <data name="Users Reports" xml:space="preserve">
+    <value>Brukere rapporter</value>
+  </data>
+  <data name="V 2.93" xml:space="preserve">
+    <value>V 2,93</value>
+  </data>
+  <data name="Vacation" xml:space="preserve">
+    <value>Ferie</value>
+  </data>
+  <data name="Value 1 Base Currency Unit X New Currency Units" xml:space="preserve">
+    <value>Verdi (1 Standardvalutaenhet = X Ny valuta enhet)</value>
+  </data>
+  <data name="VAT" xml:space="preserve">
+    <value>MVA</value>
+  </data>
+  <data name="VAT:" xml:space="preserve">
+    <value>MVA:</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>Bekreft</value>
+  </data>
+  <data name="Verify Password" xml:space="preserve">
+    <value>Bekreft passord</value>
+  </data>
+  <data name="Verify Password:" xml:space="preserve">
+    <value>Bekreft passord:</value>
+  </data>
+  <data name="Verify:" xml:space="preserve">
+    <value>Bekreft:</value>
+  </data>
+  <data name="Visa" xml:space="preserve">
+    <value>Visa</value>
+  </data>
+  <data name="Web based fully hosted solution (ASP Based)" xml:space="preserve">
+    <value>Web-basert løsning (ASP basert)</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Nettsted</value>
+  </data>
+  <data name="Website:" xml:space="preserve">
+    <value>Nettsted:</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>Ons</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Onsdag</value>
+  </data>
+  <data name="Week No" xml:space="preserve">
+    <value>Uke nr</value>
+  </data>
+  <data name="Week No." xml:space="preserve">
+    <value>Uke nr.</value>
+  </data>
+  <data name="Week Start Day" xml:space="preserve">
+    <value>Uke startdag</value>
+  </data>
+  <data name="Week Start Day:" xml:space="preserve">
+    <value>Uke startdag:</value>
+  </data>
+  <data name="Week Start Day_GridView" xml:space="preserve">
+    <value>Uke startdag</value>
+  </data>
+  <data name="Week TimeSheet Summary" xml:space="preserve">
+    <value>Timeliste denne uke</value>
+  </data>
+  <data name="Week View" xml:space="preserve">
+    <value>Ukesvisning</value>
+  </data>
+  <data name="Weekly Timesheet" xml:space="preserve">
+    <value>Ukentlig Timeliste</value>
+  </data>
+  <data name="Welfair" xml:space="preserve">
+    <value>Velferd</value>
+  </data>
+  <data name="Windows Based" xml:space="preserve">
+    <value>Windows basert</value>
+  </data>
+  <data name="Windows based installable on server and local system" xml:space="preserve">
+    <value>Installerbar Windows versjon for server og lokalt system</value>
+  </data>
+  <data name="Work Phone No." xml:space="preserve">
+    <value>Telefonnr, arbeid</value>
+  </data>
+  <data name="Work Phone No:" xml:space="preserve">
+    <value>Telefonnr. arbeid:</value>
+  </data>
+  <data name="Work Type" xml:space="preserve">
+    <value>Arbeidstype</value>
+  </data>
+  <data name="Work Type Code" xml:space="preserve">
+    <value>Arbeidstypekode</value>
+  </data>
+  <data name="Work Type Code:" xml:space="preserve">
+    <value>Arbeidstypekode:</value>
+  </data>
+  <data name="Work Type Information" xml:space="preserve">
+    <value>Arbeids-type informasjon</value>
+  </data>
+  <data name="Work Type List" xml:space="preserve">
+    <value>Arbeidsliste</value>
+  </data>
+  <data name="Work Type List:" xml:space="preserve">
+    <value>Arbeidsliste:</value>
+  </data>
+  <data name="Work Type:" xml:space="preserve">
+    <value>Arbeidstype:</value>
+  </data>
+  <data name="Work Types" xml:space="preserve">
+    <value>Arbeidstyper</value>
+  </data>
+  <data name="Working Day" xml:space="preserve">
+    <value>Arbeidsdag</value>
+  </data>
+  <data name="Working Day Type" xml:space="preserve">
+    <value>Arbeidsdag type</value>
+  </data>
+  <data name="Working Day Type Information" xml:space="preserve">
+    <value>Arbeidsdag type informasjon</value>
+  </data>
+  <data name="Working Day Type List" xml:space="preserve">
+    <value>Arbeidsdag type liste</value>
+  </data>
+  <data name="Working Day Type:" xml:space="preserve">
+    <value>Arbeidsdag type:</value>
+  </data>
+  <data name="Working Days" xml:space="preserve">
+    <value>Virkedager</value>
+  </data>
+  <data name="Working Days List" xml:space="preserve">
+    <value>Virkedager liste</value>
+  </data>
+  <data name="Working Days:" xml:space="preserve">
+    <value>Virkedagerr:</value>
+  </data>
+  <data name="WorkingDay" xml:space="preserve">
+    <value>Virkedag</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>År</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="You can log-in in TimeLive using your administrator email address and password which you entered in registration form." xml:space="preserve">
+    <value>Du kan logge inn i TimeLive med administrator e-postadressen og passordet som du oppgav i registreringsskjemaet.</value>
+  </data>
+  <data name="You may have to check your JUNK E-MAIL folder. If you do not receive further instructions please contact support using the following toll free numbers:" xml:space="preserve">
+    <value>Du må kanskje sjekke mappen og filter for søppelpost. Hvis du ikke motter ytterligere instruksjoner, vennligst kontakt support.</value>
+  </data>
+  <data name="Your password and instructions have been e-mailed to" xml:space="preserve">
+    <value>Ditt passord og instruksjoner er sendt med e-post til</value>
+  </data>
+  <data name="Your Web TimeSheet Account is Ready" xml:space="preserve">
+    <value>Din Web timeliste konto er klar</value>
+  </data>
+  <data name="Zip Code" xml:space="preserve">
+    <value>Postnummer</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>Postnr:</value>
+  </data>
+  <data name="Auto Generate Project Code:" xml:space="preserve">
+    <value>Auto Generer Prosjekt Kode:</value>
+  </data>
+  <data name="Invoice Billing Type:" xml:space="preserve">
+    <value>Faktura Billing Type:</value>
+  </data>
+  <data name="Invoice Footer:" xml:space="preserve">
+    <value>Faktura Bunntekst:</value>
+  </data>
+  <data name="License Users Usage:" xml:space="preserve">
+    <value>Vis Prosent I Timeregistrering:</value>
+  </data>
+  <data name="Show Billing Rate In Invoice Report:" xml:space="preserve">
+    <value>Vis Billing rate i Faktura Rapport:</value>
+  </data>
+  <data name="Show Percentage In Timesheet:" xml:space="preserve">
+    <value>Vis Prosent I Timeregistrering:</value>
+  </data>
+  <data name="Show Project Name In Invoice Report:" xml:space="preserve">
+    <value>Vis Prosjekt Name In Faktura Rapport:</value>
+  </data>
+  <data name="Time Entry Clock Format:" xml:space="preserve">
+    <value>Tid Entry Klokke Format:</value>
+  </data>
+  <data name="Time Entry Hours Format:" xml:space="preserve">
+    <value>Tid Entry Hours Format:</value>
+  </data>
+  <data name="Timesheet Periods Overdue:" xml:space="preserve">
+    <value>Timeregistrering Perioder Forfalte:</value>
+  </data>
+  <data name="Add Custom Field" xml:space="preserve">
+    <value>Add Custom Field</value>
+  </data>
+  <data name="Custom Field" xml:space="preserve">
+    <value>Custom Field</value>
+  </data>
+  <data name="Custom Field Caption" xml:space="preserve">
+    <value>Custom Field Caption</value>
+  </data>
+  <data name="Custom Field Information" xml:space="preserve">
+    <value>Custom Field Information</value>
+  </data>
+  <data name="Custom Field List" xml:space="preserve">
+    <value>Custom Field List</value>
+  </data>
+  <data name="Custom Field Manage" xml:space="preserve">
+    <value>Custom Field Manage</value>
+  </data>
+  <data name="Custom Field Manage List" xml:space="preserve">
+    <value>Custom Field Manage List</value>
+  </data>
+  <data name="Custom Field Name" xml:space="preserve">
+    <value>Custom Field Name</value>
+  </data>
+  <data name="Custom Field Name:" xml:space="preserve">
+    <value>Custom Field Name:</value>
+  </data>
+  <data name="Data Type" xml:space="preserve">
+    <value>Data Type</value>
+  </data>
+  <data name="Database Field Name" xml:space="preserve">
+    <value>Database Field Name</value>
+  </data>
+  <data name="Default Value" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="IsDisable:" xml:space="preserve">
+    <value>IsDisable:</value>
+  </data>
+  <data name="IsRequired" xml:space="preserve">
+    <value>IsRequired</value>
+  </data>
+  <data name="IsRequired:" xml:space="preserve">
+    <value>IsRequired:</value>
+  </data>
+  <data name="Maximum Length:" xml:space="preserve">
+    <value>Maximum Length:</value>
+  </data>
+  <data name="Maximum Value:" xml:space="preserve">
+    <value>Maximum Value:</value>
+  </data>
+  <data name="Minimum Value:" xml:space="preserve">
+    <value>Minimum Value:</value>
+  </data>
+  <data name="Options:" xml:space="preserve">
+    <value>Options:</value>
+  </data>
+  <data name="Show Client Department In Project:" xml:space="preserve">
+    <value>Vis klient Avdeling I Project:</value>
+  </data>
+  <data name="Show Client Name In Task:" xml:space="preserve">
+    <value>Vis klient Name In Oppgave:</value>
+  </data>
+  <data name="Show Copy Activities Button In Timesheet:" xml:space="preserve">
+    <value>Vis Kopier Aktiviteter Button I Timeregistrering:</value>
+  </data>
+  <data name="Show Copy Timesheet Button:" xml:space="preserve">
+    <value>Vis Kopiere Timeregistrering knapp:</value>
+  </data>
+  <data name="Show Cost Center In Timesheet By:" xml:space="preserve">
+    <value>Vis Cost Center i Timeregistrering Av:</value>
+  </data>
+  <data name="Show Entry Date In Invoice Report:" xml:space="preserve">
+    <value>Vis Utfyllingsdato I Faktura Rapport:</value>
+  </data>
+  <data name="Show Project Name In Task:" xml:space="preserve">
+    <value>Vis Prosjektnavn I Oppgave:</value>
+  </data>
+  <data name="Show Task Percentage In Timesheet:" xml:space="preserve">
+    <value>Vis oppgave prosentandel i Timeregistrering:</value>
+  </data>
+  <data name="Sort Timesheet By:" xml:space="preserve">
+    <value>Sorter Timeregistrering Av:</value>
+  </data>
+  <data name="Use Electronic Signature:" xml:space="preserve">
+    <value>Bruk Elektronisk Signatur:</value>
+  </data>
+  <data name="Dashboard Setting" xml:space="preserve">
+    <value>Dashboard Setting</value>
+  </data>
+  <data name="Click on chart for more information" xml:space="preserve">
+    <value>Klikk på kartet for mer informasjon</value>
+  </data>
+  <data name="Export Offline Timesheet" xml:space="preserve">
+    <value>Eksportere Offline Timeregistrering</value>
+  </data>
+  <data name="My Projects by Status Count" xml:space="preserve">
+    <value>Mine prosjekter etter status Count</value>
+  </data>
+  <data name="My Tasks By Completed %" xml:space="preserve">
+    <value>Mine oppgaver ved Fullført%</value>
+  </data>
+  <data name="My Tasks by Duration" xml:space="preserve">
+    <value>Mine oppgaver ved Varighet</value>
+  </data>
+  <data name="My Tasks by Status Count" xml:space="preserve">
+    <value>Mine oppgaver ved Status Count</value>
+  </data>
+  <data name="Please Select a Task" xml:space="preserve">
+    <value>Vennligst velg en oppgave</value>
+  </data>
+  <data name="Succesfully Updated" xml:space="preserve">
+    <value>hell Oppdatert</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Brukernavn</value>
+  </data>
+</root>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsProjectExpenseDetailReport" targetNamespace="http://tempuri.org/dsProjectExpenseDetailReport.xsd" xmlns:mstns="http://tempuri.org/dsProjectExpenseDetailReport.xsd" xmlns="http://tempuri.org/dsProjectExpenseDetailReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vueAccountExpenseEntryTableAdapter" GeneratorDataComponentClassName="vueAccountExpenseEntryTableAdapter" Name="vueAccountExpenseEntry" UserDataComponentName="vueAccountExpenseEntryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeLive.dbo.vueAccountExpenseEntry" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     EmployeeName, AccountExpenseName, ProjectName, AccountExpenseEntryId, AccountExpenseEntryDate, AccountId, AccountEmployeeId, 
+                      AccountProjectId, AccountExpenseId, TeamLeadApproved, ProjectManagerApproved, AdministratorApproved, Approved, 
+                      CreatedOn, CreatedByEmployeeId, ModifiedOn, ModifiedByEmployeeId, PartyName, AccountClientId, Description, ExpenseType, 
+                      AccountExpenseTypeId, AccountCurrencyId, CurrencyCode, Amount, ExchangeRate, Submitted, TaxAmount, NetAmount
+FROM         vueAccountExpenseEntry</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="AccountExpenseName" DataSetColumn="AccountExpenseName" />
+              <Mapping SourceColumn="ProjectName" DataSetColumn="ProjectName" />
+              <Mapping SourceColumn="AccountExpenseEntryId" DataSetColumn="AccountExpenseEntryId" />
+              <Mapping SourceColumn="AccountExpenseEntryDate" DataSetColumn="AccountExpenseEntryDate" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="AccountEmployeeId" DataSetColumn="AccountEmployeeId" />
+              <Mapping SourceColumn="AccountProjectId" DataSetColumn="AccountProjectId" />
+              <Mapping SourceColumn="AccountExpenseId" DataSetColumn="AccountExpenseId" />
+              <Mapping SourceColumn="TeamLeadApproved" DataSetColumn="TeamLeadApproved" />
+              <Mapping SourceColumn="ProjectManagerApproved" DataSetColumn="ProjectManagerApproved" />
+              <Mapping SourceColumn="AdministratorApproved" DataSetColumn="AdministratorApproved" />
+              <Mapping SourceColumn="Approved" DataSetColumn="Approved" />
+              <Mapping SourceColumn="CreatedOn" DataSetColumn="CreatedOn" />
+              <Mapping SourceColumn="CreatedByEmployeeId" DataSetColumn="CreatedByEmployeeId" />
+              <Mapping SourceColumn="ModifiedOn" DataSetColumn="ModifiedOn" />
+              <Mapping SourceColumn="ModifiedByEmployeeId" DataSetColumn="ModifiedByEmployeeId" />
+              <Mapping SourceColumn="PartyName" DataSetColumn="PartyName" />
+              <Mapping SourceColumn="AccountClientId" DataSetColumn="AccountClientId" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="ExpenseType" DataSetColumn="ExpenseType" />
+              <Mapping SourceColumn="AccountExpenseTypeId" DataSetColumn="AccountExpenseTypeId" />
+              <Mapping SourceColumn="AccountCurrencyId" DataSetColumn="AccountCurrencyId" />
+              <Mapping SourceColumn="CurrencyCode" DataSetColumn="CurrencyCode" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="ExchangeRate" DataSetColumn="ExchangeRate" />
+              <Mapping SourceColumn="Submitted" DataSetColumn="Submitted" />
+              <Mapping SourceColumn="TaxAmount" DataSetColumn="TaxAmount" />
+              <Mapping SourceColumn="NetAmount" DataSetColumn="NetAmount" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsProjectExpenseDetailReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsProjectExpenseDetailReport" msprop:Generator_DataSetName="dsProjectExpenseDetailReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vueAccountExpenseEntry" msprop:Generator_UserTableName="vueAccountExpenseEntry" msprop:Generator_RowDeletedName="vueAccountExpenseEntryRowDeleted" msprop:Generator_TableClassName="vueAccountExpenseEntryDataTable" msprop:Generator_RowChangedName="vueAccountExpenseEntryRowChanged" msprop:Generator_RowClassName="vueAccountExpenseEntryRow" msprop:Generator_RowChangingName="vueAccountExpenseEntryRowChanging" msprop:Generator_RowEvArgName="vueAccountExpenseEntryRowChangeEvent" msprop:Generator_RowEvHandlerName="vueAccountExpenseEntryRowChangeEventHandler" msprop:Generator_TablePropName="vueAccountExpenseEntry" msprop:Generator_TableVarName="tablevueAccountExpenseEntry" msprop:Generator_RowDeletingName="vueAccountExpenseEntryRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmployeeName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="151" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountExpenseName" msprop:Generator_UserColumnName="AccountExpenseName" msprop:Generator_ColumnPropNameInRow="AccountExpenseName" msprop:Generator_ColumnVarNameInTable="columnAccountExpenseName" msprop:Generator_ColumnPropNameInTable="AccountExpenseNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectName" msprop:Generator_UserColumnName="ProjectName" msprop:Generator_ColumnPropNameInRow="ProjectName" msprop:Generator_ColumnVarNameInTable="columnProjectName" msprop:Generator_ColumnPropNameInTable="ProjectNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountExpenseEntryId" msprop:Generator_UserColumnName="AccountExpenseEntryId" msprop:Generator_ColumnPropNameInRow="AccountExpenseEntryId" msprop:Generator_ColumnVarNameInTable="columnAccountExpenseEntryId" msprop:Generator_ColumnPropNameInTable="AccountExpenseEntryIdColumn" type="xs:int" />
+              <xs:element name="AccountExpenseEntryDate" msprop:Generator_UserColumnName="AccountExpenseEntryDate" msprop:Generator_ColumnPropNameInRow="AccountExpenseEntryDate" msprop:Generator_ColumnVarNameInTable="columnAccountExpenseEntryDate" msprop:Generator_ColumnPropNameInTable="AccountExpenseEntryDateColumn" type="xs:dateTime" />
+              <xs:element name="AccountId" msprop:Generator_UserColumnName="AccountId" msprop:Generator_ColumnPropNameInRow="AccountId" msprop:Generator_ColumnVarNameInTable="columnAccountId" msprop:Generator_ColumnPropNameInTable="AccountIdColumn" type="xs:int" />
+              <xs:element name="AccountEmployeeId" msprop:Generator_UserColumnName="AccountEmployeeId" msprop:Generator_ColumnPropNameInRow="AccountEmployeeId" msprop:Generator_ColumnVarNameInTable="columnAccountEmployeeId" msprop:Generator_ColumnPropNameInTable="AccountEmployeeIdColumn" type="xs:int" />
+              <xs:element name="AccountProjectId" msprop:Generator_UserColumnName="AccountProjectId" msprop:Generator_ColumnPropNameInRow="AccountProjectId" msprop:Generator_ColumnVarNameInTable="columnAccountProjectId" msprop:Generator_ColumnPropNameInTable="AccountProjectIdColumn" type="xs:int" />
+              <xs:element name="AccountExpenseId" msprop:Generator_UserColumnName="AccountExpenseId" msprop:Generator_ColumnPropNameInRow="AccountExpenseId" msprop:Generator_ColumnVarNameInTable="columnAccountExpenseId" msprop:Generator_ColumnPropNameInTable="AccountExpenseIdColumn" type="xs:int" />
+              <xs:element name="TeamLeadApproved" msprop:Generator_UserColumnName="TeamLeadApproved" msprop:Generator_ColumnPropNameInRow="TeamLeadApproved" msprop:Generator_ColumnVarNameInTable="columnTeamLeadApproved" msprop:Generator_ColumnPropNameInTable="TeamLeadApprovedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ProjectManagerApproved" msprop:Generator_UserColumnName="ProjectManagerApproved" msprop:Generator_ColumnPropNameInRow="ProjectManagerApproved" msprop:Generator_ColumnVarNameInTable="columnProjectManagerApproved" msprop:Generator_ColumnPropNameInTable="ProjectManagerApprovedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AdministratorApproved" msprop:Generator_UserColumnName="AdministratorApproved" msprop:Generator_ColumnPropNameInRow="AdministratorApproved" msprop:Generator_ColumnVarNameInTable="columnAdministratorApproved" msprop:Generator_ColumnPropNameInTable="AdministratorApprovedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Approved" msprop:Generator_UserColumnName="Approved" msprop:Generator_ColumnPropNameInRow="Approved" msprop:Generator_ColumnVarNameInTable="columnApproved" msprop:Generator_ColumnPropNameInTable="ApprovedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CreatedOn" msprop:Generator_UserColumnName="CreatedOn" msprop:Generator_ColumnPropNameInRow="CreatedOn" msprop:Generator_ColumnVarNameInTable="columnCreatedOn" msprop:Generator_ColumnPropNameInTable="CreatedOnColumn" type="xs:dateTime" />
+              <xs:element name="CreatedByEmployeeId" msprop:Generator_UserColumnName="CreatedByEmployeeId" msprop:Generator_ColumnPropNameInRow="CreatedByEmployeeId" msprop:Generator_ColumnVarNameInTable="columnCreatedByEmployeeId" msprop:Generator_ColumnPropNameInTable="CreatedByEmployeeIdColumn" type="xs:int" />
+              <xs:element name="ModifiedOn" msprop:Generator_UserColumnName="ModifiedOn" msprop:Generator_ColumnPropNameInRow="ModifiedOn" msprop:Generator_ColumnVarNameInTable="columnModifiedOn" msprop:Generator_ColumnPropNameInTable="ModifiedOnColumn" type="xs:dateTime" />
+              <xs:element name="ModifiedByEmployeeId" msprop:Generator_UserColumnName="ModifiedByEmployeeId" msprop:Generator_ColumnPropNameInRow="ModifiedByEmployeeId" msprop:Generator_ColumnVarNameInTable="columnModifiedByEmployeeId" msprop:Generator_ColumnPropNameInTable="ModifiedByEmployeeIdColumn" type="xs:int" />
+              <xs:element name="PartyName" msprop:Generator_UserColumnName="PartyName" msprop:Generator_ColumnPropNameInRow="PartyName" msprop:Generator_ColumnVarNameInTable="columnPartyName" msprop:Generator_ColumnPropNameInTable="PartyNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountClientId" msprop:Generator_UserColumnName="AccountClientId" msprop:Generator_ColumnPropNameInRow="AccountClientId" msprop:Generator_ColumnVarNameInTable="columnAccountClientId" msprop:Generator_ColumnPropNameInTable="AccountClientIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExpenseType" msprop:Generator_UserColumnName="ExpenseType" msprop:Generator_ColumnPropNameInRow="ExpenseType" msprop:Generator_ColumnVarNameInTable="columnExpenseType" msprop:Generator_ColumnPropNameInTable="ExpenseTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountExpenseTypeId" msprop:Generator_UserColumnName="AccountExpenseTypeId" msprop:Generator_ColumnPropNameInRow="AccountExpenseTypeId" msprop:Generator_ColumnVarNameInTable="columnAccountExpenseTypeId" msprop:Generator_ColumnPropNameInTable="AccountExpenseTypeIdColumn" type="xs:int" />
+              <xs:element name="AccountCurrencyId" msprop:Generator_UserColumnName="AccountCurrencyId" msprop:Generator_ColumnPropNameInRow="AccountCurrencyId" msprop:Generator_ColumnVarNameInTable="columnAccountCurrencyId" msprop:Generator_ColumnPropNameInTable="AccountCurrencyIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CurrencyCode" msprop:Generator_UserColumnName="CurrencyCode" msprop:Generator_ColumnPropNameInRow="CurrencyCode" msprop:Generator_ColumnVarNameInTable="columnCurrencyCode" msprop:Generator_ColumnPropNameInTable="CurrencyCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:double" />
+              <xs:element name="ExchangeRate" msprop:Generator_UserColumnName="ExchangeRate" msprop:Generator_ColumnPropNameInRow="ExchangeRate" msprop:Generator_ColumnVarNameInTable="columnExchangeRate" msprop:Generator_ColumnPropNameInTable="ExchangeRateColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Submitted" msprop:Generator_UserColumnName="Submitted" msprop:Generator_ColumnPropNameInRow="Submitted" msprop:Generator_ColumnVarNameInTable="columnSubmitted" msprop:Generator_ColumnPropNameInTable="SubmittedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TaxAmount" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TaxAmount" msprop:Generator_ColumnPropNameInRow="TaxAmount" msprop:Generator_ColumnVarNameInTable="columnTaxAmount" msprop:Generator_ColumnPropNameInTable="TaxAmountColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NetAmount" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NetAmount" msprop:Generator_ColumnPropNameInRow="NetAmount" msprop:Generator_ColumnVarNameInTable="columnNetAmount" msprop:Generator_ColumnPropNameInTable="NetAmountColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vueAccountExpenseEntry" />
+      <xs:field xpath="mstns:AccountExpenseEntryId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

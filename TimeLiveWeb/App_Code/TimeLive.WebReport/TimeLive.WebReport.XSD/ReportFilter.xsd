@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportFilter" targetNamespace="http://tempuri.org/Report.xsd" xmlns:mstns="http://tempuri.org/Report.xsd" xmlns="http://tempuri.org/Report.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="TLHostedConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="TLHostedConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.TLHostedConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vueAccountReportFilterTableAdapter" GeneratorDataComponentClassName="vueAccountReportFilterTableAdapter" Name="vueAccountReportFilter" UserDataComponentName="vueAccountReportFilterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TLHosted.dbo.vueAccountReportFilter" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     ReportDataSourceName, ReportDatasource, ReportDataSourceType, SystemReportDataSourceId, AccountReportId, AccountReportCategoryId, 
+                      ReportName, ReportDescription, ReportIconPath, AccountId, AccountReportDataSourceMappingId, IsRequired, IsAllowAll, SystemReportFilterMappingId,
+                       SystemReportFilterSource, SystemReportFilterSourceId, ClassName, ClassFunction, ParameterName1, Caption, FilterSourceType, FilterSource, 
+                      FilterOperator, IsOptional, FilterField, ParentFilterSource , FilterSequence
+FROM         vueAccountReportFilter</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ReportDataSourceName" DataSetColumn="ReportDataSourceName" />
+              <Mapping SourceColumn="ReportDatasource" DataSetColumn="ReportDatasource" />
+              <Mapping SourceColumn="ReportDataSourceType" DataSetColumn="ReportDataSourceType" />
+              <Mapping SourceColumn="SystemReportDataSourceId" DataSetColumn="SystemReportDataSourceId" />
+              <Mapping SourceColumn="AccountReportId" DataSetColumn="AccountReportId" />
+              <Mapping SourceColumn="AccountReportCategoryId" DataSetColumn="AccountReportCategoryId" />
+              <Mapping SourceColumn="ReportName" DataSetColumn="ReportName" />
+              <Mapping SourceColumn="ReportDescription" DataSetColumn="ReportDescription" />
+              <Mapping SourceColumn="ReportIconPath" DataSetColumn="ReportIconPath" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="AccountReportDataSourceMappingId" DataSetColumn="AccountReportDataSourceMappingId" />
+              <Mapping SourceColumn="IsRequired" DataSetColumn="IsRequired" />
+              <Mapping SourceColumn="IsAllowAll" DataSetColumn="IsAllowAll" />
+              <Mapping SourceColumn="SystemReportFilterMappingId" DataSetColumn="SystemReportFilterMappingId" />
+              <Mapping SourceColumn="SystemReportFilterSource" DataSetColumn="SystemReportFilterSource" />
+              <Mapping SourceColumn="SystemReportFilterSourceId" DataSetColumn="SystemReportFilterSourceId" />
+              <Mapping SourceColumn="ClassName" DataSetColumn="ClassName" />
+              <Mapping SourceColumn="ClassFunction" DataSetColumn="ClassFunction" />
+              <Mapping SourceColumn="ParameterName1" DataSetColumn="ParameterName1" />
+              <Mapping SourceColumn="Caption" DataSetColumn="Caption" />
+              <Mapping SourceColumn="FilterSourceType" DataSetColumn="FilterSourceType" />
+              <Mapping SourceColumn="FilterSource" DataSetColumn="FilterSource" />
+              <Mapping SourceColumn="FilterOperator" DataSetColumn="FilterOperator" />
+              <Mapping SourceColumn="IsOptional" DataSetColumn="IsOptional" />
+              <Mapping SourceColumn="FilterField" DataSetColumn="FilterField" />
+              <Mapping SourceColumn="ParentFilterSource" DataSetColumn="ParentFilterSource" />
+              <Mapping SourceColumn="FilterSequence" DataSetColumn="FilterSequence" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TLHosted.dbo.vueAccountReportFilter" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="True" GeneratorGetMethodName="GetDataByAccountReportId" GetMethodModifier="Public" GetMethodName="GetDataByAccountReportId" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetDataByAccountReportId" UserSourceName="GetDataByAccountReportId1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     AccountId, AccountReportCategoryId, AccountReportDataSourceMappingId, AccountReportId, Caption, ClassFunction, ClassName, FilterField, 
+                      FilterOperator, FilterSequence, FilterSource, FilterSourceType, IsAllowAll, IsOptional, IsRequired, ParameterName1, ParentFilterSource, 
+                      ReportDataSourceName, ReportDataSourceType, ReportDatasource, ReportDescription, ReportIconPath, ReportName, SystemReportDataSourceId, 
+                      SystemReportFilterMappingId, SystemReportFilterSource, SystemReportFilterSourceId
+FROM         vueAccountReportFilter
+WHERE     (AccountReportId = @AccountReportId)
+ORDER BY FilterSequence</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="AccountReportId" ColumnName="AccountReportId" DataSourceName="TLHosted.dbo.vueAccountReportFilter" DataTypeServer="uniqueidentifier" DbType="Guid" Direction="Input" ParameterName="@AccountReportId" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="16" SourceColumn="AccountReportId" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vueAccountReportTableAdapter" GeneratorDataComponentClassName="vueAccountReportTableAdapter" Name="vueAccountReport" UserDataComponentName="vueAccountReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TLHosted.dbo.vueAccountReport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     AccountReportCategory, AccountReportId, AccountReportCategoryId, ReportName, ReportDescription, ReportIconPath, AccountId, SystemReportTypeId, 
+                      SystemReportId
+FROM         vueAccountReport</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AccountReportCategory" DataSetColumn="AccountReportCategory" />
+              <Mapping SourceColumn="AccountReportId" DataSetColumn="AccountReportId" />
+              <Mapping SourceColumn="AccountReportCategoryId" DataSetColumn="AccountReportCategoryId" />
+              <Mapping SourceColumn="ReportName" DataSetColumn="ReportName" />
+              <Mapping SourceColumn="ReportDescription" DataSetColumn="ReportDescription" />
+              <Mapping SourceColumn="ReportIconPath" DataSetColumn="ReportIconPath" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="SystemReportTypeId" DataSetColumn="SystemReportTypeId" />
+              <Mapping SourceColumn="SystemReportId" DataSetColumn="SystemReportId" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TLHosted.dbo.vueAccountReport" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="True" GeneratorGetMethodName="GetDataByAccountIdUnionAll" GetMethodModifier="Public" GetMethodName="GetDataByAccountIdUnionAll" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetDataByAccountIdUnionAll" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     AccountId, AccountReportCategory, AccountReportCategoryId, AccountReportId, ReportDescription, ReportIconPath, ReportName,SystemReportId,SystemReportTypeId
+FROM         vueAccountReport
+WHERE     (AccountId IS NULL)
+UNION ALL
+SELECT     AccountReportCategory, AccountReportId, AccountReportCategoryId, ReportName, ReportDescription, ReportIconPath, AccountId, SystemReportId , SystemReportTypeId
+FROM         vueAccountReport AS vueAccountReport_1
+WHERE     (AccountId = @AccountId) And  (AccountReportId IN
+                          (SELECT     SystemReportId
+                            FROM          AccountReport
+                            WHERE      (AccountId = @AccountID)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="AccountId" ColumnName="AccountId" DataSourceName="TLHosted.dbo.vueAccountReport" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountId" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TLHosted.dbo.vueAccountReport" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="True" GeneratorGetMethodName="GetDataByAccountReportId" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataByAccountReportId" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetDataByAccountReportId" UserSourceName="GetDataByAccountReportId1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT AccountId, AccountReportCategory, AccountReportCategoryId, AccountReportId, ReportDescription, ReportIconPath, ReportName, SystemReportId, SystemReportTypeId FROM vueAccountReport WHERE (AccountReportId = @AccountReportId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="AccountReportId" ColumnName="AccountReportId" DataSourceName="TLHosted.dbo.vueAccountReport" DataTypeServer="uniqueidentifier" DbType="Guid" Direction="Input" ParameterName="@AccountReportId" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="16" SourceColumn="AccountReportId" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportFilter" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ReportFilter" msprop:Generator_DataSetName="ReportFilter">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vueAccountReportFilter" msprop:Generator_UserTableName="vueAccountReportFilter" msprop:Generator_RowDeletedName="vueAccountReportFilterRowDeleted" msprop:Generator_RowChangedName="vueAccountReportFilterRowChanged" msprop:Generator_RowClassName="vueAccountReportFilterRow" msprop:Generator_RowChangingName="vueAccountReportFilterRowChanging" msprop:Generator_RowEvArgName="vueAccountReportFilterRowChangeEvent" msprop:Generator_RowEvHandlerName="vueAccountReportFilterRowChangeEventHandler" msprop:Generator_TableClassName="vueAccountReportFilterDataTable" msprop:Generator_TableVarName="tablevueAccountReportFilter" msprop:Generator_RowDeletingName="vueAccountReportFilterRowDeleting" msprop:Generator_TablePropName="vueAccountReportFilter">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReportDataSourceName" msprop:Generator_UserColumnName="ReportDataSourceName" msprop:Generator_ColumnVarNameInTable="columnReportDataSourceName" msprop:Generator_ColumnPropNameInRow="ReportDataSourceName" msprop:Generator_ColumnPropNameInTable="ReportDataSourceNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReportDatasource" msprop:Generator_UserColumnName="ReportDatasource" msprop:Generator_ColumnVarNameInTable="columnReportDatasource" msprop:Generator_ColumnPropNameInRow="ReportDatasource" msprop:Generator_ColumnPropNameInTable="ReportDatasourceColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReportDataSourceType" msprop:Generator_UserColumnName="ReportDataSourceType" msprop:Generator_ColumnVarNameInTable="columnReportDataSourceType" msprop:Generator_ColumnPropNameInRow="ReportDataSourceType" msprop:Generator_ColumnPropNameInTable="ReportDataSourceTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SystemReportDataSourceId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="SystemReportDataSourceId" msprop:Generator_ColumnVarNameInTable="columnSystemReportDataSourceId" msprop:Generator_ColumnPropNameInRow="SystemReportDataSourceId" msprop:Generator_ColumnPropNameInTable="SystemReportDataSourceIdColumn" type="xs:string" />
+              <xs:element name="AccountReportId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="AccountReportId" msprop:Generator_ColumnVarNameInTable="columnAccountReportId" msprop:Generator_ColumnPropNameInRow="AccountReportId" msprop:Generator_ColumnPropNameInTable="AccountReportIdColumn" type="xs:string" />
+              <xs:element name="AccountReportCategoryId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="AccountReportCategoryId" msprop:Generator_ColumnVarNameInTable="columnAccountReportCategoryId" msprop:Generator_ColumnPropNameInRow="AccountReportCategoryId" msprop:Generator_ColumnPropNameInTable="AccountReportCategoryIdColumn" type="xs:string" />
+              <xs:element name="ReportName" msprop:Generator_UserColumnName="ReportName" msprop:Generator_ColumnVarNameInTable="columnReportName" msprop:Generator_ColumnPropNameInRow="ReportName" msprop:Generator_ColumnPropNameInTable="ReportNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReportDescription" msprop:Generator_UserColumnName="ReportDescription" msprop:Generator_ColumnVarNameInTable="columnReportDescription" msprop:Generator_ColumnPropNameInRow="ReportDescription" msprop:Generator_ColumnPropNameInTable="ReportDescriptionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReportIconPath" msprop:Generator_UserColumnName="ReportIconPath" msprop:Generator_ColumnVarNameInTable="columnReportIconPath" msprop:Generator_ColumnPropNameInRow="ReportIconPath" msprop:Generator_ColumnPropNameInTable="ReportIconPathColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountId" msprop:Generator_UserColumnName="AccountId" msprop:Generator_ColumnVarNameInTable="columnAccountId" msprop:Generator_ColumnPropNameInRow="AccountId" msprop:Generator_ColumnPropNameInTable="AccountIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AccountReportDataSourceMappingId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="AccountReportDataSourceMappingId" msprop:Generator_ColumnVarNameInTable="columnAccountReportDataSourceMappingId" msprop:Generator_ColumnPropNameInRow="AccountReportDataSourceMappingId" msprop:Generator_ColumnPropNameInTable="AccountReportDataSourceMappingIdColumn" type="xs:string" />
+              <xs:element name="IsRequired" msprop:Generator_UserColumnName="IsRequired" msprop:Generator_ColumnVarNameInTable="columnIsRequired" msprop:Generator_ColumnPropNameInRow="IsRequired" msprop:Generator_ColumnPropNameInTable="IsRequiredColumn" type="xs:boolean" />
+              <xs:element name="IsAllowAll" msprop:Generator_UserColumnName="IsAllowAll" msprop:Generator_ColumnVarNameInTable="columnIsAllowAll" msprop:Generator_ColumnPropNameInRow="IsAllowAll" msprop:Generator_ColumnPropNameInTable="IsAllowAllColumn" type="xs:boolean" />
+              <xs:element name="SystemReportFilterMappingId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="SystemReportFilterMappingId" msprop:Generator_ColumnVarNameInTable="columnSystemReportFilterMappingId" msprop:Generator_ColumnPropNameInRow="SystemReportFilterMappingId" msprop:Generator_ColumnPropNameInTable="SystemReportFilterMappingIdColumn" type="xs:string" />
+              <xs:element name="SystemReportFilterSource" msprop:Generator_UserColumnName="SystemReportFilterSource" msprop:Generator_ColumnVarNameInTable="columnSystemReportFilterSource" msprop:Generator_ColumnPropNameInRow="SystemReportFilterSource" msprop:Generator_ColumnPropNameInTable="SystemReportFilterSourceColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SystemReportFilterSourceId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="SystemReportFilterSourceId" msprop:Generator_ColumnVarNameInTable="columnSystemReportFilterSourceId" msprop:Generator_ColumnPropNameInRow="SystemReportFilterSourceId" msprop:Generator_ColumnPropNameInTable="SystemReportFilterSourceIdColumn" type="xs:string" />
+              <xs:element name="ClassName" msprop:Generator_UserColumnName="ClassName" msprop:Generator_ColumnVarNameInTable="columnClassName" msprop:Generator_ColumnPropNameInRow="ClassName" msprop:Generator_ColumnPropNameInTable="ClassNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClassFunction" msprop:Generator_UserColumnName="ClassFunction" msprop:Generator_ColumnVarNameInTable="columnClassFunction" msprop:Generator_ColumnPropNameInRow="ClassFunction" msprop:Generator_ColumnPropNameInTable="ClassFunctionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParameterName1" msprop:Generator_UserColumnName="ParameterName1" msprop:Generator_ColumnVarNameInTable="columnParameterName1" msprop:Generator_ColumnPropNameInRow="ParameterName1" msprop:Generator_ColumnPropNameInTable="ParameterName1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Caption" msprop:Generator_UserColumnName="Caption" msprop:Generator_ColumnVarNameInTable="columnCaption" msprop:Generator_ColumnPropNameInRow="Caption" msprop:Generator_ColumnPropNameInTable="CaptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FilterSourceType" msprop:Generator_UserColumnName="FilterSourceType" msprop:Generator_ColumnVarNameInTable="columnFilterSourceType" msprop:Generator_ColumnPropNameInRow="FilterSourceType" msprop:Generator_ColumnPropNameInTable="FilterSourceTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FilterSource" msprop:Generator_UserColumnName="FilterSource" msprop:Generator_ColumnVarNameInTable="columnFilterSource" msprop:Generator_ColumnPropNameInRow="FilterSource" msprop:Generator_ColumnPropNameInTable="FilterSourceColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FilterOperator" msprop:Generator_UserColumnName="FilterOperator" msprop:Generator_ColumnVarNameInTable="columnFilterOperator" msprop:Generator_ColumnPropNameInRow="FilterOperator" msprop:Generator_ColumnPropNameInTable="FilterOperatorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsOptional" msprop:Generator_UserColumnName="IsOptional" msprop:Generator_ColumnVarNameInTable="columnIsOptional" msprop:Generator_ColumnPropNameInRow="IsOptional" msprop:Generator_ColumnPropNameInTable="IsOptionalColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FilterField" msprop:Generator_UserColumnName="FilterField" msprop:Generator_ColumnVarNameInTable="columnFilterField" msprop:Generator_ColumnPropNameInRow="FilterField" msprop:Generator_ColumnPropNameInTable="FilterFieldColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentFilterSource" msprop:Generator_UserColumnName="ParentFilterSource" msprop:Generator_ColumnVarNameInTable="columnParentFilterSource" msprop:Generator_ColumnPropNameInRow="ParentFilterSource" msprop:Generator_ColumnPropNameInTable="ParentFilterSourceColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FilterSequence" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vueAccountReport" msprop:Generator_UserTableName="vueAccountReport" msprop:Generator_RowDeletedName="vueAccountReportRowDeleted" msprop:Generator_RowChangedName="vueAccountReportRowChanged" msprop:Generator_RowClassName="vueAccountReportRow" msprop:Generator_RowChangingName="vueAccountReportRowChanging" msprop:Generator_RowEvArgName="vueAccountReportRowChangeEvent" msprop:Generator_RowEvHandlerName="vueAccountReportRowChangeEventHandler" msprop:Generator_TableClassName="vueAccountReportDataTable" msprop:Generator_TableVarName="tablevueAccountReport" msprop:Generator_RowDeletingName="vueAccountReportRowDeleting" msprop:Generator_TablePropName="vueAccountReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountReportCategory" msprop:Generator_UserColumnName="AccountReportCategory" msprop:Generator_ColumnPropNameInRow="AccountReportCategory" msprop:Generator_ColumnVarNameInTable="columnAccountReportCategory" msprop:Generator_ColumnPropNameInTable="AccountReportCategoryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountReportId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="AccountReportId" msprop:Generator_ColumnPropNameInRow="AccountReportId" msprop:Generator_ColumnVarNameInTable="columnAccountReportId" msprop:Generator_ColumnPropNameInTable="AccountReportIdColumn" type="xs:string" />
+              <xs:element name="AccountReportCategoryId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="AccountReportCategoryId" msprop:Generator_ColumnPropNameInRow="AccountReportCategoryId" msprop:Generator_ColumnVarNameInTable="columnAccountReportCategoryId" msprop:Generator_ColumnPropNameInTable="AccountReportCategoryIdColumn" type="xs:string" />
+              <xs:element name="ReportName" msprop:Generator_UserColumnName="ReportName" msprop:Generator_ColumnPropNameInRow="ReportName" msprop:Generator_ColumnVarNameInTable="columnReportName" msprop:Generator_ColumnPropNameInTable="ReportNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReportDescription" msprop:Generator_UserColumnName="ReportDescription" msprop:Generator_ColumnPropNameInRow="ReportDescription" msprop:Generator_ColumnVarNameInTable="columnReportDescription" msprop:Generator_ColumnPropNameInTable="ReportDescriptionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReportIconPath" msprop:Generator_UserColumnName="ReportIconPath" msprop:Generator_ColumnPropNameInRow="ReportIconPath" msprop:Generator_ColumnVarNameInTable="columnReportIconPath" msprop:Generator_ColumnPropNameInTable="ReportIconPathColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountId" msprop:Generator_UserColumnName="AccountId" msprop:Generator_ColumnPropNameInRow="AccountId" msprop:Generator_ColumnVarNameInTable="columnAccountId" msprop:Generator_ColumnPropNameInTable="AccountIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SystemReportTypeId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="SystemReportTypeId" msprop:Generator_ColumnPropNameInRow="SystemReportTypeId" msprop:Generator_ColumnVarNameInTable="columnSystemReportTypeId" msprop:Generator_ColumnPropNameInTable="SystemReportTypeIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SystemReportId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="SystemReportId" msprop:Generator_ColumnPropNameInRow="SystemReportId" msprop:Generator_ColumnVarNameInTable="columnSystemReportId" msprop:Generator_ColumnPropNameInTable="SystemReportIdColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

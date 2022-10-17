@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="http://localhost:1050/TimeLiveWeb/services/TaskService.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="http://localhost:1050/TimeLiveWeb/services/TaskService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:1050/TimeLiveWeb/services/TaskService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="TaskService_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="DoWork" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_GetTasks_InputMessage">
+    <wsdl:part name="parameters" element="GetTasks" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_GetTasks_OutputMessage">
+    <wsdl:part name="parameters" element="GetTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_UpdateAccountProjectTask_InputMessage">
+    <wsdl:part name="parameters" element="UpdateAccountProjectTask" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_UpdateAccountProjectTask_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateAccountProjectTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_AddAccountProjectTask_InputMessage">
+    <wsdl:part name="parameters" element="AddAccountProjectTask" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_AddAccountProjectTask_OutputMessage">
+    <wsdl:part name="parameters" element="AddAccountProjectTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_DeleteAccountProjectTask_InputMessage">
+    <wsdl:part name="parameters" element="DeleteAccountProjectTask" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_DeleteAccountProjectTask_OutputMessage">
+    <wsdl:part name="parameters" element="DeleteAccountProjectTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_SetPermissionForTask_InputMessage">
+    <wsdl:part name="parameters" element="SetPermissionForTask" />
+  </wsdl:message>
+  <wsdl:message name="TaskService_SetPermissionForTask_OutputMessage">
+    <wsdl:part name="parameters" element="SetPermissionForTaskResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TaskService">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="urn:TaskService/DoWork" message="TaskService_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="urn:TaskService/DoWorkResponse" message="TaskService_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTasks">
+      <wsdl:input wsaw:Action="urn:TaskService/GetTasks" message="TaskService_GetTasks_InputMessage" />
+      <wsdl:output wsaw:Action="urn:TaskService/GetTasksResponse" message="TaskService_GetTasks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAccountProjectTask">
+      <wsdl:input wsaw:Action="urn:TaskService/UpdateAccountProjectTask" message="TaskService_UpdateAccountProjectTask_InputMessage" />
+      <wsdl:output wsaw:Action="urn:TaskService/UpdateAccountProjectTaskResponse" message="TaskService_UpdateAccountProjectTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAccountProjectTask">
+      <wsdl:input wsaw:Action="urn:TaskService/AddAccountProjectTask" message="TaskService_AddAccountProjectTask_InputMessage" />
+      <wsdl:output wsaw:Action="urn:TaskService/AddAccountProjectTaskResponse" message="TaskService_AddAccountProjectTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAccountProjectTask">
+      <wsdl:input wsaw:Action="urn:TaskService/DeleteAccountProjectTask" message="TaskService_DeleteAccountProjectTask_InputMessage" />
+      <wsdl:output wsaw:Action="urn:TaskService/DeleteAccountProjectTaskResponse" message="TaskService_DeleteAccountProjectTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPermissionForTask">
+      <wsdl:input wsaw:Action="urn:TaskService/SetPermissionForTask" message="TaskService_SetPermissionForTask_InputMessage" />
+      <wsdl:output wsaw:Action="urn:TaskService/SetPermissionForTaskResponse" message="TaskService_SetPermissionForTask_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

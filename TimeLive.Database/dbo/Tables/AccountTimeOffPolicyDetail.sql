@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[AccountTimeOffPolicyDetail] (
+    [AccountTimeOffPolicyDetailId] UNIQUEIDENTIFIER CONSTRAINT [DF_AccountTimeOffPolicyDetail_AccountTimeOffPolicyDetailId] DEFAULT (newid()) NOT NULL,
+    [AccountTimeOffPolicyId]       UNIQUEIDENTIFIER NOT NULL,
+    [AccountTimeOffTypeId]         UNIQUEIDENTIFIER NOT NULL,
+    [SystemEarnPeriodId]           UNIQUEIDENTIFIER NULL,
+    [SystemResetToZeroTypeId]      UNIQUEIDENTIFIER NULL,
+    [InitialSetToHours]            FLOAT (53)       NULL,
+    [ResetToHours]                 FLOAT (53)       NULL,
+    [EarnHours]                    FLOAT (53)       NULL,
+    [CarryOver]                    FLOAT (53)       NULL,
+    [MaximumAvailable]             FLOAT (53)       NULL,
+    [AccountId]                    INT              NOT NULL,
+    [CreatedByEmployeeId]          INT              NOT NULL,
+    [CreatedOn]                    DATETIME         CONSTRAINT [DF_AccountTimeOffPolicyDetail_CreatedOn] DEFAULT (getdate()) NOT NULL,
+    [ModifiedByEmployeeId]         INT              NOT NULL,
+    [ModifiedOn]                   DATETIME         CONSTRAINT [DF_AccountTimeOffPolicyDetail_ModifiedOn] DEFAULT (getdate()) NOT NULL,
+    [MasterTimeOffPolicyDetailId]  UNIQUEIDENTIFIER NULL,
+    [EffectiveDate]                DATETIME         NULL,
+    [IsInclude]                    BIT              NULL,
+    [AdditionalHours]              FLOAT (53)       NULL,
+    [CarryForwardExpiryDate]       DATETIME         NULL,
+    CONSTRAINT [PK_AccountTimeOffPolicyDetail] PRIMARY KEY CLUSTERED ([AccountTimeOffPolicyDetailId] ASC),
+    CONSTRAINT [FK_AccountTimeOffPolicyDetail_AccountTimeOffPolicy] FOREIGN KEY ([AccountTimeOffPolicyId]) REFERENCES [dbo].[AccountTimeOffPolicy] ([AccountTimeOffPolicyId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AccountTimeOffPolicyDetail_AccountTimeOffType] FOREIGN KEY ([AccountTimeOffTypeId]) REFERENCES [dbo].[AccountTimeOffType] ([AccountTimeOffTypeId]) ON DELETE CASCADE
+);
+

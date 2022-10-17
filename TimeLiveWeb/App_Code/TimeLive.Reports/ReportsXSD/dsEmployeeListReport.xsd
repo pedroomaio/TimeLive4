@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsEmployeeListReport" targetNamespace="http://tempuri.org/dsEmployeeListReport.xsd" xmlns:mstns="http://tempuri.org/dsEmployeeListReport.xsd" xmlns="http://tempuri.org/dsEmployeeListReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vueAccountEmployeeTableAdapter" Name="vueAccountEmployee">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeLive.dbo.vueAccountEmployee" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     AccountEmployeeId, FirstName, LastName, EMailAddress, DepartmentName, Role, AccountId, AccountLocation, Password, AccountDepartmentId, 
+                      AccountLocationId, BillingType, EmployeeName, ShowClockStartEnd, TimeZoneId, MasterAccountRoleId, DefaultCurrencyId, CountryId, 
+                      CultureInfoName, TimeEntryFormat, AllowedAccessFromIP, AccountRoleId, AccountSessionTimeout, ShowCompletedTasksInTimeSheet, 
+                      CurrencySymbol, IsCompanyOwnLogo, AccountExpiryActivation, LicenseActivation, EmployeeTypeId, ExternalUserClientId, AccountBillingRateId, 
+                      ScheduledEmailSendTime, LastScheduledEmailSentTime, Username, IsDisabled, FromEmailAddress, FromEmailAddressDisplayName, 
+                      EmployeeCode, Version, LockSubmittedRecords, LockApprovedRecords, EmployeeNameWithCode
+FROM         vueAccountEmployee</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AccountEmployeeId" DataSetColumn="AccountEmployeeId" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="EMailAddress" DataSetColumn="EMailAddress" />
+              <Mapping SourceColumn="DepartmentName" DataSetColumn="DepartmentName" />
+              <Mapping SourceColumn="Role" DataSetColumn="Role" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="AccountLocation" DataSetColumn="AccountLocation" />
+              <Mapping SourceColumn="Password" DataSetColumn="Password" />
+              <Mapping SourceColumn="AccountDepartmentId" DataSetColumn="AccountDepartmentId" />
+              <Mapping SourceColumn="AccountLocationId" DataSetColumn="AccountLocationId" />
+              <Mapping SourceColumn="BillingType" DataSetColumn="BillingType" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="ShowClockStartEnd" DataSetColumn="ShowClockStartEnd" />
+              <Mapping SourceColumn="TimeZoneId" DataSetColumn="TimeZoneId" />
+              <Mapping SourceColumn="MasterAccountRoleId" DataSetColumn="MasterAccountRoleId" />
+              <Mapping SourceColumn="DefaultCurrencyId" DataSetColumn="DefaultCurrencyId" />
+              <Mapping SourceColumn="CountryId" DataSetColumn="CountryId" />
+              <Mapping SourceColumn="CultureInfoName" DataSetColumn="CultureInfoName" />
+              <Mapping SourceColumn="TimeEntryFormat" DataSetColumn="TimeEntryFormat" />
+              <Mapping SourceColumn="AllowedAccessFromIP" DataSetColumn="AllowedAccessFromIP" />
+              <Mapping SourceColumn="AccountRoleId" DataSetColumn="AccountRoleId" />
+              <Mapping SourceColumn="AccountSessionTimeout" DataSetColumn="AccountSessionTimeout" />
+              <Mapping SourceColumn="ShowCompletedTasksInTimeSheet" DataSetColumn="ShowCompletedTasksInTimeSheet" />
+              <Mapping SourceColumn="CurrencySymbol" DataSetColumn="CurrencySymbol" />
+              <Mapping SourceColumn="IsCompanyOwnLogo" DataSetColumn="IsCompanyOwnLogo" />
+              <Mapping SourceColumn="AccountExpiryActivation" DataSetColumn="AccountExpiryActivation" />
+              <Mapping SourceColumn="LicenseActivation" DataSetColumn="LicenseActivation" />
+              <Mapping SourceColumn="EmployeeTypeId" DataSetColumn="EmployeeTypeId" />
+              <Mapping SourceColumn="ExternalUserClientId" DataSetColumn="ExternalUserClientId" />
+              <Mapping SourceColumn="AccountBillingRateId" DataSetColumn="AccountBillingRateId" />
+              <Mapping SourceColumn="ScheduledEmailSendTime" DataSetColumn="ScheduledEmailSendTime" />
+              <Mapping SourceColumn="LastScheduledEmailSentTime" DataSetColumn="LastScheduledEmailSentTime" />
+              <Mapping SourceColumn="Username" DataSetColumn="Username" />
+              <Mapping SourceColumn="IsDisabled" DataSetColumn="IsDisabled" />
+              <Mapping SourceColumn="FromEmailAddress" DataSetColumn="FromEmailAddress" />
+              <Mapping SourceColumn="FromEmailAddressDisplayName" DataSetColumn="FromEmailAddressDisplayName" />
+              <Mapping SourceColumn="EmployeeCode" DataSetColumn="EmployeeCode" />
+              <Mapping SourceColumn="Version" DataSetColumn="Version" />
+              <Mapping SourceColumn="LockSubmittedRecords" DataSetColumn="LockSubmittedRecords" />
+              <Mapping SourceColumn="LockApprovedRecords" DataSetColumn="LockApprovedRecords" />
+              <Mapping SourceColumn="EmployeeNameWithCode" DataSetColumn="EmployeeNameWithCode" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeLive.dbo.vueAccountEmployee" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillByAccountIdLocationIdDepartmentId" GenerateMethods="Both" GenerateShortCommands="True" GetMethodModifier="Public" GetMethodName="GetDataByAccountIdLocationIdDepartmentId" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT AccountBillingRateId, AccountDepartmentId, AccountEmployeeId, AccountExpiryActivation, AccountId, AccountLocation, AccountLocationId, AccountRoleId, AccountSessionTimeout, AllowedAccessFromIP, BillingType, CountryId, CultureInfoName, CurrencySymbol, DefaultCurrencyId, DepartmentName, EMailAddress, EmployeeCode, EmployeeName, EmployeeNameWithCode, EmployeeTypeId, ExternalUserClientId, FirstName, FromEmailAddress, FromEmailAddressDisplayName, IsCompanyOwnLogo, IsDisabled, LastName, LastScheduledEmailSentTime, LicenseActivation, LockApprovedRecords, LockSubmittedRecords, MasterAccountRoleId, Password, Role, ScheduledEmailSendTime, ShowClockStartEnd, ShowCompletedTasksInTimeSheet, TimeEntryFormat, TimeZoneId, Username, Version FROM vueAccountEmployee WHERE (AccountId = @AccountId) AND (@AccountLocationId = 0 OR AccountLocationId = @AccountLocationId) AND (@AccountDepartmentId = 0 OR AccountDepartmentId = @AccountDepartmentId) AND (@AccountRoleId = 0 OR AccountRoleId = @AccountRoleId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="AccountId" ColumnName="AccountId" DataSourceName="TimeLive.dbo.vueAccountEmployee" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountId" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="AccountLocationId" ColumnName="AccountLocationId" DataSourceName="TimeLive.dbo.vueAccountEmployee" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountLocationId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountLocationId" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="AccountDepartmentId" ColumnName="AccountDepartmentId" DataSourceName="TimeLive.dbo.vueAccountEmployee" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountDepartmentId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountDepartmentId" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="AccountRoleId" ColumnName="AccountRoleId" DataSourceName="TimeLive.dbo.vueAccountEmployee" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@AccountRoleId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="AccountRoleId" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsEmployeeListReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vueAccountEmployee">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountEmployeeId" type="xs:int" />
+              <xs:element name="FirstName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMailAddress">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DepartmentName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Role">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountId" type="xs:int" />
+              <xs:element name="AccountLocation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Password">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountDepartmentId" type="xs:int" minOccurs="0" />
+              <xs:element name="AccountLocationId" type="xs:int" minOccurs="0" />
+              <xs:element name="BillingType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="301" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShowClockStartEnd" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TimeZoneId" type="xs:unsignedByte" />
+              <xs:element name="MasterAccountRoleId" type="xs:short" minOccurs="0" />
+              <xs:element name="DefaultCurrencyId" type="xs:short" minOccurs="0" />
+              <xs:element name="CountryId" type="xs:short" />
+              <xs:element name="CultureInfoName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TimeEntryFormat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AllowedAccessFromIP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountRoleId" type="xs:int" />
+              <xs:element name="AccountSessionTimeout" type="xs:int" minOccurs="0" />
+              <xs:element name="ShowCompletedTasksInTimeSheet" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CurrencySymbol" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsCompanyOwnLogo" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AccountExpiryActivation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LicenseActivation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeTypeId" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="ExternalUserClientId" type="xs:int" minOccurs="0" />
+              <xs:element name="AccountBillingRateId" type="xs:int" minOccurs="0" />
+              <xs:element name="ScheduledEmailSendTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastScheduledEmailSentTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Username" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsDisabled" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FromEmailAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FromEmailAddressDisplayName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Version" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LockSubmittedRecords" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LockApprovedRecords" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EmployeeNameWithCode" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="404" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

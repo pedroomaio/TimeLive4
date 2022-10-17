@@ -1,0 +1,1 @@
+<%@ Application Inherits="AppGlobal" Language="VB" Codebehind="Global.vb" %>

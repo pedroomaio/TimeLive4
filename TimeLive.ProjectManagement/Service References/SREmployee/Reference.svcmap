@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c83f11b8-9053-4e2f-95f2-7ddb987fa35b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1050/TimeLiveWeb/services/EmployeeService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EmployeeService3.xsd" MetadataType="Schema" ID="782558d9-5d2e-4091-90e4-f8b38342331d" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/EmployeeService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EmployeeService31.xsd" MetadataType="Schema" ID="572db02e-8393-4acf-a18e-08be16f6c871" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/EmployeeService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EmployeeService2.wsdl" MetadataType="Wsdl" ID="aa38034a-6f78-4183-8cec-af793d641c96" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/EmployeeService.svc?wsdl" />
+    <MetadataFile FileName="EmployeeService1.disco" MetadataType="Disco" ID="015b1df6-d131-456f-9df7-02ea5ae7dce7" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/EmployeeService.svc?disco" />
+    <MetadataFile FileName="EmployeeService.xsd" MetadataType="Schema" ID="dccf9e4e-1d09-4c46-9f26-6568cab240de" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/EmployeeService.svc?xsd=xsd3" />
+    <MetadataFile FileName="EmployeeService32.xsd" MetadataType="Schema" ID="58f54cf1-5074-4f3b-903d-4fa33dbe3c04" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/EmployeeService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EmployeeService21.wsdl" MetadataType="Wsdl" ID="808ed41b-a91a-4934-abc4-65a7ce4c6d57" SourceId="1" SourceUrl="http://localhost:1050/TimeLiveWeb/services/EmployeeService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

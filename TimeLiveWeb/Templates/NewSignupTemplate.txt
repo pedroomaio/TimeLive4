@@ -1,0 +1,159 @@
+<p>
+	<a href="http://www.livetecs.com/"><img alt="" src="http://www.livetecs.com/images/logo.jpg" style="width: 146px; height: 42px;" /></a></p>
+<p>
+	<span style="font-size:12px;"><span style="font-family: verdana, geneva, sans-serif;">Dear Customer,</span><br />
+	<br />
+	<span style="font-size:12px;"><span style="font-family: verdana, geneva, sans-serif;">Thank you for signing up the TimeLive On-Demand account. Below 
+
+provided is your account details alongwith instructions to get start with your account.</span></span></span></p>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">&nbsp;&nbsp;</span></span></td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Customer Id&nbsp;</span></span></td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">[accountid]</span></span></td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Login User Name</span></span></td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;"><a href="mailto:[emailaddress]" 
+
+style="font-family: verdana, geneva, sans-serif;">[emailaddress]</a></span></span></td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Password &nbsp; &nbsp; &nbsp; &nbsp; 
+
+&nbsp; &nbsp; &nbsp;&nbsp;</span></span></td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">[password]</span></span></td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Login URL</span></span></td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;"><a href="[url]" style="font-family: verdana, 
+
+geneva, sans-serif;">[url]</a></span></span></td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<br />
+	<span style="font-size:18px;"><strong><span style="font-family: verdana, geneva, sans-serif; color: rgb(255, 126, 7); line-height: 16.5px;">Introduction to 
+
+TimeLive</span></strong></span></p>
+<p>
+	<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">TimeLive is a web-based integrated suite with the major features 
+
+include:</span></span></p>
+<ul>
+	<li>
+		<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Timesheet Management</span></span></li>
+	<li>
+		<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-
+
+family:verdana,geneva,sans-serif;">Expense Management</span></span></span></span></li>
+	<li>
+		<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-
+
+family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Automated Client 
+
+Invoicing</span></span></span></span></span></span></li>
+	<li>
+		<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Time Off &ndash; Leave Management</span></span></li>
+	<li>
+		<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">QuickBooks Integration</span></span></li>
+	<li>
+		<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Project Management</span></span></li>
+	<li>
+		<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Task Management</span></span></li>
+</ul>
+<p>
+	<strong style="font-size: 18px;"><span style="font-family: verdana, geneva, sans-serif; color: rgb(255, 126, 7); line-height: 16.5px;">Getting Started Video 
+
+Tutorial</span></strong></p>
+<p>
+	<a href="http://www.livetecs.com/TimesheetVideoTrainings/TimLiveWebQuickStart.html"><img alt="" 
+
+src="http://www.livetecs.com/images/GettingStartedImage.jpg" style="width: 550px; height: 286px;" /></a></p>
+<p>
+	<br />
+	<span style="font-size:12px;"><strong style="font-family: verdana, geneva, sans-serif;">Other Helpful Resources</strong><br />
+	<span style="font-size:12px;"><a href="http://www.livetecs.com/" style="font-family: verdana, geneva, sans-serif;">Home Page</a><br />
+	<span style="font-size:12px;"><a href="http://www.livetecs.com/timelivehelp/" style="font-family: verdana, geneva, sans-serif;">Online Help</a><br />
+	<span style="font-size:12px;"><a href="http://www.livetecs.com/members/knowledgebase.php" style="font-family: verdana, geneva, sans-
+
+serif;">Knowledgebase / FAQs</a><br />
+	<span style="font-size:12px;"><a href="http://www.livetecs.com/Time-And-Expense-Demo" style="font-family: verdana, geneva, sans-serif;">Online 
+
+Demo</a><br />
+	<span style="font-size:12px;"><a href="http://www.livetecs.com/Home/Purchase.aspx" style="font-family: verdana, geneva, sans-serif;">Pricing</a><br />
+	<span style="font-size:12px;"><a href="http://www.livetecs.com/Home/AboutUs.aspx" style="font-family: verdana, geneva, sans-serif;">About 
+
+us</a></span></span></span></span></span></span></span></p>
+<p>
+	<span style="font-size:12px;"><span style="font-family: verdana, geneva, sans-serif;">If you have any questions, reach our Sales / Support / Technical staff 
+
+at:</span></span></p>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">&nbsp; &nbsp;</span></span></td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Sales Email</span></span></td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;"><a href="mailto:sales@livetecs.com" 
+
+style="font-family: verdana, geneva, sans-serif;">sales@livetecs.com</a></span></span></td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Support Email</span></span></td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;"><a href="mailto:support@livetecs.com" 
+
+style="font-family: verdana, geneva, sans-serif;">support@livetecs.com</a></span></span></td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Live Chat &nbsp; &nbsp; &nbsp; &nbsp; 
+
+&nbsp; &nbsp; &nbsp;</span></span></td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;"><a href="http://livechat.livetecs.com/" 
+
+style="font-family: verdana, geneva, sans-serif;">http://livechat.livetecs.com/</a></span></span></td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">Toll Free (Sales/Support)
+
+&nbsp;</span></span></td>
+			<td>
+				<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">1-888-666-8154</span></span></td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<span style="font-size:12px;"><span style="font-family:verdana,geneva,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></span><br />
+	&nbsp;</p>

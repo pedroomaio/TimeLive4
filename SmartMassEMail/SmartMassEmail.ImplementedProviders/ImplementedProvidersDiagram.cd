@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="SmartMassEmail.ImplementedProviders.FileSystemEmailTemplateProvider" Collapsed="true">
+    <Position X="13.75" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>FileSystemEmailTemplateProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAQAAAAAAAAAAEAAAAAAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartMassEmail.ImplementedProviders.Sql2005ProcessFailureProvider" Collapsed="true">
+    <Position X="10" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Sql2005ProcessFailureProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAgAAQAAAgAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Method Name="ConvertByteArrayToString" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="Sql2005ProcessFailureProvider" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="SmartMassEmail.ImplementedProviders.SMTPDotnet1EmailDispatchProvider" Collapsed="true">
+    <Position X="7" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>SMTPDotnet1EmailDispatchProvider.cs</FileName>
+      <HashCode>AAgAEAAAAAAAAQAAAAAAAAQIAAAAAAAEAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="SmartMassEmail.ImplementedProviders.SMTPDotnet1EmailDispatchProvider.SmtpSetting" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SMTPDotnet1EmailDispatchProvider.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="SmartMassEmail.ImplementedProviders.SMTPDotnet2EmailDispatchProvider" Collapsed="true">
+    <Position X="10" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>SMTPDotnet2EmailDispatchProvider.cs</FileName>
+      <HashCode>AAgAEABAAAAAAQAAAAAAAAQIAAAAAAAEAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartMassEmail.ImplementedProviders.Sql2000EmailDeQueueProvider" Collapsed="true">
+    <Position X="13" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Sql2000EmailDeQueueProvider.cs</FileName>
+      <HashCode>AAAAAAAAEAAAAQAAAAAAAAQAAAEAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartMassEmail.ImplementedProviders.Sql2000EmailQueueProvider" Collapsed="true">
+    <Position X="9.75" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Sql2000EmailQueueProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartMassEmail.ImplementedProviders.Sql2000ProcessFailureProvider" Collapsed="true">
+    <Position X="13" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Sql2000ProcessFailureProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAgAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="Sql2000ProcessFailureProvider" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="SmartMassEmail.ImplementedProviders.Sql2005EmailDeQueueProvider" Collapsed="true">
+    <Position X="15.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Sql2005EmailDeQueueProvider.cs</FileName>
+      <HashCode>AAAAAAAAEAAAAQAAAAAAAAQAAAEAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartMassEmail.ImplementedProviders.Sql2005EmailQueueProvider" Collapsed="true">
+    <Position X="7.25" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Sql2005EmailQueueProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAgAAQAAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartMassEmail.Providers.ProcessFailureProvider">
+    <Position X="12" Y="6" Width="1.5" />
+    <TypeIdentifier />
+    <Members>
+      <Method Name="Instance" Hidden="true" />
+      <Method Name="ProcessFailureProvider" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="SmartMassEmail.Providers.EmailTemplateProvider">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Members>
+      <Method Name="EmailTemplateProvider" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="SmartMassEmail.Providers.EmailQueueProvider">
+    <Position X="8.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+    <Members>
+      <Method Name="EmailQueueProvider" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="SmartMassEmail.Providers.EmailDispatchProvider">
+    <Position X="9" Y="3" Width="1.75" />
+    <TypeIdentifier />
+    <Members>
+      <Method Name="EmailDispatchProvider" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="SmartMassEmail.Providers.EmailDeQueueProvider">
+    <Position X="14.25" Y="3" Width="1.75" />
+    <TypeIdentifier />
+    <Members>
+      <Method Name="EmailDeQueueProvider" Hidden="true" />
+      <Method Name="Instance" Hidden="true" />
+    </Members>
+  </Class>
+</ClassDiagram>

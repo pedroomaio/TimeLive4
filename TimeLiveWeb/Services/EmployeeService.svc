@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="EmployeeService" CodeBehind="~/App_Code/TimeLive.SilverLight.Services/EmployeeService.vb" %>

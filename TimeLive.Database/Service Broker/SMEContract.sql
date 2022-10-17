@@ -1,0 +1,4 @@
+﻿CREATE CONTRACT [SMEContract]
+    AUTHORIZATION [dbo]
+    ([SMEMessageType] SENT BY INITIATOR);
+

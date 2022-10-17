@@ -1,0 +1,62 @@
+<%@ Master Language="VB" CodeFile="MasterPageReport.master.vb" Inherits="Masters_MasterPageReport" MasterPageFile="~/Masters/MasterPageBase.master" %>
+
+<%@ Register Src="../Menus/Controls/ctlAccountAdminSiteMenu.ascx" TagName="ctlAccountAdminSiteMenu"
+    TagPrefix="uc1" %>
+    <%@ Register Src="../Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus"
+    TagPrefix="uc3" %>
+<%@ Register Assembly="C1.Web.C1WebSplitter.2" Namespace="C1.Web.C1WebSplitter" TagPrefix="C1WebSplitter" %>    
+<%--<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderLeftMenu" Runat="Server">
+<uc1:ctlAccountAdminSiteMenu ID="CtlAccountAdminSiteMenu1" runat="server" />
+
+   <asp:UpdateProgress id="UpdateProgress1" runat="server" DisplayAfter="1" >
+        <ProgressTemplate>
+            <br />
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/AjaxUpdateStatus.gif"/><span class="LoginStatusText">Processing...</span> 
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+ 
+</asp:Content>--%>
+<asp:Content ID="C2" ContentPlaceHolderID="C" Runat="Server">
+	<tr>
+		<TD vAlign=top colspan=2  bgColor=#ffffff width="100%">
+            
+    <C1WebSplitter:C1WebSplitter BorderColor="Black" BorderStyle=none ID="C1WebSplitter1" Panel1-CssClass="PanelStyle1" Panel2-CssClass="PanelStyle1" Bar-CssClass="Splitter" Bar-CollapsedCssClass="SplitterCollapsedHorizontal" Bar-HoverCssClass="SplitterHover" Bar-DragCssClass="SplitterDrag" Bar-CollapseHoverImageUrl="~/images/splitter_colhover_vert.gif" Bar-CollapseImageUrl="~/images/splitter_col_vert.gif" Bar-ExpandHoverImageUrl="~/images/splitter_exphover_vert.gif" Bar-ExpandImageUrl="~/images/splitter_exp_vert.gif" runat="server" Height="100%" Orientation="Vertical" SplitterDistance="155" Width="100%"  Panel1-MinSize="100" Bar-Width="20" Panel2-ScrollBars="None" Panel1-ScrollBars="None">
+        <C1WebSplitter:C1WebPanel ID="C1WebSplitter1_Panel1" runat="server">
+           <uc1:ctlAccountAdminSiteMenu ID="CtlAccountAdminSiteMenu2" runat="server" />
+
+                       <asp:UpdateProgress id="UpdateProgress2" runat="server" DisplayAfter="1" >
+                            <ProgressTemplate>
+                                <br />
+                                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/AjaxUpdateStatus.gif"/><span class="LoginStatusText">Processing...</span> 
+                            </ProgressTemplate>
+                        </asp:UpdateProgress>
+        </C1WebSplitter:C1WebPanel>
+        <C1WebSplitter:C1WebPanel ID="C1WebSplitter1_Panel2" runat="server"  >
+          
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    
+                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <uc3:ctlLoginStatus ID="CtlLoginStatus2" runat="server"  />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:ScriptManager ID="ScriptManager2" runat="server">
+                                    </asp:ScriptManager>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+                                                              </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                        </table>
+                                                              </asp:ContentPlaceHolder>
+        </C1WebSplitter:C1WebPanel>
+    </C1WebSplitter:C1WebSplitter>
+
+	    </td>
+
+</tr>                      
+</asp:Content>
+
+
